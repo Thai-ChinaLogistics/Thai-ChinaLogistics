@@ -13342,7 +13342,7 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
   const PHONE = String(cfg.whatsappNumber || '66839769828').replace(/[^0-9]/g, '');
   const FB_URL = cfg.facebookUrl || 'https://www.facebook.com/profile.php?id=61576232865352';
   const BUSINESS = cfg.businessLabel || '泰国寄中国物流';
-  const WECHAT_ID = cfg.wechatId || '';
+  const WECHAT_ID = cfg.wechatId || 'THAICHINA-LOGISTICS';
 
   function log() { if (DEBUG) console.log.apply(console, ['[AdsLeadTracker]'].concat([].slice.call(arguments))); }
   function makeId(prefix) { return prefix + Date.now() + '-' + Math.random().toString(36).slice(2, 9); }
@@ -13354,6 +13354,24 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
   }
   function visitorId() { return storageGet('atl_visitor_id', 'V', localStorage); }
   function sessionId() { return storageGet('atl_session_id', 'S', sessionStorage); }
+  function currentLang() {
+    return (document.documentElement.getAttribute('data-lang') || navigator.language || 'zh').toLowerCase();
+  }
+  function t(key) {
+    const lang = currentLang();
+    const isEn = lang.startsWith('en');
+    const isTh = lang.startsWith('th');
+    const dict = {
+      wechatLabel: isEn ? 'WeChat ID' : (isTh ? 'ไอดี WeChat' : '微信号'),
+      copyWechat: isEn ? 'Copy WeChat ID' : (isTh ? 'คัดลอก WeChat ID' : '复制微信号'),
+      copyOk: isEn ? 'WeChat ID copied. Please open WeChat and add our customer service.' : (isTh ? 'คัดลอกไอดี WeChat แล้ว กรุณาเปิด WeChat เพื่อเพิ่มฝ่ายบริการลูกค้า' : '微信号已复制，请打开微信添加客服咨询。'),
+      wechatFallback: isEn ? 'Please add our WeChat customer service: ' : (isTh ? 'กรุณาเพิ่ม WeChat ฝ่ายบริการลูกค้า: ' : '请添加微信客服：'),
+      trackFail: isEn ? 'The tracking service is temporarily unavailable. We will open the contact method for you first.' : (isTh ? 'ระบบบันทึกข้อมูลยังเชื่อมต่อไม่ได้ชั่วคราว จะเปิดช่องทางติดต่อให้ก่อน' : '追踪接口暂时无法连接，先为你打开联系方式。'),
+      noApi: isEn ? 'Worker API is not configured. Contact method will open normally, but data will not be saved.' : (isTh ? 'ยังไม่ได้ตั้งค่า Worker API จะเปิดช่องทางติดต่อได้ตามปกติ แต่จะไม่บันทึกข้อมูล' : '还没有配置 Worker 地址，当前只做普通跳转，不会保存到后台。'),
+      whatsappDefault: isEn ? 'Hello, I would like to ask about shipping from Thailand to China. Could you tell me the price and delivery time?' : (isTh ? 'สวัสดีค่ะ/ครับ ต้องการสอบถามเรื่องการส่งของจากประเทศไทยไปจีน ขอทราบราคาและระยะเวลาจัดส่งค่ะ/ครับ' : '你好，我想咨询泰国寄中国物流，请问价格和时效怎么计算？')
+    };
+    return dict[key] || '';
+  }
   function params() {
     const p = new URLSearchParams(location.search);
     return {
@@ -13402,22 +13420,24 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
       keepalive: !!beacon
     }).then(r => r.json().catch(() => ({ ok: r.ok }))).catch(err => ({ ok: false, error: err.message }));
   }
-  function buildMessage(leadId, customMessage) {
-    if (customMessage) {
-      if (/线索编号|Lead ID|รหัสลูกค้า/i.test(customMessage)) return customMessage;
-      return customMessage + '\n\n线索编号：' + leadId;
-    }
-    const lang = (document.documentElement.getAttribute('data-lang') || navigator.language || '').toLowerCase();
-    if (lang.startsWith('en')) return 'Hello, I want to ask about ' + BUSINESS + '. Lead ID: ' + leadId;
-    if (lang.startsWith('th')) return 'สวัสดีค่ะ/ครับ ต้องการสอบถามบริการ ' + BUSINESS + ' รหัสลูกค้า: ' + leadId;
-    return '你好，我想咨询' + BUSINESS + '，线索编号：' + leadId;
+  function cleanCustomerMessage(message) {
+    const msg = String(message || '').trim();
+    if (!msg) return t('whatsappDefault');
+    return msg
+      .replace(/\n*\s*线索编号[:：].*$/gim, '')
+      .replace(/\n*\s*Lead ID[:：].*$/gim, '')
+      .replace(/\n*\s*รหัสลูกค้า[:：]?.*$/gim, '')
+      .trim() || t('whatsappDefault');
+  }
+  function openWhatsapp(message) {
+    const finalMessage = cleanCustomerMessage(message);
+    window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(finalMessage), '_blank');
   }
   function fallbackOpen(channel, opts) {
     opts = opts || {};
     const leadId = makeId('LOCAL');
-    const message = buildMessage(leadId, opts.message || '');
     if (channel === 'whatsapp') {
-      window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(message), '_blank');
+      openWhatsapp(opts.message || '');
       return { ok: false, fallback: true, lead_id: leadId };
     }
     if (channel === 'facebook') {
@@ -13437,31 +13457,31 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
       box = document.createElement('div');
       box.id = 'leadTrackerWechatBox';
       box.innerHTML = '<div style="margin:14px auto 0;padding:12px;border-radius:14px;background:#f4f8ff;border:1px solid rgba(77,141,255,.18);color:#1f2a3d;text-align:center;">' +
-        '<div style="font-size:13px;color:#6a7890;margin-bottom:4px;">添加后请发送这个线索编号，方便识别广告来源</div>' +
-        '<strong id="leadCode" style="font-size:18px;color:#2563eb;letter-spacing:.3px;"></strong>' +
-        '<div style="margin-top:8px;font-size:13px;color:#6a7890;">微信号：<span id="wechatIdText"></span></div>' +
-        '<button type="button" id="copyWechatTrackerBtn" style="margin-top:10px;border:0;border-radius:999px;padding:9px 14px;background:#2563eb;color:#fff;font-weight:800;cursor:pointer;">复制微信号</button>' +
+        '<div style="margin-top:2px;font-size:13px;color:#6a7890;"><span id="wechatIdLabel"></span>：<span id="wechatIdText"></span></div>' +
+        '<button type="button" id="copyWechatTrackerBtn" style="margin-top:10px;border:0;border-radius:999px;padding:9px 14px;background:#2563eb;color:#fff;font-weight:800;cursor:pointer;"></button>' +
       '</div>';
       const tip = card.querySelector('.wechat-tip') || card.lastElementChild;
       if (tip && tip.parentNode === card) card.insertBefore(box, tip.nextSibling); else card.appendChild(box);
       const btn = box.querySelector('#copyWechatTrackerBtn');
       btn.addEventListener('click', copyWechat);
     }
+    const label = document.getElementById('wechatIdLabel');
+    const btn = document.getElementById('copyWechatTrackerBtn');
+    if (label) label.textContent = t('wechatLabel');
+    if (btn) btn.textContent = t('copyWechat');
     return box;
   }
   function showWechatModal(data) {
     ensureWechatLeadBox();
     const modal = document.getElementById('wechatModal');
-    const leadEl = document.getElementById('leadCode');
     const wechatEl = document.getElementById('wechatIdText');
-    if (leadEl) leadEl.textContent = data.lead_id || '';
-    if (wechatEl) wechatEl.textContent = data.wechat_id || WECHAT_ID || '请替换成你的微信号';
+    if (wechatEl) wechatEl.textContent = data.wechat_id || WECHAT_ID || 'THAICHINA-LOGISTICS';
     if (modal) {
       modal.setAttribute('data-lead-id', data.lead_id || '');
       modal.classList.add('active');
       modal.style.display = '';
     } else {
-      alert('请添加微信：' + (data.wechat_id || WECHAT_ID) + '\n线索编号：' + (data.lead_id || ''));
+      alert(t('wechatFallback') + (data.wechat_id || WECHAT_ID || 'THAICHINA-LOGISTICS'));
     }
   }
   function copyText(text) {
@@ -13477,7 +13497,7 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
     const wechat = (document.getElementById('wechatIdText')?.textContent || WECHAT_ID || '').trim();
     copyText(wechat).then(() => {
       eventTrack('wechat_copy', 'wechat', leadId, { lead_id: leadId, wechat_id: wechat });
-      alert('微信号已复制。客户添加后让他发送线索编号：' + leadId);
+      alert(t('copyOk'));
     });
   }
   function eventTrack(type, channel, value, extra, beacon) {
@@ -13492,26 +13512,31 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
     opts = opts || {};
     channel = String(channel || '').toLowerCase();
     if (!API_READY) {
-      console.warn('[AdsLeadTracker] 还没有配置 Worker 地址，当前只做普通跳转，不会保存到后台。');
+      console.warn('[AdsLeadTracker] ' + t('noApi'));
       return fallbackOpen(channel, opts);
     }
+    const cleanMessage = cleanCustomerMessage(opts.message || '');
     const res = await post('/api/contact', basePayload({
       channel,
-      message: opts.message || '',
+      message: cleanMessage,
       source_button: opts.sourceButton || opts.source_button || '',
       lang: document.documentElement.getAttribute('data-lang') || navigator.language || ''
     }), false);
     log('contact result', res);
     if (!res || !res.ok) {
-      alert('追踪接口暂时无法连接，先为你打开联系方式。');
-      return fallbackOpen(channel, opts);
+      alert(t('trackFail'));
+      return fallbackOpen(channel, { message: cleanMessage });
     }
     if (channel === 'wechat') return showWechatModal(res);
-    if (res.redirect_url) {
-      window.open(res.redirect_url, '_blank');
+    if (channel === 'whatsapp') {
+      openWhatsapp(cleanMessage);
       return res;
     }
-    return fallbackOpen(channel, opts);
+    if (channel === 'facebook') {
+      window.open(res.redirect_url || FB_URL, '_blank');
+      return res;
+    }
+    return fallbackOpen(channel, { message: cleanMessage });
   }
   function collectInquiryMessage(form) {
     const get = (name) => {
@@ -13539,7 +13564,6 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
     ].join('\n');
   }
 
-  // 覆盖原来的表单提交：先生成线索编号并保存，再打开 WhatsApp。
   window.submitInquiry = function (event) {
     event.preventDefault();
     const form = event.target;
@@ -13547,7 +13571,6 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
     contact('whatsapp', { message, sourceButton: 'quote_form' });
   };
 
-  // 捕捉现有页面所有联系按钮：顶部 WhatsApp、首页 WhatsApp、右侧悬浮 WhatsApp/Facebook/微信。
   document.addEventListener('click', function (e) {
     const el = e.target.closest('a,button');
     if (!el) return;
