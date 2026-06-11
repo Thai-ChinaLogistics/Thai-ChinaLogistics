@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>广告来源渠道实时数据大屏</title>
+<style>
+:root{
+  --bg:#030817;--panel:rgba(8,20,42,.94);--panel2:rgba(9,23,48,.98);
+  --line:rgba(102,180,255,.16);--text:#ebf5ff;--soft:#93add0;--muted:#6684ad;
+  --cyan:#48e1ff;--blue:#4f89ff;--green:#30e1a2;--yellow:#ffd166;--pink:#ff6b9d;--purple:#948dff;--red:#ff707e;
+  --shadow:0 20px 56px rgba(0,0,0,.32);
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;color:var(--text);background:
+radial-gradient(circle at 12% 0%,rgba(72,225,255,.09),transparent 28%),
+radial-gradient(circle at 100% 0%,rgba(79,137,255,.12),transparent 34%),
+linear-gradient(180deg,#030817 0%,#07152c 54%,#041022 100%)}
+button,input{font:inherit}
+.screen{min-height:100vh;padding:14px 16px 18px}
+.header{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin-bottom:12px}
+.header-left,.header-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.header-right{justify-content:flex-end;gap:8px}
+.tag{padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(79,137,255,.08);font-size:12px;color:var(--soft);white-space:nowrap}
+.live-time-tag{color:#9ff4ff;border-color:rgba(72,225,255,.28);background:linear-gradient(90deg,rgba(72,225,255,.12),rgba(79,137,255,.08));box-shadow:inset 0 0 14px rgba(72,225,255,.08),0 0 16px rgba(72,225,255,.07);letter-spacing:.4px}
+.panel-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.range-tabs{display:flex;align-items:center;gap:6px;padding:4px;border-radius:999px;border:1px solid rgba(72,225,255,.16);background:rgba(6,20,42,.56);box-shadow:inset 0 0 14px rgba(72,225,255,.05)}
+.range-btn{height:28px;min-width:44px;padding:0 12px;border-radius:999px;border:1px solid rgba(92,179,255,.18);background:linear-gradient(180deg,rgba(13,37,72,.72),rgba(6,19,41,.82));color:#a9d8ff;font-size:12px;font-weight:800;cursor:pointer;letter-spacing:.3px;box-shadow:inset 0 0 10px rgba(72,225,255,.04);transition:.2s ease}
+.range-btn:hover,.range-btn.active{color:#f1ffff;border-color:rgba(72,225,255,.42);background:linear-gradient(135deg,rgba(48,225,162,.22),rgba(72,225,255,.16));box-shadow:0 0 14px rgba(72,225,255,.14),inset 0 0 12px rgba(255,255,255,.06)}
+.tag.active-focus{color:#7ef5d4;border-color:rgba(84,219,140,.32);box-shadow:0 0 16px rgba(84,219,140,.12) inset}
+.title-wrap{text-align:center;position:relative;min-width:360px}
+.title-wrap:before,.title-wrap:after{content:"";position:absolute;top:50%;width:24%;height:1px;background:linear-gradient(90deg,transparent,rgba(72,225,255,.45),transparent)}
+.title-wrap:before{left:0}.title-wrap:after{right:0}
+.title{margin:0;font-size:30px;font-weight:900;letter-spacing:1.6px}
+.subtitle{margin-top:5px;color:var(--soft);font-size:12px;letter-spacing:.8px}
+.input,.btn{height:38px;padding:0 12px;border-radius:10px;border:1px solid var(--line);background:rgba(7,18,37,.92);color:var(--text);outline:none}
+.header-right .input,.header-right .btn{height:34px;border-radius:12px;font-size:13px;letter-spacing:.2px}
+.date-wrap{position:relative;display:inline-flex;align-items:center}
+.date-wrap:after{content:"";position:absolute;right:12px;width:14px;height:14px;border:1.7px solid #64dfff;border-radius:3px;box-shadow:0 0 8px rgba(100,223,255,.42);pointer-events:none}
+.date-wrap:before{content:"";position:absolute;right:14px;top:10px;width:10px;height:3px;border-top:1.7px solid #64dfff;border-bottom:1.7px solid #64dfff;z-index:1;pointer-events:none}
+.date-input{width:198px;padding-right:38px;color:#eef8ff;background:linear-gradient(180deg,rgba(9,28,55,.88),rgba(5,18,38,.92));border-color:rgba(80,162,255,.28);box-shadow:inset 0 0 14px rgba(72,225,255,.04),0 0 12px rgba(72,225,255,.04)}
+.date-input::placeholder{color:#7fb5e6;opacity:1}
+.date-input::-webkit-calendar-picker-indicator{opacity:0}
+.input:focus{box-shadow:0 0 0 2px rgba(72,225,255,.10);border-color:rgba(72,225,255,.42)}
+.btn{cursor:pointer;font-weight:800;transition:.2s ease}
+.btn:hover{transform:translateY(-1px);border-color:rgba(72,225,255,.36)}
+.btn.primary{background:linear-gradient(135deg,rgba(48,225,162,.26),rgba(72,225,255,.16));color:#eafffb;border-color:rgba(48,225,162,.38);box-shadow:inset 0 0 16px rgba(48,225,162,.06),0 0 12px rgba(48,225,162,.07)}
+.btn.blue{background:linear-gradient(135deg,rgba(79,137,255,.20),rgba(72,225,255,.14));border-color:rgba(79,137,255,.34)}
+.btn.ghost{background:linear-gradient(135deg,rgba(79,137,255,.13),rgba(72,225,255,.06));border-color:rgba(106,179,255,.22);color:#d8edff}.btn.live{background:linear-gradient(90deg,#0f4d7d,#146ab5)}
+.panel{background:linear-gradient(180deg,rgba(8,20,42,.96),rgba(7,17,35,.98));border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.panel:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(135deg,rgba(72,225,255,.06),transparent 26%,transparent 78%,rgba(79,137,255,.06))}
+.panel>*{position:relative}
+.panel-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:14px 16px 8px}
+.panel-title{margin:0;font-size:17px;font-weight:900}.panel-desc{margin:4px 0 0;color:var(--soft);font-size:12px;line-height:1.55}
+.panel-body{padding:0 16px 16px}
+.kpi-row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:12px}
+.kpi{min-height:108px;padding:16px;border-radius:16px;border:1px solid rgba(98,182,255,.17);background:linear-gradient(180deg,rgba(7,20,44,.98),rgba(5,14,32,.98));box-shadow:0 16px 36px rgba(0,0,0,.28);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.kpi:before{content:"";position:absolute;inset:0;padding:1.2px;border-radius:16px;background:linear-gradient(90deg,rgba(108,236,255,.72),rgba(171,148,255,.66),rgba(255,218,130,.66),rgba(120,255,194,.68),rgba(108,236,255,.72));background-size:240% 240%;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:borderFlow 9s linear infinite}
+.kpi-label{width:100%;display:flex;justify-content:center;align-items:center;margin-bottom:9px;color:#8ea9ce;font-size:13px}
+.kpi strong{font-size:35px;line-height:1;letter-spacing:1px;text-shadow:0 0 12px currentColor}
+.kpi>span{margin-top:10px;color:#7f9bc4;font-size:12px;line-height:1.4}
+.c1{color:var(--cyan)}.c2{color:var(--green)}.c3{color:#abc7ff}.c4{color:var(--yellow)}.c5{color:#9ce8ff}.c6{color:var(--pink)}
+.action-tip{margin:0 0 12px;padding:10px 14px;border-radius:14px;border:1px solid rgba(72,225,255,.12);background:rgba(8,21,43,.72);color:#9eb8dc;font-size:13px}
+.main-grid{display:grid;grid-template-columns:320px 1fr 330px;gap:14px;align-items:start}.stack{display:grid;gap:14px}
+.stack:first-child .panel:nth-child(3){min-height:610px}
+.latest-box{min-height:648px}
+.stack:last-child .panel:nth-child(3){min-height:372px}
+.stack:first-child .panel:nth-child(3),.stack:last-child .panel:nth-child(3){display:flex;flex-direction:column}
+.stack:first-child .panel:nth-child(3) .panel-body,.stack:last-child .panel:nth-child(3) .panel-body{flex:1}
+.stack:first-child .panel:nth-child(3) .panel-body{display:flex;flex-direction:column}
+.stack:last-child .panel:nth-child(3) .funnel{height:100%;align-content:space-between}
+.source-ratio-wrap{display:grid;grid-template-columns:1fr;gap:10px;align-items:center;padding:6px 0 2px}
+.source-chart-stage{height:198px;display:flex;align-items:center;justify-content:center}.source-3d{width:230px;height:188px;position:relative;display:flex;align-items:center;justify-content:center}
+.source-3d svg{width:230px;height:188px;overflow:visible;filter:drop-shadow(0 10px 16px rgba(0,0,0,.28))}
+.ring-segment{cursor:pointer;transition:transform .24s cubic-bezier(.2,.8,.2,1),filter .24s ease,opacity .22s ease;transform-box:fill-box;transform-origin:center}
+.source-3d:has(.ring-segment:hover) .ring-segment{opacity:.46}
+.source-3d:has(.ring-segment:hover) .ring-segment:hover{opacity:1}
+.source-3d:has(.ring-segment:hover) .ring-segment:hover{opacity:1;transform:translateY(-8px) scale(1.08);filter:drop-shadow(0 8px 8px rgba(0,0,0,.24))}
+.source-3d:has(.ring-segment:hover) .source-3d-center{opacity:0;transform:translate(-50%,-50%) scale(.92)}
+.seg-pop-value{position:absolute;left:50%;top:16px;transform:translate(-50%,-6px) scale(.94);opacity:0;pointer-events:none;font-size:34px;line-height:1;font-weight:900;color:#f5fbff;text-shadow:0 0 14px rgba(108,220,255,.58),0 4px 14px rgba(0,0,0,.42);transition:opacity .18s ease,transform .22s ease;z-index:3}
+.source-3d:has(.ring-segment:hover) .seg-pop-value{opacity:1;transform:translate(-50%,-12px) scale(1)}
+.source-3d-center{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%);text-align:center}.source-3d-center strong{display:block;font-size:36px;color:#f0f7ff;text-shadow:0 0 14px rgba(117,201,255,.65),0 2px 8px rgba(0,0,0,.45)}.source-3d-center small{display:none}
+.source-callouts{display:grid;gap:10px}.source-callout{position:relative;padding-left:18px;min-height:36px}.source-callout:before{content:"";position:absolute;left:0;top:14px;width:12px;height:2px;background:var(--callout-color)}
+.source-callout .label{display:block;color:var(--soft);font-size:11px}.source-callout .value{display:block;margin-top:2px;font-size:24px;font-weight:900;color:var(--callout-color)}
+.source-mini-legend{display:grid;gap:7px;margin-top:8px}.source-mini-row{display:grid;grid-template-columns:12px 1fr auto auto;gap:8px;align-items:center;font-size:11px;color:var(--soft)}
+.sw{width:10px;height:10px;border-radius:50%}.count{color:#e9f6ff;font-weight:700}.pct{color:var(--muted)}
+.trend-box{height:180px;flex:1;position:relative;padding-top:8px}.trend-grid{position:absolute;inset:14px 0 22px;background:linear-gradient(180deg,transparent 0,transparent calc(25% - 1px),rgba(72,225,255,.06) calc(25% - 1px),rgba(72,225,255,.06) 25%,transparent 25%,transparent calc(50% - 1px),rgba(72,225,255,.06) calc(50% - 1px),rgba(72,225,255,.06) 50%,transparent 50%,transparent calc(75% - 1px),rgba(72,225,255,.06) calc(75% - 1px),rgba(72,225,255,.06) 75%,transparent 75%);border-bottom:1px solid rgba(72,225,255,.08)}
+.trend-svg{width:100%;height:100%;position:relative;z-index:2}.axis{display:flex;justify-content:space-between;color:var(--muted);font-size:10px;margin-top:6px}
+.center-panel{padding:16px;min-height:690px}.center-visual{position:relative;height:480px;border-radius:20px;border:1px solid rgba(72,225,255,.14);background:radial-gradient(circle at 50% 48%,rgba(72,225,255,.08),transparent 48%),linear-gradient(180deg,rgba(8,25,48,.82),rgba(4,14,29,.92));overflow:visible;box-shadow:inset 0 0 90px rgba(72,225,255,.06),0 20px 60px rgba(0,0,0,.22);backdrop-filter:blur(8px)}
+.center-visual:before{content:"";position:absolute;inset:20px;background-image:linear-gradient(rgba(72,225,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(72,225,255,.05) 1px,transparent 1px);background-size:28px 28px;opacity:.35}
+.radar-ring{position:absolute;border-radius:50%;border:1px solid rgba(72,225,255,.14);left:50%;top:52%;transform:translate(-50%,-50%);box-shadow:0 0 24px rgba(72,225,255,.06);animation:ringPulse 4.2s ease-in-out infinite}.radar-r1{width:420px;height:420px}.radar-r2{width:320px;height:320px}.radar-r3{width:220px;height:220px}.radar-r4{width:120px;height:120px}
+.cross-x,.cross-y{position:absolute;background:rgba(72,225,255,.10)}.cross-x{height:1px;width:460px;left:50%;top:52%;transform:translate(-50%,-50%)}.cross-y{width:1px;height:460px;left:50%;top:52%;transform:translate(-50%,-50%)}
+.link{position:absolute;left:50%;top:52%;transform-origin:0 50%;height:3px;background:linear-gradient(90deg,rgba(72,225,255,.05),rgba(72,225,255,.75) 35%,rgba(255,255,255,.8) 50%,rgba(72,225,255,0));background-size:180px 100%;animation:flowLine 3.4s linear infinite;z-index:2}.l1{width:170px;transform:translate(0,-50%) rotate(-150deg)}.l2{width:164px;transform:translate(0,-50%) rotate(-30deg)}.l3{width:160px;transform:translate(0,-50%) rotate(148deg)}.l4{width:178px;transform:translate(0,-50%) rotate(35deg)}.l5{width:184px;transform:translate(0,-50%) rotate(-90deg)}
+.center-core{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:154px;height:154px;border-radius:50%;background:radial-gradient(circle at 35% 24%,rgba(244,254,255,.26),rgba(86,219,255,.28) 28%,rgba(51,174,208,.18) 58%,rgba(8,30,54,.30));border:1px solid rgba(162,239,255,.42);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;box-shadow:0 0 42px rgba(72,225,255,.24),inset 0 0 34px rgba(255,255,255,.10),inset -12px -16px 30px rgba(2,14,30,.22);animation:coreFloat 4.5s ease-in-out infinite;backdrop-filter:blur(14px);overflow:hidden}
+.center-core:before{content:"";position:absolute;inset:10px;border-radius:50%;border:1px solid rgba(215,251,255,.12);box-shadow:inset 0 0 22px rgba(255,255,255,.08)}
+.core-grid{width:78px;height:78px;display:grid;grid-template-columns:repeat(3,1fr);gap:5px;position:relative;z-index:1}.core-grid span{display:block;background:linear-gradient(180deg,rgba(236,254,255,.82),rgba(96,225,255,.38));border-radius:7px;box-shadow:0 0 14px rgba(123,233,255,.22);backdrop-filter:blur(3px)}.core-label{font-size:12px;color:#effdff;text-shadow:0 0 10px rgba(72,225,255,.42);position:relative;z-index:1}
+.node{position:absolute;width:134px;height:134px;padding:10px;border-radius:50%;border:1px solid rgba(72,225,255,.20);background:radial-gradient(circle at 30% 28%,rgba(79,137,255,.28),rgba(9,23,44,.98) 54%,rgba(5,12,24,.98));box-shadow:0 18px 42px rgba(0,0,0,.32),inset 0 0 28px rgba(72,173,255,.07);z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;cursor:pointer;animation:nodeFloat 4.8s ease-in-out infinite;transition:.25s ease}
+.node:hover,.node.active{box-shadow:0 24px 52px rgba(0,0,0,.35),0 0 26px rgba(84,219,140,.18);border-color:rgba(84,219,140,.42)}.node.dim{opacity:.38;filter:saturate(.72)}.node strong{display:block;font-size:42px;line-height:1;margin-top:12px;text-shadow:0 0 18px currentColor}.node small{color:#f0f7ff;font-size:13px;font-weight:800}
+.node.w strong{color:#67ffb3}.node.f strong{color:#8ec0ff}.node.we strong{color:#78ffc4}.node.g strong{color:#ffd45f}.node.d strong{color:#ff9dc3}
+.node.w{left:54px;top:78px}.node.f{right:54px;top:98px}.node.we{left:70px;bottom:58px}.node.g{right:70px;bottom:62px}.node.d{left:50%;top:14px;transform:translateX(-50%);animation:nodeFloatCenter 4.8s ease-in-out infinite}
+.logo-badge{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(145,233,255,.34);box-shadow:0 0 20px rgba(97,198,255,.28),inset 0 0 16px rgba(255,255,255,.09),0 10px 18px rgba(0,0,0,.32);position:absolute;right:-18px;top:4px;background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.30),rgba(24,58,104,.88) 58%,rgba(5,16,32,.98));overflow:hidden}.logo-badge:before{content:"";position:absolute;inset:4px;border-radius:50%;border:1px solid rgba(255,255,255,.09);box-shadow:inset -5px -7px 10px rgba(0,0,0,.24)}.logo-badge:after{content:"";position:absolute;left:9px;right:9px;top:7px;height:10px;border-radius:50%;background:rgba(255,255,255,.18);filter:blur(1px)}.node.d .logo-badge{right:-8px;top:-8px}.logo-badge svg{width:31px;height:31px;display:block;position:relative;z-index:1;filter:drop-shadow(0 7px 5px rgba(0,0,0,.35)) drop-shadow(0 0 6px currentColor)}.logo-badge.google svg{width:34px;height:34px}.whatsapp{color:#5cffad}.facebook{color:#8ec0ff}.wechat{color:#78ffc4}.google{color:#ffd45f}.direct{color:#ff8fb3}
+.subcards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}.subcard{padding:12px;border-radius:14px;border:1px solid var(--line);background:rgba(7,16,31,.92)}.subcard small{display:block;color:var(--soft);font-size:11px}.subcard strong{display:block;font-size:24px;margin-top:5px}.subcard span{display:block;margin-top:6px;color:var(--muted);font-size:11px}
+.latest-box{display:flex;flex-direction:column}.latest-list{display:grid;gap:10px;max-height:none;overflow:auto;padding-right:4px;flex:1;align-content:start}.latest-item{display:grid;grid-template-columns:90px 110px 68px 68px 1fr 72px;gap:8px;align-items:center;padding:10px 12px;border-radius:14px;border:1px solid rgba(72,225,255,.08);background:rgba(7,17,34,.72);font-size:12px}.note{color:#d5e5f9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pill,.status{display:inline-flex;align-items:center;padding:4px 9px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}.pill.s{background:rgba(79,137,255,.12);color:#a8c6ff}.pill.c{background:rgba(48,225,162,.12);color:#b5f8e6}.status.clicked{background:rgba(79,137,255,.12);color:#a8c6ff}.status.chat{background:rgba(148,141,255,.14);color:#c9c3ff}.status.quoted{background:rgba(255,209,102,.14);color:#ffe2a4}.status.deal{background:rgba(48,225,162,.14);color:#adf4df}.status.invalid{background:rgba(255,112,126,.15);color:#ffb0bb}
+.small-bar-list,.rank-list,.funnel,.manual-form{display:grid;gap:10px}.small-bar{display:grid;grid-template-columns:76px 1fr 32px;gap:8px;align-items:center;font-size:12px}.track{height:8px;border-radius:999px;background:rgba(79,137,255,.08);overflow:hidden}.fill{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--cyan),var(--blue))}
+.rank-item{display:grid;grid-template-columns:30px 1fr 56px;gap:10px;align-items:center;padding:10px 12px;border-radius:14px;background:rgba(7,17,34,.72);border:1px solid rgba(72,225,255,.08)}.rank-no{width:30px;height:30px;border-radius:10px;display:grid;place-items:center;background:rgba(79,137,255,.16);font-weight:900}.rank-name{font-size:13px;font-weight:800}.rank-sub{margin-top:4px;color:var(--soft);font-size:11px}.rank-bar{margin-top:8px;height:8px;border-radius:999px;background:rgba(79,137,255,.08);overflow:hidden}.rank-bar span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#48e1ff,#4f89ff)}.rank-val{text-align:right;font-size:24px;font-weight:900;color:#aee3ff}
+.funnel-step{position:relative;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-radius:14px;border:1px solid rgba(72,225,255,.09);background:rgba(7,17,34,.72);overflow:hidden}.funnel-step:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--fcolor)}.funnel-label{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800}.funnel-badge{width:26px;height:26px;border-radius:9px;display:grid;place-items:center;background:rgba(255,255,255,.04)}.funnel-right{text-align:right}.funnel-right strong{display:block;font-size:26px;line-height:1;color:var(--fcolor)}.funnel-right span{display:block;margin-top:4px;color:var(--soft);font-size:11px}
+.hit,.focus-panel{box-shadow:0 0 0 1px rgba(84,219,140,.14) inset,0 0 18px rgba(84,219,140,.08)!important;border-color:rgba(84,219,140,.20)!important}.latest-note{color:#7ef5d4;font-size:12px;margin-bottom:8px}
+.footer-tip{display:none}.toast{position:fixed;right:18px;bottom:18px;padding:12px 16px;border-radius:12px;background:rgba(7,18,37,.96);border:1px solid rgba(72,225,255,.24);display:none;z-index:999}
+.login-mask,.modal-mask{position:fixed;inset:0;background:#020817;display:none;align-items:center;justify-content:center;z-index:999;padding:20px}.modal-mask{background:rgba(3,8,23,.72);backdrop-filter:blur(10px);z-index:70}
+.login-mask{overflow:hidden;background:rgba(2,8,23,.88);backdrop-filter:blur(22px) saturate(.62);-webkit-backdrop-filter:blur(22px) saturate(.62)}
+.login-mask:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 42%,rgba(10,24,48,.20),rgba(2,8,23,.54) 52%,rgba(0,4,14,.84) 100%);box-shadow:inset 0 0 170px rgba(0,0,0,.72)}
+.login-card,.export-modal{width:min(460px,100%);padding:28px;border-radius:18px;background:linear-gradient(180deg,rgba(10,24,48,.98),rgba(7,18,37,.98));border:1px solid var(--line);box-shadow:var(--shadow)}.login-card{position:relative;z-index:1;box-shadow:0 24px 70px rgba(0,0,0,.46),0 0 32px rgba(72,225,255,.10),inset 0 0 24px rgba(255,255,255,.03)}.login-card h2{margin:0 0 8px}.login-card p{margin:0 0 16px;color:var(--soft)}.login-card .input{width:100%;margin-bottom:12px}
+.export-modal{width:min(980px,96vw);border-radius:22px}.export-head{display:flex;justify-content:space-between;gap:16px;margin-bottom:16px}.export-head h2{margin:0 0 8px;font-size:28px}.export-head p{margin:0;color:var(--soft);line-height:1.7}.export-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.export-card{padding:18px;border-radius:18px;border:1px solid rgba(72,225,255,.12);background:rgba(8,21,43,.92)}.export-card h3{margin:0 0 10px}.export-card p{margin:0 0 16px;color:var(--soft);line-height:1.7;font-size:13px}.export-tip,.export-history{margin-top:14px;color:var(--muted);font-size:12px}
+.boss-mode .stack:first-child .panel:nth-child(3),.boss-mode .stack:last-child .panel:first-child,.boss-mode .stack:last-child .panel:nth-child(2),.boss-mode .stack:last-child .panel:nth-child(4),.boss-mode .action-tip,.boss-mode .footer-tip{display:none}.boss-mode .main-grid{grid-template-columns:1.05fr 1.4fr .95fr}.boss-mode .kpi-row{grid-template-columns:repeat(6,minmax(0,1fr))}
+@keyframes borderFlow{to{background-position:240% 0}}@keyframes ringPulse{50%{opacity:.9;transform:translate(-50%,-50%) scale(1.02)}}@keyframes coreFloat{50%{transform:translate(-50%,-52%)}}@keyframes nodeFloat{50%{transform:translateY(-6px)}}@keyframes nodeFloatCenter{0%,100%{transform:translateX(-50%)}50%{transform:translate(-50%,-6px)}}@keyframes flowLine{to{background-position:180px 0}}
+@media (max-width:1500px){.main-grid{grid-template-columns:300px 1fr 310px}.kpi-row{grid-template-columns:repeat(3,1fr)}.subcards{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:1200px){.header{grid-template-columns:1fr}.title-wrap{min-width:0}.title-wrap:before,.title-wrap:after{display:none}.main-grid{grid-template-columns:1fr}.center-panel{min-height:auto}.latest-item{grid-template-columns:1fr 1fr 1fr}.export-grid{grid-template-columns:1fr}}
+@media (max-width:760px){.screen{padding:10px}.kpi-row{grid-template-columns:repeat(2,1fr)}.subcards{grid-template-columns:1fr}.header-right{justify-content:flex-start}.latest-item{grid-template-columns:1fr 1fr}.title{font-size:24px}.source-ratio-wrap{grid-template-columns:1fr}.center-visual{height:420px;transform:scale(.82);transform-origin:top center;margin-bottom:-70px}.input{width:100%}.btn{flex:1}}
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="header">
+    <div class="header-left">
+      <span class="tag">TH · 图形化监管大屏</span>
+      <span class="tag" id="workerTag">Worker 未连接</span>
+      <span class="tag" id="clockTag">--:--:--</span>
+      <span class="tag" id="refreshTag">60s 后刷新</span>
+    </div>
+    <div class="title-wrap">
+      <h1 class="title">广告来源渠道实时数据大屏</h1>
+      <div class="subtitle">图形化展示渠道结构、来源占比、实时动态与转化结果</div>
+    </div>
+    <div class="header-right">
+      <label class="date-wrap"><input id="startInput" class="input date-input" type="text" placeholder="选择开始日期" /></label>
+      <label class="date-wrap"><input id="endInput" class="input date-input" type="text" placeholder="选择结束日期" /></label>
+      <button id="queryBtn" class="btn primary">查询数据</button>
+      <button id="exportBtn" class="btn blue">数据导出</button>
+      <button id="logoutBtn" class="btn ghost">退出登录</button>
+    </div>
+  </div>
+
+  <div class="kpi-row">
+    <div class="kpi"><div class="kpi-label">访问会话</div><strong class="c1" id="mVisits">0</strong><span>进入网站的人次</span></div>
+    <div class="kpi"><div class="kpi-label">联系点击</div><strong class="c2" id="mClicks">0</strong><span>WhatsApp / 微信 / Facebook</span></div>
+    <div class="kpi"><div class="kpi-label">真实会话</div><strong class="c3" id="mChats">0</strong><span>人工确认或 API 确认</span></div>
+    <div class="kpi"><div class="kpi-label">报价数量</div><strong class="c4" id="mQuoted">0</strong><span>已进入报价阶段</span></div>
+    <div class="kpi"><div class="kpi-label">成交数量</div><strong class="c5" id="mDeals">0</strong><span>已标记成交</span></div>
+    <div class="kpi"><div class="kpi-label">成交金额</div><strong class="c6" id="mAmount">0</strong><span>默认 THB</span></div>
+  </div>
+  <div class="action-tip">提示：点击中间圆形渠道节点可聚焦查看对应渠道数据；开启轮播后，大屏会自动切换重点渠道。</div>
+
+  <div class="main-grid">
+    <div class="stack">
+      <div class="panel">
+        <div class="panel-header"><div><h3 class="panel-title">来源占比</h3><p class="panel-desc">来源结构立体环形分析</p></div></div>
+        <div class="panel-body"><div class="source-ratio-wrap"><div class="source-chart-stage"><div class="source-3d" id="sourceDonut"></div></div></div><div class="source-mini-legend" id="sourceLegend"></div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><h3 class="panel-title">状态占比</h3><p class="panel-desc">转化链路立体分布</p></div></div>
+        <div class="panel-body"><div class="source-ratio-wrap"><div class="source-chart-stage"><div class="source-3d" id="statusDonut"></div></div></div><div class="source-mini-legend" id="statusLegend"></div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><h3 class="panel-title">每小时联系趋势</h3><p class="panel-desc">最近周期咨询时段</p></div></div>
+        <div class="panel-body"><div class="trend-box"><div class="trend-grid"></div><svg class="trend-svg" id="trendSvg" viewBox="0 0 280 180" preserveAspectRatio="none"></svg></div><div class="axis" id="trendAxis"></div></div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div class="panel center-panel">
+        <div class="panel-header"><div><h3 class="panel-title">渠道流量关系图</h3><p class="panel-desc">中心展示广告渠道来源，周边展示主要联系渠道与来源节点</p></div><div class="panel-tools"><div class="range-tabs"><button class="range-btn" data-range="day">当天</button><button class="range-btn" data-range="week">周</button><button class="range-btn" data-range="month">月</button></div><div class="tag live-time-tag" id="periodTag">实时 --:--:--</div></div></div>
+        <div class="panel-body">
+          <div class="center-visual">
+            <div class="radar-ring radar-r1"></div><div class="radar-ring radar-r2"></div><div class="radar-ring radar-r3"></div><div class="radar-ring radar-r4"></div>
+            <div class="cross-x"></div><div class="cross-y"></div><div class="link l1"></div><div class="link l2"></div><div class="link l3"></div><div class="link l4"></div><div class="link l5"></div>
+            <div class="node d" data-focus="direct"><span class="logo-badge direct"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="directTop" x1="9" y1="3" x2="22" y2="27" gradientUnits="userSpaceOnUse"><stop stop-color="#ffd6e7"/><stop offset=".45" stop-color="#ff84b2"/><stop offset="1" stop-color="#d64282"/></linearGradient><linearGradient id="directSide" x1="18" y1="11" x2="24" y2="28" gradientUnits="userSpaceOnUse"><stop stop-color="#7d1747"/><stop offset="1" stop-color="#2b1026"/></linearGradient></defs><path d="M11 7l14 10-5.9 1.4 3.9 7-5 2.4-3.8-7.5-4.2 4.9V7z" fill="url(#directSide)" transform="translate(2 2)" opacity=".95"/><path d="M9 5l14 10-5.9 1.4 3.9 7-5 2.4-3.8-7.5L8 23.2V5z" fill="url(#directTop)"/><path d="M12 8.5l7.4 5.2-3.4.8" stroke="#fff" stroke-opacity=".45" stroke-width="1.3" stroke-linecap="round"/><path d="M23.6 6.6l1.5-3.3M26.8 10.6l3.2-1.3M27.1 15.4h3.5" stroke="#ffc3de" stroke-width="1.7" stroke-linecap="round"/></svg></span><small>直接点击</small><strong id="nDirect">0</strong></div>
+            <div class="node w" data-focus="whatsapp"><span class="logo-badge whatsapp"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="waTop" x1="7" y1="5" x2="24" y2="27" gradientUnits="userSpaceOnUse"><stop stop-color="#8dffc8"/><stop offset=".55" stop-color="#25d366"/><stop offset="1" stop-color="#0f9b55"/></linearGradient><linearGradient id="waSide" x1="20" y1="13" x2="26" y2="29" gradientUnits="userSpaceOnUse"><stop stop-color="#087a43"/><stop offset="1" stop-color="#053523"/></linearGradient></defs><path d="M16 6.6a10 10 0 0 0-8.7 14.95L6 27l5.8-1.5A10 10 0 1 0 16 6.6Z" fill="url(#waSide)" transform="translate(2 2)" opacity=".96"/><path d="M15 4.5A10 10 0 0 0 6.3 19.45L5 25l5.8-1.5A10 10 0 1 0 15 4.5Z" fill="url(#waTop)"/><path d="M10.9 10.5c.25-.62.5-.66.86-.66h.72c.28 0 .5.15.63.48l1 2.45c.12.3 0 .6-.16.78l-.74.84c.74 1.34 1.83 2.4 3.18 3.18l.83-.72c.24-.17.52-.25.84-.13l2.43.96c.34.14.5.38.5.66v.75c0 .36 0 .62-.62.86-.5.24-1.24.36-1.86.24-1.6-.24-3.25-1.1-5-2.85-1.8-1.8-2.64-3.44-2.88-5-.12-.62.02-1.34.27-1.86Z" fill="#eafff4"/><path d="M9 8.4c1.3-1.3 3.4-2 5.6-1.9" stroke="#fff" stroke-opacity=".42" stroke-width="1.5" stroke-linecap="round"/></svg></span><small>WhatsApp</small><strong id="nWhatsapp">0</strong></div>
+            <div class="node f" data-focus="facebook"><span class="logo-badge facebook"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="fbTop" x1="10" y1="4" x2="21" y2="27" gradientUnits="userSpaceOnUse"><stop stop-color="#d8ebff"/><stop offset=".45" stop-color="#7eb6ff"/><stop offset="1" stop-color="#2f64db"/></linearGradient><linearGradient id="fbSide" x1="20" y1="11" x2="24" y2="29" gradientUnits="userSpaceOnUse"><stop stop-color="#224da8"/><stop offset="1" stop-color="#101f58"/></linearGradient></defs><path d="M18 28v-9.2h3.1l.5-4h-3.6v-2.6c0-1.2.33-2 2-2h1.8V6.6c-.65-.1-1.85-.25-3.25-.25-3.2 0-5.4 2-5.4 5.7v2.75H9.5v4h3.65V28H18Z" fill="url(#fbSide)" transform="translate(2 1.8)" opacity=".92"/><path d="M16.5 26.2v-9.2h3.1l.5-4h-3.6v-2.6c0-1.2.33-2 2-2h1.8V4.8c-.65-.1-1.85-.25-3.25-.25-3.2 0-5.4 2-5.4 5.7V13H8v4h3.65v9.2h4.85Z" fill="url(#fbTop)"/><path d="M14.3 6.9c.9-.65 2.1-.9 3.8-.78" stroke="#fff" stroke-opacity=".5" stroke-width="1.5" stroke-linecap="round"/></svg></span><small>Facebook</small><strong id="nFacebook">0</strong></div>
+            <div class="node we" data-focus="wechat"><span class="logo-badge wechat"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><defs><linearGradient id="wcTop" x1="6" y1="5" x2="24" y2="26" gradientUnits="userSpaceOnUse"><stop stop-color="#b8ffd8"/><stop offset=".55" stop-color="#35df8c"/><stop offset="1" stop-color="#169c68"/></linearGradient><linearGradient id="wcSide" x1="18" y1="12" x2="25" y2="29" gradientUnits="userSpaceOnUse"><stop stop-color="#0e7a51"/><stop offset="1" stop-color="#073124"/></linearGradient></defs><path d="M13.8 6.5C9.5 6.5 6 9.25 6 12.8c0 2 .95 3.7 2.75 5l-.65 2.55 2.9-1.55c.78.24 1.64.37 2.8.37 4.3 0 7.8-2.75 7.8-6.32S18.1 6.5 13.8 6.5Z" fill="url(#wcSide)" transform="translate(2 2)" opacity=".94"/><path d="M12.6 4.8C8.3 4.8 4.8 7.55 4.8 11.1c0 2 .95 3.7 2.75 5l-.65 2.55 2.9-1.55c.78.24 1.64.37 2.8.37 4.3 0 7.8-2.75 7.8-6.32S16.9 4.8 12.6 4.8Z" fill="url(#wcTop)"/><path d="M19.8 10.2c-3 0-5.3 1.9-5.3 4.3 0 1.37.8 2.67 2.16 3.55l-.48 2.02 2.25-1.12c.5.13 1 .24 1.5.24 3 0 5.3-1.9 5.3-4.3s-2.45-4.67-5.43-4.67Z" fill="#9fffc9" opacity=".82"/><circle cx="10.4" cy="10.8" r="1" fill="#082236"/><circle cx="15" cy="10.8" r="1" fill="#082236"/><circle cx="18.6" cy="14" r=".85" fill="#082236"/><circle cx="22.2" cy="14" r=".85" fill="#082236"/><path d="M8.2 7.6c1.2-.9 2.8-1.3 4.6-1.25" stroke="#fff" stroke-opacity=".42" stroke-width="1.4" stroke-linecap="round"/></svg></span><small>微信</small><strong id="nWechat">0</strong></div>
+            <div class="node g" data-focus="google"><span class="logo-badge google"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><filter id="gShadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="3" dy="5" stdDeviation="2" flood-color="#000" flood-opacity=".36"/></filter><linearGradient id="gBlue" x1="35" y1="14" x2="55" y2="45" gradientUnits="userSpaceOnUse"><stop stop-color="#79a8ff"/><stop offset=".55" stop-color="#3f72e8"/><stop offset="1" stop-color="#173a9d"/></linearGradient><linearGradient id="gGreen" x1="14" y1="37" x2="38" y2="58" gradientUnits="userSpaceOnUse"><stop stop-color="#68d87a"/><stop offset=".55" stop-color="#2f9c47"/><stop offset="1" stop-color="#146a31"/></linearGradient><linearGradient id="gRed" x1="16" y1="8" x2="45" y2="22" gradientUnits="userSpaceOnUse"><stop stop-color="#ff6a4d"/><stop offset=".6" stop-color="#ea2f22"/><stop offset="1" stop-color="#9e171b"/></linearGradient><linearGradient id="gYellow" x1="8" y1="24" x2="21" y2="47" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe06c"/><stop offset=".7" stop-color="#f5bc12"/><stop offset="1" stop-color="#bd7d08"/></linearGradient></defs><g filter="url(#gShadow)"><path d="M55 33.5c0-2.1-.18-3.7-.58-5.35H32v10.05h13c-.3 2.5-1.8 6.2-5.25 8.75l-.08.68 7.65 5.92.53.05C52.7 49.1 55 42.5 55 33.5Z" fill="url(#gBlue)"/><path d="M32 56c7 0 12.85-2.3 17.12-6.22l-8.15-6.3C38.8 45 35.9 46 32 46c-6.78 0-12.52-4.45-14.57-10.6l-.62.05-7.96 6.18-.1.57C13 50.45 21.6 56 32 56Z" fill="url(#gGreen)"/><path d="M17.43 35.4A14.8 14.8 0 0 1 16.6 30c0-1.88.32-3.7.8-5.4l-.03-.72-8.18-6.35-.53.25A25.8 25.8 0 0 0 6 30c0 4.37 1.05 8.5 2.86 12.15l8.57-6.75Z" fill="url(#gYellow)"/><path d="M32 13.95c4.88 0 8.18 2.1 10.05 3.88l7.35-7.18C44.9 6.45 39 4 32 4 21.6 4 13 9.55 8.7 17.8l8.72 6.8C19.48 18.42 25.22 13.95 32 13.95Z" fill="url(#gRed)"/><path d="M22 13.4c4.5-3.7 11.2-4.4 17.4-1.9" stroke="#fff" stroke-opacity=".33" stroke-width="3.1" stroke-linecap="round"/></g></svg></span><small>Google</small><strong id="nGoogle">0</strong></div>
+            <div class="center-core"><div class="core-grid"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="core-label">广告渠道来源</div></div>
+          </div>
+          <div class="subcards">
+            <div class="subcard"><small>联系转化率</small><strong id="sRate">0%</strong><span>联系点击 / 访问会话</span></div>
+            <div class="subcard"><small>会话转化率</small><strong id="sChatRate">0%</strong><span>真实会话 / 联系点击</span></div>
+            <div class="subcard"><small>成交转化率</small><strong id="sDealRate">0%</strong><span>成交 / 联系点击</span></div>
+            <div class="subcard"><small>无效线索</small><strong id="sInvalid">0</strong><span>需要人工清洗</span></div>
+          </div>
+          <div class="latest-box">
+            <div class="panel-header" style="padding:16px 0 10px"><div><h3 class="panel-title">实时线索动态</h3><p class="panel-desc">最近 8 条线索，适合大屏实时查看</p></div></div>
+            <div class="latest-list" id="latestList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div class="panel"><div class="panel-header"><div><h3 class="panel-title">渠道表现排行</h3><p class="panel-desc">按点击量对比渠道表现</p></div></div><div class="panel-body"><div class="small-bar-list" id="channelBars"></div></div></div>
+      <div class="panel"><div class="panel-header"><div><h3 class="panel-title">来源贡献榜</h3><p class="panel-desc">展示主要来源与贡献度</p></div></div><div class="panel-body"><div class="rank-list" id="sourceRankList"></div></div></div>
+      <div class="panel"><div class="panel-header"><div><h3 class="panel-title">转化漏斗</h3><p class="panel-desc">从访问到成交的阶段推进一眼可见</p></div></div><div class="panel-body"><div class="funnel" id="funnelBox"></div></div></div>
+      <div class="panel"><div class="panel-header"><div><h3 class="panel-title">手动录入直聊线索</h3><p class="panel-desc">用于 Facebook 直接打开 WhatsApp 的客户</p></div></div><div class="panel-body"><div class="manual-form"><input id="manualAd" class="input" placeholder="广告暗号，例如 FB-A01" /><input id="manualName" class="input" placeholder="客户号码 / 名称" /><input id="manualNote" class="input" placeholder="备注，例如 30kg 普吉寄上海" /><button id="manualBtn" class="btn primary">录入线索</button></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-mask" id="exportMask">
+  <div class="export-modal">
+    <div class="export-head"><div><h2>数据导出中心</h2><p>可导出当前时间范围内的线索明细、汇总报表和 JSON 原始数据。</p></div><button id="closeExportBtn" class="btn ghost">关闭</button></div>
+    <div class="export-grid">
+      <div class="export-card"><h3>当前筛选线索</h3><p>下载当前时间范围内的全部线索明细，适合日常复盘、对账和人工筛选。</p><button id="exportLeadsBtn" class="btn primary">导出 CSV</button></div>
+      <div class="export-card"><h3>汇总数据报表</h3><p>导出核心经营指标、来源占比、状态占比、渠道表现等汇总结果。</p><button id="exportSummaryBtn" class="btn primary">导出汇总 CSV</button></div>
+      <div class="export-card"><h3>原始 JSON 数据</h3><p>保留完整字段，适合后续导入其他系统或再次分析。</p><button id="exportJsonBtn" class="btn primary">导出 JSON</button></div>
+    </div>
+    <div class="export-tip">导出文件会自动下载到浏览器默认下载文件夹。</div><div class="export-history" id="exportHistory">最近导出：暂无记录</div>
+  </div>
+</div>
+<div class="login-mask" id="loginMask">
+  <div class="login-card">
+    <h2>登录广告实时数据大屏</h2>
+    <p>请输入账号和密码。</p>
+    <form id="loginForm" autocomplete="on">
+      <input id="apiInput" name="username" class="input" autocomplete="username" placeholder="输入账号，例如 https://ads-lead-tracker.xxxx.workers.dev" />
+      <input id="tokenInput" name="password" class="input" type="password" autocomplete="current-password" placeholder="输入密码" />
+      <button id="loginBtn" class="btn primary" type="submit" style="width:100%">进入大屏</button>
+    </form>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+const LS_API='ads_tracker_visual_api';
+const LS_TOKEN='ads_tracker_visual_token';
+let API_BASE = localStorage.getItem(LS_API) || '';
+let TOKEN = localStorage.getItem(LS_TOKEN) || '';
+let allLeads = [];
+let visitCount = 0;
+let refreshTimer = null;
+let countdownTimer = null;
+let rotateTimer = null;
+let rotateOn = false;
+let bossMode = false;
+let currentFocus = 'all';
+const focusCycle = ['all','whatsapp','wechat','facebook','google','direct'];
+
+function showToast(msg){ const t=$('toast'); t.textContent=msg; t.style.display='block'; clearTimeout(t._tt); t._tt=setTimeout(()=>t.style.display='none',2600); }
+function esc(s){ return String(s ?? '').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+function num(v){ return Number(v||0); }
+function normalize(v){ return String(v||'').toLowerCase().trim(); }
+function api(path, opts={}){ const sep = path.includes('?') ? '&' : '?'; const url = API_BASE.replace(/\/$/,'') + path + sep + 'token=' + encodeURIComponent(TOKEN); return fetch(url, opts).then(async r=>{ const data = await r.json().catch(()=>({ok:false,error:'Invalid JSON'})); if(!r.ok || data.ok===false) throw new Error(data.error || '请求失败'); return data; }); }
+function statusLabel(s){ const map={clicked:'已点击',chat:'已会话',quoted:'已报价',deal:'已成交',invalid:'无效'}; const cls={clicked:'clicked',chat:'chat',quoted:'quoted',deal:'deal',invalid:'invalid'}[s]||'clicked'; return `<span class="status ${cls}">${map[s]||s||'已点击'}</span>`; }
+function focusLabel(focus){ return ({all:'全部',whatsapp:'WhatsApp',wechat:'微信',facebook:'Facebook',google:'谷歌广告',direct:'直接点击'})[focus] || focus; }
+function toInput(d){ const p=n=>String(n).padStart(2,'0'); return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}T${p(d.getHours())}:${p(d.getMinutes())}`; }
+function setDateDefaults(){ $('startInput').value=''; $('endInput').value=''; document.querySelector('.range-btn[data-range="day"]')?.classList.add('active'); updatePeriodText(); }
+function bindDateInput(id){ const el=$(id); el.addEventListener('focus',()=>{ el.type='datetime-local'; setTimeout(()=>el.showPicker?.(),0); }); el.addEventListener('blur',()=>{ if(!el.value) el.type='text'; updatePeriodText(); }); el.addEventListener('change',updatePeriodText); }
+function defaultRange(){ const end=new Date(); const start=new Date(end); start.setHours(0,0,0,0); return {start,end}; }
+function inputDateValue(id, fallback){ const v=$(id).value; return v ? new Date(v) : fallback; }
+function setRangeShortcut(type){
+  const end = new Date();
+  const start = new Date(end);
+  if(type==='day') start.setHours(0,0,0,0);
+  if(type==='week') start.setDate(end.getDate()-6);
+  if(type==='month') start.setMonth(end.getMonth()-1);
+  if(type!=='day') start.setHours(0,0,0,0);
+  $('startInput').type='datetime-local';
+  $('endInput').type='datetime-local';
+  $('startInput').value=toInput(start);
+  $('endInput').value=toInput(end);
+  document.querySelectorAll('.range-btn').forEach(btn=>btn.classList.toggle('active', btn.dataset.range===type));
+  updatePeriodText();
+  refreshData().catch(e=>showToast(e.message));
+}
+function updatePeriodText(){ updateLivePeriodTag(); }
+function updateLivePeriodTag(){ const d=new Date(); const p=n=>String(n).padStart(2,'0'); $('periodTag').textContent = `实时 ${d.getFullYear()}/${p(d.getMonth()+1)}/${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`; }
+function getRange(){ const d=defaultRange(); const from=inputDateValue('startInput',d.start); const to=inputDateValue('endInput',d.end); return `from=${encodeURIComponent(from.toISOString())}&to=${encodeURIComponent(to.toISOString())}`; }
+function updateClock(){ const d=new Date(); const p=n=>String(n).padStart(2,'0'); $('clockTag').textContent = `${d.getFullYear()}/${p(d.getMonth()+1)}/${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}:${p(d.getSeconds())}`; updateLivePeriodTag(); }
+function setMetric(id, value, type='int'){ const el=$(id); if(!el) return; if(type==='percent') el.textContent = `${Number(value||0).toFixed(1)}%`; else if(type==='money') el.textContent = Math.round(Number(value||0)).toLocaleString(); else el.textContent = Math.round(Number(value||0)).toLocaleString(); }
+function emptyText(){ return '<div style="color:var(--soft)">暂无数据</div>'; }
+
+function hexToRgb(hex){ const m=String(hex).replace('#',''); const n=m.length===3?m.split('').map(x=>x+x).join(''):m; const v=parseInt(n,16); return {r:(v>>16)&255,g:(v>>8)&255,b:v&255}; }
+function shade(hex, amt){ const {r,g,b}=hexToRgb(hex); const f=v=>Math.max(0,Math.min(255,Math.round(v+amt))); return `rgb(${f(r)},${f(g)},${f(b)})`; }
+function polar(cx, cy, rx, ry, deg){ const rad=(deg-90)*Math.PI/180; return {x:cx+rx*Math.cos(rad), y:cy+ry*Math.sin(rad)}; }
+function arcPath(cx,cy,rx,ry,start,end){ const s=polar(cx,cy,rx,ry,end), e=polar(cx,cy,rx,ry,start); const large=(end-start)<=180?0:1; return `M ${s.x.toFixed(2)} ${s.y.toFixed(2)} A ${rx} ${ry} 0 ${large} 0 ${e.x.toFixed(2)} ${e.y.toFixed(2)}`; }
+function segmentPath(cx,cy,outerRx,outerRy,innerRx,innerRy,start,end){ const p1=polar(cx,cy,outerRx,outerRy,end), p2=polar(cx,cy,outerRx,outerRy,start), p3=polar(cx,cy,innerRx,innerRy,start), p4=polar(cx,cy,innerRx,innerRy,end); const large=(end-start)<=180?0:1; return `M ${p1.x.toFixed(2)} ${p1.y.toFixed(2)} A ${outerRx} ${outerRy} 0 ${large} 0 ${p2.x.toFixed(2)} ${p2.y.toFixed(2)} L ${p3.x.toFixed(2)} ${p3.y.toFixed(2)} A ${innerRx} ${innerRy} 0 ${large} 1 ${p4.x.toFixed(2)} ${p4.y.toFixed(2)} Z`; }
+function render3DRing(el, items, totalLabel){
+  const total = items.reduce((a,b)=>a+b.value,0) || 1;
+  const cx=110, cy=72, depth=28, outerRx=78, outerRy=42;
+  let start=-115; const segs=[];
+  items.forEach((it)=>{
+    const rawSweep=(it.value/total)*360;
+    const sweep=items.length===1 ? 359.6 : Math.min(340, Math.max(12, rawSweep));
+    const thickness=18+(it.value/total)*18;
+    segs.push({...it,start,end:start+sweep,thickness,dark:shade(it.color,-44),mid:shade(it.color,-18),light:shade(it.color,30)});
+    start+=sweep;
+  });
+  const groups=[];
+  for(const seg of segs){
+    const innerRx=Math.max(26, outerRx-seg.thickness), innerRy=Math.max(14, outerRy-seg.thickness*.58);
+    const parts=[];
+    parts.push(`<path d="${segmentPath(cx,cy+depth,outerRx,outerRy,innerRx,innerRy,seg.start,seg.end)}" fill="${seg.dark}" opacity=".72"></path>`);
+    for(let d=depth-6; d>=6; d-=6) parts.push(`<path d="${segmentPath(cx,cy+d,outerRx,outerRy,innerRx,innerRy,seg.start,seg.end)}" fill="${seg.mid}" opacity=".20"></path>`);
+    const fs=Math.max(seg.start,180), fe=Math.min(seg.end,360);
+    if(fe>fs) parts.push(`<path d="${segmentPath(cx,cy+depth+2,outerRx,outerRy,innerRx,innerRy,fs,fe)}" fill="${seg.mid}" opacity=".95"></path>`);
+    parts.push(`<path d="${segmentPath(cx,cy,outerRx,outerRy,innerRx,innerRy,seg.start,seg.end)}" fill="${seg.color}" stroke="${seg.light}" stroke-width="1.35"></path><path d="${arcPath(cx,cy,outerRx,outerRy,seg.start,seg.end)}" stroke="rgba(255,255,255,.28)" stroke-width="1.2" fill="none"></path>`);
+    groups.push(`<g class="ring-segment" data-value="${seg.value}" data-label="${esc(seg.label||'segment')}" data-seg="${groups.length}" aria-label="${esc(seg.label||'segment')}">${parts.join('')}</g>`);
+  }
+  el.innerHTML = `<svg viewBox="0 0 220 188" aria-hidden="true"><defs><filter id="softBlur"><feGaussianBlur stdDeviation="2.8"/></filter><linearGradient id="plateTop" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="rgba(25,60,108,.98)"/><stop offset="100%" stop-color="rgba(8,22,46,.98)"/></linearGradient></defs><ellipse cx="${cx}" cy="${cy+depth+22}" rx="72" ry="11" fill="rgba(72,173,255,.14)" filter="url(#softBlur)"></ellipse>${groups.join('')}<ellipse cx="${cx}" cy="${cy+1}" rx="36" ry="20" fill="url(#plateTop)" stroke="rgba(145,215,255,.28)" stroke-width="1"></ellipse><ellipse cx="${cx-4}" cy="${cy-6}" rx="23" ry="7" fill="rgba(255,255,255,.08)"></ellipse></svg><div class="seg-pop-value"></div><div class="source-3d-center"><strong>${total}</strong><small>${totalLabel}</small></div>`;
+  const pop = el.querySelector('.seg-pop-value');
+  el.querySelectorAll('.ring-segment').forEach(seg=>{
+    seg.addEventListener('mouseenter',()=>{ pop.textContent = seg.dataset.value || ''; });
+    seg.addEventListener('mouseleave',()=>{ pop.textContent = ''; });
+  });
+}
+function renderSourceLegend(container, items){ const total = items.reduce((a,b)=>a+b.value,0) || 1; container.innerHTML = items.map(it=>`<div class="source-mini-row"><span class="sw" style="background:${it.color}"></span><span>${esc(it.label)}</span><span class="count">${it.value}</span><span class="pct">${(it.value/total*100).toFixed(1)}%</span></div>`).join('') || emptyText(); }
+function renderCallouts(container, items, suffix){ if(!container) return; container.innerHTML = items.slice(0,3).map(it=>`<div class="source-callout" style="--callout-color:${it.color}"><span class="label">${esc(it.label)} ${suffix}</span><span class="value">${it.value}</span></div>`).join('') || emptyText(); }
+function renderTrend(leads){ const counts={}; for(let i=0;i<24;i++) counts[String(i).padStart(2,'0')]=0; leads.forEach(l=>{ const h=(l.created_at||'').slice(11,13); if(h in counts) counts[h]++; }); const keys=Object.keys(counts), vals=keys.map(k=>counts[k]), max=Math.max(1,...vals); const w=280,h=180,p=14,b=22, innerW=w-p*2, innerH=h-p-b; const pts=vals.map((v,i)=>[p+(innerW/(keys.length-1))*i,p+innerH-(v/max)*innerH]); const path=pts.map((pt,i)=>`${i?'L':'M'} ${pt[0].toFixed(1)} ${pt[1].toFixed(1)}`).join(' '); const area=`${path} L ${p+innerW} ${p+innerH} L ${p} ${p+innerH} Z`; $('trendSvg').innerHTML=`<defs><linearGradient id="lineGrad" x1="0" x2="1"><stop offset="0%" stop-color="#48e1ff"/><stop offset="100%" stop-color="#4f89ff"/></linearGradient><linearGradient id="areaGrad" x1="0" x2="0" y1="0" y2="1"><stop offset="0%" stop-color="rgba(72,225,255,.35)"/><stop offset="100%" stop-color="rgba(72,225,255,0)"/></linearGradient></defs><path d="${area}" fill="url(#areaGrad)"></path><path d="${path}" fill="none" stroke="url(#lineGrad)" stroke-width="2.4" stroke-linecap="round"></path>${pts.filter((_,i)=>i%3===0||i===pts.length-1).map(pt=>`<circle cx="${pt[0]}" cy="${pt[1]}" r="3.2" fill="#48e1ff" />`).join('')}`; $('trendAxis').innerHTML=['00','04','08','12','16','20','23'].map(k=>`<span>${k}:00</span>`).join(''); }
+function focusMatch(lead, focus){ if(focus==='all') return true; const source=normalize(lead.source); const channel=normalize(lead.contact_channel||lead.channel); if(['whatsapp','wechat','facebook'].includes(focus)) return channel===focus; if(focus==='google') return source==='google'; if(focus==='direct') return source==='direct'; return true; }
+function setFocus(focus, silent=false){ currentFocus=focus||'all'; const focusTag=$('focusTag'); if(focusTag){ focusTag.textContent=`当前聚焦：${focusLabel(currentFocus)}`; focusTag.classList.toggle('active-focus',currentFocus!=='all'); } document.querySelectorAll('.node').forEach(n=>{ const active=n.dataset.focus===currentFocus; n.classList.toggle('active',active); n.classList.toggle('dim',currentFocus!=='all'&&!active); }); document.querySelectorAll('.panel').forEach(p=>p.classList.remove('focus-panel')); if(currentFocus!=='all') document.querySelector('.center-panel')?.classList.add('focus-panel'); if(!silent) render(); }
+function render(){
+  const leads=allLeads.slice().sort((a,b)=>String(b.created_at||'').localeCompare(String(a.created_at||'')));
+  const visits=visitCount || new Set(leads.map(x=>x.visitor_id||x.session_id||x.lead_id)).size;
+  const clicks=leads.length, chats=leads.filter(x=>['chat','quoted','deal'].includes(x.status)).length, quoted=leads.filter(x=>['quoted','deal'].includes(x.status)).length, deals=leads.filter(x=>x.status==='deal').length, invalid=leads.filter(x=>x.status==='invalid').length, amount=leads.reduce((a,x)=>a+num(x.deal_amount||x.amount),0);
+  setMetric('mVisits',visits); setMetric('mClicks',clicks); setMetric('mChats',chats); setMetric('mQuoted',quoted); setMetric('mDeals',deals); setMetric('mAmount',amount,'money');
+  const sourceAgg={}; leads.forEach(l=>{ const k=l.source||'direct'; sourceAgg[k]=(sourceAgg[k]||0)+1; });
+  const sourceItems=Object.entries(sourceAgg).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([label,value],i)=>({label,value,color:['#67c6ff','#54db8c','#9b7cff','#ffd45f','#ff8b8b','#5cc9ff'][i%6]}));
+  render3DRing($('sourceDonut'),sourceItems.length?sourceItems:[{label:'暂无数据',value:1,color:'#21334f'}],'总线索'); renderCallouts($('sourceCallouts'),sourceItems,'来源线索'); renderSourceLegend($('sourceLegend'),sourceItems);
+  const statusItems=[{label:'已点击',value:leads.filter(x=>(x.status||'clicked')==='clicked').length,color:'#4f89ff'},{label:'已会话',value:leads.filter(x=>x.status==='chat').length,color:'#948dff'},{label:'已报价',value:leads.filter(x=>x.status==='quoted').length,color:'#ffd166'},{label:'已成交',value:deals,color:'#30e1a2'},{label:'无效',value:invalid,color:'#ff707e'}].filter(x=>x.value>0);
+  render3DRing($('statusDonut'),statusItems.length?statusItems:[{label:'暂无数据',value:1,color:'#21334f'}],'状态总量'); renderCallouts($('statusCallouts'),statusItems,'当前数量'); renderSourceLegend($('statusLegend'),statusItems); renderTrend(leads);
+  setMetric('nWhatsapp',leads.filter(x=>normalize(x.contact_channel||x.channel)==='whatsapp').length); setMetric('nFacebook',leads.filter(x=>normalize(x.contact_channel||x.channel)==='facebook').length); setMetric('nWechat',leads.filter(x=>normalize(x.contact_channel||x.channel)==='wechat').length); setMetric('nGoogle',leads.filter(x=>normalize(x.source)==='google').length); setMetric('nDirect',leads.filter(x=>normalize(x.source)==='direct').length);
+  setMetric('sRate',visits?(clicks/visits*100):0,'percent'); setMetric('sChatRate',clicks?(chats/clicks*100):0,'percent'); setMetric('sDealRate',clicks?(deals/clicks*100):0,'percent'); setMetric('sInvalid',invalid);
+  const focusLeads=currentFocus==='all'?leads:leads.filter(l=>focusMatch(l,currentFocus));
+  $('latestList').innerHTML=(currentFocus!=='all'?`<div class="latest-note">当前仅展示 ${focusLabel(currentFocus)} 相关最近线索</div>`:'')+(focusLeads.slice(0,8).map(l=>`<div class="latest-item${currentFocus!=='all'?' hit':''}"><div>${esc((l.created_at||'').replace('T',' ').slice(5,16))}</div><div>${esc(l.lead_id||'-')}</div><div><span class="pill s">${esc(l.source||'direct')}</span></div><div><span class="pill c">${esc(l.contact_channel||l.channel||'-')}</span></div><div class="note">${esc(l.remark||l.customer_message||'-')}</div><div>${statusLabel(l.status||'clicked')}</div></div>`).join('')||emptyText());
+  const channelAgg={}; leads.forEach(l=>{ const k=(l.contact_channel||l.channel||'unknown').toLowerCase(); channelAgg[k]=(channelAgg[k]||0)+1; }); const channelEntries=Object.entries(channelAgg).sort((a,b)=>b[1]-a[1]); const cMax=Math.max(1,...channelEntries.map(x=>x[1]),1);
+  $('channelBars').innerHTML=channelEntries.map(([k,v])=>`<div class="small-bar${currentFocus!=='all'&&normalize(k)===currentFocus?' hit':''}"><div>${esc(k)}</div><div class="track"><div class="fill" style="width:${(v/cMax*100).toFixed(1)}%"></div></div><div>${v}</div></div>`).join('')||emptyText();
+  const sourceSummary={}; leads.forEach(l=>{ const s=l.source||'direct'; sourceSummary[s] ||= {count:0,mediums:{}}; sourceSummary[s].count++; const m=l.medium||'-'; sourceSummary[s].mediums[m]=(sourceSummary[s].mediums[m]||0)+1; }); const sourceSorted=Object.entries(sourceSummary).sort((a,b)=>b[1].count-a[1].count); const sMax=Math.max(1,...sourceSorted.map(x=>x[1].count),1);
+  $('sourceRankList').innerHTML=sourceSorted.map(([name,obj],idx)=>{ const mainMedium=Object.entries(obj.mediums).sort((a,b)=>b[1]-a[1])[0]?.[0]||'-'; return `<div class="rank-item${currentFocus!=='all'&&normalize(name)===currentFocus?' hit':''}"><div class="rank-no">${idx+1}</div><div><div class="rank-name">${esc(name)}</div><div class="rank-sub">主媒介：${esc(mainMedium)} · 占比 ${clicks?((obj.count/clicks)*100).toFixed(1):0}%</div><div class="rank-bar"><span style="width:${(obj.count/sMax*100).toFixed(1)}%"></span></div></div><div class="rank-val">${obj.count}</div></div>`; }).join('')||emptyText();
+  const stages=[{label:'访问会话',value:visits,color:'#67c6ff',icon:'1',base:visits||1},{label:'联系点击',value:clicks,color:'#48e1ff',icon:'2',base:visits||1},{label:'真实会话',value:chats,color:'#9b7cff',icon:'3',base:clicks||1},{label:'已报价',value:quoted,color:'#ffd45f',icon:'4',base:clicks||1},{label:'已成交',value:deals,color:'#54db8c',icon:'5',base:clicks||1}];
+  $('funnelBox').innerHTML=stages.map((s,idx)=>{ const rate=idx===0?100:s.value/(s.base||1)*100; return `<div class="funnel-step" style="--fcolor:${s.color}"><div class="funnel-label"><span class="funnel-badge">${s.icon}</span><span>${s.label}</span></div><div class="funnel-right"><strong>${s.value}</strong><span>${idx===0?'基准值':`转化率 ${rate.toFixed(1)}%`}</span></div></div>`; }).join('');
+}
+function downloadFile(name,content,type){ const blob=new Blob([content],{type}); const url=URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download=name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(()=>URL.revokeObjectURL(url),1000); }
+function csvEscape(v){ const s=String(v??''); return /[",\n]/.test(s)?`"${s.replace(/"/g,'""')}"`:s; }
+function exportLeadsCsv(){ if(!allLeads.length){ showToast('当前没有可导出的线索数据'); return; } const rows=[['lead_id','created_at','source','medium','campaign','contact_channel','status','customer_name','customer_contact','deal_amount','currency','remark','landing_page']]; allLeads.forEach(l=>rows.push([l.lead_id,l.created_at,l.source,l.medium,l.campaign,l.contact_channel||l.channel,l.status,l.customer_name,l.customer_contact,l.deal_amount||l.amount,l.currency,l.remark||l.customer_message,l.landing_page])); downloadFile(`ads_leads_${Date.now()}.csv`,rows.map(r=>r.map(csvEscape).join(',')).join('\n'),'text/csv;charset=utf-8;'); markExport('线索明细 CSV'); showToast('已开始下载线索明细 CSV'); }
+function exportSummaryCsv(){ const rows=[['metric','value'],['visits',$('mVisits').textContent],['clicks',$('mClicks').textContent],['chats',$('mChats').textContent],['quoted',$('mQuoted').textContent],['deals',$('mDeals').textContent],['amount',$('mAmount').textContent],['contact_rate',$('sRate').textContent],['chat_rate',$('sChatRate').textContent],['deal_rate',$('sDealRate').textContent],['invalid',$('sInvalid').textContent]]; downloadFile(`ads_summary_${Date.now()}.csv`,rows.map(r=>r.map(csvEscape).join(',')).join('\n'),'text/csv;charset=utf-8;'); markExport('汇总报表 CSV'); showToast('已开始下载汇总 CSV'); }
+function exportJson(){ if(!allLeads.length){ showToast('当前没有可导出的数据'); return; } downloadFile(`ads_leads_${Date.now()}.json`,JSON.stringify(allLeads,null,2),'application/json;charset=utf-8;'); markExport('原始 JSON 数据'); showToast('已开始下载 JSON 数据'); }
+function markExport(type){ const text=`最近导出：${type} · ${new Date().toLocaleString()}`; localStorage.setItem('adsExportHistory',text); $('exportHistory').textContent=text; }
+function openExport(){ $('exportHistory').textContent=localStorage.getItem('adsExportHistory')||'最近导出：暂无记录'; $('exportMask').style.display='flex'; }
+function closeExport(){ $('exportMask').style.display='none'; }
+async function refreshData(){ if(!API_BASE||!TOKEN){ $('loginMask').style.display='flex'; render(); return; } updatePeriodText(); $('workerTag').textContent=API_BASE.replace(/^https?:\/\//,'').slice(0,42); const range=getRange(); const leadRes=await api('/api/leads?'+range); const statsRes=await api('/api/stats?'+range).catch(()=>({})); allLeads=leadRes.leads||leadRes.items||[]; visitCount=Number(leadRes.visits??leadRes.sessions??statsRes.visits??statsRes.sessions??0); render(); }
+async function manualAdd(){ const ad=$('manualAd').value.trim(), name=$('manualName').value.trim(), note=$('manualNote').value.trim(); if(!ad&&!name){ showToast('请至少填写广告暗号或客户名称'); return; } try{ await api('/api/manual-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ad_code:ad,customer_contact:name,remark:note,channel:'whatsapp',source:'facebook_direct_whatsapp'})}); $('manualAd').value=''; $('manualName').value=''; $('manualNote').value=''; showToast('线索已录入'); refreshData().catch(()=>{}); }catch(e){ showToast('录入失败：'+e.message); } }
+function login(){ API_BASE=$('apiInput').value.trim().replace(/\/$/,''); TOKEN=$('tokenInput').value.trim(); if(!API_BASE||!TOKEN){ showToast('请输入账号和密码'); return; } localStorage.setItem(LS_API,API_BASE); localStorage.setItem(LS_TOKEN,TOKEN); $('loginMask').style.display='none'; refreshData().catch(e=>{ showToast(e.message); $('loginMask').style.display='flex'; }); }
+function logout(){ localStorage.removeItem(LS_API); localStorage.removeItem(LS_TOKEN); API_BASE=''; TOKEN=''; clearInterval(refreshTimer); clearInterval(countdownTimer); clearInterval(rotateTimer); rotateOn=false; $('workerTag').textContent='Worker 未连接'; $('apiInput').value=''; $('tokenInput').value=''; $('loginMask').style.display='flex'; showToast('已退出登录，请重新输入账号密码'); }
+function startRefreshCountdown(){ clearInterval(countdownTimer); let sec=60; $('refreshTag').textContent=`${sec}s 后刷新`; countdownTimer=setInterval(()=>{ sec--; if(sec<=0) sec=60; $('refreshTag').textContent=`${sec}s 后刷新`; },1000); }
+function autoRefresh(){ clearInterval(refreshTimer); startRefreshCountdown(); refreshTimer=setInterval(()=>{ refreshData().catch(()=>{}); startRefreshCountdown(); },60000); }
+
+$('queryBtn').onclick=()=>refreshData().catch(e=>showToast(e.message));
+$('exportBtn').onclick=openExport; $('closeExportBtn').onclick=closeExport; $('exportLeadsBtn').onclick=exportLeadsCsv; $('exportSummaryBtn').onclick=exportSummaryCsv; $('exportJsonBtn').onclick=exportJson;
+$('exportMask').addEventListener('click',e=>{ if(e.target.id==='exportMask') closeExport(); }); document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeExport(); });
+$('manualBtn').onclick=manualAdd; $('loginForm').addEventListener('submit',e=>{ e.preventDefault(); login(); }); $('logoutBtn').onclick=logout;
+document.querySelectorAll('.node').forEach(node=>node.addEventListener('click',()=>{ const key=node.dataset.focus; if(currentFocus===key){ setFocus('all'); showToast('已取消聚焦，恢复查看全部数据'); } else { setFocus(key); showToast(`已聚焦 ${focusLabel(key)} 数据`); } }));
+document.querySelectorAll('.range-btn').forEach(btn=>btn.addEventListener('click',()=>setRangeShortcut(btn.dataset.range)));
+bindDateInput('startInput'); bindDateInput('endInput');
+setDateDefaults(); updateClock(); setInterval(updateClock,1000); autoRefresh(); setFocus('all',true);
+if(!API_BASE||!TOKEN){ $('apiInput').value=''; $('loginMask').style.display='flex'; render(); } else { $('apiInput').value=API_BASE; $('tokenInput').value=TOKEN; refreshData().catch(e=>{ showToast(e.message); $('loginMask').style.display='flex'; }); }
+</script>
+</body>
+</html>
