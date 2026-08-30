@@ -10168,12 +10168,12 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
 </div>
 </div>
 </section>
-<section id="cargo">
+<section class="cargo-types-section" id="cargo">
 <div class="container">
 <div class="section-title">
 <div class="label">Cargo Types</div>
-<h2>支持多种泰国商品寄往中国</h2>
-<p>我们承接多品类货物，不以普通品类做强限制；特殊、监管及违禁风险货物需提前审核，最终以实际货物和清关要求为准。</p>
+<h2>支持多种货物泰中双向寄送</h2>
+<p>我们承接多品类货物，不以普通品类做硬限制；特殊、监管及违禁风险货物需提前审核，最终以实际货物和清关要求为准。</p>
 </div>
 <div class="grid grid-4">
 <div class="cargo-card"><div class="icon">🧳</div><h3>个人物品</h3><p>衣服、鞋子、包包、生活用品、行李箱、纪念品。</p></div>
@@ -13844,6 +13844,119 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
 }
 </style>
 
+<style id="v123-cargo-types-page-polish">
+/* v123: organize existing cargo section to match the approved two-row reference layout */
+#cargo.cargo-types-section {
+  background: #f4f8fd !important;
+  padding: clamp(56px, 7vw, 86px) 0 clamp(58px, 7vw, 88px) !important;
+}
+#cargo.cargo-types-section .container {
+  max-width: 1520px !important;
+}
+#cargo.cargo-types-section .section-title {
+  margin: 0 auto clamp(34px, 4vw, 52px) !important;
+  text-align: center !important;
+}
+#cargo.cargo-types-section .section-title .label {
+  display: none !important;
+}
+#cargo.cargo-types-section .section-title h2 {
+  margin: 0 0 14px !important;
+  color: #07111f !important;
+  font-size: clamp(34px, 3.05vw, 52px) !important;
+  line-height: 1.08 !important;
+  font-weight: 900 !important;
+  letter-spacing: 0 !important;
+}
+#cargo.cargo-types-section .section-title p {
+  max-width: 920px !important;
+  margin: 0 auto !important;
+  color: #536275 !important;
+  font-size: clamp(14px, .92vw, 16px) !important;
+  line-height: 1.8 !important;
+}
+#cargo.cargo-types-section .grid,
+#cargo.cargo-types-section .grid.grid-4 {
+  display: grid !important;
+  grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+}
+#cargo.cargo-types-section .cargo-card {
+  min-width: 0 !important;
+  min-height: 242px !important;
+  height: 100% !important;
+  padding: 28px 18px 26px !important;
+  border: 1px solid rgba(222, 233, 246, .86) !important;
+  border-radius: 22px !important;
+  background: rgba(255,255,255,.92) !important;
+  box-shadow: 0 18px 42px rgba(43, 73, 112, .08) !important;
+  text-align: left !important;
+  overflow: hidden !important;
+}
+#cargo.cargo-types-section .cargo-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 22px 52px rgba(43, 73, 112, .12) !important;
+}
+#cargo.cargo-types-section .cargo-card .icon {
+  display: flex !important;
+  width: 58px !important;
+  height: 58px !important;
+  margin: 0 auto 18px !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 18px !important;
+  background: linear-gradient(135deg, rgba(225,241,252,.92), rgba(234,249,247,.96)) !important;
+  color: #265d8d !important;
+  font-size: 25px !important;
+  line-height: 1 !important;
+}
+#cargo.cargo-types-section .cargo-card h3 {
+  margin: 0 0 13px !important;
+  color: #06111f !important;
+  text-align: center !important;
+  font-size: clamp(19px, 1.42vw, 25px) !important;
+  font-weight: 900 !important;
+  line-height: 1.18 !important;
+  letter-spacing: 0 !important;
+}
+#cargo.cargo-types-section .cargo-card p {
+  margin: 0 !important;
+  color: #1f3147 !important;
+  text-align: left !important;
+  font-size: clamp(13px, .86vw, 15px) !important;
+  line-height: 1.78 !important;
+}
+@media (max-width: 1280px) {
+  #cargo.cargo-types-section .grid,
+  #cargo.cargo-types-section .grid.grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  }
+}
+@media (max-width: 900px) {
+  #cargo.cargo-types-section .grid,
+  #cargo.cargo-types-section .grid.grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+  }
+}
+@media (max-width: 600px) {
+  #cargo.cargo-types-section {
+    padding: 46px 0 54px !important;
+  }
+  #cargo.cargo-types-section .section-title h2 {
+    font-size: 30px !important;
+  }
+  #cargo.cargo-types-section .grid,
+  #cargo.cargo-types-section .grid.grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+  #cargo.cargo-types-section .cargo-card {
+    min-height: 0 !important;
+  }
+}
+</style>
+
 <style id="v122-hero-carousel-system">
 /* v122: Hero-only carousel system, keeping confirmed visual language */
 .hero#home {
@@ -13859,6 +13972,11 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
 .hero#home .hero-carousel {
   z-index: 0 !important;
   pointer-events: none !important;
+  background-image: url("hero-sandbox-map-china-clean-v3.png") !important;
+  background-position: center 72% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  transition: background-image .2s ease !important;
 }
 .hero#home .hero-carousel::before,
 .hero#home .hero-carousel::after {
@@ -13887,6 +14005,7 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
 }
 .hero#home .hero-track {
   z-index: 0 !important;
+  display: none !important;
 }
 .hero#home .hero-slide {
   background-position: center 72% !important;
@@ -13994,16 +14113,19 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
   display: none !important;
 }
 @media (min-width: 1500px) {
+  .hero#home .hero-carousel,
   .hero#home .hero-slide {
     background-position: center 72% !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1499px) {
+  .hero#home .hero-carousel,
   .hero#home .hero-slide {
     background-position: 52% 72% !important;
   }
 }
 @media (max-width: 1020px) {
+  .hero#home .hero-carousel,
   .hero#home .hero-slide {
     background-position: 55% center !important;
   }
@@ -14015,6 +14137,7 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
   .hero#home .hero-pagination {
     bottom: 20px !important;
   }
+  .hero#home .hero-carousel,
   .hero#home .hero-slide {
     background-position: 56% center !important;
   }
@@ -14172,6 +14295,8 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
     const next = (index + 1) % SLIDES.length;
     const slide = document.querySelectorAll('.hero#home .hero-slide')[next];
     loadSlide(slide);
+    const image = new Image();
+    image.src = SLIDES[next].image;
   }
 
   function syncCopy() {
@@ -14199,11 +14324,16 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
   }
 
   function goTo(index, userAction) {
+    const carousel = document.querySelector('.hero#home .hero-carousel');
     const slides = Array.from(document.querySelectorAll('.hero#home .hero-slide'));
     const dots = Array.from(document.querySelectorAll('.hero#home .hero-dot'));
     if (!slides.length) return;
     active = (index + slides.length) % slides.length;
     loadSlide(slides[active]);
+    if (carousel) {
+      carousel.style.setProperty('background-image', `url("${SLIDES[active].image}")`, 'important');
+      carousel.setAttribute('data-active-slide', String(active + 1));
+    }
     slides.forEach((slide, i) => slide.classList.toggle('is-active', i === active));
     dots.forEach((dot, i) => {
       dot.classList.toggle('is-active', i === active);
