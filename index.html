@@ -8919,6 +8919,135 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
   html[data-lang="en"] .hero-insight-title,
   html[data-lang="th"] .hero-insight-title { font-size: 23px !important; }
 }
+
+/* ===== v50: homepage 3D sandbox route map visual ===== */
+.hero-sandbox-card {
+  position: relative !important;
+  min-height: 486px !important;
+  border-radius: 34px !important;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(255,255,255,.75), transparent 28%),
+    linear-gradient(135deg, rgba(255,255,255,.84), rgba(235,246,255,.68)) !important;
+  border: 1px solid rgba(151,194,255,.46) !important;
+  box-shadow: 0 24px 64px rgba(41,83,151,.14) !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+}
+.hero-sandbox-card::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  background:
+    radial-gradient(ellipse at 48% 82%, rgba(255,255,255,.10), transparent 32%),
+    repeating-radial-gradient(ellipse at 52% 86%, rgba(255,255,255,.08) 0 1px, transparent 2px 26px) !important;
+  opacity: .16 !important;
+  transform: translate3d(0, 0, 0) scale(1.04) !important;
+  animation: sandboxWaterWave 16s linear infinite !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.22) 43%, rgba(0,0,0,.82) 58%, rgba(0,0,0,.86)) !important;
+}
+.hero-sandbox-card::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: -12% -8% !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  background:
+    repeating-linear-gradient(113deg, transparent 0 28px, rgba(255,255,255,.055) 29px 31px, transparent 32px 62px),
+    radial-gradient(ellipse at 52% 72%, rgba(255,255,255,.10), transparent 36%) !important;
+  opacity: .12 !important;
+  transform: translate3d(0, 0, 0) !important;
+  animation: sandboxWaterDrift 24s linear infinite !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.86), rgba(0,0,0,.18) 40%, rgba(0,0,0,.76) 56%, rgba(0,0,0,.88)) !important;
+}
+.hero-sandbox-map {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 486px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: inherit !important;
+}
+.sandbox-hotspot {
+  position: absolute !important;
+  z-index: 8 !important;
+  display: block !important;
+  background: transparent !important;
+  border: 0 !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+}
+.sandbox-hotspot:focus-visible {
+  outline: 2px solid rgba(77,141,255,.65) !important;
+  outline-offset: 3px !important;
+  border-radius: 999px !important;
+}
+.sandbox-thailand {
+  left: 2% !important;
+  top: 31% !important;
+  width: 37% !important;
+  height: 42% !important;
+  border-radius: 48% !important;
+}
+.sandbox-china {
+  right: 4% !important;
+  top: 25% !important;
+  width: 43% !important;
+  height: 48% !important;
+  border-radius: 44% !important;
+}
+.sandbox-plane-zone {
+  left: 35% !important;
+  top: 15% !important;
+  width: 28% !important;
+  height: 22% !important;
+  border-radius: 999px !important;
+}
+.sandbox-ship-zone {
+  left: 35% !important;
+  bottom: 4% !important;
+  width: 26% !important;
+  height: 28% !important;
+  border-radius: 999px !important;
+}
+.sandbox-truck-zone {
+  right: 11% !important;
+  bottom: 22% !important;
+  width: 23% !important;
+  height: 19% !important;
+  border-radius: 999px !important;
+}
+@keyframes sandboxWaterWave {
+  0% { opacity: .10; background-position: 0 0, 0 0; transform: translate3d(-1.5%, .5%, 0) scale(1.04); }
+  50% { opacity: .16; background-position: 42px -18px, 24px 0; transform: translate3d(1.5%, -1%, 0) scale(1.04); }
+  100% { opacity: .10; background-position: 84px -36px, 48px 0; transform: translate3d(-1.5%, .5%, 0) scale(1.04); }
+}
+@keyframes sandboxWaterDrift {
+  0% { opacity: .08; background-position: 0 0, 0 0; transform: translate3d(1%, 0, 0); }
+  50% { opacity: .12; background-position: -56px 24px, -18px 0; transform: translate3d(-1%, .6%, 0); }
+  100% { opacity: .08; background-position: -112px 48px, -36px 0; transform: translate3d(1%, 0, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-sandbox-card::before,
+  .hero-sandbox-card::after {
+    animation: none !important;
+  }
+}
+@media (max-width: 1020px) {
+  .hero-sandbox-card,
+  .hero-sandbox-map {
+    min-height: 420px !important;
+  }
+}
+@media (max-width: 640px) {
+  .hero-sandbox-card,
+  .hero-sandbox-map {
+    min-height: 300px !important;
+    border-radius: 26px !important;
+  }
+}
 </style>
 <!-- v51: 修复 localStorage 异常导致语言切换中断，恢复三语文字同步 -->
 
@@ -9816,6 +9945,7 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
     cursor: grabbing !important;
   }
 </style>
+<link rel="preload" as="image" href="hero-sandbox-map-china-clean-v3.png" fetchpriority="high">
 
 </head>
 <body>
@@ -9863,36 +9993,47 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
 </header>
 <main>
 <section class="hero" id="home">
+<div class="hero-carousel" aria-roledescription="carousel" aria-label="首页服务场景轮播">
+<div class="hero-track" aria-hidden="true">
+<div class="hero-slide hero-slide-01 is-active" style="background-image:url('hero-sandbox-map-china-clean-v3.png')"></div>
+<div class="hero-slide hero-slide-02" data-bg="hero-pickup-v1.png"></div>
+<div class="hero-slide hero-slide-03" data-bg="hero-special-items-v1.png"></div>
+<div class="hero-slide hero-slide-04" data-bg="hero-consolidation-v1.png"></div>
+</div>
+</div>
 <div class="container hero-inner">
 <div class="hero-copy">
 <div class="eyebrow" id="heroEyebrow">泰国 ↔ 中国 门到门双向跨境物流</div>
-<h1 class="hero-title">
+<h1 class="hero-title" id="heroTitleH1">
 <span class="title-row title-main" id="heroAirTitle">泰国发中国</span>
 <span class="title-row title-sub" id="heroLandTitle">中国发泰国双向物流</span>
 </h1>
+<h2 class="hero-title hero-title-alt" id="heroTitleH2" hidden>
+<span class="title-row title-main" id="heroAltMain"></span>
+<span class="title-row title-sub" id="heroAltSub"></span>
+</h2>
 <p id="heroDesc">专注泰国发中国、中国发泰国双向跨境物流服务，当前主做空运与陆运，专业服务。服务覆盖曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，并支持全泰多数地区上门取件；中国发泰国可按城市、货物类型、时效和预算咨询对应线路。</p>
 <div class="hero-actions">
 <a class="btn btn-primary" data-lead-contact="whatsapp" href="https://api.whatsapp.com/send?phone=66839769828&amp;text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E5%92%A8%E8%AF%A2%E6%B3%B0%E5%9B%BD%E5%8F%91%E8%B4%A7%E5%88%B0%E4%B8%AD%E5%9B%BD%EF%BC%8C%E8%AF%B7%E9%97%AE%E6%98%AF%E4%BB%80%E4%B9%88%E6%B5%81%E7%A8%8B%E5%91%A2%EF%BC%9F" id="heroBtnPrimary" rel="noopener" target="_blank">立即获取报价</a>
 <a class="btn btn-light" href="#services" id="heroBtnSecondary">查看服务项目</a>
 </div>
 </div>
-<div class="hero-card hero-hero-card">
-<div class="hero-bottom-note">
-<span id="heroPill1">全泰均可取件</span>
-<span id="heroPill2">中泰双语客服</span>
-<span id="heroPill3">专业服务</span>
-</div><div class="hero-main-panel"><div class="hero-insight-head"><div class="hero-insight-copy"><div class="hero-insight-label" id="heroInsightLabel">空运 + 陆运</div><h3 class="hero-insight-title" id="heroInsightTitle">空运 / 陆运时效方案</h3><p class="hero-insight-desc" id="heroInsightDesc">按时效、货量与预算，灵活选择更适合的发货线路。</p></div></div><div class="hero-visual-top">
-<div class="visual-speed-card air">
-<small id="heroAirBadge">主打时效</small>
-<strong class="airland-final-title" data-route="air" id="heroVisualAirTitle"><span class="airland-title-line">空运中国</span><span class="airland-title-line">48小时</span></strong>
-<span id="heroAirDesc">适合高时效、急件、补货、游客行李、高价值货物等需求。</span>
+<div class="hero-card hero-hero-card hero-sandbox-card" aria-label="泰国中国双向物流沙盘地图">
+<img class="hero-sandbox-map" src="hero-sandbox-map-china-clean-v3.png" alt="泰国与中国双向物流立体沙盘地图" loading="eager" decoding="async">
+<button class="sandbox-hotspot sandbox-thailand" type="button" aria-label="泰国地图区域"></button>
+<button class="sandbox-hotspot sandbox-china" type="button" aria-label="中国地图区域"></button>
+<button class="sandbox-hotspot sandbox-plane-zone" type="button" aria-label="飞机区域"></button>
+<button class="sandbox-hotspot sandbox-ship-zone" type="button" aria-label="轮船区域"></button>
+<button class="sandbox-hotspot sandbox-truck-zone" type="button" aria-label="车辆区域"></button>
 </div>
-<div class="visual-speed-card land">
-<small id="heroLandBadge">经济线路</small>
-<strong class="airland-final-title" data-route="land" id="heroVisualLandTitle"><span class="airland-title-line">陆运时效</span><span class="airland-title-line">7-15天</span></strong>
-<span id="heroLandDesc">适合大件、批量、长期合作与预算型发货需求。</span>
 </div>
-</div></div></div>
+<button class="hero-carousel-btn hero-prev" type="button" aria-label="上一张 Hero"></button>
+<button class="hero-carousel-btn hero-next" type="button" aria-label="下一张 Hero"></button>
+<div class="hero-pagination" role="tablist" aria-label="Hero 轮播分页">
+<button class="hero-dot is-active" type="button" aria-label="显示第 1 屏" aria-current="true"></button>
+<button class="hero-dot" type="button" aria-label="显示第 2 屏"></button>
+<button class="hero-dot" type="button" aria-label="显示第 3 屏"></button>
+<button class="hero-dot" type="button" aria-label="显示第 4 屏"></button>
 </div>
 </section>
 <section class="transport-section" id="transport">
@@ -12638,6 +12779,7 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
       setText('heroDesc', t.heroDesc);
       setText('heroBtnPrimary', t.heroBtns[0]);
       setText('heroBtnSecondary', t.heroBtns[1]);
+      if (window.updateHeroCarouselLanguage) window.updateHeroCarouselLanguage(lang);
       setHeroPanelRobust(t.heroPanel);
       applyAirLandPanelStable(lang);
       setText('contactTitle', t.contactTitle);
@@ -13401,6 +13543,750 @@ html[data-lang="th"] #pickup .pickup-slide-tag {
 
 
 
+
+<style id="v120-hero-full-sandbox-background">
+/* v120: 沙盘图铺满首页横屏背景，右侧只保留互动层 */
+.hero#home {
+  min-height: min(760px, 100svh) !important;
+  padding: 118px 0 86px !important;
+  background:
+    linear-gradient(90deg, rgba(242,248,255,.96) 0%, rgba(242,248,255,.86) 28%, rgba(242,248,255,.36) 56%, rgba(242,248,255,.18) 100%),
+    linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.20) 45%, rgba(237,246,255,.64) 100%),
+    url("hero-sandbox-map-china-clean-v3.png?v=20260830-china-clean-v3") center center / cover no-repeat !important;
+  color: #1f2a3d !important;
+}
+.hero#home::before {
+  z-index: 0 !important;
+  background-image:
+    linear-gradient(rgba(77,141,255,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77,141,255,.055) 1px, transparent 1px) !important;
+  background-size: 42px 42px !important;
+  mask-image: linear-gradient(to bottom, #000, transparent 92%) !important;
+}
+.hero#home .hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  grid-template-columns: minmax(480px, .92fr) minmax(420px, .78fr) !important;
+  gap: clamp(38px, 5vw, 86px) !important;
+  align-items: center !important;
+}
+.hero#home .hero-copy {
+  position: relative !important;
+  z-index: 3 !important;
+  max-width: 720px !important;
+  padding: clamp(22px, 3vw, 34px) !important;
+  border-radius: 30px !important;
+  background:
+    radial-gradient(circle at 95% 100%, rgba(67,214,200,.18), transparent 34%),
+    linear-gradient(135deg, rgba(255,255,255,.76), rgba(255,255,255,.48)) !important;
+  border: 1px solid rgba(255,255,255,.58) !important;
+  box-shadow: 0 24px 68px rgba(67,96,136,.10) !important;
+  backdrop-filter: blur(10px) saturate(1.08) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(1.08) !important;
+}
+.hero#home .hero-copy .eyebrow {
+  background: rgba(216,230,255,.64) !important;
+  color: #3f78ff !important;
+  border-color: rgba(125,170,255,.38) !important;
+}
+.hero#home .hero-title,
+.hero#home .hero-title .title-row {
+  color: #1f2a3d !important;
+  text-shadow: 0 8px 26px rgba(255,255,255,.46) !important;
+}
+.hero#home #heroDesc {
+  color: #344660 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,.48) !important;
+}
+.hero#home .btn-light {
+  background: rgba(255,255,255,.72) !important;
+  color: #243650 !important;
+  border-color: rgba(255,255,255,.72) !important;
+}
+.hero#home .hero-sandbox-card {
+  min-height: 520px !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+}
+.hero#home .hero-sandbox-map {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.hero#home .sandbox-hotspot {
+  inset: -2% -3% -2% -3% !important;
+}
+.hero#home .hero-sandbox-card::before {
+  inset: -42% -88% -24% -170% !important;
+  z-index: 1 !important;
+  opacity: .24 !important;
+  background:
+    radial-gradient(ellipse at 49% 76%, rgba(255,255,255,.23), transparent 28%),
+    repeating-radial-gradient(ellipse at 50% 80%, rgba(255,255,255,.17) 0 1px, transparent 2px 24px) !important;
+}
+@media (max-width: 1020px) {
+  .hero#home {
+    min-height: auto !important;
+    padding: 94px 0 70px !important;
+    background-position: 58% center !important;
+  }
+  .hero#home .hero-inner {
+    grid-template-columns: 1fr !important;
+  }
+  .hero#home .hero-copy {
+    max-width: 760px !important;
+  }
+  .hero#home .hero-sandbox-card {
+    min-height: 360px !important;
+  }
+}
+@media (max-width: 640px) {
+  .hero#home {
+    padding: 76px 0 54px !important;
+    background:
+      linear-gradient(180deg, rgba(242,248,255,.96) 0%, rgba(242,248,255,.72) 48%, rgba(242,248,255,.34) 100%),
+      url("hero-sandbox-map-china-clean-v3.png?v=20260830-china-clean-v3") 58% center / cover no-repeat !important;
+  }
+  .hero#home .hero-copy {
+    padding: 20px !important;
+    border-radius: 24px !important;
+  }
+  .hero#home .hero-sandbox-card {
+    min-height: 260px !important;
+  }
+}
+</style>
+
+<style id="v121-hero-frozen-background-correction">
+/* v121: only Hero correction for confirmed full-background visual */
+.hero#home {
+  position: relative !important;
+  min-height: clamp(680px, 80vh, 820px) !important;
+  padding: clamp(104px, 10vh, 128px) 0 clamp(96px, 11vh, 124px) !important;
+  background: #dff2ff !important;
+  color: #1f2a3d !important;
+  isolation: isolate !important;
+}
+.hero#home::before {
+  z-index: 0 !important;
+  background-image:
+    linear-gradient(rgba(77,141,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(77,141,255,.05) 1px, transparent 1px) !important;
+  background-size: 42px 42px !important;
+  opacity: .55 !important;
+  mask-image: linear-gradient(to right, #000 0%, rgba(0,0,0,.65) 34%, transparent 55%) !important;
+}
+.hero#home::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 auto 0 0 !important;
+  width: min(66%, 1180px) !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background:
+    radial-gradient(ellipse at 22% 51%, rgba(255,255,255,.78) 0%, rgba(255,255,255,.54) 30%, rgba(255,255,255,.22) 50%, rgba(255,255,255,0) 72%) !important;
+}
+.hero#home .hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
+  grid-template-columns: minmax(430px, .76fr) minmax(520px, 1fr) !important;
+  gap: clamp(36px, 5vw, 82px) !important;
+  align-items: center !important;
+}
+.hero#home .hero-copy {
+  max-width: 690px !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.hero#home .hero-title,
+.hero#home .hero-title .title-row {
+  color: #182238 !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.12 !important;
+  text-shadow: 0 1px 2px rgba(255,255,255,.95), 0 2px 12px rgba(255,255,255,.55) !important;
+}
+.hero#home #heroDesc {
+  max-width: 540px !important;
+  color: #26354d !important;
+  font-size: clamp(16px, .95vw, 17px) !important;
+  font-weight: 500 !important;
+  line-height: 1.8 !important;
+  text-shadow: 0 1px 2px rgba(255,255,255,.95), 0 0 8px rgba(255,255,255,.75) !important;
+}
+.hero#home .hero-copy .eyebrow {
+  background: rgba(216,230,255,.52) !important;
+  color: #3f78ff !important;
+  border-color: rgba(125,170,255,.35) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+.hero#home .btn-light {
+  background: rgba(255,255,255,.62) !important;
+  color: #243650 !important;
+  border-color: rgba(255,255,255,.58) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+.hero#home .hero-sandbox-card {
+  min-height: clamp(430px, 47vh, 540px) !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  overflow: visible !important;
+  margin: 0 !important;
+}
+.hero#home .hero-sandbox-map {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.hero#home .hero-sandbox-card::before {
+  inset: -42% -120vw -24% -120vw !important;
+  z-index: 1 !important;
+  opacity: .12 !important;
+  background:
+    radial-gradient(ellipse at 52% 78%, rgba(255,255,255,.10), transparent 31%),
+    repeating-radial-gradient(ellipse at 50% 82%, rgba(255,255,255,.08) 0 1px, transparent 2px 30px) !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.22) 43%, rgba(0,0,0,.82) 58%, rgba(0,0,0,.86)) !important;
+}
+.hero#home .hero-sandbox-card::after {
+  inset: -22% -120vw -18% -120vw !important;
+  z-index: 1 !important;
+  opacity: .10 !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.86), rgba(0,0,0,.18) 40%, rgba(0,0,0,.76) 56%, rgba(0,0,0,.88)) !important;
+}
+@media (min-width: 1500px) {
+  .hero#home {
+    background-position: center 72% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .hero#home {
+    background-position: 52% 72% !important;
+  }
+}
+@media (max-width: 1020px) {
+  .hero#home {
+    min-height: auto !important;
+    padding: 92px 0 64px !important;
+    background-position: 55% center !important;
+  }
+  .hero#home::after {
+    width: 100% !important;
+    background: radial-gradient(ellipse at 42% 39%, rgba(255,255,255,.76) 0%, rgba(255,255,255,.48) 36%, rgba(255,255,255,.18) 62%, rgba(255,255,255,0) 84%) !important;
+  }
+  .hero#home .hero-inner {
+    grid-template-columns: 1fr !important;
+  }
+  .hero#home .hero-copy {
+    max-width: 760px !important;
+  }
+  .hero#home .hero-sandbox-card {
+    min-height: 300px !important;
+  }
+}
+@media (max-width: 640px) {
+  .hero#home {
+    padding: 76px 0 50px !important;
+    background-position: 56% center !important;
+  }
+  .hero#home .hero-title,
+  .hero#home .hero-title .title-row,
+  html[data-lang="zh"] .hero#home .hero-title .title-main,
+  html[data-lang="zh"] .hero#home .hero-title .title-sub,
+  html[data-lang="zh"] .hero#home .hero-title .title-row {
+    font-size: clamp(28px, 7.6vw, 32px) !important;
+    line-height: 1.18 !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    letter-spacing: 0 !important;
+  }
+  .hero#home #heroDesc {
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.68 !important;
+  }
+  .hero#home::after {
+    background: radial-gradient(ellipse at 42% 38%, rgba(255,255,255,.78) 0%, rgba(255,255,255,.52) 38%, rgba(255,255,255,.20) 64%, rgba(255,255,255,0) 86%) !important;
+  }
+  .hero#home .hero-sandbox-card {
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 2 !important;
+    min-height: 0 !important;
+    pointer-events: none !important;
+  }
+  .hero#home .sandbox-hotspot {
+    pointer-events: auto !important;
+  }
+  .hero#home .hero-actions {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .hero#home .hero-actions .btn {
+    box-sizing: border-box !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 13px 14px !important;
+    font-size: 15px !important;
+    white-space: nowrap !important;
+  }
+}
+</style>
+
+<style id="v122-hero-carousel-system">
+/* v122: Hero-only carousel system, keeping confirmed visual language */
+.hero#home {
+  overflow: hidden !important;
+  background: #dff2ff !important;
+}
+.hero#home .hero-carousel,
+.hero#home .hero-track,
+.hero#home .hero-slide {
+  position: absolute !important;
+  inset: 0 !important;
+}
+.hero#home .hero-carousel {
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+.hero#home .hero-carousel::before,
+.hero#home .hero-carousel::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: -16% -8% !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+.hero#home .hero-carousel::before {
+  background:
+    radial-gradient(ellipse at 52% 78%, rgba(255,255,255,.10), transparent 31%),
+    repeating-radial-gradient(ellipse at 50% 82%, rgba(255,255,255,.08) 0 1px, transparent 2px 30px) !important;
+  opacity: .12 !important;
+  transform: translate3d(0, 0, 0) scale(1.04) !important;
+  animation: sandboxWaterWave 16s linear infinite !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.22) 43%, rgba(0,0,0,.82) 58%, rgba(0,0,0,.86)) !important;
+}
+.hero#home .hero-carousel::after {
+  background:
+    repeating-linear-gradient(113deg, transparent 0 28px, rgba(255,255,255,.055) 29px 31px, transparent 32px 62px),
+    radial-gradient(ellipse at 52% 72%, rgba(255,255,255,.10), transparent 36%) !important;
+  opacity: .10 !important;
+  animation: sandboxWaterDrift 24s linear infinite !important;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.86), rgba(0,0,0,.18) 40%, rgba(0,0,0,.76) 56%, rgba(0,0,0,.88)) !important;
+}
+.hero#home .hero-track {
+  z-index: 0 !important;
+}
+.hero#home .hero-slide {
+  background-position: center 72% !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  opacity: 0 !important;
+  transform: translate3d(14px, 0, 0) !important;
+  transition: opacity 680ms ease, transform 680ms ease !important;
+  will-change: opacity, transform !important;
+}
+.hero#home .hero-slide.is-active {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+.hero#home .hero-slide:not(.is-active) {
+  pointer-events: none !important;
+}
+.hero#home .hero-slide-02,
+.hero#home .hero-slide-03,
+.hero#home .hero-slide-04 {
+  background-position: 56% center !important;
+}
+.hero#home .hero-sandbox-card {
+  pointer-events: none !important;
+}
+.hero#home .hero-sandbox-card::before,
+.hero#home .hero-sandbox-card::after {
+  display: none !important;
+}
+.hero#home .hero-carousel-btn,
+.hero#home .hero-dot {
+  pointer-events: auto !important;
+}
+.hero#home .hero-carousel-btn {
+  position: absolute !important;
+  top: 54% !important;
+  z-index: 4 !important;
+  width: 42px !important;
+  height: 42px !important;
+  border: 1px solid rgba(255,255,255,.58) !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,.24) !important;
+  box-shadow: 0 10px 28px rgba(38,73,126,.14) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  cursor: pointer !important;
+  transition: background .2s ease, transform .2s ease, opacity .2s ease !important;
+}
+.hero#home .hero-carousel-btn:hover,
+.hero#home .hero-carousel-btn:focus-visible {
+  background: rgba(255,255,255,.48) !important;
+  transform: translateY(-1px) !important;
+  outline: none !important;
+}
+.hero#home .hero-prev {
+  left: clamp(18px, 2.6vw, 48px) !important;
+}
+.hero#home .hero-next {
+  right: clamp(18px, 2.6vw, 48px) !important;
+}
+.hero#home .hero-carousel-btn::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-top: 2px solid #315981 !important;
+  border-left: 2px solid #315981 !important;
+  top: 15px !important;
+}
+.hero#home .hero-prev::before {
+  left: 17px !important;
+  transform: rotate(-45deg) !important;
+}
+.hero#home .hero-next::before {
+  right: 17px !important;
+  transform: rotate(135deg) !important;
+}
+.hero#home .hero-pagination {
+  position: absolute !important;
+  left: 50% !important;
+  bottom: clamp(22px, 4vh, 38px) !important;
+  z-index: 4 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 9px !important;
+  transform: translateX(-50%) !important;
+}
+.hero#home .hero-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  padding: 0 !important;
+  background: rgba(255,255,255,.58) !important;
+  box-shadow: 0 4px 12px rgba(33,72,126,.18) !important;
+  cursor: pointer !important;
+  transition: width .22s ease, background .22s ease !important;
+}
+.hero#home .hero-dot.is-active {
+  width: 26px !important;
+  background: rgba(77,141,255,.88) !important;
+}
+.hero#home .hero-title[hidden],
+.hero#home .hero-title-alt[hidden] {
+  display: none !important;
+}
+@media (min-width: 1500px) {
+  .hero#home .hero-slide {
+    background-position: center 72% !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .hero#home .hero-slide {
+    background-position: 52% 72% !important;
+  }
+}
+@media (max-width: 1020px) {
+  .hero#home .hero-slide {
+    background-position: 55% center !important;
+  }
+}
+@media (max-width: 640px) {
+  .hero#home .hero-carousel-btn {
+    display: none !important;
+  }
+  .hero#home .hero-pagination {
+    bottom: 20px !important;
+  }
+  .hero#home .hero-slide {
+    background-position: 56% center !important;
+  }
+  .hero#home .hero-slide-02,
+  .hero#home .hero-slide-03,
+  .hero#home .hero-slide-04 {
+    background-position: 63% center !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero#home .hero-slide,
+  .hero#home .hero-carousel::before,
+  .hero#home .hero-carousel::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+</style>
+
+<script id="v122-hero-carousel-script">
+(function(){
+  const SLIDES = [
+    {
+      id: 'twoWay',
+      image: 'hero-sandbox-map-china-clean-v3.png',
+      alt: '泰国与中国双向物流立体沙盘地图',
+      cta: ['whatsapp', '#services'],
+      zh: {
+        eyebrow: '泰国 ↔ 中国 门到门双向跨境物流',
+        title: ['泰国发中国', '中国发泰国双向物流'],
+        desc: '专注泰国发中国、中国发泰国双向跨境物流服务，当前主做空运与陆运，专业服务。服务覆盖曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，并支持全泰多数地区上门取件；中国发泰国可按城市、货物类型、时效和预算咨询对应线路。',
+        buttons: ['立即获取报价', '查看服务项目']
+      },
+      en: {
+        eyebrow: 'Thailand ↔ China door-to-door cross-border logistics',
+        title: ['Thailand to China Shipping', 'China to Thailand Two-Way Logistics'],
+        desc: 'We specialize in two-way cross-border logistics between Thailand and China, covering air freight, land freight and sea freight consultation, with pickup available across key Thai cities and route advice by city, cargo type, timing and budget.',
+        buttons: ['Get a Quote Now', 'View Services']
+      },
+      th: {
+        eyebrow: 'บริการโลจิสติกส์ไทย ↔ จีน ถึงที่',
+        title: ['ส่งไทยไปจีน', 'ส่งจีนมาไทยสองทาง'],
+        desc: 'เราเชี่ยวชาญด้านโลจิสติกส์สองทางระหว่างไทยและจีน ครอบคลุมการขนส่งทางอากาศ ทางบก และทางทะเล พร้อมบริการรับพัสดุถึงที่ในเมืองหลักของไทย และให้คำปรึกษาเส้นทางตามเมือง ประเภทสินค้า เวลา และงบประมาณ',
+        buttons: ['ขอใบเสนอราคา', 'ดูบริการ']
+      }
+    },
+    {
+      id: 'pickup',
+      image: 'hero-pickup-v1.png',
+      alt: '泰国酒店公寓上门取件与打包服务场景',
+      cta: ['whatsapp', '#pickup'],
+      zh: {
+        eyebrow: '曼谷 · 普吉 · 清迈等地上门取件',
+        title: ['泰国上门取件', '酒店取件 · 跑腿打包'],
+        desc: '人在泰国不用自己跑物流点，可预约上门取件、酒店取件、跑腿协助和基础打包，再按货物情况安排发往中国的合适线路。',
+        buttons: ['预约上门取件', '查看取件服务']
+      },
+      en: {
+        eyebrow: 'Pickup from hotels, condos and local addresses in Thailand',
+        title: ['Thailand Pickup Service', 'Hotel Pickup · Errands · Packing · Ship to China'],
+        desc: 'Book pickup from your hotel, condo or local address in Thailand. We can help with errands, basic packing and route selection before shipping your items to China.',
+        buttons: ['Book Pickup', 'View Pickup Service']
+      },
+      th: {
+        eyebrow: 'รับของถึงโรงแรม คอนโด และที่อยู่ในไทย',
+        title: ['รับของถึงที่ในไทย', 'โรงแรม · ธุระ · แพ็กของ · ส่งไปจีน'],
+        desc: 'นัดรับของจากโรงแรม คอนโด หรือที่อยู่ในไทยได้ พร้อมช่วยงานธุระ แพ็กของเบื้องต้น และเลือกเส้นทางขนส่งไปจีนตามประเภทสินค้า',
+        buttons: ['นัดรับของ', 'ดูบริการรับของ']
+      }
+    },
+    {
+      id: 'specialItems',
+      image: 'hero-special-items-v1.png',
+      alt: '泰国特色物品包装与跨境运输场景',
+      cta: ['whatsapp', '#services'],
+      zh: {
+        eyebrow: '植物 · 佛牌 · 文件 · 潮玩 · 搬家物品',
+        title: ['不只是普通包裹', '泰国特色物品也能寄'],
+        desc: '针对植物、佛牌、文件、潮玩和搬家物品等不同类型，协助确认包装方式、运输限制和适合线路，让特殊物品寄送更省心。',
+        buttons: ['查看可寄物品', '咨询特殊物品']
+      },
+      en: {
+        eyebrow: 'Plants · Amulets · Documents · Collectibles · Moving items',
+        title: ['More Than Parcels', 'Special Thailand Items Can Ship Too'],
+        desc: 'For plants, amulets, documents, collectibles and moving items, we help check packing needs, route limits and suitable shipping choices before dispatch.',
+        buttons: ['View Item Types', 'Ask About Special Items']
+      },
+      th: {
+        eyebrow: 'ต้นไม้ · พระเครื่อง · เอกสาร · ของสะสม · ของย้ายบ้าน',
+        title: ['ไม่ใช่แค่พัสดุทั่วไป', 'ของพิเศษจากไทยก็ส่งได้'],
+        desc: 'ช่วยดูวิธีแพ็ก ข้อจำกัด และเส้นทางที่เหมาะสำหรับต้นไม้ พระเครื่อง เอกสาร ของสะสม และของย้ายบ้าน เพื่อให้ส่งของได้มั่นใจขึ้น',
+        buttons: ['ดูประเภทของที่ส่งได้', 'ปรึกษาของพิเศษ']
+      }
+    },
+    {
+      id: 'consolidation',
+      image: 'hero-consolidation-v1.png',
+      alt: '泰国代购集运与电商物流仓储打包场景',
+      cta: ['whatsapp', '#services'],
+      zh: {
+        eyebrow: '泰国代购 · 集运 · 电商物流',
+        title: ['泰国代购集运', '电商物流一站完成'],
+        desc: '适合泰国商品采购、多个包裹集中整理、电商订单打包和跨境发货需求，从采购协助到集运出库，流程更清楚。',
+        buttons: ['查看代购集运', '咨询电商物流']
+      },
+      en: {
+        eyebrow: 'Thailand sourcing · Consolidation · Ecommerce logistics',
+        title: ['Thailand Sourcing and Consolidation', 'From Purchase to Cross-Border Dispatch'],
+        desc: 'For product sourcing, multi-parcel consolidation, ecommerce packing and cross-border dispatch, we help organize the flow from purchase support to outbound shipping.',
+        buttons: ['View Consolidation', 'Ask Ecommerce Logistics']
+      },
+      th: {
+        eyebrow: 'จัดซื้อในไทย · รวมพัสดุ · โลจิสติกส์อีคอมเมิร์ซ',
+        title: ['จัดซื้อและรวมพัสดุในไทย', 'ตั้งแต่ซื้อจนถึงส่งข้ามประเทศ'],
+        desc: 'เหมาะสำหรับการจัดซื้อสินค้าไทย รวมหลายพัสดุ แพ็กคำสั่งซื้ออีคอมเมิร์ซ และส่งข้ามประเทศอย่างเป็นระบบ',
+        buttons: ['ดูบริการรวมพัสดุ', 'ปรึกษาโลจิสติกส์อีคอมเมิร์ซ']
+      }
+    }
+  ];
+
+  const AUTOPLAY_MS = 6000;
+  let active = 0;
+  let timer = null;
+  let paused = false;
+  let reducedMotion = false;
+
+  function $(id) { return document.getElementById(id); }
+  function lang() { return document.documentElement.getAttribute('data-lang') || 'zh'; }
+
+  function setText(id, value) {
+    const node = $(id);
+    if (node) node.textContent = value || '';
+  }
+
+  function setHref(button, target) {
+    if (!button) return;
+    if (target === 'whatsapp') {
+      button.setAttribute('href', 'https://api.whatsapp.com/send?phone=66839769828&text=%E6%82%A8%E5%A5%BD%EF%BC%8C%E6%83%B3%E5%92%A8%E8%AF%A2%E6%B3%B0%E4%B8%AD%E8%B7%A8%E5%A2%83%E7%89%A9%E6%B5%81%E6%9C%8D%E5%8A%A1');
+      button.setAttribute('target', '_blank');
+      button.setAttribute('rel', 'noopener');
+    } else {
+      button.setAttribute('href', target);
+      button.removeAttribute('target');
+      button.removeAttribute('rel');
+    }
+  }
+
+  function loadSlide(slide) {
+    if (!slide || slide.style.backgroundImage) return;
+    const bg = slide.getAttribute('data-bg');
+    if (bg) slide.style.backgroundImage = `url("${bg}")`;
+  }
+
+  function preloadNext(index) {
+    const next = (index + 1) % SLIDES.length;
+    const slide = document.querySelectorAll('.hero#home .hero-slide')[next];
+    loadSlide(slide);
+  }
+
+  function syncCopy() {
+    const data = SLIDES[active][lang()] || SLIDES[active].zh;
+    const h1 = $('heroTitleH1');
+    const h2 = $('heroTitleH2');
+    const primary = $('heroBtnPrimary');
+    const secondary = $('heroBtnSecondary');
+
+    setText('heroEyebrow', data.eyebrow);
+    setText(active === 0 ? 'heroAirTitle' : 'heroAltMain', data.title[0]);
+    setText(active === 0 ? 'heroLandTitle' : 'heroAltSub', data.title[1]);
+    setText('heroDesc', data.desc);
+    setText('heroBtnPrimary', data.buttons[0]);
+    setText('heroBtnSecondary', data.buttons[1]);
+    setHref(primary, SLIDES[active].cta[0]);
+    setHref(secondary, SLIDES[active].cta[1]);
+
+    if (h1 && h2) {
+      h1.hidden = active !== 0;
+      h2.hidden = active === 0;
+      h1.setAttribute('aria-hidden', active === 0 ? 'false' : 'true');
+      h2.setAttribute('aria-hidden', active === 0 ? 'true' : 'false');
+    }
+  }
+
+  function goTo(index, userAction) {
+    const slides = Array.from(document.querySelectorAll('.hero#home .hero-slide'));
+    const dots = Array.from(document.querySelectorAll('.hero#home .hero-dot'));
+    if (!slides.length) return;
+    active = (index + slides.length) % slides.length;
+    loadSlide(slides[active]);
+    slides.forEach((slide, i) => slide.classList.toggle('is-active', i === active));
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('is-active', i === active);
+      if (i === active) dot.setAttribute('aria-current', 'true');
+      else dot.removeAttribute('aria-current');
+    });
+    syncCopy();
+    preloadNext(active);
+    if (userAction) restart();
+  }
+
+  function stop() {
+    if (timer) window.clearInterval(timer);
+    timer = null;
+  }
+
+  function start() {
+    stop();
+    if (paused || reducedMotion || document.hidden) return;
+    timer = window.setInterval(() => goTo(active + 1, false), AUTOPLAY_MS);
+  }
+
+  function restart() {
+    stop();
+    start();
+  }
+
+  function init() {
+    const hero = document.querySelector('.hero#home');
+    if (!hero || hero.dataset.carouselReady === 'true') return;
+    hero.dataset.carouselReady = 'true';
+
+    const media = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+    reducedMotion = !!(media && media.matches);
+    if (media && media.addEventListener) media.addEventListener('change', function(event) {
+      reducedMotion = event.matches;
+      restart();
+    });
+
+    document.querySelectorAll('.hero#home .hero-dot').forEach((dot, i) => {
+      dot.addEventListener('click', () => goTo(i, true));
+    });
+    const prev = document.querySelector('.hero#home .hero-prev');
+    const next = document.querySelector('.hero#home .hero-next');
+    if (prev) prev.addEventListener('click', () => goTo(active - 1, true));
+    if (next) next.addEventListener('click', () => goTo(active + 1, true));
+
+    hero.addEventListener('mouseenter', () => { paused = true; stop(); });
+    hero.addEventListener('mouseleave', () => { paused = false; start(); });
+    document.addEventListener('visibilitychange', restart);
+    hero.addEventListener('keydown', function(event) {
+      if (event.key === 'ArrowLeft') goTo(active - 1, true);
+      if (event.key === 'ArrowRight') goTo(active + 1, true);
+    });
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+    hero.addEventListener('touchstart', function(event) {
+      const touch = event.changedTouches[0];
+      touchStartX = touch.clientX;
+      touchStartY = touch.clientY;
+    }, { passive: true });
+    hero.addEventListener('touchend', function(event) {
+      const touch = event.changedTouches[0];
+      const dx = touch.clientX - touchStartX;
+      const dy = touch.clientY - touchStartY;
+      if (Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        goTo(dx < 0 ? active + 1 : active - 1, true);
+      }
+    }, { passive: true });
+
+    goTo(0, false);
+    start();
+  }
+
+  window.updateHeroCarouselLanguage = function() {
+    syncCopy();
+  };
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 
 <script id="v20-fixed-topbar-header-script">
 (function(){
