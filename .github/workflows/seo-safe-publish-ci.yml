@@ -5,7 +5,7 @@ on:
     paths:
       - '*.html'
       - 'tools/seo_publish_guard.py'
-      - 'tests/test_seo_publish_guard.py'
+      - 'tests/*.py'
       - '.github/workflows/seo-safe-publish-ci.yml'
       - 'sitemap.xml'
   workflow_dispatch:
@@ -28,8 +28,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Run guard unit tests
-        run: python -m unittest tests/test_seo_publish_guard.py -v
+      - name: Run SEO repository tests
+        run: python -m unittest discover -s tests -v
 
       - name: Validate SEO auto-publish diff
         if: github.event_name == 'pull_request' && (startsWith(github.head_ref, 'seo-auto/') || github.head_ref == 'feat/seo-safe-auto-publish')
@@ -47,4 +47,4 @@ jobs:
 
       - name: Manual feature branch note
         if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'seo-auto/') && github.head_ref != 'feat/seo-safe-auto-publish'
-        run: echo "Manual/user-approved feature PR: SEO auto single-page diff guard is not applicable; unit tests still run."
+        run: echo "Manual/user-approved feature PR: SEO auto single-page diff guard is not applicable; repository tests still run."
