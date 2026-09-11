@@ -52,6 +52,15 @@ class SeoPublishGuardTests(unittest.TestCase):
         self.assertEqual(validate_changed_paths(['google744716665e019d1a.html'])['safe'], False)
         self.assertEqual(validate_changed_paths(['folder/page.html'])['safe'], False)
 
+    def test_bootstrap_mode_allows_only_guard_infrastructure_without_html(self):
+        infrastructure = [
+            '.github/workflows/seo-safe-publish-ci.yml',
+            'tests/test_seo_publish_guard.py',
+            'tools/seo_publish_guard.py',
+        ]
+        self.assertTrue(validate_changed_paths(infrastructure, allow_infrastructure=True)['safe'])
+        self.assertFalse(validate_changed_paths(infrastructure + ['seo-pages.css'], allow_infrastructure=True)['safe'])
+
 
 if __name__ == '__main__':
     unittest.main()
