@@ -1,0 +1,45 @@
+name: SEO自动发布安全门禁
+
+on:
+  pull_request:
+    paths:
+      - '*.html'
+      - 'tools/seo_publish_guard.py'
+      - 'tests/test_seo_publish_guard.py'
+      - '.github/workflows/seo-safe-publish-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  seo-safe-publish-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run guard unit tests
+        run: python -m unittest tests/test_seo_publish_guard.py -v
+
+      - name: Validate SEO auto-publish diff
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          EXTRA=""
+          if [ "${{ github.head_ref }}" = "feat/seo-safe-auto-publish" ]; then
+            EXTRA="--allow-infrastructure"
+          fi
+          python tools/seo_publish_guard.py \
+            --base-ref "origin/${{ github.base_ref }}" \
+            --head-ref HEAD \
+            $EXTRA
