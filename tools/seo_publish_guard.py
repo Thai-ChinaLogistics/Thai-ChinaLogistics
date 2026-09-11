@@ -4,7 +4,6 @@ import argparse
 import difflib
 import re
 import subprocess
-import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Dict, List, Sequence, Tuple
@@ -194,16 +193,30 @@ def validate_changed_paths(paths: Sequence[str], *, allow_infrastructure: bool =
     extras = [p for p in normalized if p not in html_paths]
 
     violations: List[str] = []
-    if len(html_paths) != 1:
-        violations.append('expected_exactly_one_html')
-    elif not _is_public_root_html(html_paths[0]):
-        violations.append('html_path_not_allowed')
+    infrastructure_only = (
+        allow_infrastructure
+        and not html_paths
+        and bool(extras)
+        and all(p in INFRA_PATHS for p in extras)
+    )
+
+    if not infrastructure_only:
+        if len(html_paths) != 1:
+            violations.append('expected_exactly_one_html')
+        elif not _is_public_root_html(html_paths[0]):
+            violations.append('html_path_not_allowed')
 
     if extras:
         if not allow_infrastructure or any(p not in INFRA_PATHS for p in extras):
             violations.append('non_html_change')
 
-    return {'safe': not violations, 'violations': violations, 'html_paths': html_paths, 'extra_paths': extras}
+    return {
+        'safe': not violations,
+        'violations': violations,
+        'html_paths': html_paths,
+        'extra_paths': extras,
+        'infrastructure_only': infrastructure_only,
+    }
 
 
 def _git(*args: str) -> str:
@@ -232,6 +245,10 @@ def main(argv=None) -> int:
     if not path_result['safe']:
         print(f"BLOCKED paths: {path_result}")
         return 2
+
+    if path_result.get('infrastructure_only'):
+        print('PASS BOOTSTRAP infrastructure-only change')
+        return 0
 
     html_path = path_result['html_paths'][0]
     before = _show(args.base_ref, html_path)
