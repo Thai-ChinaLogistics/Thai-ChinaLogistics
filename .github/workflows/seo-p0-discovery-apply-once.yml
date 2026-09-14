@@ -1,0 +1,73 @@
+name: SEO P0 Discovery Apply Once
+
+on:
+  push:
+    branches:
+      - seo-p0-discovery-20260914
+    paths:
+      - '.github/workflows/seo-p0-discovery-apply-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout staging branch
+        uses: actions/checkout@v4
+        with:
+          ref: seo-p0-discovery-20260914
+          fetch-depth: 0
+
+      - name: Verify locked production baselines and apply exact batch
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD:admin.html)" = "781d07fd477601501bc0758a042ffdaa27fb5dd6"
+          test "$(git rev-parse HEAD:sitemap.xml)" = "d6d8939fc44a41b3c87612edb9ae4f2bf47be926"
+          test "$(git rev-parse HEAD:robots.txt)" = "1c50d351a989058cadb91d7aeb3c89db836c55f3"
+          test ! -e c0fc5dd39aeca9fe046645bd536ba395.txt
+          python - <<'PY'
+          from pathlib import Path
+
+          admin = Path('admin.html')
+          text = admin.read_text(encoding='utf-8')
+          marker = '<meta name="robots" content="noindex,nofollow">'
+          if marker in text:
+              raise SystemExit('admin noindex already present unexpectedly')
+          if '<meta name="robots"' in text.lower():
+              raise SystemExit('different robots meta already exists')
+          if text.count('<head>') != 1:
+              raise SystemExit('admin head anchor is not unique')
+          admin.write_text(text.replace('<head>', '<head>\n' + marker, 1), encoding='utf-8')
+
+          sitemap = Path('sitemap.xml')
+          xml = sitemap.read_text(encoding='utf-8')
+          old = '<url><loc>https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html</loc><lastmod>2026-08-29</lastmod></url>'
+          new = '<url><loc>https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html</loc><lastmod>2026-09-14</lastmod></url>'
+          if xml.count(old) != 1:
+              raise SystemExit('air freight sitemap baseline is not unique')
+          sitemap.write_text(xml.replace(old, new, 1), encoding='utf-8')
+
+          Path('c0fc5dd39aeca9fe046645bd536ba395.txt').write_text(
+              'c0fc5dd39aeca9fe046645bd536ba395', encoding='utf-8'
+          )
+          PY
+
+          grep -F '<meta name="robots" content="noindex,nofollow">' admin.html
+          grep -F '<loc>https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html</loc><lastmod>2026-09-14</lastmod>' sitemap.xml
+          test "$(cat c0fc5dd39aeca9fe046645bd536ba395.txt)" = "c0fc5dd39aeca9fe046645bd536ba395"
+          git diff -- robots.txt | test ! -s /dev/stdin
+
+      - name: Commit exact batch and remove one-shot workflow
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm .github/workflows/seo-p0-discovery-apply-once.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add admin.html sitemap.xml c0fc5dd39aeca9fe046645bd536ba395.txt .github/workflows/seo-p0-discovery-apply-once.yml
+          git commit -m "seo(auto): apply P0 Google+AI discovery infrastructure"
+          git push origin HEAD:seo-p0-discovery-20260914
