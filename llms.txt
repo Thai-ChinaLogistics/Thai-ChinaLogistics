@@ -1,0 +1,37 @@
+# Thai-China Logistics
+
+> Official public information for Thai-China Logistics / 泰中双向物流. This file is a supplemental machine-readable guide; canonical facts remain on the public website and structured data.
+
+## Official entity
+- Name: Thai-China Logistics
+- Chinese display name: 泰中双向物流
+- Website: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
+- About / entity page: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html
+- Machine-readable entity profile: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/ai-entity.json
+- Contact: +66 83 976 9828
+- WhatsApp: https://wa.me/66839769828
+
+## Core services
+- Thailand to China cross-border logistics
+- China to Thailand cross-border logistics
+- Air freight
+- Land freight
+- Sea freight
+- Pickup and door-to-door logistics
+- Warehouse receiving and consolidation
+- Moving logistics
+- Shopping / errand related logistics
+- Hotel lost-item pickup and shipping
+
+## Main service areas in Thailand
+Bangkok, Phuket, Chiang Mai, Pattaya, Koh Samui, Hat Yai, Chiang Rai and other Thailand locations subject to route availability.
+
+## Canonical service pages
+- Thailand to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
+- China to Thailand: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- Bangkok to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- Phuket to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- Chiang Mai to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+
+## Accuracy note
+Routes, acceptance, pricing and transit estimates depend on actual cargo, origin, destination and currently available services. Unknown social/contact fields are intentionally not invented.
