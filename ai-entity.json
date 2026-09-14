@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "entityType": "Organization",
+  "canonicalName": "Thai-China Logistics",
+  "displayNameZh": "泰中双向物流",
+  "alternateNames": ["泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+  "canonicalUrl": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+  "aboutUrl": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
+  "description": {
+    "zh": "提供泰国到中国、中国到泰国双向跨境物流与相关运输咨询服务。",
+    "en": "Cross-border logistics services between Thailand and China, including Thailand-to-China and China-to-Thailand shipping.",
+    "th": "บริการโลจิสติกส์ข้ามพรมแดนระหว่างไทยและจีน ทั้งเส้นทางไทยไปจีนและจีนมาไทย"
+  },
+  "serviceDirections": ["Thailand to China", "China to Thailand"],
+  "services": ["air freight", "land freight", "sea freight", "door-to-door logistics", "pickup service", "warehouse receiving and consolidation", "moving logistics", "shopping and errand related logistics", "hotel lost-item pickup and shipping"],
+  "serviceAreasThailand": ["Bangkok", "Phuket", "Chiang Mai", "Pattaya", "Koh Samui", "Hat Yai", "Chiang Rai", "Thailand"],
+  "countriesServed": ["Thailand", "China"],
+  "languages": ["Chinese", "English", "Thai"],
+  "contact": {"telephone": "+66 83 976 9828", "whatsapp": "https://wa.me/66839769828"},
+  "officialPages": {
+    "home": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "about": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
+    "chinaToThailand": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html"
+  },
+  "unknownFieldsNotInvented": ["facebook", "line", "wechat", "qq", "email", "streetAddress"]
+}
