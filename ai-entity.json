@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "1.1",
+  "schemaVersion": "1.2",
   "entityType": "Organization",
   "canonicalId": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/#organization",
   "canonicalName": "Thai-China Logistics",
@@ -27,15 +27,37 @@
   "officialPages": {
     "home": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
     "about": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
-    "thailandToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
     "chinaToThailand": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html",
-    "phuketToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html"
+    "thailandToChinaExpress": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html",
+    "thailandToChinaPrice": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html",
+    "thailandToChinaPickup": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html",
+    "bangkokToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html",
+    "phuketToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html",
+    "chiangMaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html",
+    "pattayaToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html",
+    "kohSamuiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html",
+    "hatYaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html",
+    "chiangRaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html",
+    "airFreightToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html",
+    "landFreightToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html",
+    "luggageToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html",
+    "thaiProductsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html",
+    "daigouShipping": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html",
+    "movingToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html",
+    "electronicsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html",
+    "buddhistAmuletsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html",
+    "thailandDomesticMoving": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-domestic-moving.html",
+    "plantsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-plants-to-china.html",
+    "petsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-pets-to-china.html",
+    "petsToThailand": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-pets-to-thailand.html",
+    "birdNestToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bird-nest-to-china.html"
   },
   "entityRelations": [
     {"subject":"Thai-China Logistics","predicate":"provides","object":"Thailand to China cross-border logistics"},
     {"subject":"Thai-China Logistics","predicate":"provides","object":"China to Thailand cross-border logistics"},
     {"subject":"Thai-China Logistics","predicate":"transportModes","object":["air freight","land freight","sea freight"]},
-    {"subject":"Thai-China Logistics","predicate":"serves","object":["Bangkok","Phuket","Chiang Mai","Pattaya","Koh Samui","Hat Yai","Chiang Rai","Thailand","China"]}
+    {"subject":"Thai-China Logistics","predicate":"serves","object":["Bangkok","Phuket","Chiang Mai","Pattaya","Koh Samui","Hat Yai","Chiang Rai","Thailand","China"]},
+    {"subject":"All official service pages","predicate":"providedBy","object":"https://thai-chinalogistics.github.io/Thai-ChinaLogistics/#organization"}
   ],
   "unknownFieldsNotInvented": ["line", "qq", "email", "streetAddress"]
 }
