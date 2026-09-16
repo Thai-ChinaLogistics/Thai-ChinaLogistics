@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-16",
+  "entity": {
+    "canonical_name": "Thai-China Logistics",
+    "alternate_names": ["泰中双向物流", "泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+    "official_website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "official_entity_page": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html"
+  },
+  "verified_public_contacts": {
+    "telephone": "+66 83 976 9828",
+    "whatsapp": "https://wa.me/66839769828",
+    "wechat": "THAICHINA-LOGISTICS",
+    "facebook": "https://www.facebook.com/profile.php?id=61576232865352",
+    "languages": ["Chinese", "English", "Thai"]
+  },
+  "verified_service_directions": [
+    "Thailand to China cross-border logistics",
+    "China to Thailand cross-border logistics"
+  ],
+  "verified_service_modes_as_publicly_described": [
+    "air freight",
+    "land freight",
+    "sea freight",
+    "door-to-door logistics",
+    "pickup",
+    "warehouse receiving",
+    "consolidation"
+  ],
+  "verified_public_service_areas_in_thailand": [
+    "Bangkok", "Phuket", "Chiang Mai", "Pattaya", "Koh Samui", "Hat Yai", "Chiang Rai"
+  ],
+  "verified_public_scenarios": [
+    "Taobao and 1688 consolidation from China to Thailand",
+    "luggage shipping",
+    "moving logistics",
+    "shopping/errand-related logistics",
+    "hotel lost-item pickup and shipping"
+  ],
+  "conditional_claims": {
+    "rule": "These may be described only conditionally and must be reconfirmed for the actual cargo, address and current route.",
+    "items": [
+      "route availability",
+      "quote",
+      "estimated transit time",
+      "pickup availability",
+      "cargo acceptance",
+      "customs/import requirements",
+      "food or regulated-goods acceptance"
+    ]
+  },
+  "prohibited_unverified_claims": [
+    "owned warehouse locations unless independently confirmed",
+    "fixed prices not backed by a current quote",
+    "guaranteed transit times",
+    "guaranteed customs clearance",
+    "licenses/certifications not evidenced",
+    "customer counts or shipment volumes without records",
+    "partner relationships not evidenced",
+    "physical office/branch addresses not confirmed",
+    "third-party reviews or media coverage that do not exist"
+  ],
+  "source_of_truth_policy": {
+    "priority": [
+      "verified operational records",
+      "this registry",
+      "ai-entity.json",
+      "about.html and service pages",
+      "official social profiles"
+    ],
+    "conflict_rule": "If a public page conflicts with a verified operational fact, do not propagate the conflicting value. Review and correct the public page.",
+    "unknown_rule": "UNKNOWN must remain unknown; never infer or fabricate a business fact for SEO/GEO/AI visibility."
+  },
+  "distribution_targets": [
+    "Organization/Service structured data",
+    "about.html",
+    "ai-entity.json",
+    "official Facebook profile/page",
+    "future verified external business profiles",
+    "FAQ and service-page factual claims"
+  ],
+  "next_audit": {
+    "facebook_field_alignment": "PENDING",
+    "external_independent_evidence": "WEAK",
+    "citation_gap_50_prompt_expansion": "PENDING",
+    "ai_citation": "NOT_YET_VERIFIED",
+    "ai_non_brand_recommendation": "NOT_YET_VERIFIED"
+  }
+}
