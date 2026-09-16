@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "1.0",
+  "entity": "Thai-China Logistics",
+  "created": "2026-09-16",
+  "purpose": "Track real external evidence that independently corroborates the canonical Thai-China Logistics entity for search and AI visibility. Never create fake reviews, fake media, fake directories or unverifiable business facts.",
+  "canonical": {
+    "name": "Thai-China Logistics",
+    "alternateNames": ["泰中双向物流", "泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+    "website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "telephone": "+66 83 976 9828",
+    "whatsapp": "https://wa.me/66839769828",
+    "wechatId": "THAICHINA-LOGISTICS",
+    "facebook": "https://www.facebook.com/profile.php?id=61576232865352",
+    "services": ["Thailand to China logistics", "China to Thailand logistics", "air freight", "land freight", "sea freight", "pickup", "consolidation", "door-to-door logistics"],
+    "languages": ["Chinese", "English", "Thai"]
+  },
+  "evidenceLevels": {
+    "E0": "self-published canonical source",
+    "E1": "official controlled external profile linked consistently to canonical entity",
+    "E2": "independent legitimate business/directory/partner source",
+    "E3": "independent editorial, customer, industry or institutional corroboration"
+  },
+  "sources": [
+    {
+      "sourceId": "WEB-001",
+      "type": "official_website",
+      "level": "E0",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+      "status": "VERIFIED",
+      "entityNameConsistent": true,
+      "websiteLinked": true,
+      "notes": "Canonical first-party source."
+    },
+    {
+      "sourceId": "FB-001",
+      "type": "facebook",
+      "level": "E1",
+      "url": "https://www.facebook.com/profile.php?id=61576232865352",
+      "status": "KNOWN_OFFICIAL_PROFILE_NEEDS_FIELD_AUDIT",
+      "requiredConsistency": ["Thai-China Logistics or approved alternate name", "canonical website URL", "Thailand-China two-way logistics description", "+66 83 976 9828 where appropriate", "service area Thailand and China"],
+      "notes": "Do not mark VERIFIED_CONSISTENT until public profile fields are actually checked."
+    }
+  ],
+  "nextEvidenceTargets": [
+    {"priority": 1, "type": "official_social_profile_consistency", "action": "Audit and align existing Facebook public profile fields with canonical entity."},
+    {"priority": 2, "type": "legitimate_business_profiles", "action": "Identify only real business/profile platforms where this entity is eligible and can publish accurate public details."},
+    {"priority": 3, "type": "partner_or_customer_corroboration", "action": "Earn genuine third-party mentions/links from actual partners, customers or industry sources; no fabricated endorsements."},
+    {"priority": 4, "type": "citation_gap", "action": "For fixed Benchmark V1 prompts, record source domains repeatedly cited for competing providers and prioritize legitimate equivalent evidence types."}
+  ],
+  "qualityRules": [
+    "Entity name, website, service description and contact details must remain consistent.",
+    "Unknown fields stay unknown; never invent addresses, registrations, certifications, reviews or partnerships.",
+    "A backlink alone is not evidence quality; source legitimacy and entity corroboration matter.",
+    "Do not mass-submit to low-quality directories.",
+    "Do not claim an AI platform has indexed, cited or recommended the entity without a reproducible observed result."
+  ]
+}
