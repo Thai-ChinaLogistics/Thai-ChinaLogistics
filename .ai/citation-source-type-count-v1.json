@@ -1,0 +1,62 @@
+{
+  "version": "1.0",
+  "created_at": "2026-09-16",
+  "project": "Thai-China Logistics AI Visibility Pilot",
+  "purpose": "Classify and count source types appearing in real public search samples for Thailand-China logistics intents. This is an evidence sample, not a claim about all AI engines.",
+  "method": {
+    "sample_queries": [
+      "Thailand to China logistics company shipping Phuket China",
+      "China to Thailand logistics Taobao shipping company",
+      "泰国寄中国 物流 公司 普吉",
+      "中国寄泰国 物流 淘宝 集运"
+    ],
+    "rules": [
+      "Count only sources actually observed in the sampled public search results.",
+      "Do not infer ChatGPT/Gemini/DeepSeek/Doubao recommendation from public-search appearance.",
+      "Classify each URL by source ownership/type.",
+      "Keep first-party company pages separate from independent editorial/community/government evidence.",
+      "Re-run with the frozen 50-prompt benchmark before drawing cross-engine conclusions."
+    ]
+  },
+  "observed_sources": [
+    {"name":"Thai-China Logistics","domain":"thai-chinalogistics.github.io","type":"FIRST_PARTY_COMPANY_SERVICE_PAGE","intent":"China to Thailand","notes":"Own service page surfaced and its service semantics were extractable."},
+    {"name":"PTCARGO","domain":"ptcargomember.com","type":"FIRST_PARTY_COMPANY_SERVICE_PAGE","intent":"China to Thailand / Taobao / 1688","signals":["Guangzhou warehouse","Bangkok warehouse","LINE","phone","opening hours","process steps"]},
+    {"name":"PUKA Logistics","domain":"pukalogistics.co","type":"FIRST_PARTY_COMPANY_ROUTE_PAGE","intent":"Thailand to China","signals":["Thailand-China route page","Bangkok branch","Chiang Mai branch","Phuket branch","phone","email","LINE","WhatsApp","Facebook"]},
+    {"name":"Magic Cart","domain":"magiccartth.com","type":"FIRST_PARTY_COMPANY_SERVICE_PAGE","intent":"China to Thailand","signals":["land freight","sea freight","Taobao/1688 ordering","factory coordination","published price/time claims"]},
+    {"name":"KA Express","domain":"kaexpress-th.com","type":"FIRST_PARTY_COMPANY_SERVICE_PAGE","intent":"China to Thailand","signals":["land freight","sea freight","preorder","factory coordination","published price/time claims"]},
+    {"name":"Mango/HIGO forwarding","domain":"mangogo2u.com","type":"FIRST_PARTY_COMPANY_SERVICE_PAGE","intent":"China-Thailand forwarding","signals":["air/land/sea","warehouse/consolidation","tracking","company profile","contact details"]},
+    {"name":"RNP Express","domain":"rnpexpress.com","type":"FIRST_PARTY_COMPANY_DESTINATION_PAGE","intent":"Thailand to China parcel shipping","signals":["China destination page","door-to-door","tracking","July 2026 rates","service tiers"]},
+    {"name":"SGL Thailand","domain":"sgl.co.th","type":"FIRST_PARTY_COMPANY_CROSS_BORDER_PAGE","intent":"Thailand to China commercial freight","signals":["China route","land/sea","customs clearance","cross-border service"]},
+    {"name":"CTS China Thai Shipping","domain":"chinathaishipping.co.th","type":"FIRST_PARTY_COMPANY_HOME_SERVICE_PAGE","intent":"China to Thailand","signals":["company identity","import service","1688/Taobao purchasing","customs/documentation"]},
+    {"name":"Global Link Trading Bangkok","domain":"globallinktbc.com","type":"FIRST_PARTY_COMPANY_HOME_PAGE","intent":"Phuket/Thailand logistics","signals":["Phuket address","phone","email","company identity"]},
+    {"name":"HowToTao","domain":"howtotao.com","type":"INDEPENDENT_EDITORIAL_GUIDE","intent":"Taobao to Thailand","signals":["Thailand-specific Taobao shipping explanation","rates/methods","third-party informational context"]},
+    {"name":"DHL Discover","domain":"dhl.com","type":"FIRST_PARTY_MAJOR_CARRIER_GUIDE","intent":"Thailand to China","signals":["country shipping guide","customs context","carrier service explanation"]},
+    {"name":"YouDotDot","domain":"youdotdot.com","type":"FIRST_PARTY_FORWARDER_DESTINATION_PAGE","intent":"China to Thailand forwarding","signals":["Thailand destination page","warehouse process","Taobao forwarding","rate structure"]},
+    {"name":"ThaiFanShip","domain":"thaifanship.com","type":"FIRST_PARTY_COMPANY_COUNTRY_GUIDE","intent":"Thailand to China","signals":["China country guide","updated August 2026","workflow","official-rules reminder"]}
+  ],
+  "source_type_counts_in_observed_sample": {
+    "FIRST_PARTY_COMPANY_OR_CARRIER_PAGES": 13,
+    "INDEPENDENT_EDITORIAL_GUIDES": 1,
+    "INDEPENDENT_BUSINESS_DIRECTORIES": 0,
+    "GOVERNMENT_OR_REGULATOR": 0,
+    "COMMUNITY_OR_FORUM": 0,
+    "SOCIAL_PROFILE_AS_PRIMARY_RESULT": 0
+  },
+  "interpretation": {
+    "sample_finding": "For these sampled commercial logistics queries, first-party route/service/country pages dominate the observed public search results.",
+    "important_limit": "This does not prove that AI assistants use the same distribution. AI citations/recommendations must be measured separately with the frozen benchmark.",
+    "current_gap_for_thai_china_logistics": [
+      "First-party service semantics are now competitive enough to surface for at least some China-to-Thailand queries.",
+      "Independent third-party evidence remains weak.",
+      "Operational facts that can be truthfully verified should be strengthened where available: real pickup coverage, real route nodes, real process, real update/verification dates.",
+      "Do not invent warehouse addresses, rates, transit times, registrations, branches, customs capabilities, customer counts or partnerships."
+    ]
+  },
+  "next_actions": [
+    {"priority":"P0","action":"Audit and normalize the existing Facebook profile against the canonical entity: brand name, website, phone, service description and Thailand-China direction."},
+    {"priority":"P0","action":"Build an operational-facts registry containing only verifiable facts that may safely be published on route/service pages."},
+    {"priority":"P1","action":"Run source-type classification across the frozen 50-prompt benchmark and store per-prompt observed domains and source classes."},
+    {"priority":"P1","action":"Track independent evidence separately from first-party pages so external authority is not overstated."},
+    {"priority":"P1","action":"Re-test identical prompts after meaningful entity/evidence changes; compare DISCOVERED, UNDERSTOOD, CITED and RECOMMENDED states."}
+  ]
+}
