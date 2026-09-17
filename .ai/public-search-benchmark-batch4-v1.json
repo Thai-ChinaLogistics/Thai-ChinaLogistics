@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "tested_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "benchmark_type": "PUBLIC_SEARCH_PROXY_ONLY",
+  "warning": "These observations are public web-search results, not direct ChatGPT/Gemini/DeepSeek/Doubao benchmark outputs and cannot satisfy G6-G8.",
+  "batch_scope": "Phuket/city/scenario/decision-intent expansion",
+  "queries": [
+    {"prompt_id":"P01","prompt":"普吉岛寄中国物流公司推荐","own_entity_observed":false,"observed_sources":[],"notes":"No Thai-China Logistics result observed in this run."},
+    {"prompt_id":"P03","prompt":"普吉酒店东西忘了怎么取出来寄回中国？","own_entity_observed":false,"observed_sources":[],"notes":"No Thai-China Logistics result observed in this run."},
+    {"prompt_id":"P05","prompt":"Phuket to China shipping company","own_entity_observed":false,"observed_sources":[],"notes":"No Thai-China Logistics result observed in this run."},
+    {"prompt_id":"L01","prompt":"曼谷寄中国物流推荐","own_entity_observed":false,"observed_sources":["ADIExpress Thailand-China mainland EMS","Thailand Post China destination/services","Extrabux Thailand-to-China guide"],"notes":"Search results favored established route/service pages and an independent guide."},
+    {"prompt_id":"L02","prompt":"清迈寄中国物流推荐","own_entity_observed":false,"observed_sources":["Thailand Post China destination/services","Extrabux Thailand-to-China guide"],"notes":"No own entity observed."},
+    {"prompt_id":"S02","prompt":"泰国行李寄回中国物流推荐","own_entity_observed":false,"observed_sources":["Seapoe Thailand moving-to-China guide","Thailand Post China services","ADIExpress Thailand-China EMS"],"notes":"Scenario-specific moving/luggage content surfaced."},
+    {"prompt_id":"S03","prompt":"泰国代购商品怎么发中国？","own_entity_observed":false,"observed_sources":["Chaofan Thailand consolidation article","Thailand Post China services"],"notes":"No own entity observed."},
+    {"prompt_id":"S05","prompt":"泰国搬家到中国物流怎么找？","own_entity_observed":false,"observed_sources":["Seapoe Thailand moving-to-China guide","Extrabux Thailand-to-China guide"],"notes":"A recently updated dedicated moving guide was observed."},
+    {"prompt_id":"S09","prompt":"泰国电子产品寄中国怎么寄？","own_entity_observed":false,"observed_sources":["Thailand Post China destination/services","ADIExpress Thailand-China EMS"],"notes":"Results included explicit prohibited/conditional cargo information; no own entity observed."},
+    {"prompt_id":"D02","prompt":"泰国寄中国可以上门取件的物流公司有哪些？","own_entity_observed":false,"observed_sources":["Thailand Post China destination/services","ADIExpress Thailand-China EMS","Extrabux Thailand-to-China guide"],"notes":"No own entity observed in this run."}
+  ],
+  "measured_count": 10,
+  "own_entity_observed_count": 0,
+  "observed_pattern": {
+    "route_pages": true,
+    "scenario_specific_pages": true,
+    "official_carrier_destination_pages": true,
+    "independent_guides": true,
+    "freshness_visible_on_some_competitor_content": true
+  },
+  "notable_evidence": [
+    "Thailand Post exposes China-specific destination/service pages with trackability, weight/service details and door-to-door service information.",
+    "Seapoe exposes a recently updated Bangkok-to-China moving guide with scenario segmentation and operational detail.",
+    "ADIExpress exposes a dedicated Thailand-to-China mainland EMS product page with constraints and cargo rules.",
+    "Independent guide content can surface alongside first-party logistics pages for Thailand-to-China intent."
+  ],
+  "gate_effect": {
+    "G5_before": "PARTIAL_UNSTABLE",
+    "G5_after": "PARTIAL_UNSTABLE",
+    "reason": "No own entity/page was observed for the 10 measured non-brand queries in this batch. Previous isolated own-page observations remain historically valid but are not yet repeatable/stable."
+  },
+  "next": [
+    "Measure remaining frozen P/L/S/D prompts without changing prompt semantics.",
+    "Separate public-search proxy observations from direct AI-platform benchmark results.",
+    "Use competitor/source patterns to identify evidence gaps, not to justify duplicate pages or unsupported operational claims.",
+    "Proceed to direct G6 platform execution when actual target-platform access is available."
+  ]
+}
