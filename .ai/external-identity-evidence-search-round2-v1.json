@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "tested_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "gate": "G4",
+  "purpose": "Second strict public-search pass for independent identity-bridge evidence using strong identifiers, excluding first-party GitHub results where applicable.",
+  "queries": [
+    {"query": "\"Thai-China Logistics\" \"+66 83 976 9828\" -github", "result": "NO_RESULT_OBSERVED"},
+    {"query": "\"Thai-China Logistics\" \"THAICHINA-LOGISTICS\" -github", "result": "NO_RESULT_OBSERVED"},
+    {"query": "\"thai-chinalogistics.github.io/Thai-ChinaLogistics\" -github", "result": "NO_RESULT_OBSERVED"},
+    {"query": "\"泰中双向物流\" \"0839769828\" -github", "result": "NO_RESULT_OBSERVED"},
+    {"query": "\"泰中双向物流\" \"THAICHINA-LOGISTICS\" -github", "result": "NO_RESULT_OBSERVED"},
+    {"query": "\"61576232865352\" logistics", "result": "NO_RESULT_OBSERVED"}
+  ],
+  "accepted_independent_evidence": [],
+  "rejected_or_ambiguous_evidence": [],
+  "status": "NO_VERIFIED_INDEPENDENT_IDENTITY_BRIDGE_FOUND",
+  "gate_status": "WEAK",
+  "interpretation": "No independent public result was observed in this round that unambiguously bridges the exact entity to its verified phone, WeChat, canonical website, or Facebook profile ID. This does not prove that no external references exist; it means none were verified in the tested public-search sample.",
+  "rules": [
+    "Do not count generic Thai-China logistics name collisions as evidence.",
+    "Do not manufacture directory profiles, reviews, partnerships, media mentions, addresses, licenses, warehouses, prices or customer-volume claims.",
+    "A future G4 upgrade requires a genuine independent source with a strong identifier bridge to this exact entity."
+  ],
+  "next_action": "Keep G4 WEAK; continue G5 public-search benchmark expansion and prepare G6 direct-platform benchmark while G3 awaits direct Facebook browser verification."
+}
