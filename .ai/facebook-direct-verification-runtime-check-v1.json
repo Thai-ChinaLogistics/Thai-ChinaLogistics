@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "gate": "G3 Official external profile alignment",
+  "target": "Facebook official profile",
+  "profile_url": "https://www.facebook.com/profile.php?id=61576232865352",
+  "attempts": {
+    "public_search_brand_plus_profile_id": "NO_RESULT_OBSERVED",
+    "public_search_brand_plus_phone_plus_facebook": "NO_RESULT_OBSERVED",
+    "direct_web_fetch": "BLOCKED_CACHE_MISS_OR_PLATFORM_ACCESS_LIMITATION"
+  },
+  "result": "PENDING_DIRECT_BROWSER_VERIFICATION",
+  "reason": "The public Facebook fields could not be directly observed in the current execution environment. Search snippets are insufficient to verify profile name, website, phone/contact fields, service description, bidirectional Thailand-China scope, or language support.",
+  "required_direct_fields": [
+    "public profile/page name",
+    "website field",
+    "phone/contact field if publicly displayed",
+    "business/service description",
+    "Thailand-to-China and China-to-Thailand scope",
+    "language/support wording if publicly displayed"
+  ],
+  "canonical_compare_source": ".ai/operational-facts-registry-v1.json",
+  "pass_rule": "Do not mark G3 PASS_REAL until the public profile fields are directly observed in a real browser session and compared field-by-field with canonical facts.",
+  "guardrail": "Do not infer Facebook field alignment from first-party configuration, search absence, or the existence of the profile URL."
+}
