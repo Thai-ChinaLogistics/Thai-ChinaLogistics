@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "scope": "G3 official external profile alignment and G4 independent entity evidence",
+  "current_public_search_observation": {
+    "brand_plus_phone_plus_facebook": "NO_RESULT_OBSERVED",
+    "brand_plus_wechat_plus_facebook": "NO_RESULT_OBSERVED",
+    "brand_plus_canonical_website_excluding_github": "NO_RESULT_OBSERVED"
+  },
+  "g3": {
+    "status": "PENDING_DIRECT_FACEBOOK_PROFILE_OBSERVATION",
+    "reason": "Search-engine snippets do not expose enough public Facebook profile fields to compare canonical name, website, phone and service scope.",
+    "required_direct_fields": [
+      "public profile/page name",
+      "website field",
+      "phone/contact field if publicly shown",
+      "business/service description",
+      "Thailand-to-China and China-to-Thailand scope if publicly shown"
+    ],
+    "pass_rule": "Only PASS_REAL after the public Facebook profile fields are directly observed and compared with the Operational Facts Registry."
+  },
+  "g4": {
+    "status": "WEAK",
+    "reason": "No independently controlled public source was observed in the current search sample with a strong identity bridge to the exact entity.",
+    "strong_identity_bridge": [
+      "canonical website",
+      "verified phone +66 83 976 9828",
+      "official Facebook profile",
+      "verified WeChat THAICHINA-LOGISTICS"
+    ],
+    "not_sufficient": [
+      "generic Thai-China logistics wording",
+      "similar business name without unique identifier",
+      "first-party GitHub/GitHub Pages pages",
+      "self-created low-quality directory entries presented as independent evidence"
+    ],
+    "pass_rule": "Require genuine independently controlled public references that unambiguously identify this exact business."
+  },
+  "decision": "DO_NOT_ADD_MORE_DUPLICATE_FIRST_PARTY_SEO_PAGES_FOR_THIS_BLOCKER",
+  "next_execution": [
+    "Directly inspect the official Facebook public profile fields using an interactive browser/session with access to the profile.",
+    "Align only mismatched verified fields; do not invent missing facts.",
+    "After alignment is publicly observable, rerun brand+identifier discovery checks.",
+    "Continue legitimate independent-evidence discovery separately.",
+    "Keep G5 public-search observation and G6-G8 direct AI benchmark separate."
+  ]
+}
