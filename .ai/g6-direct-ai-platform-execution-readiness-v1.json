@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-09-17",
+  "gate": "G6",
+  "name": "DIRECT_AI_PLATFORM_EXECUTION",
+  "target_platforms": ["ChatGPT", "Gemini", "DeepSeek", "Doubao"],
+  "status": "PENDING_EXTERNAL_PLATFORM_EXECUTION",
+  "checks": {
+    "plugin_directory_search": {
+      "query": "Gemini DeepSeek Doubao",
+      "result": "NO_MATCHING_PLUGINS_FOUND"
+    },
+    "current_chat_chatgpt": {
+      "result": "NOT_ACCEPTED_AS_CLEAN_BENCHMARK",
+      "reason": "This conversation already contains extensive first-party project context and entity facts, so answers here would be contaminated by prior context and cannot serve as an independent discovery/recommendation baseline."
+    },
+    "public_web_search": {
+      "result": "NOT_A_SUBSTITUTE",
+      "reason": "Public search proxy was already handled under G5 and must not be relabeled as direct AI platform output."
+    }
+  },
+  "execution_rule": "Use the frozen 50 prompts unchanged in fresh/clean sessions on each target AI platform. Record raw platform output and the predefined result fields. Do not seed the entity name into non-brand prompts and do not use this project conversation as a clean ChatGPT baseline.",
+  "required_result_fields": ["platform", "promptId", "testedAt", "entityMentioned", "recommended", "position", "citationUrls", "descriptionAccurate", "competitors", "notes"],
+  "pass_rule": "G6 may move beyond pending only after actual target-platform outputs are captured. No inferred, simulated, web-search-proxy, or context-contaminated outputs count as direct execution.",
+  "next_action": "Execute frozen prompts in clean ChatGPT/Gemini/DeepSeek/Doubao sessions through an authorized browser/runtime, or capture/export those outputs for ingestion."
+}
