@@ -1,0 +1,83 @@
+{
+  "version": "2026-09-18-batch-1",
+  "entity": "Thai-China Logistics",
+  "executed_at": "2026-09-18",
+  "objective": "Consolidate the remaining AI-visibility work into one evidence-driven execution batch without overstating AI citation or recommendation.",
+  "verified_current_state": {
+    "DISCOVERED": "PASS_REAL_PARTIAL",
+    "UNDERSTOOD": "PASS_REAL_PARTIAL",
+    "CITED": "NOT_YET_VERIFIED",
+    "RECOMMENDED": "NOT_YET_VERIFIED"
+  },
+  "public_search_observations": {
+    "brand_discovery": "NOT_STABLY_OBSERVED_IN_CURRENT_SAMPLE",
+    "competitor_route_pages_observed": [
+      {
+        "name": "PUKA Logistics",
+        "url": "https://www.pukalogistics.co/truck-service-from-thailand-to-china/",
+        "signals": ["dedicated Thailand-China route", "process/service detail", "multilingual contact", "Bangkok/Chiang Mai/Phuket branch detail"]
+      },
+      {
+        "name": "Thai Global Freight",
+        "url": "https://thaiglobalfreight.com/en/shipping/thailand-to-china",
+        "signals": ["dedicated route page", "ports/airports", "documents", "cost components", "risks", "FAQ", "updated and last-verified dates"]
+      },
+      {
+        "name": "Seven Seas Worldwide",
+        "url": "https://www.sevenseasworldwide.com/en-th/shipping/shipping-to-destinations/china/",
+        "signals": ["Thailand-to-China destination content", "step-by-step workflow", "luggage/personal-effects intent", "FAQ", "quote CTA", "packing guidance"]
+      },
+      {
+        "name": "CargoRouter",
+        "url": "https://www.cargorouter.com/shipping/Thailand-to-China/",
+        "signals": ["independent route comparison context", "transport modes", "route nodes", "provider network", "RFQ intent"]
+      }
+    ]
+  },
+  "answer_gap_map": [
+    {"benchmarkGroups":["T01-T10","D01-D05"],"requiredAnswerPattern":"direct service answer + supported modes + pickup/door-to-door conditionality + contact + current-fact caveat","priority":"P0"},
+    {"benchmarkGroups":["P01-P06","S01"],"requiredAnswerPattern":"Phuket pickup/hotel lost-item workflow + required customer information + packaging/shipping steps + cargo acceptance caveat","priority":"P0"},
+    {"benchmarkGroups":["C01-C08"],"requiredAnswerPattern":"China-to-Thailand receiving/consolidation + Taobao/1688 + air/land/sea + delivery workflow + quote/acceptance caveat","priority":"P0"},
+    {"benchmarkGroups":["L01-L06"],"requiredAnswerPattern":"city-specific pickup/service-area answer linked to the same canonical entity; do not invent branches or addresses","priority":"P1"},
+    {"benchmarkGroups":["S02-S10"],"requiredAnswerPattern":"scenario-specific concise FAQ using only verified facts; regulated/special cargo remains conditional","priority":"P1"}
+  ],
+  "citation_gap_consolidation": {
+    "P0": [
+      "stable brand/public-search discovery remains incomplete",
+      "independent external corroboration remains weak",
+      "real operational detail should be strengthened where verified",
+      "Facebook public-field consistency remains unverified"
+    ],
+    "P1": [
+      "FAQ answerability across frozen benchmark intents",
+      "honest reviewed/updated provenance",
+      "per-prompt source-domain classification across the frozen 50 prompts"
+    ],
+    "do_not_repeat": [
+      "more schema merely for schema volume",
+      "more llms.txt work without a discovered defect",
+      "thin duplicate keyword pages",
+      "mass low-quality directory submissions"
+    ]
+  },
+  "external_evidence_plan": {
+    "E0": "ESTABLISHED",
+    "E1": "PARTIAL_PENDING_FACEBOOK_FIELD_AUDIT",
+    "E2": "WEAK",
+    "E3": "WEAK",
+    "rule": "Only observed legitimate evidence may advance these levels. No fabricated reviews, addresses, warehouses, licenses, media coverage or partnerships."
+  },
+  "single_loop_execution": [
+    "Use frozen 50 prompts as the permanent demand universe.",
+    "For each observed result, record provider, URL, source class and answer pattern.",
+    "Map missing answer/evidence patterns to existing Thai-China Logistics pages before creating any new page.",
+    "Publish only facts permitted by operational-facts-registry-v1.json.",
+    "Re-test identical prompts after meaningful changes.",
+    "Advance CITED or RECOMMENDED only after direct reproducible observation on the named AI platform."
+  ],
+  "remaining_external_dependencies": [
+    "Direct ChatGPT/Gemini/DeepSeek/Doubao benchmark runs require direct observations from those platforms; public web search is not a substitute.",
+    "Facebook field alignment requires publicly observable fields or authenticated editing access; inaccessible fields remain NOT_PUBLICLY_VERIFIABLE.",
+    "Independent partner/customer/reputation evidence must arise from real-world sources and cannot be manufactured in-repository."
+  ]
+}
