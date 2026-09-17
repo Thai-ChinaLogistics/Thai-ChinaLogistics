@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "status": "NO_VERIFIED_INDEPENDENT_ENTITY_MENTIONS_FOUND_IN_CURRENT_SEARCH",
+  "purpose": "Separate real independent evidence from generic Thai-China logistics references and prevent false entity matching.",
+  "search_observations": {
+    "exact_brand_plus_phone": "NO_MATCH",
+    "exact_brand_plus_facebook": "NO_MATCH",
+    "exact_brand_plus_website": "NO_MATCH",
+    "generic_brand_search": "AMBIGUOUS_GENERIC_TERM_COLLISIONS"
+  },
+  "false_positive_patterns": [
+    {
+      "pattern": "Thai-China logistics used as a generic trade/logistics phrase",
+      "classification": "NOT_OUR_ENTITY",
+      "action": "Exclude from entity evidence."
+    },
+    {
+      "pattern": "Other companies or articles using similar Thai-China/Thailand-China logistics wording",
+      "classification": "NOT_OUR_ENTITY_UNLESS_CANONICAL_IDENTIFIERS_MATCH",
+      "action": "Require at least one strong canonical identifier such as official website, verified phone, official social profile, or explicit legal/brand linkage."
+    }
+  ],
+  "evidence_acceptance_rule": {
+    "required": "Independent source must clearly refer to this exact entity, not merely the Thailand-China logistics category.",
+    "strong_identifiers": [
+      "canonical website",
+      "+66 83 976 9828",
+      "official Facebook profile",
+      "THAICHINA-LOGISTICS WeChat when publicly verifiable",
+      "explicit Thai-China Logistics brand linkage to the canonical website"
+    ],
+    "forbidden": [
+      "claiming generic Thai-China logistics articles as brand mentions",
+      "creating fake directories",
+      "buying or fabricating reviews",
+      "inventing media coverage",
+      "inventing partnerships"
+    ]
+  },
+  "candidate_evidence_types_to_build_organically": [
+    "fully aligned official social profile",
+    "real partner or supplier reference when a real relationship exists and publication is appropriate",
+    "real customer-generated public mention or review without fabrication or incentives that distort authenticity",
+    "legitimate business/industry profile for which the entity actually qualifies",
+    "independent editorial or industry coverage earned from real activity"
+  ],
+  "current_gap": "The web has first-party entity infrastructure but no verified independent source in the current search that unambiguously links the exact brand to its canonical identifiers.",
+  "next_action": "Improve answerability and provenance on existing high-intent first-party pages while external evidence is accumulated organically."
+}
