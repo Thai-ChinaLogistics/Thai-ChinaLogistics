@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "scope": "Thailand to China core route/mode answerability audit",
+  "pages": [
+    {
+      "path": "air-freight-to-china.html",
+      "status": "PASS_REAL",
+      "verified": [
+        "canonical URL",
+        "Organization and Service structured data",
+        "provider points to canonical organization",
+        "Chinese/English/Thai content",
+        "Thailand-to-China air freight intent",
+        "pickup and China delivery intent",
+        "cargo-review and conditional pricing/transit wording",
+        "process and FAQ answerability"
+      ]
+    },
+    {
+      "path": "land-freight-to-china.html",
+      "status": "PASS_REAL_WITH_REVIEW_NOTE",
+      "verified": [
+        "canonical URL",
+        "Organization and Service structured data",
+        "provider points to canonical organization",
+        "Chinese/English/Thai content",
+        "Thailand-to-China land freight intent",
+        "bulky/multiple-carton/moving/commercial-restocking intent",
+        "pickup and China delivery intent",
+        "conditional pricing and route wording",
+        "process and FAQ answerability"
+      ],
+      "review_note": "The visible FAQ contains an existing 7–15 day reference. This audit does not independently verify that range. It must remain subject to current-route confirmation and should not be promoted as a guaranteed or universal transit time."
+    }
+  ],
+  "supporting_high_intent_pages_already_audited": [
+    "phuket-to-china.html",
+    "bangkok-to-china.html",
+    "luggage-to-china.html",
+    "thailand-to-china-pickup.html",
+    "china-to-thailand.html"
+  ],
+  "g2_decision": {
+    "status": "PASS_REAL",
+    "reason": "The principal bidirectional route, city, pickup, luggage, air and land intents now have factual canonical pages with consistent provider/entity linkage and sufficient direct answerability. Remaining work is optimization/maintenance rather than a missing core first-party answerability gate.",
+    "does_not_prove": [
+      "independent external evidence",
+      "stable public-search discovery",
+      "AI citation",
+      "AI recommendation"
+    ]
+  },
+  "next_priority": [
+    "official external profile alignment",
+    "independent external entity evidence",
+    "fixed 50-prompt direct AI benchmark"
+  ]
+}
