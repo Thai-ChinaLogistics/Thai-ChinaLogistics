@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "scope": "Existing high-intent pages only; no thin duplicate-page expansion.",
+  "audited_page": "phuket-to-china.html",
+  "result": {
+    "direct_intent_match": "PASS",
+    "multilingual_zh_en_th": "PASS",
+    "canonical_url": "PASS",
+    "organization_provider_linkage": "PASS",
+    "service_schema": "PASS",
+    "direct_process_steps": "PASS",
+    "faq_content": "PASS",
+    "conditional_price_transit_cargo_language": "PASS",
+    "hotel_lost_item_intent": "PASS",
+    "visible_reviewed_updated_date": "NEEDS_IMPROVEMENT",
+    "explicit_fact_provenance": "NEEDS_IMPROVEMENT"
+  },
+  "observed_answer_units": [
+    "what services are available from Phuket to China",
+    "pickup from hotel/apartment/residence/store/warehouse subject to confirmation",
+    "air versus land freight comparison context",
+    "China destination delivery",
+    "what cargo/address information to provide before quotation",
+    "hotel forgotten-item pickup workflow",
+    "price/transit time depends on actual cargo and addresses"
+  ],
+  "safe_next_changes": [
+    "Add an honest reviewed/updated date when the service facts are actually reviewed.",
+    "Where useful, state that route, acceptance, quote and estimated transit time are confirmed against current operating conditions.",
+    "Keep FAQ answers concise and directly extractable.",
+    "Do not invent warehouse ownership, route guarantees, customs guarantees, prices, transit promises, licenses or partnerships."
+  ],
+  "decision": "Do not create another Phuket-to-China page. Improve provenance/freshness on the existing canonical page when facts are reviewed."
+}
