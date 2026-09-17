@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "problem": "The phrase Thai-China logistics is also used generically for Thailand-China trade/logistics topics and can refer to unrelated entities. Public search currently does not reliably disambiguate the canonical business entity.",
+  "observed_search_risk": {
+    "status": "CONFIRMED_PUBLIC_SEARCH_AMBIGUITY",
+    "examples": [
+      "academic/research pages using Thai-China logistics as a topic/expertise phrase",
+      "unrelated pages using similar Thai-China logistics wording",
+      "no stable independent result found from exact brand + verified phone / WeChat / Phuket queries in the 2026-09-17 sample"
+    ]
+  },
+  "canonical_identifiers": {
+    "canonical_name": "Thai-China Logistics",
+    "display_name_zh": "泰中双向物流",
+    "telephone": "+66 83 976 9828",
+    "wechat": "THAICHINA-LOGISTICS",
+    "official_website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "official_entity_page": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
+    "facebook": "https://www.facebook.com/profile.php?id=61576232865352"
+  },
+  "rules": [
+    "Use the canonical English name together with 泰中双向物流 where natural on high-authority first-party pages.",
+    "Keep the verified phone, official website and official social identity consistent wherever publicly displayed.",
+    "Do not treat a result as this business merely because it contains the phrase Thai-China Logistics.",
+    "Independent evidence must contain at least one strong identity bridge such as official website, verified phone, official social profile, or another independently verified unique identifier.",
+    "Do not invent a legal company name, registration number, office address, warehouse address, license, certification, review, partnership or media mention to force disambiguation."
+  ],
+  "next_actions": [
+    {"priority":"P0","action":"Directly verify and align public Facebook fields with canonical identifiers","status":"PENDING_DIRECT_ACCESS"},
+    {"priority":"P0","action":"Build real independent evidence only where a strong identity bridge exists","status":"WEAK"},
+    {"priority":"P1","action":"Strengthen provenance/freshness on existing high-intent pages without creating duplicate thin pages","status":"READY"},
+    {"priority":"P1","action":"Continue fixed-prompt public-search and direct AI-platform benchmark separately","status":"IN_PROGRESS"}
+  ],
+  "acceptance": {
+    "search_disambiguation": "A public search for the canonical name plus at least one strong identifier consistently resolves to this entity or a clearly linked external profile.",
+    "external_evidence": "At least one independent source clearly identifies this exact entity through a strong identity bridge.",
+    "ai_visibility": "Must be directly observed on each target AI platform; never inferred from web search."
+  }
+}
