@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "purpose": "Define one canonical field set for every legitimate external public profile so search engines and AI systems receive consistent identity signals without inventing business facts.",
+  "canonical_identity": {
+    "name": "Thai-China Logistics",
+    "display_name_zh": "泰中双向物流",
+    "aliases": ["泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+    "website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "phone": "+66 83 976 9828",
+    "whatsapp": "https://wa.me/66839769828",
+    "wechat": "THAICHINA-LOGISTICS",
+    "facebook": "https://www.facebook.com/profile.php?id=61576232865352",
+    "languages": ["Chinese", "English", "Thai"]
+  },
+  "canonical_short_description": {
+    "zh": "Thai-China Logistics（泰中双向物流）提供泰国到中国、中国到泰国的跨境物流服务，可根据实际货物与地址咨询空运、陆运、海运、门到门、泰国上门取件、代收集货、行李与搬家等需求。",
+    "en": "Thai-China Logistics provides cross-border logistics between Thailand and China, including Thailand-to-China and China-to-Thailand shipping. Air, land, sea, door-to-door, pickup and consolidation options are confirmed according to the actual cargo and route.",
+    "th": "Thai-China Logistics ให้บริการโลจิสติกส์ข้ามพรมแดนระหว่างไทยและจีน ทั้งเส้นทางไทยไปจีนและจีนมาไทย โดยรูปแบบขนส่งและการรับของต้องยืนยันตามสินค้าและเส้นทางจริง"
+  },
+  "required_profile_fields": [
+    "canonical business name",
+    "official website",
+    "verified phone when the platform supports it",
+    "clear Thailand-China and China-Thailand service description",
+    "consistent contact method",
+    "same service wording as operational facts registry"
+  ],
+  "strong_identity_bridge": {
+    "rule": "An external source is attributable to this entity only when it contains enough strong identifiers to distinguish it from generic Thai-China logistics terminology or similarly named companies.",
+    "preferred_identifiers": ["official website", "verified phone", "official Facebook URL", "verified WeChat ID"],
+    "name_only_is_insufficient": true
+  },
+  "profile_audit_statuses": ["MATCH", "MISSING", "CONFLICT", "NOT_PUBLICLY_VERIFIABLE", "NOT_APPLICABLE"],
+  "claim_policy": {
+    "conditional": ["route availability", "price/quote", "transit time", "pickup availability", "cargo acceptance", "customs/import requirements"],
+    "never_invent": ["street address", "owned warehouse", "legal registration identity", "license/certification", "fixed price", "guaranteed transit", "guaranteed customs clearance", "partnership", "review", "media coverage"]
+  },
+  "current_public_search_check": {
+    "checked_at": "2026-09-17",
+    "queries": ["Thai-China Logistics + phone + WeChat", "泰中双向物流 + phone", "Thai-China Logistics + Facebook profile ID"],
+    "result": "NO_RELIABLE_EXTERNAL_MATCH_OBSERVED",
+    "interpretation": "Do not upgrade G4 or claim external entity verification from this search sample."
+  },
+  "next_actions": [
+    "Use this exact field standard when directly auditing or editing official Facebook/profile fields.",
+    "Audit legitimate external profile opportunities one by one; reject sources that cannot establish an identity bridge.",
+    "After a real external profile becomes publicly observable, rerun brand+identifier discovery checks.",
+    "Only then update external evidence registry and G3/G4 stage gates."
+  ]
+}
