@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0",
+  "created": "2026-09-17",
+  "benchmark": "AI Visibility Benchmark V1 - Public Search Proxy Consolidation",
+  "entity": "Thai-China Logistics",
+  "canonicalPromptSet": ".ai/ai-visibility-benchmark-v1.json",
+  "purpose": "Consolidate public-search proxy work before direct AI-platform execution. Public search is not direct ChatGPT/Gemini/DeepSeek/Doubao output and must not be used as proof of AI citation or recommendation.",
+  "sourceArtifacts": [
+    ".ai/public-search-benchmark-sample-v1.json",
+    ".ai/public-search-benchmark-batch2-v1.json",
+    ".ai/public-search-repeatability-check-v1.json",
+    ".ai/public-search-benchmark-batch3-v1.json",
+    ".ai/public-search-benchmark-batch4-v1.json",
+    ".ai/public-search-benchmark-batch5-v1.json",
+    ".ai/public-search-benchmark-batch6-v1.json"
+  ],
+  "observedSummary": {
+    "stableNonBrandOwnEntityDiscovery": false,
+    "historicalOwnEntityObservation": "One China-to-Thailand non-brand query previously surfaced an own page, but it did not reproduce in repeatability checks.",
+    "latestBrandPlusIntentCheck": "NO_RESULT_OBSERVED",
+    "gateStatus": "PARTIAL_UNSTABLE"
+  },
+  "coverageByPromptGroup": {
+    "brand": {"promptIds": ["B01","B02","B03","B04","B05"], "publicSearchProxyRole": "identity/disambiguation checks handled separately; direct AI benchmark still required"},
+    "thailand-to-china": {"promptIds": ["T01","T02","T03","T04","T05","T06","T07","T08","T09","T10"], "status": "sampled_across_batches"},
+    "china-to-thailand": {"promptIds": ["C01","C02","C03","C04","C05","C06","C07","C08"], "status": "sampled_across_batches"},
+    "phuket": {"promptIds": ["P01","P02","P03","P04","P05","P06"], "status": "sampled_across_batches"},
+    "locations": {"promptIds": ["L01","L02","L03","L04","L05","L06"], "status": "sampled_across_batches"},
+    "scenarios": {"promptIds": ["S01","S02","S03","S04","S05","S06","S07","S08","S09","S10"], "status": "sampled_across_batches"},
+    "decision": {"promptIds": ["D01","D02","D03","D04","D05"], "status": "sampled_across_batches"}
+  },
+  "dominantGapClassification": [
+    "DISCOVERY: canonical first-party pages exist but are not stably surfacing for non-brand public search intents",
+    "EVIDENCE: independent external entity evidence remains weak",
+    "IDENTITY: generic brand wording creates disambiguation pressure; strong identifiers must remain consistent",
+    "ANSWERABILITY: core canonical pages are already materially stronger than the current discovery signal, so duplicate page creation is not the primary next action"
+  ],
+  "decision": {
+    "g5": "PARTIAL_UNSTABLE",
+    "closeRepeatedProxySearchingAsPrimaryWorkstream": true,
+    "doNotUpgradeToPass": true,
+    "nextGate": "G6_DIRECT_AI_PLATFORM_EXECUTION",
+    "nextPlatforms": ["ChatGPT","Gemini","DeepSeek","Doubao"],
+    "requiredMethod": "Use the frozen 50 prompts unchanged; capture actual platform answer, entity mention, recommendation status, position if applicable, citation URLs, description accuracy, competitors, testedAt, and notes. Do not substitute web-search proxy results for platform output."
+  },
+  "guardrails": [
+    "No guaranteed AI recommendation claims.",
+    "No fabricated citations, reviews, media, partnerships, addresses, licenses, warehouses, prices, transit guarantees, or customer counts.",
+    "A search-engine result is not an AI-platform citation or recommendation.",
+    "A single observed result is not stable discovery until repeatable.",
+    "Keep the 50-prompt set fixed for Before/After comparison."
+  ]
+}
