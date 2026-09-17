@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "purpose": "Real public-search sampling against frozen AI Visibility Benchmark V1. This is search evidence only and MUST NOT be represented as direct ChatGPT/Gemini/DeepSeek/Doubao output.",
+  "sample_prompt_ids": ["T01","T07","C01","C06","P01","P05","S01","S02"],
+  "observations": [
+    {"prompt_id":"T01","query":"泰国寄中国物流公司推荐","own_entity_observed":false,"observed_sources":[{"name":"RNP Express","type":"official_service_page","url":"https://www.rnpexpress.com/en/international-shipping-service/shipping-to-china/"},{"name":"Thai Global Freight","type":"official_route_page","url":"https://www.thaiglobalfreight.com/en/shipping/thailand-to-china"}]},
+    {"prompt_id":"T07","query":"Thailand to China shipping company","own_entity_observed":false,"observed_sources":[{"name":"RNP Express","type":"official_service_page","url":"https://www.rnpexpress.com/en/international-shipping-service/shipping-to-china/"},{"name":"Seven Seas Worldwide","type":"official_destination_page","url":"https://www.sevenseasworldwide.com/en-th/shipping/shipping-to-destinations/china/"},{"name":"Thai Global Freight","type":"official_route_page","url":"https://www.thaiglobalfreight.com/en/shipping/thailand-to-china"}]},
+    {"prompt_id":"C01","query":"中国寄泰国物流公司推荐","own_entity_observed":false,"observed_sources":[{"name":"SCIC Group","type":"official_service_page","url":"https://scic.group/th/china-to-thailand/"},{"name":"KA Express","type":"official_company_site","url":"https://kaexpress-th.com/"},{"name":"China Thai Shipping (CTS)","type":"official_company_site","url":"https://www.chinathaishipping.co.th/en/home-en/"},{"name":"ZiDongHua article","type":"third_party_editorial_or_promotional","url":"https://www.zidonghua.com.cn/news/need/277119.html"}]},
+    {"prompt_id":"C06","query":"China to Thailand shipping company","own_entity_observed":false,"observed_sources":[{"name":"CSC Logistics","type":"official_route_page","url":"https://www.csc.cc/en/china-thailand-ocean-freight-line.html"},{"name":"CNXtrans","type":"official_route_page","url":"https://www.cnxtrans.com/th/shipping-from-china-to-thailand"},{"name":"Speed Line Logistics","type":"official_route_page","url":"https://speedlinelogistic.com/shipping-from-china-to-thailand/"},{"name":"Thai Global Freight","type":"official_route_page","url":"https://www.thaiglobalfreight.com/en/shipping/china-to-thailand"}]},
+    {"prompt_id":"P01","query":"普吉岛寄中国物流公司推荐","own_entity_observed":false,"notes":"No stable own-entity result observed in this sampling pass."},
+    {"prompt_id":"P05","query":"Phuket to China shipping company","own_entity_observed":false,"notes":"No stable own-entity result observed in this sampling pass."},
+    {"prompt_id":"S01","query":"泰国酒店遗失物品怎么寄回中国？","own_entity_observed":false,"observed_sources":[{"name":"Thai Nexus","type":"official_service_page","url":"https://thainexus.co.th/en/services/hotel-lost-and-found-recovery"}]},
+    {"prompt_id":"S02","query":"泰国行李寄回中国物流推荐","own_entity_observed":false,"observed_sources":[{"name":"Seven Seas Worldwide","type":"official_destination_page","url":"https://www.sevenseasworldwide.com/en-th/shipping/shipping-to-destinations/china/"}]}
+  ],
+  "aggregate": {
+    "sample_size": 8,
+    "own_entity_observed_count": 0,
+    "interpretation": "The entity did not surface in this public-search sample. Competitor visibility is dominated by specific route/service/destination pages with concrete process, route, pricing/timing or service details. This is a prioritization signal, not an AI recommendation measurement."
+  },
+  "brand_disambiguation_check": {
+    "queries": ["Thai-China Logistics + phone", "Thai-China Logistics + WeChat", "Thai-China Logistics + official website excluding GitHub"],
+    "result": "NO_MATCH_IN_CURRENT_SEARCH_PASS",
+    "implication": "External identity corroboration remains weak. Do not treat generic occurrences of the phrase Thai-China logistics as evidence for this entity."
+  },
+  "next_actions": [
+    "Directly verify and align official Facebook fields when platform access permits.",
+    "Strengthen provenance/freshness on existing high-intent pages without creating duplicate thin pages.",
+    "Accumulate legitimate independent entity evidence tied by strong identifiers such as official website, phone or official social account.",
+    "Execute the frozen 50 prompts directly on ChatGPT, Gemini, DeepSeek and Doubao when those interfaces are available; record UNKNOWN rather than infer missing results."
+  ],
+  "guardrails": [
+    "Never convert public-search results into AI-platform PASS.",
+    "Never fabricate reviews, addresses, warehouses, licenses, partnerships, rates, transit guarantees or media coverage.",
+    "Never count a generic Thai-China logistics mention as entity evidence without a strong identifier."
+  ]
+}
