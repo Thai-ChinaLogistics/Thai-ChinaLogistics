@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "entity": "Thai-China Logistics",
+  "created": "2026-09-17",
+  "benchmarkType": "PUBLIC_SEARCH_PROXY_NOT_AI_PLATFORM_OUTPUT",
+  "sourceBenchmark": ".ai/ai-visibility-benchmark-v1.json",
+  "scope": "Remaining decision/scenario/location prompts from frozen benchmark",
+  "queries": [
+    {"promptId":"D01","query":"泰国寄中国哪家物流比较方便？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"D02","query":"泰国寄中国可以上门取件的物流公司有哪些？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"D03","query":"不会泰语，在泰国怎么找寄中国的物流？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"D04","query":"Chinese speaking logistics company in Thailand for shipping to China","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"D05","query":"Best way to ship personal items from Thailand to China with pickup","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"S10","query":"泰国佛牌寄中国物流怎么找？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"S07","query":"曼谷搬家到普吉岛找哪家公司？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"S08","query":"普吉岛搬家到曼谷物流推荐","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"S01","query":"泰国酒店遗失物品怎么寄回中国？","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"},
+    {"promptId":"S06","query":"泰国国内跨城市搬家物流推荐","ownEntityObserved":false,"result":"NO_RESULT_OBSERVED_FOR_ENTITY"}
+  ],
+  "observedOwnEntityCount": 0,
+  "searchExecutionNote": "Current public-search execution returned no results for the exact entity-constrained query set. This is recorded as no observed entity result, not proof of de-indexing or absence from every search engine.",
+  "gateDecision": {
+    "G5": "PARTIAL_UNSTABLE",
+    "reason": "A prior batch observed one own China-to-Thailand result, but repeatability and subsequent batches have not produced stable own-entity discovery."
+  },
+  "guardrails": [
+    "Public search is a proxy and must not be recorded as ChatGPT/Gemini/DeepSeek/Doubao output.",
+    "Do not upgrade CITED or RECOMMENDED based on search results.",
+    "Do not create duplicate first-party pages solely to force benchmark coverage.",
+    "Keep the frozen prompt wording unchanged for direct AI-platform Before/After testing."
+  ],
+  "next": "Consolidate all public-search batches into the frozen-prompt coverage matrix, then move G6 to real platform execution."
+}
