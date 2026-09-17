@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "purpose": "Define the executable acceptance criteria for G3-G5 after first-party G1-G2 closure, without converting search absence or first-party claims into external evidence.",
+  "current_observation": {
+    "exact_brand_plus_phone_public_search": "NO_RESULT_OBSERVED",
+    "exact_brand_plus_wechat_public_search": "NO_RESULT_OBSERVED",
+    "chinese_brand_plus_phone_public_search": "NO_RESULT_OBSERVED",
+    "interpretation": "Current public search still does not provide a reliable external identity bridge. This does not prove the official Facebook profile is absent and does not justify a PASS for G3 or G4."
+  },
+  "G3_official_external_profile_alignment": {
+    "current_status": "PENDING_DIRECT_VERIFICATION",
+    "target": "Facebook official profile already recorded in the canonical registry",
+    "pass_requires": [
+      "Directly observe the public profile rather than infer fields from first-party configuration.",
+      "Canonical business name is consistent or clearly bridged to the canonical entity.",
+      "Official website is visible where the platform permits it.",
+      "Only verified phone/contact values are used.",
+      "Service description accurately represents Thailand-to-China and China-to-Thailand logistics if currently offered.",
+      "No invented address, warehouse, legal identity, license, price, transit guarantee, partnership, review or customer-volume claim."
+    ]
+  },
+  "G4_independent_external_entity_evidence": {
+    "current_status": "WEAK",
+    "minimum_identity_bridge": "An independent source must connect the entity through at least one strong identifier such as the canonical website, verified phone, official Facebook profile, verified public WeChat, or another independently verified unique identifier.",
+    "not_accepted": [
+      "generic Thai-China logistics phrase",
+      "name-only collision",
+      "first-party website pages",
+      "self-created low-quality directory pages presented as independent evidence",
+      "fake reviews, media, partnerships or credentials"
+    ],
+    "pass_direction": "Accumulate genuine independently controlled references with an unambiguous identity bridge; quality and identity certainty take priority over raw count."
+  },
+  "G5_public_search_discovery": {
+    "current_status": "PARTIAL_UNSTABLE",
+    "measurement": [
+      "Repeat exact brand plus strong-identifier queries.",
+      "Repeat frozen non-brand customer-demand queries.",
+      "Record whether the canonical entity or its canonical pages are actually observed.",
+      "Keep public-search observations separate from direct AI-platform benchmark results."
+    ]
+  },
+  "execution_order": [
+    "Direct Facebook public-field verification when direct access is available.",
+    "Search for legitimate independent identity-bridged evidence; reject generic collisions.",
+    "Repeat public-search discovery measurements with frozen demand prompts.",
+    "Then run the frozen 50-prompt benchmark directly on ChatGPT, Gemini, DeepSeek and Doubao where direct platform execution is available."
+  ],
+  "hard_rule": "G6-G8 can never be passed by public-search proxy. Direct target-platform observations are required."
+}
