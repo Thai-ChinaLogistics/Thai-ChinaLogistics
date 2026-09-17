@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "page": "china-to-thailand.html",
+  "scope": "Answerability and provenance audit against the current public page and canonical operational facts registry; this is not independent operational verification.",
+  "checks": {
+    "canonical_url": "PASS",
+    "organization_entity_linkage": "PASS",
+    "service_provider_linkage": "PASS",
+    "multilingual_zh_en_th": "PASS",
+    "direct_china_to_thailand_intent": "PASS",
+    "taobao_1688_intent": "PASS",
+    "warehouse_receiving_and_consolidation_answerability": "PASS",
+    "air_land_sea_answerability": "PASS",
+    "door_to_door_answerability": "PASS",
+    "furniture_bulky_commercial_cargo_answerability": "PASS",
+    "conditional_route_quote_transit_language": "PASS",
+    "regulated_food_customs_caution": "PASS",
+    "faq_or_stepwise_decision_support": "PASS_REAL_PARTIAL",
+    "visible_content_review_provenance": "NEEDS_IMPROVEMENT",
+    "independent_external_evidence": "WEAK"
+  },
+  "observed_risk": "The page contains detailed operational and regulatory-intent language. Do not convert conditional wording into guarantees and do not add unverified warehouses, fixed prices, transit promises, licenses, addresses or partner claims.",
+  "decision": "KEEP_EXISTING_CANONICAL_PAGE__DO_NOT_CREATE_DUPLICATE_CHINA_TO_THAILAND_PAGE",
+  "next_actions": [
+    "Preserve the existing canonical page and provider linkage.",
+    "Improve concise decision-support/FAQ structure only where it helps answer frozen benchmark prompts without inventing facts.",
+    "Treat content review date separately from real-world operational verification date.",
+    "Prioritize external identity/evidence nodes because first-party answerability is already comparatively strong.",
+    "Retest frozen China-to-Thailand benchmark prompts after rediscovery."
+  ]
+}
