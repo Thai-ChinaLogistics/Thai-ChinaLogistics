@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "tested_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "measurement_type": "PUBLIC_SEARCH_PROXY_ONLY",
+  "warning": "These observations are public web search results, not direct ChatGPT/Gemini/DeepSeek/Doubao outputs and cannot satisfy G6-G8.",
+  "batch": "G5_BATCH_5_REMAINING_LONG_TAIL",
+  "queries_tested": [
+    {"prompt_id":"L03","prompt":"芭提雅寄中国物流推荐","own_entity_observed":false},
+    {"prompt_id":"L04","prompt":"苏梅岛寄中国物流推荐","own_entity_observed":false},
+    {"prompt_id":"L05","prompt":"合艾寄中国物流推荐","own_entity_observed":false},
+    {"prompt_id":"L06","prompt":"清莱寄中国物流推荐","own_entity_observed":false},
+    {"prompt_id":"S04","prompt":"泰国特产寄中国找什么物流？","own_entity_observed":false,"observed_sources":["Thai To China","RNP Express","ThaiFanShip"]},
+    {"prompt_id":"S06","prompt":"泰国国内跨城市搬家物流推荐","own_entity_observed":false},
+    {"prompt_id":"S10","prompt":"泰国佛牌寄中国物流怎么找？","own_entity_observed":false,"observed_sources":["泰熊物流"]},
+    {"prompt_id":"D03","prompt":"不会泰语，在泰国怎么找寄中国的物流？","own_entity_observed":false,"observed_sources":["PUKA Logistics","WEIMING"]},
+    {"prompt_id":"D04","prompt":"Chinese speaking logistics company in Thailand for shipping to China","own_entity_observed":false,"observed_sources":["PUKA Logistics","WEIMING","RNP Express"]},
+    {"prompt_id":"D05","prompt":"Best way to ship personal items from Thailand to China with pickup","own_entity_observed":false,"observed_sources":["RNP Express","ThaiFanShip","Thailand Post"]}
+  ],
+  "measured_count": 10,
+  "own_entity_observed_count": 0,
+  "status": "NO_OWN_ENTITY_OBSERVED_IN_THIS_BATCH",
+  "competitive_patterns_observed": [
+    "Dedicated Thailand-to-China destination/service pages",
+    "Explicit door-to-door and pickup wording",
+    "Chinese/Thai/English language support stated visibly",
+    "Concrete process, customs and prohibited/restricted-item guidance",
+    "Visible rates or transit references on some competitors",
+    "Freshness/update signals on some pages"
+  ],
+  "guardrails": [
+    "Do not infer AI recommendation from public search.",
+    "Do not copy competitor prices, transit promises, certifications, warehouses or legal claims unless independently true for Thai-China Logistics.",
+    "Do not create duplicate intent pages where an existing canonical page already answers the intent.",
+    "G5 remains PARTIAL_UNSTABLE until discovery is repeatedly observable."
+  ]
+}
