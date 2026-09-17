@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-17",
+  "purpose": "Audit two high-intent Thailand-to-China canonical pages for AI answerability, entity linkage, safety of claims and duplication risk.",
+  "source_of_truth": ".ai/operational-facts-registry-v1.json",
+  "pages": [
+    {
+      "path": "thailand-to-china-pickup.html",
+      "intent": ["Thailand pickup to China", "hotel pickup", "commercial-address pickup", "lost-item pickup and forwarding"],
+      "status": "PASS_REAL_PARTIAL",
+      "passes": [
+        "canonical URL present",
+        "Organization entity uses canonical #organization",
+        "Service.provider links to canonical organization",
+        "country-level areaServed is present",
+        "direct pickup intent is answered above the fold",
+        "hotel/apartment/villa/store/warehouse scenarios are described",
+        "required intake fields are explained",
+        "availability, fee and timing are conditional rather than guaranteed",
+        "related canonical pages are internally linked"
+      ],
+      "needs_improvement": [
+        "page is Chinese-only while the strongest canonical service pages are multilingual",
+        "Organization schema lacks the fuller alias/identity context used by the canonical entity profile",
+        "no explicit reviewed/provenance metadata is exposed",
+        "FAQ structured data is not present even though visible FAQ content exists"
+      ],
+      "decision": "Keep this canonical page. Do not create a duplicate pickup page. Prioritize multilingual/entity consistency and provenance in a later controlled page edit."
+    },
+    {
+      "path": "luggage-to-china.html",
+      "intent": ["Thailand luggage to China", "excess baggage", "hotel lost item to China", "hotel/condo pickup", "personal effects"],
+      "status": "PASS_REAL",
+      "passes": [
+        "canonical URL present",
+        "Chinese/English/Thai intent coverage",
+        "Organization entity uses canonical #organization",
+        "Service.provider links to canonical organization",
+        "direct luggage and hotel lost-item intent is answered above the fold",
+        "clear three-step intake process",
+        "visible FAQ addresses price factors, hotel pickup, excess luggage and cargo disclosure",
+        "pricing and acceptance are conditional and fact-specific",
+        "WhatsApp conversion path is consistent with verified public contact"
+      ],
+      "needs_improvement": [
+        "reviewed/provenance metadata can be added only as a content-review fact, not as proof that every route/price/acceptance condition was operationally reverified"
+      ],
+      "decision": "No duplicate luggage/hotel-lost-item page. Existing page is already a strong canonical answer target."
+    }
+  ],
+  "search_identity_recheck": {
+    "queries": [
+      "\"Thai-China Logistics\" \"THAICHINA-LOGISTICS\" \"66839769828\"",
+      "\"泰中双向物流\" \"0839769828\""
+    ],
+    "observed_result": "NO_RESULTS_IN_CURRENT_PUBLIC_SEARCH",
+    "interpretation": "External identity corroboration remains weak. This is not evidence that the entity is absent from every search engine or AI platform."
+  },
+  "g2_assessment": {
+    "status": "PASS_REAL_PARTIAL_STRONG",
+    "reason": "Phuket-to-China, China-to-Thailand, luggage-to-China and pickup-to-China have now been directly audited. Pickup remains the clearest first-party answerability consistency gap among these pages.",
+    "remaining_high_value_audits": ["primary Thailand-to-China route/express page", "Bangkok-to-China page"],
+    "rule": "Do not upgrade G2 to full PASS until remaining highest-value canonical pages are reviewed or a documented threshold for G2 completion is met."
+  },
+  "guardrails": [
+    "Do not fabricate route availability, rates, transit times, customs outcomes, licenses, warehouses, addresses, reviews or partnerships.",
+    "Do not treat public-search sampling as ChatGPT/Gemini/DeepSeek/Doubao benchmark evidence.",
+    "Do not create near-duplicate pages when an existing canonical page already answers the intent."
+  ]
+}
