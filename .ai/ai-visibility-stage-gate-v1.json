@@ -1,13 +1,13 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "updated_at": "2026-09-17",
   "entity": "Thai-China Logistics",
   "purpose": "Prevent false PASS states and define the remaining gates before AI Visibility V1 can be called complete.",
   "gates": [
     {"id":"G1","name":"Canonical entity infrastructure","status":"PASS_REAL","evidence":["about.html","ai-entity.json","robots.txt","sitemap.xml","llms.txt","operational-facts-registry-v1.json"]},
-    {"id":"G2","name":"Core service answerability","status":"PASS_REAL_PARTIAL","evidence":["phuket-to-china.html audit","existing route/service pages"],"remaining":"Extend the same audit to the other highest-intent existing canonical pages; add provenance/freshness only after factual review."},
-    {"id":"G3","name":"Official external profile alignment","status":"PENDING_DIRECT_VERIFICATION","evidence":["facebook-entity-field-audit-v1.json"],"remaining":"Directly observe public Facebook fields and compare them with canonical facts."},
-    {"id":"G4","name":"Independent external entity evidence","status":"WEAK","evidence":["external-evidence-candidates-v1.json"],"remaining":"Accumulate genuine independent references that unambiguously identify this exact entity."},
+    {"id":"G2","name":"Core service answerability","status":"PASS_REAL","evidence":["phuket-to-china.html audit","china-to-thailand-answerability-audit-v1.json","thailand-to-china-pickup-luggage-answerability-audit-v1.json","bangkok-to-china-answerability-audit-v1.json","thailand-to-china-core-route-answerability-audit-v1.json"],"remaining":"Maintenance only: review factual freshness when operational facts change; do not create duplicate intent pages without a genuine content gap."},
+    {"id":"G3","name":"Official external profile alignment","status":"PENDING_DIRECT_VERIFICATION","evidence":["facebook-entity-field-audit-v1.json","external-entity-profile-standard-v1.json"],"remaining":"Directly observe public Facebook fields and compare them with canonical facts."},
+    {"id":"G4","name":"Independent external entity evidence","status":"WEAK","evidence":["external-evidence-candidates-v1.json","external-identity-bridge-check-v1.json"],"remaining":"Accumulate genuine independent references that unambiguously identify this exact entity."},
     {"id":"G5","name":"Public search discovery","status":"PARTIAL_UNSTABLE","remaining":"Brand and non-brand discovery must be repeatedly observable, not inferred from crawlability."},
     {"id":"G6","name":"Fixed 50-prompt AI benchmark","status":"PENDING_PLATFORM_EXECUTION","remaining":"Run the frozen prompts on the actual target AI systems and record observable mentions, citations, descriptions and competitors."},
     {"id":"G7","name":"AI citation","status":"NOT_YET_VERIFIED","remaining":"Require directly observed citation/source behavior on the target AI platform."},
@@ -15,5 +15,5 @@
   ],
   "completion_rule": "AI Visibility V1 is not complete merely because website/schema/SEO work is complete. G6-G8 require direct platform observations. Unknown or inaccessible platform results remain UNKNOWN/PENDING, never PASS by inference.",
   "optimization_loop": "Frozen prompts -> observe sources/competitors -> classify recommendation gap -> make evidence/content change -> allow rediscovery -> rerun the exact same prompts -> compare.",
-  "current_phase": "FIRST_PARTY_FOUNDATION_COMPLETE__EXTERNAL_EVIDENCE_AND_REAL_AI_BENCHMARK_REMAIN"
+  "current_phase": "FIRST_PARTY_G1_G2_COMPLETE__EXTERNAL_EVIDENCE_AND_REAL_AI_BENCHMARK_REMAIN"
 }
