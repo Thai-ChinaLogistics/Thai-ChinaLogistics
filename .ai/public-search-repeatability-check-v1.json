@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "purpose": "Test whether previously observed non-brand public-search discovery is repeatable. This is public-search evidence only and must not be interpreted as direct ChatGPT, Gemini, DeepSeek or Doubao citation/recommendation evidence.",
+  "queries": [
+    {"intent":"China to Thailand recommendation","query":"中国寄泰国物流公司推荐 + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"},
+    {"intent":"China to Thailand English","query":"China to Thailand shipping company + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"},
+    {"intent":"Thailand to China recommendation","query":"泰国寄中国物流公司推荐 + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"},
+    {"intent":"Phuket to China","query":"普吉岛寄中国物流公司推荐 + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"},
+    {"intent":"Luggage Thailand to China","query":"泰国行李寄回中国物流推荐 + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"},
+    {"intent":"Hotel lost item Thailand to China","query":"泰国酒店遗失物品怎么寄回中国 + Thai-China Logistics -github","result":"NO_RESULT_OBSERVED_IN_CURRENT_REPEAT"}
+  ],
+  "comparison_with_prior_batch": {
+    "prior_signal":"A China-to-Thailand non-brand public-search sample previously surfaced the entity page.",
+    "current_repeat":"The same broader discovery signal was not reproduced in this repeat sample.",
+    "interpretation":"Discovery is currently unstable. The prior observation remains valid as a historical observation, but it is not sufficient to claim stable public-search discovery."
+  },
+  "gate_effect": {
+    "G5":"KEEP_PARTIAL_UNSTABLE",
+    "G6":"PENDING_PLATFORM_EXECUTION",
+    "G7":"NOT_YET_VERIFIED",
+    "G8":"NOT_YET_VERIFIED"
+  },
+  "rules":[
+    "Do not convert one-off search appearance into PASS_REAL.",
+    "Do not treat public-search results as direct AI-platform recommendation evidence.",
+    "Do not manufacture external evidence, reviews, addresses, warehouses, licenses, partnerships, rates or transit guarantees.",
+    "Continue measuring frozen demand intents and prioritize legitimate independent identity evidence."
+  ],
+  "next_actions":[
+    "Continue public-search benchmark in batches without changing the frozen intent set.",
+    "Directly verify official Facebook public fields when direct profile access is available.",
+    "Seek genuine independent references with a strong identity bridge such as canonical website or verified phone.",
+    "Run the frozen 50 prompts on the actual target AI platforms before changing G6-G8."
+  ]
+}
