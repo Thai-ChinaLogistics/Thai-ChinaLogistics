@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "tested_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "scope": "Public web search proxy only. This is NOT direct ChatGPT/Gemini/DeepSeek/Doubao benchmark evidence.",
+  "queries_sampled": [
+    {"intent":"Thailand to China logistics recommendation","observed_own_entity":false,"observed_sources":["RNP Express","SGL Thailand","Seven Seas Worldwide","Wan Shun Hang"],"notes":"Competitor/supplier pages surface with dedicated China destination pages, service modes, process, rates/transit or company proof."},
+    {"intent":"China to Thailand logistics recommendation","observed_own_entity":true,"observed_own_url":"china-to-thailand.html","observed_sources":["Thai-China Logistics","Ebaoguo","Sohu/Zhuque","ShipSBD","Dijie Logistics"],"notes":"First direct public-search observation in this batch of the canonical Thai-China Logistics site for a non-brand China-to-Thailand query."},
+    {"intent":"Phuket to China shipping","observed_own_entity":false,"notes":"No stable own-entity result observed in this batch."},
+    {"intent":"Thailand luggage shipping to China","observed_own_entity":false,"observed_sources":["Seven Seas Worldwide"],"notes":"Competitor has a dedicated luggage/personal-effects destination page with collection, customs, process and FAQ detail."},
+    {"intent":"Thailand hotel lost-item shipping to China","observed_own_entity":false,"notes":"No stable own-entity result observed in this batch."}
+  ],
+  "important_change": {
+    "g5_signal":"IMPROVED_BUT_UNSTABLE",
+    "evidence":"The canonical China-to-Thailand page was directly returned for a non-brand public search query in the 2026-09-17 batch.",
+    "constraint":"One observed result does not establish stable ranking, AI citation, or AI recommendation. Repeated observations across query variants and dates are required."
+  },
+  "competitor_pattern_update": [
+    "Dedicated route/destination pages",
+    "Concrete service modes and shipment process",
+    "Published rate/transit information where the provider supports it",
+    "Collection/door-to-door/customs explanations",
+    "FAQ and quote/contact paths",
+    "Independent reputation or operating-history proof where legitimately available"
+  ],
+  "our_gap_after_g2_pass": [
+    "External independent entity corroboration remains weak.",
+    "Thailand-to-China and Phuket/luggage/lost-item non-brand discovery is still not stable in the sampled public search.",
+    "Official Facebook public-field alignment still requires direct verification.",
+    "Direct target-AI 50-prompt execution remains pending and cannot be inferred from web search."
+  ],
+  "guardrails": [
+    "Do not convert public search appearance into ChatGPT/Gemini/DeepSeek/Doubao PASS.",
+    "Do not fabricate reviews, addresses, warehouses, licenses, partnerships, rates, transit promises or media coverage.",
+    "Do not create thin duplicate pages solely because a competitor ranks."
+  ],
+  "next_execution": [
+    "Repeat China-to-Thailand non-brand variants to test stability.",
+    "Expand Thailand-to-China, Phuket, luggage and hotel-lost-item public-search samples.",
+    "Continue strong-identifier external evidence search.",
+    "Execute the frozen 50 prompts directly on target AI platforms when direct platform access is available."
+  ]
+}
