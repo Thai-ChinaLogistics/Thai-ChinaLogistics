@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "facebook_url": "https://www.facebook.com/profile.php?id=61576232865352",
+  "canonical_source": ".ai/operational-facts-registry-v1.json",
+  "audit_status": "PARTIAL_NEEDS_DIRECT_PROFILE_VERIFICATION",
+  "canonical_expected_fields": {
+    "name": "Thai-China Logistics",
+    "alternate_names": ["泰中双向物流", "泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+    "website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+    "telephone": "+66 83 976 9828",
+    "whatsapp": "https://wa.me/66839769828",
+    "wechat": "THAICHINA-LOGISTICS",
+    "service_directions": ["Thailand to China", "China to Thailand"],
+    "languages": ["Chinese", "English", "Thai"]
+  },
+  "public_search_observation": {
+    "brand_plus_phone_query": "NO_RESULT_OBSERVED",
+    "brand_plus_facebook_url_query": "NO_RESULT_OBSERVED",
+    "website_plus_logistics_query": "NO_RESULT_OBSERVED",
+    "interpretation": "Public search did not expose enough Facebook profile fields to mark the profile aligned. This is not evidence that the profile is absent; it means direct public field verification remains required."
+  },
+  "field_status": {
+    "profile_exists_in_first_party_configuration": "CONFIRMED",
+    "profile_name_matches_canonical": "UNVERIFIED",
+    "website_matches_canonical": "UNVERIFIED",
+    "phone_matches_canonical": "UNVERIFIED",
+    "service_description_matches_canonical": "UNVERIFIED",
+    "thailand_china_bidirectional_scope_visible": "UNVERIFIED",
+    "language_support_visible": "UNVERIFIED"
+  },
+  "required_alignment": [
+    "Use the same canonical business name consistently.",
+    "Link to the canonical website where Facebook permits a website field.",
+    "Use only verified public phone/contact values.",
+    "Describe both Thailand-to-China and China-to-Thailand service directions if factually current.",
+    "Do not add an address, warehouse, license, price, transit guarantee, partner or customer-volume claim unless independently verified."
+  ],
+  "pass_rule": "PASS_REAL only after the publicly visible Facebook fields are directly observed and compared with the Operational Facts Registry.",
+  "next_action": "Build evidence-candidate registry and strengthen answerability on existing core service pages while Facebook direct verification remains pending."
+}
