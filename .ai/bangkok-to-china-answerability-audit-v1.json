@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-17",
+  "page": "bangkok-to-china.html",
+  "entity": "Thai-China Logistics",
+  "audit_type": "AI answerability / entity linkage / provenance review",
+  "status": "PASS_REAL",
+  "observed": {
+    "canonical_url": true,
+    "indexable": true,
+    "multilingual_zh_en_th": true,
+    "organization_schema": true,
+    "service_schema": true,
+    "canonical_provider_linkage": true,
+    "bangkok_to_china_intent": true,
+    "pickup_intent": true,
+    "air_and_land_options": true,
+    "china_last_mile_intent": true,
+    "personal_luggage_and_commercial_scenarios": true,
+    "process_steps": true,
+    "faq_content": true,
+    "conditional_quote_transit_and_acceptance_language": true,
+    "verified_contact_alignment": true
+  },
+  "safe_claim_review": {
+    "result": "PASS",
+    "notes": [
+      "Pricing, transit time and cargo acceptance are described conditionally rather than as fixed guarantees.",
+      "Pickup is described as address-dependent consultation rather than universal guaranteed coverage.",
+      "No new warehouse ownership, branch address, license, certification, customer-volume or partnership claim is introduced by this audit."
+    ]
+  },
+  "public_search_observation": {
+    "scope": "public-search proxy only; not an AI-platform benchmark",
+    "observed_at": "2026-09-17",
+    "brand_plus_phone_or_wechat": "NO_RELIABLE_MATCH_OBSERVED_IN_THIS_PASS",
+    "bangkok_to_china_query_pattern": "THIRD_PARTY_ROUTE_AND_PROVIDER_CONTENT_PRESENT",
+    "interpretation": "The demand topic is externally represented, but this does not establish discovery, citation or recommendation of the canonical Thai-China Logistics entity."
+  },
+  "decision": {
+    "duplicate_page_needed": false,
+    "major_rewrite_needed": false,
+    "keep_existing_canonical_page": true,
+    "next_priority": "Close the Thailand-to-China core-route audit and then shift optimization weight from first-party page expansion to external entity evidence and direct AI-platform benchmark execution."
+  },
+  "guardrails": [
+    "Do not copy third-party route estimates into first-party pages as company transit promises.",
+    "Do not infer external entity evidence from generic Thailand-China logistics pages.",
+    "Do not call public-search observations ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation results."
+  ]
+}
