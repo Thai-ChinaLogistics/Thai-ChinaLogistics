@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-09-17",
+  "purpose": "Turn the current AI Visibility pilot from first-party entity optimization into a controlled external-evidence and answerability program without fabricating business facts.",
+  "current_observation": {
+    "brand_exact_search": "WEAK_OR_UNSTABLE",
+    "brand_plus_phone_search": "NO_RELIABLE_MATCH_OBSERVED_IN_CURRENT_PUBLIC_SEARCH_SAMPLE",
+    "facebook_public_search_discovery": "NOT_VERIFIED",
+    "independent_entity_evidence": "WEAK",
+    "ai_citation": "NOT_YET_VERIFIED",
+    "ai_non_brand_recommendation": "NOT_YET_VERIFIED"
+  },
+  "workstreams": [
+    {
+      "id": "E1",
+      "name": "Official Profile Alignment",
+      "priority": "P0",
+      "targets": ["Facebook"],
+      "required_fields": ["Thai-China Logistics canonical name", "official website", "+66 83 976 9828", "Thailand-China / China-Thailand logistics description", "consistent service wording"],
+      "rule": "Only mark a field VERIFIED after directly observing it on the public profile."
+    },
+    {
+      "id": "E2",
+      "name": "Independent Evidence Discovery",
+      "priority": "P0",
+      "goal": "Find legitimate third-party places where the real business/entity can be represented or independently referenced.",
+      "acceptance": ["real source", "publicly crawlable where possible", "entity facts consistent", "no fake review", "no fake partnership", "no mass low-quality directory submission"]
+    },
+    {
+      "id": "A1",
+      "name": "Answerability Upgrade",
+      "priority": "P1",
+      "goal": "Strengthen existing core pages around frozen benchmark questions using concise direct answers and FAQ structure.",
+      "rule": "Prefer upgrading existing pages over creating thin duplicate pages. All operational claims must come from verified facts or be explicitly conditional."
+    },
+    {
+      "id": "F1",
+      "name": "Freshness and Provenance",
+      "priority": "P1",
+      "goal": "Add honest reviewed/updated metadata to factual service content when the content has actually been reviewed.",
+      "rule": "Never manufacture freshness dates merely for ranking signals."
+    },
+    {
+      "id": "B1",
+      "name": "Fixed Prompt Retest",
+      "priority": "P1",
+      "goal": "Retest the frozen 50-prompt benchmark and record observable sources, entity mentions, citations and competitors.",
+      "rule": "Public search results are not direct evidence of ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation."
+    }
+  ],
+  "next_execution_order": ["E1 Facebook field audit", "E2 independent evidence candidate audit", "A1 upgrade highest-value existing pages", "F1 verified review dates", "B1 same-prompt retest"],
+  "do_not_do": ["invent address", "invent warehouse", "invent legal identity", "invent license", "invent price", "invent transit promise", "fake reviews", "fake media", "fake partnerships", "mass thin pages", "claim AI recommendation without direct observation"]
+}
