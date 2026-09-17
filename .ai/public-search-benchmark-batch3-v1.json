@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "tested_at": "2026-09-17",
+  "entity": "Thai-China Logistics",
+  "measurement_type": "PUBLIC_SEARCH_PROXY_ONLY",
+  "warning": "These observations are public web search results, not direct ChatGPT/Gemini/DeepSeek/Doubao outputs and must never be used to mark G6-G8 PASS.",
+  "batch": {
+    "requested_prompt_ids": ["T02","T03","T04","T05","T06","T08","T09","T10","C02","C03","C04","C05","C07","C08"],
+    "own_entity_observed_count": 0,
+    "own_entity_observed_prompt_ids": [],
+    "result": "NO_OWN_ENTITY_OBSERVED_IN_THIS_BATCH"
+  },
+  "observed_competitor_source_patterns": [
+    {
+      "direction": "Thailand_to_China",
+      "sources": ["RNP Express","ThaiToChina.com","ThaiFanShip","Seven Seas Worldwide","Thailand Post"],
+      "patterns": ["dedicated China destination page","door-to-door language","published transport modes","process/FAQ","some pages expose rates or transit references","country-specific shipping guidance"]
+    },
+    {
+      "direction": "China_to_Thailand",
+      "sources": ["PTCARGO","BangkokCargo","China Ship Net","SINO Shipping","Speed Line Logistics","CNXtrans","SCD Shipping","CSC Logistics","NEXT Logistics","iWishBag","Welltrans"],
+      "patterns": ["dedicated China-to-Thailand route page","Taobao/1688 intent coverage","warehouse/consolidation workflow","air/road/sea modes","door-to-door/customs language","Thailand destination coverage","freshness/date signals on some pages"]
+    }
+  ],
+  "interpretation": {
+    "g5_status": "PARTIAL_UNSTABLE",
+    "finding": "The entity was not observed in this expanded non-brand batch. Prior isolated own-page observation remains historical evidence but is not repeatable enough to call stable discovery.",
+    "content_gap_signal": "Competitor pages repeatedly combine exact route intent with operational detail, mode selection, process, destination coverage and sometimes current rate/transit references. Existing first-party pages already cover much of the structural answerability; the larger unresolved weakness remains external entity authority/disambiguation and stable discovery rather than simply creating more duplicate pages."
+  },
+  "guardrails": [
+    "Do not infer AI recommendation from public search.",
+    "Do not fabricate rates, transit times, warehouses, licenses, addresses, reviews or partnerships.",
+    "Do not create duplicate intent pages merely to imitate competitors.",
+    "Any operational claim promoted on first-party pages must be verified against real operational facts first."
+  ],
+  "next": [
+    "Continue remaining frozen non-brand prompt coverage for P/L/S/D groups.",
+    "Keep G3 Facebook direct-browser verification pending until fields can actually be observed.",
+    "Continue G4 strong-identifier independent evidence discovery.",
+    "Execute G6 only on actual target AI platforms and record direct outputs separately."
+  ]
+}
