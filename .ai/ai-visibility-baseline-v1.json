@@ -15,8 +15,9 @@
     "entityLayerPublic": "PASS_REAL",
     "publicSearchDiscovery": "PASS_REAL_PARTIAL",
     "publicSearchUnderstanding": "PASS_REAL_PARTIAL",
-    "aiCitation": "NOT_YET_VERIFIED",
-    "nonBrandAiRecommendation": "NOT_YET_VERIFIED"
+    "aiCitation": "PASS_REAL_PARTIAL_GOOGLE_AI_OVERVIEW_SOCIAL",
+    "nonBrandAiRecommendation": "NOT_YET_VERIFIED",
+    "googleAiOverviewControlledSocialCitation": "PASS_REAL"
   },
   "observations": [
     {
@@ -33,20 +34,53 @@
       "result": "DISCOVERED_AND_UNDERSTOOD",
       "officialUrl": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html",
       "notes": "Official route page is retrievable and its China-to-Thailand service semantics can be extracted. This is discovery/understanding evidence, not proof of AI recommendation."
+    },
+    {
+      "date": "2026-09-18",
+      "scope": "google-ai-overview",
+      "query": "清迈邮寄中国",
+      "result": "CITED_CONTROLLED_INSTAGRAM_SOURCE",
+      "sourceHandle": "thaichinalogistics",
+      "evidence": "Directly visible in user-supplied screenshot.",
+      "notes": "This is a real AI-surface citation signal to a controlled social source. It is not recorded as a ChatGPT/Gemini/DeepSeek/Doubao benchmark result, and it does not yet prove non-brand provider recommendation."
     }
   ],
   "recommendationGaps": [
-    {"id":"G01","gap":"Third-party entity evidence","status":"WEAK","priority":"P0"},
-    {"id":"G02","gap":"Exact brand authority outside official website","status":"WEAK","priority":"P0"},
-    {"id":"G03","gap":"AI citation of official URLs","status":"UNVERIFIED","priority":"P0"},
-    {"id":"G04","gap":"Non-brand AI recommendation","status":"UNVERIFIED","priority":"P0"},
-    {"id":"G05","gap":"Consistent official identity across external profiles","status":"NEEDS_AUDIT","priority":"P1"}
+    {
+      "id": "G01",
+      "gap": "Third-party entity evidence",
+      "status": "WEAK",
+      "priority": "P0"
+    },
+    {
+      "id": "G02",
+      "gap": "Exact brand authority outside official website",
+      "status": "WEAK",
+      "priority": "P0"
+    },
+    {
+      "id": "G03",
+      "gap": "AI citation of official URLs",
+      "status": "UNVERIFIED",
+      "priority": "P0"
+    },
+    {
+      "id": "G04",
+      "gap": "Non-brand AI recommendation",
+      "status": "UNVERIFIED",
+      "priority": "P0"
+    },
+    {
+      "id": "G05",
+      "gap": "Consistent official identity across external profiles",
+      "status": "NEEDS_AUDIT",
+      "priority": "P1"
+    }
   ],
   "nextActions": [
-    "Audit existing Facebook identity against canonical entity profile.",
-    "Build only legitimate external entity evidence; no fake reviews, fake media, or bulk spam links.",
-    "Run fixed benchmark prompts platform-by-platform where results are verifiable.",
-    "Record citation URLs and competitors before changing the fixed prompt set.",
-    "Use the same 50 prompts for V1 versus V2 comparison."
+    "Preserve the cited Instagram content; do not rewrite or remove it while it is producing observable AI Overview citations.",
+    "Capture additional real Google AI Overview query/source pairs, including city and scenario queries, before changing the content pattern.",
+    "Replicate the proven content pattern across real city/scenario posts without keyword stuffing or fabricated operational claims.",
+    "Run the frozen ChatGPT/Gemini/DeepSeek/Doubao benchmark separately when direct observation is available."
   ]
 }
