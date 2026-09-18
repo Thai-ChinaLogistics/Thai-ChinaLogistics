@@ -5,14 +5,32 @@
   "purpose": "Track real external evidence that independently corroborates the canonical Thai-China Logistics entity for search and AI visibility. Never create fake reviews, fake media, fake directories or unverifiable business facts.",
   "canonical": {
     "name": "Thai-China Logistics",
-    "alternateNames": ["泰中双向物流", "泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+    "alternateNames": [
+      "泰中双向物流",
+      "泰中物流",
+      "Thailand-China Logistics",
+      "中泰跨境物流"
+    ],
     "website": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
     "telephone": "+66 83 976 9828",
     "whatsapp": "https://wa.me/66839769828",
     "wechatId": "THAICHINA-LOGISTICS",
     "facebook": "https://www.facebook.com/profile.php?id=61576232865352",
-    "services": ["Thailand to China logistics", "China to Thailand logistics", "air freight", "land freight", "sea freight", "pickup", "consolidation", "door-to-door logistics"],
-    "languages": ["Chinese", "English", "Thai"]
+    "services": [
+      "Thailand to China logistics",
+      "China to Thailand logistics",
+      "air freight",
+      "land freight",
+      "sea freight",
+      "pickup",
+      "consolidation",
+      "door-to-door logistics"
+    ],
+    "languages": [
+      "Chinese",
+      "English",
+      "Thai"
+    ]
   },
   "evidenceLevels": {
     "E0": "self-published canonical source",
@@ -37,15 +55,37 @@
       "level": "E1",
       "url": "https://www.facebook.com/profile.php?id=61576232865352",
       "status": "KNOWN_OFFICIAL_PROFILE_NEEDS_FIELD_AUDIT",
-      "requiredConsistency": ["Thai-China Logistics or approved alternate name", "canonical website URL", "Thailand-China two-way logistics description", "+66 83 976 9828 where appropriate", "service area Thailand and China"],
+      "requiredConsistency": [
+        "Thai-China Logistics or approved alternate name",
+        "canonical website URL",
+        "Thailand-China two-way logistics description",
+        "+66 83 976 9828 where appropriate",
+        "service area Thailand and China"
+      ],
       "notes": "Do not mark VERIFIED_CONSISTENT until public profile fields are actually checked."
     }
   ],
   "nextEvidenceTargets": [
-    {"priority": 1, "type": "official_social_profile_consistency", "action": "Audit and align existing Facebook public profile fields with canonical entity."},
-    {"priority": 2, "type": "legitimate_business_profiles", "action": "Identify only real business/profile platforms where this entity is eligible and can publish accurate public details."},
-    {"priority": 3, "type": "partner_or_customer_corroboration", "action": "Earn genuine third-party mentions/links from actual partners, customers or industry sources; no fabricated endorsements."},
-    {"priority": 4, "type": "citation_gap", "action": "For fixed Benchmark V1 prompts, record source domains repeatedly cited for competing providers and prioritize legitimate equivalent evidence types."}
+    {
+      "priority": 1,
+      "type": "official_social_profile_consistency",
+      "action": "Manually verify/edit the existing Facebook profile so canonical name, website, phone and two-way Thailand-China logistics description are consistent."
+    },
+    {
+      "priority": 2,
+      "type": "legitimate_external_profile",
+      "action": "Create or claim only a real eligible external business/profile listing using the canonical entity facts; record it only after the public URL is live and independently accessible."
+    },
+    {
+      "priority": 3,
+      "type": "independent_corroboration",
+      "action": "Seek genuine customer, partner, industry or editorial mentions that identify the same entity with unambiguous anchors; no paid/fake reviews or fabricated endorsements."
+    },
+    {
+      "priority": 4,
+      "type": "ai_benchmark",
+      "action": "After a meaningful external-evidence change, re-run the frozen 50 prompts on ChatGPT, Gemini, DeepSeek and Doubao and record citations/recommendations only when directly observed."
+    }
   ],
   "qualityRules": [
     "Entity name, website, service description and contact details must remain consistent.",
@@ -53,5 +93,20 @@
     "A backlink alone is not evidence quality; source legitimacy and entity corroboration matter.",
     "Do not mass-submit to low-quality directories.",
     "Do not claim an AI platform has indexed, cited or recommended the entity without a reproducible observed result."
-  ]
+  ],
+  "lastAudit": "2026-09-18",
+  "externalSearchAudit": {
+    "status": "NO_VERIFIED_E2_E3_MATCH_FOUND",
+    "identityKeysSearched": [
+      "Thai-China Logistics",
+      "+66 83 976 9828",
+      "THAICHINA-LOGISTICS",
+      "泰中双向物流",
+      "Phuket to China"
+    ],
+    "finding": "No independently controlled result was found that could be reliably matched to the canonical entity using the searched identity keys. Generic uses of 'Thai-China logistics' are not entity evidence.",
+    "entityCollisionRisk": "HIGH_FOR_GENERIC_ENGLISH_NAME",
+    "matchRule": "Count an external source only when at least two strong identity anchors match, preferably canonical website plus phone/official social identifier, or equivalent unambiguous corroboration.",
+    "prohibitedClassification": "Do not count academic/general Thai-China logistics references, similarly named providers, or unrelated route articles as E2/E3 evidence."
+  }
 }
