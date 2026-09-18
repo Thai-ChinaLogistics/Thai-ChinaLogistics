@@ -54,7 +54,7 @@
       "type": "facebook",
       "level": "E1",
       "url": "https://www.facebook.com/profile.php?id=61576232865352",
-      "status": "KNOWN_OFFICIAL_PROFILE_NEEDS_FIELD_AUDIT",
+      "status": "PARTIAL_VERIFIED_CONTROLLED_PROFILE",
       "requiredConsistency": [
         "Thai-China Logistics or approved alternate name",
         "canonical website URL",
@@ -62,7 +62,15 @@
         "+66 83 976 9828 where appropriate",
         "service area Thailand and China"
       ],
-      "notes": "Do not mark VERIFIED_CONSISTENT until public profile fields are actually checked."
+      "notes": "Verified from administrator screenshots on 2026-09-18. Canonical website and WeChat are public and aligned. Main page name remains the existing Chinese name because Facebook currently rejects the requested name change; alias change is also unavailable. This is not treated as a blocker for continuing external evidence work.",
+      "observedPublicFields": {
+        "pageName": "泰国邮寄中国物流",
+        "description": "泰国⇄中国双向物流｜空运·陆运·海运｜上门取件·集运·门到门｜中文·ไทย·English",
+        "canonicalWebsite": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+        "wechatId": "THAICHINA-LOGISTICS",
+        "phone": "NOT_PUBLICLY_LISTED_BY_USER_CHOICE"
+      },
+      "nameAlignment": "BLOCKED_BY_FACEBOOK_REJECTION_AND_60_DAY_CHANGE_CONSTRAINT"
     }
   ],
   "nextEvidenceTargets": [
@@ -107,7 +115,14 @@
     "entityCollisionRisk": "HIGH_FOR_GENERIC_ENGLISH_NAME",
     "matchRule": "Count E2/E3 only when an independently controlled public source matches at least two strong identity anchors, preferably canonical website plus phone/official social identifier, or equivalent unambiguous corroboration.",
     "prohibitedClassification": "Do not count generic Thailand-China logistics pages, similarly named providers, route articles, or first-party GitHub/GitHub Pages as E2/E3.",
-    "nextAction": "Prioritize one legitimate, eligible, publicly accessible external business/entity profile with canonical name + website + phone/service description; then rerun the same exact-identity search before AI benchmark retesting."
+    "nextAction": "Prioritize one legitimate, eligible, publicly accessible external business/entity profile with canonical name + website + phone/service description; then rerun the same exact-identity search before AI benchmark retesting.",
+    "latestAfterFacebookAlignment": "NO_EXACT_IDENTITY_RESULT_OBSERVED_IN_2026-09-18_PUBLIC_SEARCH_SAMPLE",
+    "searchedAnchors": [
+      "泰国邮寄中国物流 + THAICHINA-LOGISTICS",
+      "Thai-China Logistics + THAICHINA-LOGISTICS",
+      "泰国邮寄中国物流 + canonical website"
+    ],
+    "interpretation": "The controlled Facebook profile is now materially better aligned, but the latest public-search sample still did not expose an exact-identity result. Keep E1 partial until independent public discovery is reproducibly observed."
   },
   "facebookIndexAudit": {
     "auditedAt": "2026-09-18",
