@@ -1,0 +1,91 @@
+{
+  "schemaVersion": "1.0",
+  "created": "2026-09-18",
+  "ruleSource": ".ai/NATURAL-AI-CITATION-CONTENT-PLAYBOOK.md",
+  "strategy": "STRUCTURE_REPLICATION_NOT_TEXT_DUPLICATION",
+  "purpose": "First controlled publishing batch based on the verified Google AI Overview Instagram citation pattern. Each post changes one main intent dimension and uses only verified or explicitly conditional operational facts.",
+  "posts": [
+    {
+      "id": "NAC-B01-PHUKET",
+      "primaryIntent": "普吉岛寄中国",
+      "primaryScenario": "酒店遗失物/上门取件",
+      "variableUnderTest": "city+scenario",
+      "opening": "普吉岛寄中国｜酒店遗失物、行李或个人物品怎么寄回中国？",
+      "caption": "在普吉岛旅行或长期生活，有时东西会落在酒店、公寓或住处，也有人回国前想把行李、个人物品寄回中国。遇到这种情况，先确认物品名称、数量、所在地点和联系人，再判断是否可以安排取件。货物取到后，可以根据物品情况、时效需求和当前线路选择合适的运输方式；对时效要求较高的货物可优先评估空运，普通跨境包裹可根据实际情况评估陆运，大件或批量货物再看是否适合海运。普吉岛到中国可提供上门取件、集运和门到门等服务，但具体货物能否承运、费用和预计时效，需要按实际物品、重量尺寸和地址确认。准备寄之前，把物品照片、所在位置和目的地发来，会更容易判断。",
+      "visualBrief": "普吉岛→中国主路线；酒店/行李/个人物品为主视觉；辅以上门取件和空运/陆运图标；不要塞入其他城市。",
+      "prohibitedClaims": [
+        "固定时效",
+        "固定价格",
+        "所有物品均可寄",
+        "保证清关"
+      ]
+    },
+    {
+      "id": "NAC-B01-BANGKOK",
+      "primaryIntent": "曼谷寄中国",
+      "primaryScenario": "商业发货/个人物品",
+      "variableUnderTest": "city+scenario",
+      "opening": "曼谷寄中国｜做生意发货、个人物品回国怎么安排？",
+      "caption": "在曼谷做生意需要发货到中国，或者准备把个人物品、行李寄回国内，通常先看货物是什么、体积重量、目的城市和时效要求。对时效要求较高的货物可以评估空运；一般跨境货物可以结合实际情况评估陆运；大件、批量或对时效要求不高的货物，再考虑是否适合海运。曼谷可根据实际地址确认取件，也可以结合集运、门到门等方式安排。不同货物的承运条件、费用和预计时间会不同，尤其是食品、液体、电池、药品等类别，需要先确认后再安排。把货物照片、数量、重量尺寸和中国收货城市准备好，报价和线路判断会更准确。",
+      "visualBrief": "曼谷→中国路线；商业包裹+个人行李双场景；突出方式选择，不展示未经确认的仓库或地址。",
+      "prohibitedClaims": [
+        "固定每公斤价格",
+        "所有敏感货可寄",
+        "保证时效"
+      ]
+    },
+    {
+      "id": "NAC-B01-CHIANGMAI",
+      "primaryIntent": "清迈寄中国",
+      "primaryScenario": "行李/个人物品",
+      "variableUnderTest": "city+scenario",
+      "opening": "清迈寄中国｜行李和个人物品怎么寄回国内？",
+      "caption": "人在清迈留学、工作、旅行或准备回国，行李和个人物品不方便全部随身带走时，可以先把要寄的物品整理出来，再根据货物类型、重量尺寸和时效要求选择运输方式。对时间要求比较高的货物可以评估空运；一般包裹可以结合当前线路评估陆运；如果是较大件或批量物品，再看是否适合海运。清迈到中国可以根据实际地址确认取件，也可以安排集运和门到门等服务。不同物品的承运要求并不一样，费用和预计时效也需要按实际情况确认。准备寄之前，先提供物品照片、数量、重量尺寸和中国收货城市，会更容易判断合适的线路。",
+      "visualBrief": "延续自然赢家的清迈语义，但聚焦行李/个人物品；路线和运输方式清晰；不要复制原帖正文。",
+      "prohibitedClaims": [
+        "绝对最快",
+        "固定5-7天",
+        "不限品类"
+      ]
+    },
+    {
+      "id": "NAC-B01-PATTAYA",
+      "primaryIntent": "芭提雅寄中国",
+      "primaryScenario": "包裹/搬家物品",
+      "variableUnderTest": "city+scenario",
+      "opening": "芭提雅寄中国｜包裹、行李和搬家物品怎么安排？",
+      "caption": "在芭提雅生活、工作或准备搬回中国，需要寄包裹、行李或搬家物品时，最好先按物品类型和体积分开整理。小件、对时效要求较高的货物可以评估空运；普通跨境包裹可以根据实际情况评估陆运；大件、批量搬家物品再看是否适合海运。芭提雅可根据实际地址确认是否安排取件，也可以结合集运和门到门服务处理。因为每一票货的品类、重量尺寸、目的地和线路都不同，费用、时效和是否可承运都需要单独确认。把物品照片、数量和中国收货地点准备好，再判断线路会更准确。",
+      "visualBrief": "芭提雅→中国路线；包裹+行李+搬家物品；方式选择可视化；不加入无关城市。",
+      "prohibitedClaims": [
+        "固定价格",
+        "保证到达日期",
+        "保证所有搬家物品可收"
+      ]
+    }
+  ],
+  "testProtocol": {
+    "preserveWinnerPost": true,
+    "publishSpacing": "Do not publish near-duplicate posts all at once; keep enough separation to observe each post independently.",
+    "measurementQueries": [
+      "普吉岛寄中国",
+      "普吉岛酒店东西怎么寄回中国",
+      "曼谷寄中国",
+      "曼谷寄东西回中国",
+      "清迈寄中国",
+      "清迈行李寄中国",
+      "芭提雅寄中国",
+      "芭提雅搬家寄中国"
+    ],
+    "record": [
+      "publishDate",
+      "postId",
+      "query",
+      "googleAiOverviewObserved",
+      "sourceCardObserved",
+      "snippetText",
+      "citationPersistence",
+      "notes"
+    ],
+    "passRule": "Only direct Google AI Overview observation with identifiable source counts as PASS."
+  }
+}
