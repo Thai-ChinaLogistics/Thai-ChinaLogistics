@@ -96,17 +96,17 @@
   ],
   "lastAudit": "2026-09-18",
   "externalSearchAudit": {
-    "status": "NO_VERIFIED_E2_E3_MATCH_FOUND",
+    "status": "NO_VERIFIED_E2_E3_MATCH_FOUND_IN_LATEST_EXACT_IDENTITY_SAMPLE",
     "identityKeysSearched": [
-      "Thai-China Logistics",
-      "+66 83 976 9828",
-      "THAICHINA-LOGISTICS",
-      "泰中双向物流",
-      "Phuket to China"
+      "\"Thai-China Logistics\" + \"Thai-ChinaLogistics\" + phone",
+      "\"Thai-China Logistics\" + WeChat ID",
+      "\"泰中双向物流\" + phone",
+      "canonical website URL outside GitHub/GitHub Pages"
     ],
-    "finding": "No independently controlled result was found that could be reliably matched to the canonical entity using the searched identity keys. Generic uses of 'Thai-China logistics' are not entity evidence.",
+    "finding": "The 2026-09-18 exact-identity public-search batch returned no independently controlled result that could be reliably matched to the canonical entity. This is evidence of an external corroboration gap, not evidence that the company is absent from every index.",
     "entityCollisionRisk": "HIGH_FOR_GENERIC_ENGLISH_NAME",
-    "matchRule": "Count an external source only when at least two strong identity anchors match, preferably canonical website plus phone/official social identifier, or equivalent unambiguous corroboration.",
-    "prohibitedClassification": "Do not count academic/general Thai-China logistics references, similarly named providers, or unrelated route articles as E2/E3 evidence."
+    "matchRule": "Count E2/E3 only when an independently controlled public source matches at least two strong identity anchors, preferably canonical website plus phone/official social identifier, or equivalent unambiguous corroboration.",
+    "prohibitedClassification": "Do not count generic Thailand-China logistics pages, similarly named providers, route articles, or first-party GitHub/GitHub Pages as E2/E3.",
+    "nextAction": "Prioritize one legitimate, eligible, publicly accessible external business/entity profile with canonical name + website + phone/service description; then rerun the same exact-identity search before AI benchmark retesting."
   }
 }
