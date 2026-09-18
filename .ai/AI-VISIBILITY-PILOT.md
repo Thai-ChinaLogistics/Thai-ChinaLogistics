@@ -120,3 +120,95 @@
 - 图片与正文保持同一语义，但当前没有证据证明图片是引用的决定因素。
 - 新发布内容采用单变量实验；发布后用同一查询集复测 Google AI Overview，只有直接观察结果才记为 PASS。
 - 详细规则见 .ai/NATURAL-AI-CITATION-CONTENT-PLAYBOOK.md 与 .ai/ai-citation-content-pattern-v1.json。
+
+
+## Codex GEO Site Auditor V1（2026-09-18）
+
+定位：这是 `ai-visibility-growth-engine｜AI 搜索收录与推荐增长引擎` 的站内自动审计与修复模块，不是独立重复产品。
+
+### 输入
+- 企业官网 URL
+- 可选：代码仓库 / 本地项目
+- 可选：核心业务、目标国家/城市、已验证企业事实
+- 固定 Prompt Universe（若已有）
+
+### 自动审计链路
+URL / Repo
+→ Crawlability Audit
+→ Entity Audit
+→ Schema Audit
+→ Canonical Audit
+→ Internal Link Graph
+→ Answer Extraction Audit
+→ Performance / Crawl Efficiency
+→ Content / Intent Gap
+→ Prompt-to-Page Mapping
+→ GEO Fix Plan
+→ Codex Incremental Patch
+→ Before / After Validation
+
+### 审计项
+1. Crawlability：robots、sitemap、canonical、indexability、HTTP 状态、重复/孤立页面。
+2. Entity：企业名称、别名、官网、服务、地区、语言、联系方式是否统一；未知字段保持 UNKNOWN。
+3. Schema：仅在页面语义真实匹配时使用 Organization、WebSite、WebPage、Service、BreadcrumbList、Product 等类型；禁止“为了 Schema 数量而加 Schema”。
+4. FAQ / Answer Layer：FAQ 即使没有专用 Schema，也必须做到问题明确、答案可直接抽取、事实可验证。普通企业 FAQ 不机械套用不适用的 QAPage。
+5. Internal Link Priority：核心实体页、核心服务页、核心路线页具有清晰优先级，避免抓取入口和语义权重混乱。
+6. Answer Extraction：页面首段优先给出可直接回答用户问题的结论；随后提供属性、流程、适用场景、限制与下一步。
+7. Performance / Crawl Efficiency：检查影响抓取与渲染的明显问题，但不把 Core Web Vitals 或速度分数伪装成 AI Citation 证明。
+8. Prompt Mapping：每个核心页面映射到真实需求 Prompt；优先修补已有页面，不制造薄内容重复页。
+9. Evidence Boundary：站内代码优化不能代替外部 Entity Evidence；E1/E2/E3 仍需真实公开来源。
+10. Validation：Google Search 与 AI 平台双轨验收；相同 Prompt 做 Before / After，只有直接观察才允许升级 CITED / RECOMMENDED。
+
+### 决策规则
+- Existing Pages First：现有页能承接意图，就增量修复。
+- Entity First：先解决“是谁”，再扩展“回答什么”。
+- Evidence First：未经验证的地址、仓库、价格、时效、资质、媒体、合作方、评价不得写入。
+- Applicable Schema Only：Schema 类型必须与页面真实语义匹配。
+- No SEO-to-AI Inference：Google 排名提升不能自动推导为 ChatGPT / Gemini / DeepSeek / 豆包已引用或推荐。
+- No 24h Guarantee：不承诺 24/48 小时排名、收录、引用或推荐结果。
+- Freeze Real Wins：已经真实 PASS 的页面结构、引用样本或运行链路默认冻结，除非发现明确缺陷。
+
+### 自动修复输出
+`page | issue | severity | evidence | fix | changed_files | validation | status`
+
+状态仅使用：
+- `PASS_REAL`
+- `PASS_REAL_PARTIAL`
+- `NEEDS_IMPROVEMENT`
+- `BLOCKED_EXTERNAL`
+- `NOT_YET_VERIFIED`
+
+### 双轨验收
+Track A — Search:
+- 页面是否可抓取
+- 是否被索引
+- 核心查询是否出现
+- 排名/摘要/富结果是否发生真实变化
+
+Track B — AI:
+- 是否识别品牌
+- 是否正确描述
+- 是否引用本站或外部证据
+- 是否在非品牌需求中列为候选
+- 引用 URL / 来源域名 / 竞品
+
+### Gap Audit
+Required / Needs Improvement:
+- 自动 Crawl + Schema + Entity + Internal Link + Answer Extraction 审计
+- Prompt-to-Page Mapping
+- Before / After 验收
+- 外部 Evidence 与站内 GEO 分层
+- 真实状态机，禁止假 PASS
+
+Optional / Recommended:
+- Lighthouse / CWV 接入
+- 搜索控制台数据接入
+- 自动截图与证据归档
+- 多站点批量模式
+
+Not Needed by Default:
+- 为每个 Prompt 建独立页面
+- 为所有页面强塞 Product Schema
+- 机械添加 FAQ/QAPage Schema
+- 大量低质量目录提交
+- 以 llms.txt 作为收录或排名开关
