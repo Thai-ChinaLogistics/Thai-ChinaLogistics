@@ -112,3 +112,11 @@
 4. 建 Recommendation Gap 队列，只优化有证据的缺口。
 5. 建外部 Entity Evidence：优先官方 Facebook 等真实已有渠道，保持品牌、官网、电话、服务描述一致。
 6. 同题复测，形成 AI Share of Voice Before / After。
+## Natural AI Citation Content Layer V1（2026-09-18）
+- 已出现真实 Google AI Overview → Instagram 引用样本：查询“清迈邮寄中国”，受控账号 @thaichinalogistics 的帖子 DdLssnGGJKL 被作为来源卡片展示。
+- 该样本作为 FROZEN_NATURAL_WINNER，暂不改写原帖。
+- 新增默认内容规则：业务身份 → 用户真实问题 → 城市/场景 → 直接解决方案 → 按使用场景解释空/陆/海 → 已验证服务能力 → 条件限制 → 自然下一步。
+- 默认复制语义结构，不复制原文；不做关键词堆砌。
+- 图片与正文保持同一语义，但当前没有证据证明图片是引用的决定因素。
+- 新发布内容采用单变量实验；发布后用同一查询集复测 Google AI Overview，只有直接观察结果才记为 PASS。
+- 详细规则见 .ai/NATURAL-AI-CITATION-CONTENT-PLAYBOOK.md 与 .ai/ai-citation-content-pattern-v1.json。
