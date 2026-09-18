@@ -15,31 +15,89 @@
       {
         "name": "PUKA Logistics",
         "url": "https://www.pukalogistics.co/truck-service-from-thailand-to-china/",
-        "signals": ["dedicated Thailand-China route", "process/service detail", "multilingual contact", "Bangkok/Chiang Mai/Phuket branch detail"]
+        "signals": [
+          "dedicated Thailand-China route",
+          "process/service detail",
+          "multilingual contact",
+          "Bangkok/Chiang Mai/Phuket branch detail"
+        ]
       },
       {
         "name": "Thai Global Freight",
         "url": "https://thaiglobalfreight.com/en/shipping/thailand-to-china",
-        "signals": ["dedicated route page", "ports/airports", "documents", "cost components", "risks", "FAQ", "updated and last-verified dates"]
+        "signals": [
+          "dedicated route page",
+          "ports/airports",
+          "documents",
+          "cost components",
+          "risks",
+          "FAQ",
+          "updated and last-verified dates"
+        ]
       },
       {
         "name": "Seven Seas Worldwide",
         "url": "https://www.sevenseasworldwide.com/en-th/shipping/shipping-to-destinations/china/",
-        "signals": ["Thailand-to-China destination content", "step-by-step workflow", "luggage/personal-effects intent", "FAQ", "quote CTA", "packing guidance"]
+        "signals": [
+          "Thailand-to-China destination content",
+          "step-by-step workflow",
+          "luggage/personal-effects intent",
+          "FAQ",
+          "quote CTA",
+          "packing guidance"
+        ]
       },
       {
         "name": "CargoRouter",
         "url": "https://www.cargorouter.com/shipping/Thailand-to-China/",
-        "signals": ["independent route comparison context", "transport modes", "route nodes", "provider network", "RFQ intent"]
+        "signals": [
+          "independent route comparison context",
+          "transport modes",
+          "route nodes",
+          "provider network",
+          "RFQ intent"
+        ]
       }
     ]
   },
   "answer_gap_map": [
-    {"benchmarkGroups":["T01-T10","D01-D05"],"requiredAnswerPattern":"direct service answer + supported modes + pickup/door-to-door conditionality + contact + current-fact caveat","priority":"P0"},
-    {"benchmarkGroups":["P01-P06","S01"],"requiredAnswerPattern":"Phuket pickup/hotel lost-item workflow + required customer information + packaging/shipping steps + cargo acceptance caveat","priority":"P0"},
-    {"benchmarkGroups":["C01-C08"],"requiredAnswerPattern":"China-to-Thailand receiving/consolidation + Taobao/1688 + air/land/sea + delivery workflow + quote/acceptance caveat","priority":"P0"},
-    {"benchmarkGroups":["L01-L06"],"requiredAnswerPattern":"city-specific pickup/service-area answer linked to the same canonical entity; do not invent branches or addresses","priority":"P1"},
-    {"benchmarkGroups":["S02-S10"],"requiredAnswerPattern":"scenario-specific concise FAQ using only verified facts; regulated/special cargo remains conditional","priority":"P1"}
+    {
+      "benchmarkGroups": [
+        "T01-T10",
+        "D01-D05"
+      ],
+      "requiredAnswerPattern": "direct service answer + supported modes + pickup/door-to-door conditionality + contact + current-fact caveat",
+      "priority": "P0"
+    },
+    {
+      "benchmarkGroups": [
+        "P01-P06",
+        "S01"
+      ],
+      "requiredAnswerPattern": "Phuket pickup/hotel lost-item workflow + required customer information + packaging/shipping steps + cargo acceptance caveat",
+      "priority": "P0"
+    },
+    {
+      "benchmarkGroups": [
+        "C01-C08"
+      ],
+      "requiredAnswerPattern": "China-to-Thailand receiving/consolidation + Taobao/1688 + air/land/sea + delivery workflow + quote/acceptance caveat",
+      "priority": "P0"
+    },
+    {
+      "benchmarkGroups": [
+        "L01-L06"
+      ],
+      "requiredAnswerPattern": "city-specific pickup/service-area answer linked to the same canonical entity; do not invent branches or addresses",
+      "priority": "P1"
+    },
+    {
+      "benchmarkGroups": [
+        "S02-S10"
+      ],
+      "requiredAnswerPattern": "scenario-specific concise FAQ using only verified facts; regulated/special cargo remains conditional",
+      "priority": "P1"
+    }
   ],
   "citation_gap_consolidation": {
     "P0": [
@@ -79,5 +137,31 @@
     "Direct ChatGPT/Gemini/DeepSeek/Doubao benchmark runs require direct observations from those platforms; public web search is not a substitute.",
     "Facebook field alignment requires publicly observable fields or authenticated editing access; inaccessible fields remain NOT_PUBLICLY_VERIFIABLE.",
     "Independent partner/customer/reputation evidence must arise from real-world sources and cannot be manufactured in-repository."
-  ]
+  ],
+  "geoSiteAudit": {
+    "status": "PASS_REAL_PARTIAL",
+    "report": ".ai/geo-audit-thai-china-logistics-v1.json",
+    "promptMap": ".ai/prompt-to-page-map-v1.json",
+    "appliedCommits": [
+      "d2a3bb8a9300b4cca935a75921628a27d648c814",
+      "9352950178d7441b99f06d11c6f36f9fb4eb043f",
+      "3c351550749fe47f279fe9ecda077a8467e85559",
+      "48f7d3c454ef4af016184edb63e06855eb518b1d",
+      "df6c803d75d66d15982f4a6003bfcd120c4a5b50",
+      "5420a18d0b7e218ec61e74bbb826858751b8abe4"
+    ],
+    "verifiedFixes": [
+      "domestic moving page now reuses canonical Organization and Service schema",
+      "pickup page now has explicit index/follow robots directive",
+      "sitemap lastmod refreshed for audited modified pages",
+      "frozen 50 prompts mapped to existing intent-owner pages",
+      "large-file guard added to prevent false empty-file diagnosis"
+    ],
+    "remaining": [
+      "homepage fixed-duration transit wording requires a large-file-capable atomic patch",
+      "homepage payload/base64 asset extraction requires visual-regression-safe performance work",
+      "homepage static core service/entity link graph needs strengthening",
+      "direct ChatGPT/Gemini/DeepSeek/Doubao benchmark remains direct-observation dependent"
+    ]
+  }
 }
