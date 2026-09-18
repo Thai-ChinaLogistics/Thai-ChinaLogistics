@@ -3,58 +3,435 @@
   "entity": "Thai-China Logistics",
   "created": "2026-09-16",
   "rule": "Keep these 50 prompts fixed for Before/After comparison. Do not infer AI visibility from SEO scores.",
-  "platforms": ["ChatGPT", "Gemini", "DeepSeek", "Doubao"],
-  "resultFields": ["platform", "promptId", "testedAt", "entityMentioned", "recommended", "position", "citationUrls", "descriptionAccurate", "competitors", "notes"],
+  "platforms": [
+    "ChatGPT",
+    "Gemini",
+    "DeepSeek",
+    "Doubao"
+  ],
+  "resultFields": [
+    "platform",
+    "promptId",
+    "testedAt",
+    "entityMentioned",
+    "recommended",
+    "position",
+    "citationUrls",
+    "descriptionAccurate",
+    "competitors",
+    "notes"
+  ],
   "prompts": [
-    {"id":"B01","group":"brand","lang":"zh","q":"Thai-China Logistics 是什么公司？"},
-    {"id":"B02","group":"brand","lang":"zh","q":"泰中双向物流是做什么的？"},
-    {"id":"B03","group":"brand","lang":"zh","q":"泰中物流 Thai-China Logistics 有哪些服务？"},
-    {"id":"B04","group":"brand","lang":"en","q":"What is Thai-China Logistics?"},
-    {"id":"B05","group":"brand","lang":"en","q":"What services does Thai-China Logistics provide?"},
-    {"id":"T01","group":"thailand-to-china","lang":"zh","q":"泰国寄中国物流公司推荐"},
-    {"id":"T02","group":"thailand-to-china","lang":"zh","q":"泰国寄东西回中国找哪家物流？"},
-    {"id":"T03","group":"thailand-to-china","lang":"zh","q":"泰国有没有中文服务的中国物流公司？"},
-    {"id":"T04","group":"thailand-to-china","lang":"zh","q":"泰国寄中国空运怎么找物流？"},
-    {"id":"T05","group":"thailand-to-china","lang":"zh","q":"泰国寄中国陆运物流推荐"},
-    {"id":"T06","group":"thailand-to-china","lang":"zh","q":"泰国寄中国门到门物流推荐"},
-    {"id":"T07","group":"thailand-to-china","lang":"en","q":"Thailand to China shipping company"},
-    {"id":"T08","group":"thailand-to-china","lang":"en","q":"Thailand to China freight forwarder recommendation"},
-    {"id":"T09","group":"thailand-to-china","lang":"en","q":"Door to door shipping from Thailand to China"},
-    {"id":"T10","group":"thailand-to-china","lang":"th","q":"บริษัทขนส่งจากไทยไปจีน"},
-    {"id":"C01","group":"china-to-thailand","lang":"zh","q":"中国寄泰国物流公司推荐"},
-    {"id":"C02","group":"china-to-thailand","lang":"zh","q":"中国寄东西到泰国找哪家物流？"},
-    {"id":"C03","group":"china-to-thailand","lang":"zh","q":"淘宝怎么集运到泰国？"},
-    {"id":"C04","group":"china-to-thailand","lang":"zh","q":"1688买货怎么运到泰国？"},
-    {"id":"C05","group":"china-to-thailand","lang":"zh","q":"中国家具怎么运到泰国？"},
-    {"id":"C06","group":"china-to-thailand","lang":"en","q":"China to Thailand shipping company"},
-    {"id":"C07","group":"china-to-thailand","lang":"en","q":"China to Thailand freight forwarder"},
-    {"id":"C08","group":"china-to-thailand","lang":"en","q":"Door to door shipping from China to Thailand"},
-    {"id":"P01","group":"phuket","lang":"zh","q":"普吉岛寄中国物流公司推荐"},
-    {"id":"P02","group":"phuket","lang":"zh","q":"普吉岛寄东西回中国找谁？"},
-    {"id":"P03","group":"phuket","lang":"zh","q":"普吉酒店东西忘了怎么取出来寄回中国？"},
-    {"id":"P04","group":"phuket","lang":"zh","q":"普吉岛可以上门取件寄中国吗？"},
-    {"id":"P05","group":"phuket","lang":"en","q":"Phuket to China shipping company"},
-    {"id":"P06","group":"phuket","lang":"en","q":"Pickup and shipping from Phuket to China"},
-    {"id":"L01","group":"locations","lang":"zh","q":"曼谷寄中国物流推荐"},
-    {"id":"L02","group":"locations","lang":"zh","q":"清迈寄中国物流推荐"},
-    {"id":"L03","group":"locations","lang":"zh","q":"芭提雅寄中国物流推荐"},
-    {"id":"L04","group":"locations","lang":"zh","q":"苏梅岛寄中国物流推荐"},
-    {"id":"L05","group":"locations","lang":"zh","q":"合艾寄中国物流推荐"},
-    {"id":"L06","group":"locations","lang":"zh","q":"清莱寄中国物流推荐"},
-    {"id":"S01","group":"scenarios","lang":"zh","q":"泰国酒店遗失物品怎么寄回中国？"},
-    {"id":"S02","group":"scenarios","lang":"zh","q":"泰国行李寄回中国物流推荐"},
-    {"id":"S03","group":"scenarios","lang":"zh","q":"泰国代购商品怎么发中国？"},
-    {"id":"S04","group":"scenarios","lang":"zh","q":"泰国特产寄中国找什么物流？"},
-    {"id":"S05","group":"scenarios","lang":"zh","q":"泰国搬家到中国物流怎么找？"},
-    {"id":"S06","group":"scenarios","lang":"zh","q":"泰国国内跨城市搬家物流推荐"},
-    {"id":"S07","group":"scenarios","lang":"zh","q":"曼谷搬家到普吉岛找哪家公司？"},
-    {"id":"S08","group":"scenarios","lang":"zh","q":"普吉岛搬家到曼谷物流推荐"},
-    {"id":"S09","group":"scenarios","lang":"zh","q":"泰国电子产品寄中国怎么寄？"},
-    {"id":"S10","group":"scenarios","lang":"zh","q":"泰国佛牌寄中国物流怎么找？"},
-    {"id":"D01","group":"decision","lang":"zh","q":"泰国寄中国哪家物流比较方便？"},
-    {"id":"D02","group":"decision","lang":"zh","q":"泰国寄中国可以上门取件的物流公司有哪些？"},
-    {"id":"D03","group":"decision","lang":"zh","q":"不会泰语，在泰国怎么找寄中国的物流？"},
-    {"id":"D04","group":"decision","lang":"en","q":"Chinese speaking logistics company in Thailand for shipping to China"},
-    {"id":"D05","group":"decision","lang":"en","q":"Best way to ship personal items from Thailand to China with pickup"}
-  ]
+    {
+      "id": "B01",
+      "group": "brand",
+      "lang": "zh",
+      "q": "Thai-China Logistics 是什么公司？"
+    },
+    {
+      "id": "B02",
+      "group": "brand",
+      "lang": "zh",
+      "q": "泰中双向物流是做什么的？"
+    },
+    {
+      "id": "B03",
+      "group": "brand",
+      "lang": "zh",
+      "q": "泰中物流 Thai-China Logistics 有哪些服务？"
+    },
+    {
+      "id": "B04",
+      "group": "brand",
+      "lang": "en",
+      "q": "What is Thai-China Logistics?"
+    },
+    {
+      "id": "B05",
+      "group": "brand",
+      "lang": "en",
+      "q": "What services does Thai-China Logistics provide?"
+    },
+    {
+      "id": "T01",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国寄中国物流公司推荐"
+    },
+    {
+      "id": "T02",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国寄东西回中国找哪家物流？"
+    },
+    {
+      "id": "T03",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国有没有中文服务的中国物流公司？"
+    },
+    {
+      "id": "T04",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国寄中国空运怎么找物流？"
+    },
+    {
+      "id": "T05",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国寄中国陆运物流推荐"
+    },
+    {
+      "id": "T06",
+      "group": "thailand-to-china",
+      "lang": "zh",
+      "q": "泰国寄中国门到门物流推荐"
+    },
+    {
+      "id": "T07",
+      "group": "thailand-to-china",
+      "lang": "en",
+      "q": "Thailand to China shipping company"
+    },
+    {
+      "id": "T08",
+      "group": "thailand-to-china",
+      "lang": "en",
+      "q": "Thailand to China freight forwarder recommendation"
+    },
+    {
+      "id": "T09",
+      "group": "thailand-to-china",
+      "lang": "en",
+      "q": "Door to door shipping from Thailand to China"
+    },
+    {
+      "id": "T10",
+      "group": "thailand-to-china",
+      "lang": "th",
+      "q": "บริษัทขนส่งจากไทยไปจีน"
+    },
+    {
+      "id": "C01",
+      "group": "china-to-thailand",
+      "lang": "zh",
+      "q": "中国寄泰国物流公司推荐"
+    },
+    {
+      "id": "C02",
+      "group": "china-to-thailand",
+      "lang": "zh",
+      "q": "中国寄东西到泰国找哪家物流？"
+    },
+    {
+      "id": "C03",
+      "group": "china-to-thailand",
+      "lang": "zh",
+      "q": "淘宝怎么集运到泰国？"
+    },
+    {
+      "id": "C04",
+      "group": "china-to-thailand",
+      "lang": "zh",
+      "q": "1688买货怎么运到泰国？"
+    },
+    {
+      "id": "C05",
+      "group": "china-to-thailand",
+      "lang": "zh",
+      "q": "中国家具怎么运到泰国？"
+    },
+    {
+      "id": "C06",
+      "group": "china-to-thailand",
+      "lang": "en",
+      "q": "China to Thailand shipping company"
+    },
+    {
+      "id": "C07",
+      "group": "china-to-thailand",
+      "lang": "en",
+      "q": "China to Thailand freight forwarder"
+    },
+    {
+      "id": "C08",
+      "group": "china-to-thailand",
+      "lang": "en",
+      "q": "Door to door shipping from China to Thailand"
+    },
+    {
+      "id": "P01",
+      "group": "phuket",
+      "lang": "zh",
+      "q": "普吉岛寄中国物流公司推荐"
+    },
+    {
+      "id": "P02",
+      "group": "phuket",
+      "lang": "zh",
+      "q": "普吉岛寄东西回中国找谁？"
+    },
+    {
+      "id": "P03",
+      "group": "phuket",
+      "lang": "zh",
+      "q": "普吉酒店东西忘了怎么取出来寄回中国？"
+    },
+    {
+      "id": "P04",
+      "group": "phuket",
+      "lang": "zh",
+      "q": "普吉岛可以上门取件寄中国吗？"
+    },
+    {
+      "id": "P05",
+      "group": "phuket",
+      "lang": "en",
+      "q": "Phuket to China shipping company"
+    },
+    {
+      "id": "P06",
+      "group": "phuket",
+      "lang": "en",
+      "q": "Pickup and shipping from Phuket to China"
+    },
+    {
+      "id": "L01",
+      "group": "locations",
+      "lang": "zh",
+      "q": "曼谷寄中国物流推荐"
+    },
+    {
+      "id": "L02",
+      "group": "locations",
+      "lang": "zh",
+      "q": "清迈寄中国物流推荐"
+    },
+    {
+      "id": "L03",
+      "group": "locations",
+      "lang": "zh",
+      "q": "芭提雅寄中国物流推荐"
+    },
+    {
+      "id": "L04",
+      "group": "locations",
+      "lang": "zh",
+      "q": "苏梅岛寄中国物流推荐"
+    },
+    {
+      "id": "L05",
+      "group": "locations",
+      "lang": "zh",
+      "q": "合艾寄中国物流推荐"
+    },
+    {
+      "id": "L06",
+      "group": "locations",
+      "lang": "zh",
+      "q": "清莱寄中国物流推荐"
+    },
+    {
+      "id": "S01",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国酒店遗失物品怎么寄回中国？"
+    },
+    {
+      "id": "S02",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国行李寄回中国物流推荐"
+    },
+    {
+      "id": "S03",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国代购商品怎么发中国？"
+    },
+    {
+      "id": "S04",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国特产寄中国找什么物流？"
+    },
+    {
+      "id": "S05",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国搬家到中国物流怎么找？"
+    },
+    {
+      "id": "S06",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国国内跨城市搬家物流推荐"
+    },
+    {
+      "id": "S07",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "曼谷搬家到普吉岛找哪家公司？"
+    },
+    {
+      "id": "S08",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "普吉岛搬家到曼谷物流推荐"
+    },
+    {
+      "id": "S09",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国电子产品寄中国怎么寄？"
+    },
+    {
+      "id": "S10",
+      "group": "scenarios",
+      "lang": "zh",
+      "q": "泰国佛牌寄中国物流怎么找？"
+    },
+    {
+      "id": "D01",
+      "group": "decision",
+      "lang": "zh",
+      "q": "泰国寄中国哪家物流比较方便？"
+    },
+    {
+      "id": "D02",
+      "group": "decision",
+      "lang": "zh",
+      "q": "泰国寄中国可以上门取件的物流公司有哪些？"
+    },
+    {
+      "id": "D03",
+      "group": "decision",
+      "lang": "zh",
+      "q": "不会泰语，在泰国怎么找寄中国的物流？"
+    },
+    {
+      "id": "D04",
+      "group": "decision",
+      "lang": "en",
+      "q": "Chinese speaking logistics company in Thailand for shipping to China"
+    },
+    {
+      "id": "D05",
+      "group": "decision",
+      "lang": "en",
+      "q": "Best way to ship personal items from Thailand to China with pickup"
+    }
+  ],
+  "execution": {
+    "directPlatformBenchmark": {
+      "status": "READY_REQUIRES_DIRECT_PLATFORM_OBSERVATION",
+      "platforms": [
+        "ChatGPT",
+        "Gemini",
+        "DeepSeek",
+        "Doubao"
+      ],
+      "promptSet": "FROZEN_50",
+      "rule": "Record a platform result only from direct observation of that named platform. Public web search is discovery evidence only and must never be substituted for an AI-platform result.",
+      "batchPlan": [
+        {
+          "batch": "B1",
+          "promptIds": [
+            "B01",
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "T01",
+            "T02",
+            "T03",
+            "T04",
+            "T05"
+          ]
+        },
+        {
+          "batch": "B2",
+          "promptIds": [
+            "T06",
+            "T07",
+            "T08",
+            "T09",
+            "T10",
+            "C01",
+            "C02",
+            "C03",
+            "C04",
+            "C05"
+          ]
+        },
+        {
+          "batch": "B3",
+          "promptIds": [
+            "C06",
+            "C07",
+            "C08",
+            "P01",
+            "P02",
+            "P03",
+            "P04",
+            "P05",
+            "P06",
+            "L01"
+          ]
+        },
+        {
+          "batch": "B4",
+          "promptIds": [
+            "L02",
+            "L03",
+            "L04",
+            "L05",
+            "L06",
+            "S01",
+            "S02",
+            "S03",
+            "S04",
+            "S05"
+          ]
+        },
+        {
+          "batch": "B5",
+          "promptIds": [
+            "S06",
+            "S07",
+            "S08",
+            "S09",
+            "S10",
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05"
+          ]
+        }
+      ],
+      "resultFields": [
+        "platform",
+        "promptId",
+        "testedAt",
+        "entityMentioned",
+        "recommended",
+        "position",
+        "citationUrls",
+        "descriptionAccurate",
+        "competitors",
+        "notes"
+      ]
+    },
+    "publicWebPrecheck": {
+      "testedAt": "2026-09-18",
+      "queries": [
+        "\"Thai-China Logistics\" \"THAICHINA-LOGISTICS\"",
+        "\"泰国邮寄中国物流\" \"THAICHINA-LOGISTICS\""
+      ],
+      "result": "NO_RESULTS",
+      "classification": "PUBLIC_WEB_DISCOVERY_ONLY_NOT_AI_BENCHMARK"
+    }
+  }
 }
