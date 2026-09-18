@@ -51,7 +51,12 @@
           "Bottom service icons for two-way shipping, door pickup, tracking and safety/assurance"
         ]
       },
-      "whyThisCaseMatters": "The post appears to have been written as a broad, useful service explainer rather than a purpose-built AI/GEO asset. Its later appearance in Google AI Overview therefore serves as a valuable natural winner baseline."
+      "whyThisCaseMatters": "The post appears to have been written as a broad, useful service explainer rather than a purpose-built AI/GEO asset. Its later appearance in Google AI Overview therefore serves as a valuable natural winner baseline.",
+      "retrievalSignal": {
+        "status": "VERIFIED_FROM_SCREENSHOT_COMPARISON",
+        "observation": "The Google AI Overview source-card snippet visibly repeats explanatory wording from the Instagram caption about air, land and sea shipping use cases.",
+        "implication": "Caption/body text is directly evidenced as retrievable source text for this observed AI Overview result. The image may reinforce topic/entity understanding, but its causal contribution is not proven."
+      }
     }
   ],
   "currentHypotheses": [
@@ -177,5 +182,14 @@
       }
     ],
     "testRule": "Change one major intent dimension per post and preserve factual accuracy. Measure Google AI Overview pickup before expanding further."
-  }
+  },
+  "replicationPrinciples": [
+    "Lead with the route/entity in one short line.",
+    "Immediately state the real user problem the post solves.",
+    "Mention only relevant cities inside complete sentences, not as a keyword dump.",
+    "Explain shipping modes by user need or cargo situation.",
+    "Use one broad visual that reinforces route + cargo/service categories.",
+    "Keep the caption readable enough for an AI system to extract complete answer sentences.",
+    "Do not force hashtags or repeated keywords when the natural prose already covers the intent."
+  ]
 }
