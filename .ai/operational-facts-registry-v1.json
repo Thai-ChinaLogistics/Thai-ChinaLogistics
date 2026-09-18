@@ -95,10 +95,19 @@
     "FAQ and service-page factual claims"
   ],
   "next_audit": {
-    "facebook_field_alignment": "NEEDS_MANUAL_PROFILE_FIELD_CHECK",
+    "facebook_field_alignment": "PARTIAL_VERIFIED_NO_LONGER_BLOCKING",
     "external_independent_evidence": "WEAK_NO_VERIFIED_E2_E3_MATCH_FOUND",
     "citation_gap_50_prompt_expansion": "FRAMEWORK_READY_DIRECT_AI_RUN_PENDING",
-    "ai_citation": "NOT_YET_VERIFIED",
-    "ai_non_brand_recommendation": "NOT_YET_VERIFIED"
+    "google_ai_overview_social_citation": "PASS_REAL_PARTIAL",
+    "ai_citation": "PASS_REAL_PARTIAL_GOOGLE_AI_OVERVIEW_SOCIAL",
+    "ai_non_brand_recommendation": "NOT_YET_VERIFIED",
+    "next_content_test": "PUBLISH_AND_RETEST_NATURAL_AI_CITATION_PATTERN"
+  },
+  "content_distribution_rule": {
+    "status": "ACTIVE_DEFAULT",
+    "ruleFile": ".ai/NATURAL-AI-CITATION-CONTENT-PLAYBOOK.md",
+    "patternFile": ".ai/ai-citation-content-pattern-v1.json",
+    "defaultTrigger": "Use for future social publishing copy unless the user explicitly asks for a different content style.",
+    "evidenceBase": "One real Google AI Overview citation to the controlled Instagram account has been observed; causation and cross-platform transfer remain under test."
   }
 }
