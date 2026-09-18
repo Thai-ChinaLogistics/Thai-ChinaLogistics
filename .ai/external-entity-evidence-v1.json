@@ -113,9 +113,8 @@
     "auditedAt": "2026-09-18",
     "publicSearchStatus": "NOT_OBSERVED_IN_CURRENT_SEARCH_SAMPLE",
     "queries": [
-      "Facebook profile numeric ID",
-      "Thai-China Logistics + Facebook + Thailand China logistics",
-      "Thai-China Logistics + canonical website"
+      "\"Thai-China Logistics\" + Facebook profile ID 61576232865352",
+      "\"Thai-China Logistics\" + phone 66839769828 + Facebook"
     ],
     "finding": "The known official Facebook profile was not observed in the current public-search sample under the tested identity queries. This does not prove the profile is absent from Facebook or all search indexes.",
     "evidenceLevel": "E1_PENDING_PUBLIC_FIELD_AND_INDEX_VERIFICATION",
@@ -125,6 +124,10 @@
       "Thailand-China two-way logistics description",
       "+66 83 976 9828 where appropriate"
     ],
-    "acceptanceRule": "Do not advance E1 to VERIFIED_CONSISTENT until the public profile fields can be directly observed and matched."
+    "acceptanceRule": "Do not advance E1 to VERIFIED_CONSISTENT until the public profile fields can be directly observed and matched.",
+    "latestExactPublicSearch": "NO_RESULTS_FOR_PROFILE_ID_OR_PHONE_ANCHORED_FACEBOOK_QUERIES",
+    "conclusion": "The current public-search sample returned no result for the Facebook profile using strong identity anchors. Do not promote FB-001 to VERIFIED_CONSISTENT from search evidence alone.",
+    "blocker": "Public About/Profile field inspection or authenticated Facebook editing access is required to verify or align the controlled profile.",
+    "nextExecutableAfterAlignment": "Repeat exact-identity search; if independently accessible and consistent, advance E1 only, then rerun frozen AI benchmark prompts."
   }
 }
