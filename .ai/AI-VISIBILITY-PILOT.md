@@ -31,67 +31,10 @@
 - 未确认：LINE、QQ、Email、street address；不得编造。
 
 ## 固定 50 Prompt Benchmark V1
-以下问题作为 Pilot 的固定黄金测试集；Before/After 不随意换题。
 
-### A. 品牌与实体识别（1–8）
-1. Thai-China Logistics 是什么公司？
-2. 泰中双向物流是做什么的？
-3. 泰中物流有哪些服务？
-4. Thai-China Logistics Thailand contact
-5. Thai-China Logistics Facebook
-6. 泰中双向物流联系方式
-7. 泰中双向物流可以从泰国寄中国吗？
-8. 泰中双向物流可以从中国寄泰国吗？
+唯一真源：`.ai/ai-visibility-benchmark-v1.json`。
 
-### B. 泰国 → 中国非品牌需求（9–20）
-9. 泰国寄中国物流公司推荐
-10. 泰国寄东西回中国找哪家物流？
-11. 泰国到中国物流公司有哪些？
-12. 泰国寄中国空运公司推荐
-13. 泰国寄中国陆运怎么找物流？
-14. 泰国寄中国海运公司推荐
-15. 泰国寄中国门到门物流
-16. 泰国寄中国有没有中文物流公司？
-17. Thailand to China shipping company
-18. Thailand to China logistics company
-19. Thailand to China freight forwarder
-20. Thailand to China door to door shipping
-
-### C. 中国 → 泰国非品牌需求（21–30）
-21. 中国寄泰国物流公司推荐
-22. 中国寄东西到泰国找哪家物流？
-23. 中国到泰国物流公司有哪些？
-24. 中国寄泰国空运
-25. 中国寄泰国陆运
-26. 中国寄泰国海运
-27. 中国寄泰国门到门物流
-28. 淘宝怎么集运到泰国？
-29. China to Thailand shipping company
-30. China to Thailand freight forwarder
-
-### D. 城市与地域需求（31–40）
-31. 普吉岛寄中国物流公司推荐
-32. 普吉岛寄东西回中国找谁？
-33. Phuket to China shipping company
-34. 曼谷寄中国物流公司推荐
-35. Bangkok to China shipping company
-36. 清迈寄中国物流公司
-37. Chiang Mai to China shipping
-38. 芭提雅寄中国物流
-39. 中国寄普吉岛物流
-40. China to Phuket shipping
-
-### E. 场景需求（41–50）
-41. 泰国酒店东西忘了怎么寄回中国？
-42. 普吉岛酒店遗失物品怎么寄回中国？
-43. 泰国跑腿取件寄中国
-44. 泰国代购后怎么寄中国？
-45. 泰国搬家物流公司推荐
-46. 普吉岛搬家到曼谷物流
-47. 曼谷搬家到清迈物流
-48. 泰国大件寄中国怎么寄？
-49. 中国家具怎么运到泰国？
-50. 1688 买东西怎么集运到泰国？
+本文件不再复制维护另一份 50 Prompt 文本清单，避免 Prompt 漂移。任何 Agent、Codex、自动审计器、Before/After 验收都必须读取该 JSON 中的冻结 Prompt IDs 与原文；如文档与 JSON 冲突，以该 JSON 为准。
 
 ## Benchmark 记录字段
 `date | platform | prompt_id | prompt | brand_found | recommended | position | cited_url | cited_domain | description_accuracy | competitors | notes`
@@ -123,6 +66,8 @@
 
 
 ## Codex GEO Site Auditor V1（2026-09-18）
+
+机器可执行规格：`.ai/codex-geo-site-auditor-v1.json`。后续自动审计/修复优先读取该文件，本节作为人类可读说明。
 
 定位：这是 `ai-visibility-growth-engine｜AI 搜索收录与推荐增长引擎` 的站内自动审计与修复模块，不是独立重复产品。
 
