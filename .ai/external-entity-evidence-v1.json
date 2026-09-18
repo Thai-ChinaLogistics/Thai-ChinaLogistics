@@ -69,22 +69,22 @@
     {
       "priority": 1,
       "type": "official_social_profile_consistency",
-      "action": "Manually verify/edit the existing Facebook profile so canonical name, website, phone and two-way Thailand-China logistics description are consistent."
+      "action": "Verify the existing Facebook public About/profile fields against the canonical entity facts. If editing access is available, align name, canonical website, two-way Thailand-China logistics description and phone without inventing address/legal fields."
     },
     {
       "priority": 2,
       "type": "legitimate_external_profile",
-      "action": "Create or claim only a real eligible external business/profile listing using the canonical entity facts; record it only after the public URL is live and independently accessible."
+      "action": "Establish only an eligible real public business/entity profile that exposes canonical name + website + at least one strong identity anchor; record only after the public URL is independently accessible."
     },
     {
       "priority": 3,
-      "type": "independent_corroboration",
-      "action": "Seek genuine customer, partner, industry or editorial mentions that identify the same entity with unambiguous anchors; no paid/fake reviews or fabricated endorsements."
+      "type": "exact_identity_recheck",
+      "action": "After one real external profile/evidence change, rerun exact identity searches using brand + website/phone/social identifier."
     },
     {
       "priority": 4,
       "type": "ai_benchmark",
-      "action": "After a meaningful external-evidence change, re-run the frozen 50 prompts on ChatGPT, Gemini, DeepSeek and Doubao and record citations/recommendations only when directly observed."
+      "action": "Only after a meaningful evidence change, rerun frozen prompts on named AI platforms and record direct observations."
     }
   ],
   "qualityRules": [
@@ -108,5 +108,23 @@
     "matchRule": "Count E2/E3 only when an independently controlled public source matches at least two strong identity anchors, preferably canonical website plus phone/official social identifier, or equivalent unambiguous corroboration.",
     "prohibitedClassification": "Do not count generic Thailand-China logistics pages, similarly named providers, route articles, or first-party GitHub/GitHub Pages as E2/E3.",
     "nextAction": "Prioritize one legitimate, eligible, publicly accessible external business/entity profile with canonical name + website + phone/service description; then rerun the same exact-identity search before AI benchmark retesting."
+  },
+  "facebookIndexAudit": {
+    "auditedAt": "2026-09-18",
+    "publicSearchStatus": "NOT_OBSERVED_IN_CURRENT_SEARCH_SAMPLE",
+    "queries": [
+      "Facebook profile numeric ID",
+      "Thai-China Logistics + Facebook + Thailand China logistics",
+      "Thai-China Logistics + canonical website"
+    ],
+    "finding": "The known official Facebook profile was not observed in the current public-search sample under the tested identity queries. This does not prove the profile is absent from Facebook or all search indexes.",
+    "evidenceLevel": "E1_PENDING_PUBLIC_FIELD_AND_INDEX_VERIFICATION",
+    "requiredPublicFields": [
+      "canonical/approved entity name",
+      "canonical website",
+      "Thailand-China two-way logistics description",
+      "+66 83 976 9828 where appropriate"
+    ],
+    "acceptanceRule": "Do not advance E1 to VERIFIED_CONSISTENT until the public profile fields can be directly observed and matched."
   }
 }
