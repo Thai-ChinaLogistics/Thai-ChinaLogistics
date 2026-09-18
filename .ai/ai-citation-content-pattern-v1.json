@@ -30,7 +30,28 @@
         "Whether the same post is cited for every related city query.",
         "Whether Google recommended the business itself versus using the post as supporting evidence.",
         "Whether the same source is cited by ChatGPT, Gemini, DeepSeek or Doubao."
-      ]
+      ],
+      "sourcePostId": "DdLssnGGJKL",
+      "sourcePermalink": "https://www.instagram.com/p/DdLssnGGJKL/",
+      "sourceAccount": "thaichinalogistics",
+      "postAgeAtScreenshot": "5 days",
+      "screenshotVerifiedContent": {
+        "visibleOpening": "TH 泰国发中国 | CN 中国发泰国 | 中泰双向物流",
+        "visibleNarrative": [
+          "Explains a common user problem: people living or doing business in Thailand often do not know how to send goods back to China.",
+          "Names Bangkok, Phuket, Chiang Mai and Pattaya inside natural prose rather than as a detached keyword list.",
+          "States Thailand↔China two-way logistics as the service identity.",
+          "Explains air, land and sea modes by use case.",
+          "Indicates broad Thailand-side coverage, with additional city coverage continuing below the visible fold."
+        ],
+        "visualSignals": [
+          "Hero image headline: 泰国寄中国·中国寄泰国",
+          "Visual route cue Thailand ↔ China",
+          "Cargo-category grid with personal items, food, cosmetics, luxury/second-hand goods, Buddhist items, electronics, plants, medicines, documents, commercial parcels, luggage/moving and Thailand shopping",
+          "Bottom service icons for two-way shipping, door pickup, tracking and safety/assurance"
+        ]
+      },
+      "whyThisCaseMatters": "The post appears to have been written as a broad, useful service explainer rather than a purpose-built AI/GEO asset. Its later appearance in Google AI Overview therefore serves as a valuable natural winner baseline."
     }
   ],
   "currentHypotheses": [
@@ -111,5 +132,50 @@
       "acceptance": "Only direct observations count as PASS."
     }
   ],
-  "frozenRule": "Do not optimize away the current winner before its content and citation behavior are fully captured."
+  "frozenRule": "Do not optimize away the current winner before its content and citation behavior are fully captured.",
+  "naturalWinnerAnalysis": {
+    "winnerId": "GOOGLE-AIO-001",
+    "status": "FROZEN_NATURAL_WINNER",
+    "corePattern": [
+      "One clear service entity in the opening line",
+      "Immediate real-world user problem",
+      "Multiple city intents embedded naturally in explanatory prose",
+      "Mode-by-use-case answers rather than mode names alone",
+      "Broad but coherent cargo/scenario coverage",
+      "Strong visual reinforcement of route, cargo types and service capabilities",
+      "No obvious AI-specific formatting or synthetic citation bait"
+    ],
+    "avoidMisreading": [
+      "Do not conclude that keyword count alone caused the citation.",
+      "Do not copy every city into every future post.",
+      "Do not infer that the image text was necessarily the decisive retrieval signal.",
+      "Do not rewrite the winner until its citation persistence has been measured."
+    ]
+  },
+  "nextReplicationBatch": {
+    "strategy": "STRUCTURE_REPLICATION_NOT_TEXT_DUPLICATION",
+    "plannedPosts": [
+      {
+        "primaryIntent": "普吉岛寄中国",
+        "secondaryScenario": "酒店遗失物/上门取件",
+        "keep": "problem-first + route + concrete handling flow"
+      },
+      {
+        "primaryIntent": "曼谷寄中国",
+        "secondaryScenario": "商业发货/个人物品",
+        "keep": "problem-first + service modes + pickup"
+      },
+      {
+        "primaryIntent": "清迈寄中国",
+        "secondaryScenario": "行李/个人物品",
+        "keep": "city embedded naturally + mode-by-use-case"
+      },
+      {
+        "primaryIntent": "芭提雅寄中国",
+        "secondaryScenario": "包裹/搬家物品",
+        "keep": "city embedded naturally + practical logistics answer"
+      }
+    ],
+    "testRule": "Change one major intent dimension per post and preserve factual accuracy. Measure Google AI Overview pickup before expanding further."
+  }
 }
