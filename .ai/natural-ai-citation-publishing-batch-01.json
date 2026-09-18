@@ -18,7 +18,25 @@
         "固定价格",
         "所有物品均可寄",
         "保证清关"
-      ]
+      ],
+      "status": "READY_TO_PUBLISH",
+      "platformPriority": [
+        "Instagram",
+        "Facebook"
+      ],
+      "publishPackage": {
+        "headline": "普吉岛寄中国｜酒店遗失物、行李或个人物品怎么寄回中国？",
+        "caption": "在普吉岛旅行或长期生活，有时东西会落在酒店、公寓或住处，也有人回国前想把行李、个人物品寄回中国。遇到这种情况，先确认物品名称、数量、所在地点和联系人，再判断是否可以安排取件。货物取到后，可以根据物品情况、时效需求和当前线路选择合适的运输方式；对时效要求较高的货物可优先评估空运，普通跨境包裹可根据实际情况评估陆运，大件或批量货物再看是否适合海运。普吉岛到中国可提供上门取件、集运和门到门等服务，但具体货物能否承运、费用和预计时效，需要按实际物品、重量尺寸和地址确认。准备寄之前，把物品照片、所在位置和目的地发来，会更容易判断。",
+        "suggestedHashtags": [
+          "#普吉岛寄中国",
+          "#泰国寄中国",
+          "#普吉岛物流",
+          "#酒店遗失物",
+          "#上门取件",
+          "#中泰物流"
+        ],
+        "note": "Keep hashtags secondary; do not repeat them inside the body. Preserve natural-answer structure."
+      }
     },
     {
       "id": "NAC-B01-BANGKOK",
@@ -87,5 +105,10 @@
       "notes"
     ],
     "passRule": "Only direct Google AI Overview observation with identifiable source counts as PASS."
+  },
+  "currentStep": {
+    "status": "READY_FOR_FIRST_LIVE_POST",
+    "postId": "NAC-B01-PHUKET",
+    "nextAfterPublish": "Record live post URL/ID and timestamp, then retest the frozen Phuket Google AI Overview queries."
   }
 }
