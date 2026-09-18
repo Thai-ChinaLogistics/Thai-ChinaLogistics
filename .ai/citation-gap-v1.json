@@ -6,41 +6,170 @@
   "currentEntityStatus": {
     "publicSearchDiscovery": "PASS_REAL_PARTIAL",
     "serviceUnderstanding": "PASS_REAL_PARTIAL",
-    "aiCitation": "NOT_YET_VERIFIED",
-    "aiRecommendation": "NOT_YET_VERIFIED"
+    "aiCitation": "PASS_REAL_PARTIAL_GOOGLE_AI_OVERVIEW_SOCIAL",
+    "aiRecommendation": "NOT_YET_VERIFIED",
+    "googleAiOverviewControlledSocialCitation": "PASS_REAL"
   },
   "observations": [
     {
       "queryCluster": "china-to-thailand",
       "ourUrlObserved": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html",
-      "ourSignalsObserved": ["warehouse receiving", "consolidation", "Taobao/1688", "air/land/sea", "Bangkok/Phuket/Chiang Mai", "door-to-door", "contact CTA"],
+      "ourSignalsObserved": [
+        "warehouse receiving",
+        "consolidation",
+        "Taobao/1688",
+        "air/land/sea",
+        "Bangkok/Phuket/Chiang Mai",
+        "door-to-door",
+        "contact CTA"
+      ],
       "competitorExamples": [
-        {"name":"PTCARGO","url":"https://www.ptcargomember.com/en/","signals":["clear company identity","Guangzhou warehouse","Bangkok warehouse","Taobao/Tmall/1688","step-by-step process","phone/email/LINE","opening hours","physical locations"]},
-        {"name":"KA Express","url":"https://kaexpress-th.com/","signals":["clear company identity","China-to-Thailand specialization","land/sea modes","published transit ranges","preorder/sourcing service","free consultation CTA"]},
-        {"name":"CG CARGO","url":"https://www.cgcargos.com/en/faq.html","signals":["dedicated FAQ","warehouse locations","freight calculation explanation","customs/import FAQ","Taobao/1688/Alibaba intent coverage"]}
+        {
+          "name": "PTCARGO",
+          "url": "https://www.ptcargomember.com/en/",
+          "signals": [
+            "clear company identity",
+            "Guangzhou warehouse",
+            "Bangkok warehouse",
+            "Taobao/Tmall/1688",
+            "step-by-step process",
+            "phone/email/LINE",
+            "opening hours",
+            "physical locations"
+          ]
+        },
+        {
+          "name": "KA Express",
+          "url": "https://kaexpress-th.com/",
+          "signals": [
+            "clear company identity",
+            "China-to-Thailand specialization",
+            "land/sea modes",
+            "published transit ranges",
+            "preorder/sourcing service",
+            "free consultation CTA"
+          ]
+        },
+        {
+          "name": "CG CARGO",
+          "url": "https://www.cgcargos.com/en/faq.html",
+          "signals": [
+            "dedicated FAQ",
+            "warehouse locations",
+            "freight calculation explanation",
+            "customs/import FAQ",
+            "Taobao/1688/Alibaba intent coverage"
+          ]
+        }
       ]
     },
     {
       "queryCluster": "thailand-to-china",
       "competitorExamples": [
-        {"name":"Thai Global Freight","url":"https://www.thaiglobalfreight.com/en/shipping/thailand-to-china","signals":["dedicated route page","named ports and airports","sea/air/multimodal","quote CTA","route-specific operational detail"]},
-        {"name":"RNP Express","url":"https://www.rnpexpress.com/en/international-shipping-service/shipping-to-china/","signals":["dedicated China destination page","door-to-door","tracking","published service options","dated rate table","LINE CTA"]},
-        {"name":"PUKA Logistics","url":"https://www.pukalogistics.co/truck-service-from-thailand-to-china/","signals":["company identity","Bangkok/Chiang Mai/Phuket branches","physical addresses","phone/email","LINE/WeChat/WhatsApp/Facebook"]},
-        {"name":"Seapoe Global Relocations Thailand","url":"https://seapoe-th.com/en","signals":["Thailand-China positioning","personal belongings/furniture/luggage","door-to-door process","operating history claims","network/customer scale claims"]}
+        {
+          "name": "Thai Global Freight",
+          "url": "https://www.thaiglobalfreight.com/en/shipping/thailand-to-china",
+          "signals": [
+            "dedicated route page",
+            "named ports and airports",
+            "sea/air/multimodal",
+            "quote CTA",
+            "route-specific operational detail"
+          ]
+        },
+        {
+          "name": "RNP Express",
+          "url": "https://www.rnpexpress.com/en/international-shipping-service/shipping-to-china/",
+          "signals": [
+            "dedicated China destination page",
+            "door-to-door",
+            "tracking",
+            "published service options",
+            "dated rate table",
+            "LINE CTA"
+          ]
+        },
+        {
+          "name": "PUKA Logistics",
+          "url": "https://www.pukalogistics.co/truck-service-from-thailand-to-china/",
+          "signals": [
+            "company identity",
+            "Bangkok/Chiang Mai/Phuket branches",
+            "physical addresses",
+            "phone/email",
+            "LINE/WeChat/WhatsApp/Facebook"
+          ]
+        },
+        {
+          "name": "Seapoe Global Relocations Thailand",
+          "url": "https://seapoe-th.com/en",
+          "signals": [
+            "Thailand-China positioning",
+            "personal belongings/furniture/luggage",
+            "door-to-door process",
+            "operating history claims",
+            "network/customer scale claims"
+          ]
+        }
       ]
+    },
+    {
+      "queryCluster": "chiang-mai-to-china",
+      "query": "清迈邮寄中国",
+      "observedAt": "2026-09-18",
+      "surface": "Google AI Overview",
+      "result": "CONTROLLED_INSTAGRAM_SOURCE_CITED",
+      "sourceHandle": "thaichinalogistics",
+      "sourceType": "controlled_social_profile",
+      "evidenceOrigin": "user-supplied screenshot",
+      "interpretation": "Google AI Overview visibly used the Instagram account content as a supporting source for this non-brand query.",
+      "limitation": "The screenshot does not establish a canonical website citation, exact citation URL, provider recommendation, or citation on other AI platforms."
     }
   ],
   "citationGapHypotheses": [
-    {"gap":"independent external entity evidence","priority":"P0","status":"WEAK","action":"Build and verify consistent real public profiles and independent references; no fake listings or reviews."},
-    {"gap":"operational proof/detail","priority":"P0","status":"NEEDS_IMPROVEMENT","action":"Where factually available, add real route/process nodes, warehouse/pickup workflow, service limitations and current verification dates. Do not invent ports, warehouses, licenses or transit promises."},
-    {"gap":"FAQ answerability","priority":"P1","status":"NEEDS_IMPROVEMENT","action":"Strengthen existing core pages with concise question-answer blocks for recurring benchmark intents instead of creating thin duplicate pages."},
-    {"gap":"freshness/provenance","priority":"P1","status":"NEEDS_IMPROVEMENT","action":"Add honest reviewed/updated dates to factual service content and re-check time-sensitive customs/routing claims."},
-    {"gap":"business identity completeness","priority":"P1","status":"PARTIAL","action":"Keep canonical name, website, phone, WhatsApp, WeChat and Facebook consistent. Add address/legal identity only after verified."}
+    {
+      "gap": "independent external entity evidence",
+      "priority": "P0",
+      "status": "WEAK",
+      "action": "Build and verify consistent real public profiles and independent references; no fake listings or reviews."
+    },
+    {
+      "gap": "operational proof/detail",
+      "priority": "P0",
+      "status": "NEEDS_IMPROVEMENT",
+      "action": "Where factually available, add real route/process nodes, warehouse/pickup workflow, service limitations and current verification dates. Do not invent ports, warehouses, licenses or transit promises."
+    },
+    {
+      "gap": "FAQ answerability",
+      "priority": "P1",
+      "status": "NEEDS_IMPROVEMENT",
+      "action": "Strengthen existing core pages with concise question-answer blocks for recurring benchmark intents instead of creating thin duplicate pages."
+    },
+    {
+      "gap": "freshness/provenance",
+      "priority": "P1",
+      "status": "NEEDS_IMPROVEMENT",
+      "action": "Add honest reviewed/updated dates to factual service content and re-check time-sensitive customs/routing claims."
+    },
+    {
+      "gap": "business identity completeness",
+      "priority": "P1",
+      "status": "PARTIAL",
+      "action": "Keep canonical name, website, phone, WhatsApp, WeChat and Facebook consistent. Add address/legal identity only after verified."
+    }
   ],
-  "doNotDo": ["fake reviews", "fake media coverage", "invented addresses", "invented warehouses", "invented licenses", "mass low-quality directory submissions", "unsupported transit-time or price claims"],
+  "doNotDo": [
+    "fake reviews",
+    "fake media coverage",
+    "invented addresses",
+    "invented warehouses",
+    "invented licenses",
+    "mass low-quality directory submissions",
+    "unsupported transit-time or price claims"
+  ],
   "nextExperiment": {
-    "name":"Citation Source Type Count V1",
-    "method":"For the fixed 50 prompts, record every observable source URL and classify it as official company site, route/service page, directory/marketplace, social profile, media/editorial, forum/community, government/institutional, or other. Compare source-type frequency before choosing the next evidence-building action.",
-    "rule":"Do not claim ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation unless directly observed on that platform."
+    "name": "Citation Source Type Count V1",
+    "method": "For the fixed 50 prompts, record every observable source URL and classify it as official company site, route/service page, directory/marketplace, social profile, media/editorial, forum/community, government/institutional, or other. Compare source-type frequency before choosing the next evidence-building action.",
+    "rule": "Do not claim ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation unless directly observed on that platform."
   }
 }
