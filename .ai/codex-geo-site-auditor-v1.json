@@ -182,7 +182,8 @@
     "Do not rewrite a frozen real-win page unless a reproducible defect exists.",
     "Do not create one page per prompt when a single strong intent page can answer a cluster.",
     "Do not treat llms.txt as an indexing/ranking switch.",
-    "Do not infer ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation from Google ranking."
+    "Do not infer ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation from Google ranking.",
+    "Large-file read/write tool failures are not website defects; verify byte size and alternate source before any destructive rewrite."
   ],
   "findingOutput": [
     "page",
@@ -231,6 +232,20 @@
       "qapage_for_normal_faq",
       "mass_directory_submission",
       "llms_txt_as_ranking_switch"
+    ]
+  },
+  "largeFileGuard": {
+    "rule": "Never classify a repository file as empty or broken solely because the normal file reader returns empty content. Cross-check repository directory metadata/blob size first.",
+    "thresholds": {
+      "inspectAlternativePathBytes": 1000000,
+      "largePatchCautionBytes": 3000000
+    },
+    "procedure": [
+      "Check repository directory metadata for actual byte size.",
+      "If size is non-zero but normal content fetch is empty/truncated, classify as TOOL_READ_LIMIT until verified by an alternate repository API/raw path.",
+      "Do not overwrite a large file from a truncated/empty read.",
+      "For very large writes, require an atomic large-file-capable path; if connector transport fails, record BLOCKED_TOOL_PAYLOAD and leave production unchanged.",
+      "Separate performance refactors such as extracting inline Base64 assets from semantic/schema patches."
     ]
   }
 }
