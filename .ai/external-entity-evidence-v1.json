@@ -71,6 +71,18 @@
         "phone": "NOT_PUBLICLY_LISTED_BY_USER_CHOICE"
       },
       "nameAlignment": "BLOCKED_BY_FACEBOOK_REJECTION_AND_60_DAY_CHANGE_CONSTRAINT"
+    },
+    {
+      "sourceId": "IG-001",
+      "type": "instagram",
+      "level": "E1",
+      "status": "VERIFIED_CONTROLLED_PROFILE_CITED_BY_GOOGLE_AI_OVERVIEW",
+      "handle": "thaichinalogistics",
+      "observedVia": "user-supplied Google results screenshot dated 2026-09-18",
+      "observedQuery": "清迈邮寄中国",
+      "citationSurface": "Google AI Overview",
+      "evidence": "An Instagram result from the controlled account was visibly surfaced as a supporting source in the AI Overview.",
+      "caution": "This proves citation on Google AI Overview for the observed query only. It does not establish ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation, and it does not by itself establish E2/E3 independent corroboration."
     }
   ],
   "nextEvidenceTargets": [
