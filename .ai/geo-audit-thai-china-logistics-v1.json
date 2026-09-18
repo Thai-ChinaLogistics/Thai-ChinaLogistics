@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "1.0",
+  "auditId": "thai-china-logistics-geo-audit-v1",
+  "auditedAt": "2026-09-18",
+  "entity": "Thai-China Logistics",
+  "site": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
+  "repository": "Thai-ChinaLogistics/Thai-ChinaLogistics",
+  "auditorSpec": ".ai/codex-geo-site-auditor-v1.json",
+  "promptUniverse": ".ai/ai-visibility-benchmark-v1.json",
+  "promptMap": ".ai/prompt-to-page-map-v1.json",
+  "overallStatus": "PASS_REAL_PARTIAL",
+  "phaseStatus": {
+    "A1_crawlability": "PASS_REAL_PARTIAL",
+    "A2_entity": "PASS_REAL_PARTIAL",
+    "A3_schema": "PASS_REAL_PARTIAL",
+    "A4_internalLinkGraph": "NEEDS_IMPROVEMENT",
+    "A5_answerExtraction": "PASS_REAL_PARTIAL",
+    "A6_performanceCrawlEfficiency": "NEEDS_IMPROVEMENT",
+    "A7_promptToPageMapping": "PASS_REAL",
+    "A8_evidenceBoundary": "PASS_REAL_PARTIAL",
+    "A9_incrementalPatch": "PASS_REAL",
+    "A10_validation": "PASS_REAL_PARTIAL"
+  },
+  "verifiedObservations": [
+    {
+      "id": "OBS-001",
+      "phase": "A1",
+      "status": "PASS_REAL",
+      "evidence": "robots.txt allows OAI-SearchBot and general crawlers and references sitemap.xml."
+    },
+    {
+      "id": "OBS-002",
+      "phase": "A1",
+      "status": "PASS_REAL_PARTIAL",
+      "evidence": "Public search sample exposed china-to-thailand.html with crawlable answer content; this proves a real indexed/discoverable page sample, not full-site index coverage."
+    },
+    {
+      "id": "OBS-003",
+      "phase": "A2",
+      "status": "PASS_REAL",
+      "evidence": "about.html and audited core service pages reuse the canonical Organization @id https://thai-chinalogistics.github.io/Thai-ChinaLogistics/#organization."
+    },
+    {
+      "id": "OBS-004",
+      "phase": "A5",
+      "status": "PASS_REAL_PARTIAL",
+      "evidence": "Audited Phuket, pickup, luggage, China-to-Thailand and scenario pages contain direct-answer leads, FAQ/answer blocks, conditional cargo/price/transit language and contact next steps."
+    },
+    {
+      "id": "OBS-005",
+      "phase": "A6",
+      "status": "NEEDS_IMPROVEMENT",
+      "evidence": "Repository metadata reports index.html at approximately 4.7 MB. Source inspection found 8 inline data-image payloads totaling about 2.95 MB estimated binary weight, plus 27 style blocks and 12 script blocks."
+    },
+    {
+      "id": "OBS-006",
+      "phase": "A4",
+      "status": "NEEDS_IMPROVEMENT",
+      "evidence": "Static href inspection of the homepage did not find direct links to about.html, phuket-to-china.html, thailand-to-china-pickup.html or thailand-domestic-moving.html. china-to-thailand text exists in the source but core static service-link coverage is incomplete."
+    },
+    {
+      "id": "OBS-007",
+      "phase": "A7",
+      "status": "PASS_REAL",
+      "evidence": "All frozen benchmark prompts are now mapped to existing intent-owner pages in .ai/prompt-to-page-map-v1.json; no one-page-per-prompt expansion is required."
+    }
+  ],
+  "findings": [
+    {
+      "issueId": "FACT-TRANSIT-001",
+      "page": "index.html",
+      "phase": "A5",
+      "severity": "P0",
+      "status": "BLOCKED_TOOL_PAYLOAD",
+      "evidence": "Homepage source still contains fixed 48-hour, 7-15-day and 20-30-day transit expressions in Chinese/English/Thai while the operational facts registry classifies transit time as conditional and requiring current confirmation.",
+      "recommendedFix": "Replace fixed transit promises with conditional current-route wording while preserving layout and all verified service facts.",
+      "attempted": "A targeted single-variable patch was prepared, but both normal Contents write and Git blob write failed at the connector transport layer due the approximately 4.7 MB single-file payload. Production index.html was left unchanged.",
+      "validationMethod": "Re-scan all language variants after a successful large-file-capable atomic patch and confirm zero stale fixed-duration strings."
+    },
+    {
+      "issueId": "PERF-001",
+      "page": "index.html",
+      "phase": "A6",
+      "severity": "P1",
+      "status": "NEEDS_IMPROVEMENT",
+      "evidence": "index.html is approximately 4.7 MB; 8 inline Base64 images account for an estimated 2.95 MB of binary image payload.",
+      "recommendedFix": "Extract embedded images into normal image assets with stable URLs and retain dimensions/alt text. Do this as a dedicated visual-regression-safe patch, not mixed with schema/content changes.",
+      "validationMethod": "Compare HTML bytes, render output, network requests and mobile layout before/after."
+    },
+    {
+      "issueId": "LINK-001",
+      "page": "index.html",
+      "phase": "A4",
+      "severity": "P1",
+      "status": "NEEDS_IMPROVEMENT",
+      "evidence": "Homepage static href graph does not directly expose several canonical entity/service-owner pages.",
+      "recommendedFix": "Add a concise visible service/entity directory using existing pages; do not create new thin pages.",
+      "validationMethod": "Parse static href graph and verify each priority owner page is reachable from the root in one click."
+    },
+    {
+      "issueId": "SCHEMA-001",
+      "page": "thailand-domestic-moving.html",
+      "phase": "A3",
+      "severity": "P1",
+      "status": "PASS_REAL",
+      "evidence": "Previously lacked canonical Organization/Service relationship. Fixed and verified.",
+      "changedCommit": "d2a3bb8a9300b4cca935a75921628a27d648c814"
+    },
+    {
+      "issueId": "CRAWL-001",
+      "page": "thailand-to-china-pickup.html",
+      "phase": "A1",
+      "severity": "P2",
+      "status": "PASS_REAL",
+      "evidence": "Explicit index/follow robots meta added and verified.",
+      "changedCommit": "9352950178d7441b99f06d11c6f36f9fb4eb043f"
+    },
+    {
+      "issueId": "SITEMAP-001",
+      "page": "sitemap.xml",
+      "phase": "A1",
+      "severity": "P2",
+      "status": "PASS_REAL",
+      "evidence": "lastmod refreshed to 2026-09-18 for the two audited/modified pages.",
+      "changedCommit": "3c351550749fe47f279fe9ecda077a8467e85559"
+    }
+  ],
+  "frameworkImprovements": [
+    {
+      "id": "AUDITOR-LARGE-FILE-GUARD",
+      "status": "PASS_REAL",
+      "detail": "Added a large-file guard so a normal reader returning empty/truncated content cannot be misclassified as a real empty website file.",
+      "changedCommit": "df6c803d75d66d15982f4a6003bfcd120c4a5b50"
+    },
+    {
+      "id": "PROMPT-OWNER-MAP",
+      "status": "PASS_REAL",
+      "detail": "Created one canonical mapping from all frozen prompts to existing owner pages.",
+      "changedCommit": "48f7d3c454ef4af016184edb63e06855eb518b1d"
+    }
+  ],
+  "nextBatch": [
+    "Apply FACT-TRANSIT-001 through a large-file-capable atomic patch; do not rewrite from truncated content.",
+    "Extract homepage Base64 images into normal assets with visual regression protection.",
+    "Add a concise static root-to-entity/service link directory.",
+    "Re-run the same GEO audit after those changes.",
+    "Then proceed to direct named-AI benchmark observations; public web search must not be substituted for ChatGPT/Gemini/DeepSeek/Doubao evidence."
+  ],
+  "acceptanceRule": "No issue is marked PASS unless the changed repository content can be read back or the external surface is directly observed. Tool/transport failures remain blocked rather than being converted to website failures."
+}
