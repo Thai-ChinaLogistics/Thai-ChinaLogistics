@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.0",
+  "id": "codex-geo-site-auditor-v1",
+  "displayName": "Codex GEO Site Auditor｜Codex GEO 全站审计器",
+  "parentCapability": "ai-visibility-growth-engine",
+  "purpose": "Audit an existing business website/repository for search and AI discoverability gaps, produce evidence-backed incremental fixes, and validate with frozen before/after queries without inferring AI citation from SEO signals.",
+  "sourceOfTruth": {
+    "canonicalFacts": ".ai/operational-facts-registry-v1.json",
+    "promptUniverse": ".ai/ai-visibility-benchmark-v1.json",
+    "citationGap": ".ai/citation-gap-v1.json",
+    "externalEvidence": ".ai/external-entity-evidence-v1.json"
+  },
+  "inputs": {
+    "required": [
+      "siteUrl"
+    ],
+    "optional": [
+      "repository",
+      "businessContext",
+      "targetMarkets",
+      "targetLanguages",
+      "directPlatformObservations"
+    ]
+  },
+  "phases": [
+    {
+      "id": "A1",
+      "name": "crawlability",
+      "checks": [
+        "httpStatus",
+        "robots",
+        "sitemap",
+        "canonical",
+        "indexability",
+        "duplicateCanonical",
+        "orphanPages"
+      ]
+    },
+    {
+      "id": "A2",
+      "name": "entity",
+      "checks": [
+        "canonicalName",
+        "alternateNames",
+        "organizationIdReuse",
+        "contactsConsistency",
+        "serviceDirections",
+        "areasServed",
+        "unknownFieldProtection"
+      ]
+    },
+    {
+      "id": "A3",
+      "name": "schema",
+      "checks": [
+        "schemaValidity",
+        "schemaApplicability",
+        "providerLinks",
+        "breadcrumbConsistency",
+        "noSchemaStuffing"
+      ]
+    },
+    {
+      "id": "A4",
+      "name": "internalLinkGraph",
+      "checks": [
+        "corePagePriority",
+        "entityPageReachability",
+        "routePageReachability",
+        "orphanIntentPages",
+        "anchorClarity"
+      ]
+    },
+    {
+      "id": "A5",
+      "name": "answerExtraction",
+      "checks": [
+        "directAnswerLead",
+        "questionAnswerClarity",
+        "verifiedFactsOnly",
+        "limitationsVisible",
+        "contactNextStep",
+        "noSubjectiveKeywordStuffing"
+      ]
+    },
+    {
+      "id": "A6",
+      "name": "performanceCrawlEfficiency",
+      "checks": [
+        "renderBlockingRisks",
+        "brokenAssets",
+        "obviousPayloadWaste",
+        "mobileRenderIssues"
+      ],
+      "note": "Performance findings are crawl/usability signals only; never classify them as AI citation proof."
+    },
+    {
+      "id": "A7",
+      "name": "promptToPageMapping",
+      "checks": [
+        "promptCoverage",
+        "duplicateIntentPages",
+        "missingIntentOwner",
+        "existingPageFirst"
+      ]
+    },
+    {
+      "id": "A8",
+      "name": "evidenceBoundary",
+      "checks": [
+        "firstPartyVsExternalSeparated",
+        "e1e2e3NotFabricated",
+        "unsupportedClaimsBlocked"
+      ]
+    },
+    {
+      "id": "A9",
+      "name": "incrementalPatch",
+      "checks": [
+        "protectedBaselineRespected",
+        "minimalFilesChanged",
+        "noThinPages",
+        "noFakeFacts"
+      ]
+    },
+    {
+      "id": "A10",
+      "name": "validation",
+      "checks": [
+        "samePromptBeforeAfter",
+        "searchTrack",
+        "aiTrack",
+        "evidenceCaptured",
+        "statusUpgradeRequiresDirectObservation"
+      ]
+    }
+  ],
+  "severity": [
+    "P0",
+    "P1",
+    "P2"
+  ],
+  "statuses": [
+    "PASS_REAL",
+    "PASS_REAL_PARTIAL",
+    "NEEDS_IMPROVEMENT",
+    "BLOCKED_EXTERNAL",
+    "NOT_YET_VERIFIED"
+  ],
+  "schemaPolicy": {
+    "rule": "Use structured data only when semantically applicable to the page.",
+    "allowedByContext": {
+      "company": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "logisticsService": [
+        "Service",
+        "WebPage",
+        "BreadcrumbList",
+        "Organization"
+      ],
+      "ecommerceProduct": [
+        "Product",
+        "Offer",
+        "WebPage",
+        "BreadcrumbList"
+      ]
+    },
+    "forbiddenDefaults": [
+      "Adding Product to non-product service pages",
+      "Adding QAPage to ordinary publisher-controlled FAQ",
+      "Adding schema solely to increase schema count"
+    ]
+  },
+  "patchRules": [
+    "Prefer modifying an existing page that already owns the search intent.",
+    "Never invent addresses, warehouses, prices, transit times, licenses, certifications, reviews, media mentions or partnerships.",
+    "Keep UNKNOWN as UNKNOWN.",
+    "Do not rewrite a frozen real-win page unless a reproducible defect exists.",
+    "Do not create one page per prompt when a single strong intent page can answer a cluster.",
+    "Do not treat llms.txt as an indexing/ranking switch.",
+    "Do not infer ChatGPT/Gemini/DeepSeek/Doubao citation or recommendation from Google ranking."
+  ],
+  "findingOutput": [
+    "page",
+    "issueId",
+    "phase",
+    "severity",
+    "evidence",
+    "currentState",
+    "recommendedFix",
+    "changedFiles",
+    "validationMethod",
+    "status"
+  ],
+  "acceptance": {
+    "searchTrack": [
+      "crawlable",
+      "indexable_or_indexed_when_observable",
+      "query_visibility_when_observable"
+    ],
+    "aiTrack": [
+      "entityRecognized",
+      "descriptionAccurate",
+      "citationObserved",
+      "recommendationObserved"
+    ],
+    "upgradeRule": "CITED/RECOMMENDED requires direct reproducible observation on the named AI surface."
+  },
+  "gapAudit": {
+    "required": [
+      "crawl_entity_schema_internal_link_answer_audit",
+      "prompt_to_page_mapping",
+      "incremental_patch_plan",
+      "before_after_validation",
+      "external_evidence_boundary",
+      "real_status_machine"
+    ],
+    "optional": [
+      "lighthouse_cwv",
+      "search_console",
+      "screenshots",
+      "multi_site_batch"
+    ],
+    "notNeededByDefault": [
+      "one_page_per_prompt",
+      "product_schema_everywhere",
+      "qapage_for_normal_faq",
+      "mass_directory_submission",
+      "llms_txt_as_ranking_switch"
+    ]
+  }
+}
