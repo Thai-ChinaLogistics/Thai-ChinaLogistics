@@ -76,23 +76,18 @@
   "nextEvidenceTargets": [
     {
       "priority": 1,
-      "type": "official_social_profile_consistency",
-      "action": "Verify the existing Facebook public About/profile fields against the canonical entity facts. If editing access is available, align name, canonical website, two-way Thailand-China logistics description and phone without inventing address/legal fields."
+      "type": "legitimate_external_profile_or_independent_mention",
+      "action": "Obtain one real, eligible, independently accessible public source that identifies the same business using at least two strong identity anchors. Do not create fake reviews, media, addresses or partnerships."
     },
     {
       "priority": 2,
-      "type": "legitimate_external_profile",
-      "action": "Establish only an eligible real public business/entity profile that exposes canonical name + website + at least one strong identity anchor; record only after the public URL is independently accessible."
+      "type": "benchmark_execution",
+      "action": "Run direct observations on the named AI platforms only when access is available; public web search must not be recorded as ChatGPT/Gemini/DeepSeek/Doubao citation evidence."
     },
     {
       "priority": 3,
       "type": "exact_identity_recheck",
-      "action": "After one real external profile/evidence change, rerun exact identity searches using brand + website/phone/social identifier."
-    },
-    {
-      "priority": 4,
-      "type": "ai_benchmark",
-      "action": "Only after a meaningful evidence change, rerun frozen prompts on named AI platforms and record direct observations."
+      "action": "Re-run exact-identity search only after a new external source is live."
     }
   ],
   "qualityRules": [
@@ -122,7 +117,20 @@
       "Thai-China Logistics + THAICHINA-LOGISTICS",
       "泰国邮寄中国物流 + canonical website"
     ],
-    "interpretation": "The controlled Facebook profile is now materially better aligned, but the latest public-search sample still did not expose an exact-identity result. Keep E1 partial until independent public discovery is reproducibly observed."
+    "interpretation": "The controlled Facebook profile is now materially better aligned, but the latest public-search sample still did not expose an exact-identity result. Keep E1 partial until independent public discovery is reproducibly observed.",
+    "auditedAt": "2026-09-18",
+    "postFacebookExactIdentitySearch": {
+      "status": "NO_RESULTS",
+      "queries": [
+        "\"泰国邮寄中国物流\" + \"THAICHINA-LOGISTICS\" -github",
+        "\"Thai-China Logistics\" + \"THAICHINA-LOGISTICS\" -github",
+        "\"泰国邮寄中国物流\" + canonical GitHub Pages domain -github",
+        "\"66839769828\" + logistics -github"
+      ],
+      "result": "No public web result was returned for the tested exact-identity combinations.",
+      "classification": "E2_E3_NOT_ESTABLISHED",
+      "decision": "Do not spend another cycle repeating exact-identity search until a genuinely new external public source exists."
+    }
   },
   "facebookIndexAudit": {
     "auditedAt": "2026-09-18",
