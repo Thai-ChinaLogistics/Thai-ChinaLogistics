@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "1.0",
+  "created": "2026-09-18",
+  "entity": "Thai-China Logistics",
+  "purpose": "Capture reproducible content patterns from real AI citation observations without reverse-engineering by guesswork or claiming causation that has not been demonstrated.",
+  "evidencePolicy": [
+    "Separate observed facts from hypotheses.",
+    "Do not treat one citation as proof of a ranking factor.",
+    "Do not rewrite or delete a currently cited source until the observation is preserved.",
+    "Replicate semantic structure, not keyword stuffing.",
+    "Never invent locations, transit times, prices, licenses, warehouses, reviews or partnerships."
+  ],
+  "observedCases": [
+    {
+      "id": "GOOGLE-AIO-001",
+      "observedAt": "2026-09-18",
+      "query": "清迈邮寄中国",
+      "surface": "Google AI Overview",
+      "citedSourceType": "Instagram",
+      "sourceHandle": "thaichinalogistics",
+      "status": "PASS_REAL",
+      "evidenceOrigin": "user-supplied screenshot",
+      "verifiedFacts": [
+        "The Google AI Overview visibly included an Instagram source card from the controlled account.",
+        "The citation appeared for a non-brand logistics query.",
+        "The source was social content rather than the canonical website."
+      ],
+      "notYetProven": [
+        "Exact ranking factors that caused the citation.",
+        "Whether the same post is cited for every related city query.",
+        "Whether Google recommended the business itself versus using the post as supporting evidence.",
+        "Whether the same source is cited by ChatGPT, Gemini, DeepSeek or Doubao."
+      ]
+    }
+  ],
+  "currentHypotheses": [
+    {
+      "id": "H1",
+      "hypothesis": "Strong semantic overlap between the user query and the post/account topic may have helped retrieval.",
+      "evidenceLevel": "PLAUSIBLE_FROM_OBSERVATION",
+      "test": "Collect at least 10 additional query-to-source observations and compare recurring terms/topics."
+    },
+    {
+      "id": "H2",
+      "hypothesis": "A tightly focused account theme may help Google repeatedly reuse the same social source across adjacent logistics queries.",
+      "evidenceLevel": "UNVERIFIED",
+      "test": "Audit the recent Instagram corpus and map each post to city/service/scenario topics before changing content."
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Cross-city and scenario coverage inside natural-language posts may broaden retrieval beyond the exact headline keyword.",
+      "evidenceLevel": "UNVERIFIED",
+      "test": "For future posts, vary one dimension at a time: city, scenario or service. Record which queries surface each post."
+    },
+    {
+      "id": "H4",
+      "hypothesis": "Freshness may contribute to source selection for some logistics queries.",
+      "evidenceLevel": "UNVERIFIED",
+      "test": "Compare citation behavior of newer versus older posts without changing other major content dimensions."
+    }
+  ],
+  "replicationFramework": {
+    "dimensions": {
+      "city": [
+        "曼谷",
+        "普吉岛",
+        "清迈",
+        "芭提雅",
+        "苏梅岛",
+        "合艾",
+        "清莱"
+      ],
+      "scenario": [
+        "酒店遗失物取件",
+        "行李回国",
+        "搬家",
+        "代购/集运",
+        "上门取件",
+        "个人物品寄送"
+      ],
+      "service": [
+        "泰国→中国",
+        "中国→泰国",
+        "空运",
+        "陆运",
+        "海运",
+        "门到门"
+      ]
+    },
+    "rule": "Create useful natural-language posts by combining one primary city + one primary scenario/service. Add only genuinely relevant adjacent terms; do not mechanically stuff every city and service into every post."
+  },
+  "experimentPlan": [
+    {
+      "batch": "A",
+      "action": "Preserve the currently cited Instagram post unchanged and capture its exact caption, publish date, permalink and visible engagement metrics.",
+      "acceptance": "Source metadata recorded without editing the post."
+    },
+    {
+      "batch": "B",
+      "action": "Collect 10-20 Google AI Overview query observations across city, scenario and service clusters and record which Instagram post/account source is cited.",
+      "acceptance": "Each observation stores query, date, source type, source identifier and screenshot evidence."
+    },
+    {
+      "batch": "C",
+      "action": "Publish a small set of new posts that follow the proven semantic pattern while changing only one major variable at a time.",
+      "acceptance": "No keyword stuffing; each post answers one real logistics intent and uses only verified operational facts."
+    },
+    {
+      "batch": "D",
+      "action": "Recheck the same query set and compare source reuse, new-source pickup and citation persistence.",
+      "acceptance": "Only direct observations count as PASS."
+    }
+  ],
+  "frozenRule": "Do not optimize away the current winner before its content and citation behavior are fully captured."
+}
