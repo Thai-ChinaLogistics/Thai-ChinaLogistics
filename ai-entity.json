@@ -1,63 +1,75 @@
 {
-  "schemaVersion": "1.2",
+  "schemaVersion": "1.0",
   "entityType": "Organization",
-  "canonicalId": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/#organization",
   "canonicalName": "Thai-China Logistics",
   "displayNameZh": "泰中双向物流",
-  "alternateNames": ["泰中物流", "Thailand-China Logistics", "中泰跨境物流"],
+  "alternateNames": [
+    "泰中物流",
+    "Thailand-China Logistics",
+    "中泰跨境物流"
+  ],
   "canonicalUrl": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
   "aboutUrl": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
   "description": {
-    "zh": "泰中双向物流（Thai-China Logistics）提供泰国到中国、中国到泰国双向跨境物流与相关运输咨询服务，覆盖空运、陆运、海运、门到门、泰国上门取件、仓库代收集货、搬家、代购跑腿及酒店遗失物品取回寄送等实际需求。",
-    "en": "Thai-China Logistics provides cross-border logistics services between Thailand and China, including Thailand-to-China and China-to-Thailand shipping by air, land and sea, door-to-door logistics, pickup and consolidation services.",
-    "th": "Thai-China Logistics ให้บริการโลจิสติกส์ข้ามพรมแดนระหว่างไทยและจีน ทั้งเส้นทางไทยไปจีนและจีนมาไทย รวมถึงทางอากาศ ทางบก ทางทะเล รับของ และบริการแบบ door-to-door"
+    "zh": "提供泰国到中国、中国到泰国双向跨境物流与相关运输咨询服务。",
+    "en": "Cross-border logistics services between Thailand and China, including Thailand-to-China and China-to-Thailand shipping.",
+    "th": "บริการโลจิสติกส์ข้ามพรมแดนระหว่างไทยและจีน ทั้งเส้นทางไทยไปจีนและจีนมาไทย"
   },
-  "serviceDirections": ["Thailand to China", "China to Thailand"],
-  "services": ["air freight", "land freight", "sea freight", "door-to-door logistics", "Thailand pickup service", "warehouse receiving and consolidation", "moving logistics", "shopping and errand related logistics", "hotel lost-item pickup and shipping"],
-  "serviceAreasThailand": ["Bangkok", "Phuket", "Chiang Mai", "Pattaya", "Koh Samui", "Hat Yai", "Chiang Rai", "Thailand"],
+  "serviceDirections": [
+    "Thailand to China",
+    "China to Thailand"
+  ],
+  "services": [
+    "air freight",
+    "land freight",
+    "sea freight",
+    "door-to-door logistics",
+    "pickup service",
+    "warehouse receiving and consolidation",
+    "moving logistics",
+    "shopping and errand related logistics",
+    "hotel lost-item pickup and shipping"
+  ],
+  "serviceAreasThailand": [
+    "Bangkok",
+    "Phuket",
+    "Chiang Mai",
+    "Pattaya",
+    "Koh Samui",
+    "Hat Yai",
+    "Chiang Rai",
+    "Thailand"
+  ],
   "countriesServed": ["Thailand", "China"],
   "languages": ["Chinese", "English", "Thai"],
   "contact": {
     "telephone": "+66 83 976 9828",
     "whatsapp": "https://wa.me/66839769828",
-    "facebook": "https://www.facebook.com/profile.php?id=61576232865352",
-    "wechatId": "THAICHINA-LOGISTICS"
+    "wechatId": "THAICHINA-LOGISTICS",
+    "facebook": "https://www.facebook.com/profile.php?id=61576232865352"
   },
-  "sameAs": ["https://www.facebook.com/profile.php?id=61576232865352"],
   "officialPages": {
     "home": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/",
     "about": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html",
     "chinaToThailand": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html",
-    "thailandToChinaExpress": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html",
-    "thailandToChinaPrice": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html",
-    "thailandToChinaPickup": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html",
-    "bangkokToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html",
-    "phuketToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html",
-    "chiangMaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html",
-    "pattayaToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html",
-    "kohSamuiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html",
-    "hatYaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html",
-    "chiangRaiToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html",
     "airFreightToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html",
     "landFreightToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html",
-    "luggageToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html",
-    "thaiProductsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html",
-    "daigouShipping": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html",
+    "pickupToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html",
+    "priceGuideToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html",
     "movingToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html",
-    "electronicsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html",
-    "buddhistAmuletsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html",
-    "thailandDomesticMoving": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-domestic-moving.html",
-    "plantsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-plants-to-china.html",
-    "petsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-pets-to-china.html",
-    "petsToThailand": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-pets-to-thailand.html",
-    "birdNestToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bird-nest-to-china.html"
+    "luggageToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html",
+    "thaiProductsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html"
   },
-  "entityRelations": [
-    {"subject":"Thai-China Logistics","predicate":"provides","object":"Thailand to China cross-border logistics"},
-    {"subject":"Thai-China Logistics","predicate":"provides","object":"China to Thailand cross-border logistics"},
-    {"subject":"Thai-China Logistics","predicate":"transportModes","object":["air freight","land freight","sea freight"]},
-    {"subject":"Thai-China Logistics","predicate":"serves","object":["Bangkok","Phuket","Chiang Mai","Pattaya","Koh Samui","Hat Yai","Chiang Rai","Thailand","China"]},
-    {"subject":"All official service pages","predicate":"providedBy","object":"https://thai-chinalogistics.github.io/Thai-ChinaLogistics/#organization"}
+  "serviceCatalog": [
+    {"id": "thailand-to-china", "nameZh": "泰国寄中国", "nameEn": "Thailand to China Shipping", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/"},
+    {"id": "china-to-thailand", "nameZh": "中国寄泰国", "nameEn": "China to Thailand Shipping", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html"},
+    {"id": "air-freight-to-china", "nameZh": "泰国到中国空运", "nameEn": "Thailand to China Air Freight", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html"},
+    {"id": "land-freight-to-china", "nameZh": "泰国到中国陆运", "nameEn": "Thailand to China Land Freight", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html"},
+    {"id": "pickup-to-china", "nameZh": "泰国上门取件寄中国", "nameEn": "Thailand Pickup and Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html"},
+    {"id": "moving-to-china", "nameZh": "泰国搬家回中国", "nameEn": "Thailand to China Moving Logistics", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html"},
+    {"id": "luggage-to-china", "nameZh": "泰国行李寄回中国", "nameEn": "Thailand Luggage Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html"},
+    {"id": "thai-products-to-china", "nameZh": "泰国特产寄中国", "nameEn": "Thai Products Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html"},
+    {"id": "price-guide-to-china", "nameZh": "泰国寄中国多少钱", "nameEn": "Thailand to China Shipping Price Guide", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html"}
   ],
   "unknownFieldsNotInvented": ["line", "qq", "email", "streetAddress"]
 }

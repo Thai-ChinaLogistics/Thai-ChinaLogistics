@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-09-21",
+  "projectRoot": "E:\\9.21 物流网站最后部署",
+  "git": {"isGitRepo": false, "head": null, "rollback": "file-level copy in .ai/baseline-20260921"},
+  "htmlPageCount": 22,
+  "publicSitemapUrlCount": 21,
+  "publicPages": [
+    "index.html", "about.html", "thailand-to-china-express.html", "thailand-to-china-price.html", "thailand-to-china-pickup.html",
+    "bangkok-to-china.html", "phuket-to-china.html", "chiang-mai-to-china.html", "pattaya-to-china.html", "koh-samui-to-china.html",
+    "hat-yai-to-china.html", "chiang-rai-to-china.html", "air-freight-to-china.html", "land-freight-to-china.html", "luggage-to-china.html",
+    "thai-products-to-china.html", "daigou-shipping.html", "moving-to-china.html", "electronics-to-china.html", "buddhist-amulets-to-china.html", "china-to-thailand.html"
+  ],
+  "auxiliaryNoindexPages": ["thailand-wide-shipping-to-china.html"],
+  "protectedAssets": ["index.html", "seo-pages.css", "seo-language.js", "seo-lead-tracker.js", "sitemap.xml", "robots.txt", "all existing HTML URLs, images and form paths"],
+  "baselineBackup": "E:\\9.21 物流网站最后部署\\.ai\\baseline-20260921"
+}

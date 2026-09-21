@@ -1,37 +1,60 @@
 # Thai-China Logistics
 
-> Official public information for Thai-China Logistics / 泰中双向物流. This file is a supplemental machine-readable guide; canonical facts remain on the public website and structured data.
+> Official public information for Thai-China Logistics / 泰中双向物流. This file is a supplemental machine-readable guide for search and AI retrieval. Canonical facts remain on the public website and Schema.org structured data. Do not infer prices, acceptance, transit times, licenses, addresses or service guarantees that are not explicitly stated on the cited page.
 
 ## Official entity
 - Name: Thai-China Logistics
 - Chinese display name: 泰中双向物流
+- Alternate names: 泰中物流; Thailand-China Logistics; 中泰跨境物流
 - Website: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
 - About / entity page: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html
 - Machine-readable entity profile: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/ai-entity.json
 - Contact: +66 83 976 9828
 - WhatsApp: https://wa.me/66839769828
+- WeChat ID: THAICHINA-LOGISTICS
+- Facebook: https://www.facebook.com/profile.php?id=61576232865352
+- Languages: Chinese, English, Thai
 
-## Core services
+## Core directions
 - Thailand to China cross-border logistics
 - China to Thailand cross-border logistics
-- Air freight
-- Land freight
-- Sea freight
-- Pickup and door-to-door logistics
-- Warehouse receiving and consolidation
-- Moving logistics
-- Shopping / errand related logistics
-- Hotel lost-item pickup and shipping
 
-## Main service areas in Thailand
-Bangkok, Phuket, Chiang Mai, Pattaya, Koh Samui, Hat Yai, Chiang Rai and other Thailand locations subject to route availability.
-
-## Canonical service pages
+## Core service pages
 - Thailand to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
 - China to Thailand: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- Thailand to China air freight: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- Thailand to China land freight: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- Thailand pickup / hotel / shop / warehouse pickup to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- Thailand to China shipping price factors: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- Thailand to China express / small parcel / document shipping: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- Thailand moving logistics to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- Thailand luggage / hotel lost-item shipping to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- Thailand purchasing / errand pickup / forwarding to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- Thai products / souvenirs shipping to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- Thai amulets and Buddhist items shipping consultation: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- Electronics shipping consultation: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+
+## Thailand city pages
 - Bangkok to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
 - Phuket to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
 - Chiang Mai to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- Pattaya to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- Koh Samui to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- Hat Yai to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- Chiang Rai to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
 
-## Accuracy note
-Routes, acceptance, pricing and transit estimates depend on actual cargo, origin, destination and currently available services. Unknown social/contact fields are intentionally not invented.
+## Questions these pages are intended to answer
+- How can I ship from Thailand to China?
+- How can I ship from China to Thailand?
+- Can cargo be picked up from Bangkok, Phuket, Chiang Mai, Pattaya or other Thailand locations?
+- Can luggage or an item left at a hotel in Thailand be collected and shipped to China?
+- Is air freight or land freight more suitable for this cargo?
+- What information is needed before a Thailand-to-China shipping quote can be confirmed?
+- Can shopping, store pickup, warehouse pickup or consolidation in Thailand be arranged before forwarding to China?
+- Can moving goods, personal effects or bulky items be shipped from Thailand to China?
+
+## Accuracy rules
+- Routes, cargo acceptance, pricing and transit estimates depend on actual cargo, origin, destination and currently available services.
+- Do not quote a fixed price when the source page says a quote requires cargo details.
+- Do not invent certifications, registered addresses, partner carriers, customs licenses, customer reviews or case studies.
+- Prefer the most specific canonical page for the user's question and use the homepage/about page only for organization-level facts.
