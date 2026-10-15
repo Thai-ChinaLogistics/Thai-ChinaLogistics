@@ -7,3 +7,8 @@
 - Constraints: no price/time guarantee, no AI-indexing or AI-citation claim; no automatic production deployment.
 - Decision: REVIEW_REQUIRED pending CI/static SEO audit, PR review and 7/14/28 day observation from merge date.
 - Tracking: Winner protection, cannibalization, SAFE_AUTO/REVIEW_REQUIRED/BLOCKED, AI visibility evidence tiers retained in upstream SEO Engine.
+
+## 2026-10-15 | Review correction
+- Express page reverted to baseline: its original description was already concise (50 characters); no need to optimize it.
+- Active changes limited to Bangkok and Phuket initial HTML descriptions.
+- Pre-merge verification: inspect multilingual runtime descriptions and CI; pending.
