@@ -12,3 +12,9 @@
 - Express page reverted to baseline: its original description was already concise (50 characters); no need to optimize it.
 - Active changes limited to Bangkok and Phuket initial HTML descriptions.
 - Pre-merge verification: inspect multilingual runtime descriptions and CI; pending.
+
+## 2026-10-15 | Static validation
+- PASS: both pages retain exactly one title, initial description and canonical; doctype intact; runtime zh/en/th metadata retained.
+- PASS: initial descriptions are 65 and 64 Chinese characters respectively.
+- NOT VERIFIED: browser-rendered language switching, CI workflow, production deployment and post-merge GSC impact.
+- Gate: remain REVIEW_REQUIRED; no auto-merge until required validation is available.
