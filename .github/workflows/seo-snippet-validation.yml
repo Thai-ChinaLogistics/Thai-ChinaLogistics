@@ -1,0 +1,21 @@
+name: SEO Snippet Validation
+on:
+  pull_request:
+    paths:
+      - 'bangkok-to-china.html'
+      - 'phuket-to-china.html'
+      - 'scripts/validate_seo_snippets.py'
+      - '.github/workflows/seo-snippet-validation.yml'
+  workflow_dispatch:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate SEO metadata
+        run: python scripts/validate_seo_snippets.py
