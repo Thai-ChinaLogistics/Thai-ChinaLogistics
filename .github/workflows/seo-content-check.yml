@@ -5,17 +5,21 @@ on:
     paths:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
+      - 'scripts/check_seo_static_metadata.py'
   push:
     branches: [main]
     paths:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
+      - 'scripts/check_seo_static_metadata.py'
 
 jobs:
   check-html:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Verify static metadata matches existing default-language page copy
+        run: python scripts/check_seo_static_metadata.py
       - name: Verify page metadata and no internal tokens
         run: |
           python - <<'PY'
