@@ -8,7 +8,25 @@ import json
 from html.parser import HTMLParser
 from pathlib import Path
 
-PAGES = (Path("china-to-thailand.html"), Path("luggage-to-china.html"), Path("daigou-shipping.html"))
+STRICT_PAGES = (
+    Path("china-to-thailand.html"),
+    Path("luggage-to-china.html"),
+    Path("daigou-shipping.html"),
+)
+DESCRIPTION_ONLY_PAGES = (
+    Path("air-freight-to-china.html"),
+    Path("buddhist-amulets-to-china.html"),
+    Path("chiang-mai-to-china.html"),
+    Path("chiang-rai-to-china.html"),
+    Path("electronics-to-china.html"),
+    Path("hat-yai-to-china.html"),
+    Path("koh-samui-to-china.html"),
+    Path("land-freight-to-china.html"),
+    Path("moving-to-china.html"),
+    Path("pattaya-to-china.html"),
+    Path("thai-products-to-china.html"),
+)
+PAGES = STRICT_PAGES + DESCRIPTION_ONLY_PAGES
 
 
 class HeadMetadata(HTMLParser):
@@ -58,7 +76,8 @@ def validate(path: Path) -> list[str]:
     errors = []
     if parser.html_lang != zh.get("lang") or parser.default_lang != "zh":
         errors.append(f"{path}: HTML language disagrees with default Chinese metadata")
-    if parser.title != zh.get("title"):
+    # The original pilot aligned both fields. Remaining pages retain their existing titles.
+    if path in STRICT_PAGES and parser.title != zh.get("title"):
         errors.append(f"{path}: static title differs from existing zh localized title")
     if parser.description != zh.get("description"):
         errors.append(f"{path}: static description differs from existing zh localized description")
@@ -72,5 +91,5 @@ def validate(path: Path) -> list[str]:
 if __name__ == "__main__":
     errors = [error for path in PAGES for error in validate(path)]
     if errors:
-        raise SystemExit("SEO static metadata pilot failed:\n" + "\n".join(errors))
-    print(f"PASS: {len(PAGES)} scoped pages use existing zh titles/descriptions")
+        raise SystemExit("SEO static metadata regression failed:\n" + "\n".join(errors))
+    print(f"PASS: {len(PAGES)} scoped pages use existing zh descriptions; 3 pilot titles verified")
