@@ -1,0 +1,53 @@
+name: SEO content safety check
+
+on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - '.github/workflows/seo-content-check.yml'
+  push:
+    branches: [main]
+    paths:
+      - '**/*.html'
+      - '.github/workflows/seo-content-check.yml'
+
+jobs:
+  check-html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify page metadata and no internal tokens
+        run: |
+          python - <<'PY'
+          from html.parser import HTMLParser
+          from pathlib import Path
+          import sys
+
+          class Page(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.title = False
+                  self.description = False
+                  self.h1 = False
+              def handle_starttag(self, tag, attrs):
+                  attrs = dict(attrs)
+                  if tag == 'title': self.title = True
+                  if tag == 'h1': self.h1 = True
+                  if tag == 'meta' and attrs.get('name', '').lower() == 'description' and attrs.get('content', '').strip():
+                      self.description = True
+
+          pages = [Path('china-to-thailand.html'), Path('thailand-to-china-express.html')]
+          failures = []
+          for path in pages:
+              html = path.read_text(encoding='utf-8')
+              parser = Page()
+              parser.feed(html)
+              for key in ('title', 'description', 'h1'):
+                  if not getattr(parser, key): failures.append(f'{path}: missing {key}')
+              for token in ('SEARCH_INTENT_ONLY', 'COMMERCIAL_IMPORT'):
+                  if token in html: failures.append(f'{path}: internal token {token}')
+          if failures:
+              print('\n'.join(failures))
+              sys.exit(1)
+          print('PASS: checked 2 target pages, metadata and internal tokens')
+          PY
