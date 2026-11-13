@@ -47,4 +47,5 @@ jobs:
 
       - name: Manual feature branch note
         if: github.event_name == 'pull_request' && !startsWith(github.head_ref, 'seo-auto/') && github.head_ref != 'feat/seo-safe-auto-publish'
-        run: echo "Manual/user-approved feature PR: SEO auto single-page diff guard is not applicable; unit tests still run."
+        run: |
+          echo "Manual/user-approved feature PR: SEO auto single-page diff guard is not applicable; unit tests still run."
