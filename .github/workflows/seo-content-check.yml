@@ -12,6 +12,8 @@ on:
       - 'scripts/baidu_verification.py'
       - 'tests/test_baidu_verification.py'
       - 'tests/test_visible_internal_tokens.py'
+      - 'tools/check_homepage_inline_assets.py'
+      - 'tests/test_homepage_inline_assets.py'
   push:
     branches: [main]
     paths:
@@ -24,6 +26,8 @@ on:
       - 'scripts/baidu_verification.py'
       - 'tests/test_baidu_verification.py'
       - 'tests/test_visible_internal_tokens.py'
+      - 'tools/check_homepage_inline_assets.py'
+      - 'tests/test_homepage_inline_assets.py'
 
 jobs:
   check-html:
@@ -34,6 +38,10 @@ jobs:
           fetch-depth: 0
       - name: Verify static metadata matches existing default-language page copy
         run: python scripts/check_seo_static_metadata.py
+      - name: Verify homepage crawl byte budget and original image hashes
+        run: |
+          python tools/check_homepage_inline_assets.py
+          python -m unittest tests.test_homepage_inline_assets -v
       - name: Verify all public pages exclude visible internal workflow markers
         run: |
           python -m unittest tests.test_visible_internal_tokens -v
