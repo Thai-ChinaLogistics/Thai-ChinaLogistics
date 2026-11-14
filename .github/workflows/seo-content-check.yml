@@ -9,6 +9,8 @@ on:
       - 'scripts/submit_indexnow.py'
       - 'tests/test_indexnow_submission.py'
       - 'scripts/check_visible_internal_tokens.py'
+      - 'scripts/baidu_verification.py'
+      - 'tests/test_baidu_verification.py'
       - 'tests/test_visible_internal_tokens.py'
   push:
     branches: [main]
@@ -19,6 +21,8 @@ on:
       - 'scripts/submit_indexnow.py'
       - 'tests/test_indexnow_submission.py'
       - 'scripts/check_visible_internal_tokens.py'
+      - 'scripts/baidu_verification.py'
+      - 'tests/test_baidu_verification.py'
       - 'tests/test_visible_internal_tokens.py'
 
 jobs:
@@ -34,6 +38,11 @@ jobs:
         run: |
           python -m unittest tests.test_visible_internal_tokens -v
           python scripts/check_visible_internal_tokens.py
+      - name: Validate optional Baidu ownership tag without claiming platform verification
+        run: |
+          python -m unittest tests.test_baidu_verification -v
+          python scripts/baidu_verification.py --root .
+
       - name: Verify page metadata and no internal tokens
         run: |
           python - <<'PY'
