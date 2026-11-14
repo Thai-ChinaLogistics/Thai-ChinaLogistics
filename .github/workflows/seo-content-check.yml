@@ -6,6 +6,8 @@ on:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
       - 'scripts/check_seo_static_metadata.py'
+      - 'scripts/submit_indexnow.py'
+      - 'tests/test_indexnow_submission.py'
       - 'scripts/check_visible_internal_tokens.py'
       - 'tests/test_visible_internal_tokens.py'
   push:
@@ -14,6 +16,8 @@ on:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
       - 'scripts/check_seo_static_metadata.py'
+      - 'scripts/submit_indexnow.py'
+      - 'tests/test_indexnow_submission.py'
       - 'scripts/check_visible_internal_tokens.py'
       - 'tests/test_visible_internal_tokens.py'
 
@@ -22,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Verify static metadata matches existing default-language page copy
         run: python scripts/check_seo_static_metadata.py
       - name: Verify all public pages exclude visible internal workflow markers
@@ -63,3 +69,32 @@ jobs:
               sys.exit(1)
           print('PASS: checked 2 target pages, metadata and internal tokens')
           PY
+
+      - name: Validate IndexNow URL scoping and send only changed public URLs
+        if: github.event_name == 'push'
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Never submit unchanged pages, unapproved URLs or PR-branch content.
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+          if [[ "$BEFORE" =~ ^0+$ ]]; then
+            : > indexnow-changed-files.txt
+          else
+            git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" -- '*.html' > indexnow-changed-files.txt
+          fi
+          python -m unittest tests.test_indexnow_submission -v
+          python scripts/submit_indexnow.py \
+            --root . \
+            --changed-files indexnow-changed-files.txt \
+            --report indexnow-receipt.json
+
+      - name: Archive IndexNow receipt (not evidence of indexing)
+        if: always() && github.event_name == 'push'
+        uses: actions/upload-artifact@v4
+        with:
+          name: indexnow-receipt-${{ github.run_number }}
+          path: indexnow-receipt.json
+          if-no-files-found: ignore
+          retention-days: 30
