@@ -6,12 +6,16 @@ on:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
       - 'scripts/check_seo_static_metadata.py'
+      - 'scripts/check_visible_internal_tokens.py'
+      - 'tests/test_visible_internal_tokens.py'
   push:
     branches: [main]
     paths:
       - '**/*.html'
       - '.github/workflows/seo-content-check.yml'
       - 'scripts/check_seo_static_metadata.py'
+      - 'scripts/check_visible_internal_tokens.py'
+      - 'tests/test_visible_internal_tokens.py'
 
 jobs:
   check-html:
@@ -20,6 +24,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify static metadata matches existing default-language page copy
         run: python scripts/check_seo_static_metadata.py
+      - name: Verify all public pages exclude visible internal workflow markers
+        run: |
+          python -m unittest tests.test_visible_internal_tokens -v
+          python scripts/check_visible_internal_tokens.py
       - name: Verify page metadata and no internal tokens
         run: |
           python - <<'PY'
