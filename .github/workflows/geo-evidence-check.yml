@@ -1,0 +1,28 @@
+name: GEO evidence validation
+on:
+  pull_request:
+    paths:
+      - 'scripts/validate_geo_evidence.py'
+      - 'tests/test_geo_evidence.py'
+      - 'docs/GEO-CHINA-AI-BASELINE-2026-11-15.md'
+      - '.github/workflows/geo-evidence-check.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/validate_geo_evidence.py'
+      - 'tests/test_geo_evidence.py'
+      - '.github/workflows/geo-evidence-check.yml'
+permissions:
+  contents: read
+jobs:
+  geo-evidence-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run GEO evidence schema guard unit tests
+        run: python -m unittest discover -s tests -p 'test_geo_evidence.py' -v
