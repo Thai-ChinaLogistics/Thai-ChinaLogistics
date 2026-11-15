@@ -67,3 +67,15 @@
 3. 分别汇报 `SEARCH_HIT`、`CITED`、`RECOMMENDED`，附分母（已有效执行次数）和截图/响应；缺少证据报告 `UNKNOWN`。
 4. 若发现抓取障碍或内容缺口，按原有 `SAFE_AUTO / REVIEW_REQUIRED / BLOCKED` 的 PR、安全检查和人工复核路径改动。不要批量生成重复页面或宣称保证推荐。
 5. 在真实基线存在后，按每周固定问题集重复验收，并观察 7/14/28 天变化，不用猜测所谓“AI 排名”。
+
+
+## 已提交的自动校验工具（PR #28）
+
+- `scripts/validate_geo_evidence.py`：**仅校验已提供的原始记录**，不会执行 AI 搜索、联网查询或获取账号数据。
+- `tests/test_geo_evidence.py`：通过 10 个静态案例覆盖误报（品牌词冒充自然推荐、没有证据、错域名、无时间戳、缺少 URL、把未测视为 false 等）。
+- 运行：`python -m unittest discover -s tests -p 'test_geo_evidence.py' -v`
+- 真实测试记录写入一个 UTF-8 JSONL 文件后执行：`python scripts/validate_geo_evidence.py path/to/evidence.jsonl`
+- 验证器 **PASS** 只能说明记录满足证据字段约束，**不能独立证明附件真实性**；须人工核验原始聊天记录、接口响应和来源链接。
+- JSONL 使用 `checked_at_iso8601,platform,query_id,exact_prompt,run_status,search_enabled,matched_url,search_hit,cited,mentioned,recommended,source_url_or_artifact` 这些必填键。每个键在未测试时可以写 `null`，其中 `run_status` 填 `NOT_TESTED`，不可把未检测的 `false` 当成结果。
+- `OBSERVED` 状态须填写含时区的时间、原始证据位置。 `recommended=true` 必须有 `mentioned=true`，且 `query_id <= 10`；`cited=true` 或 `search_hit=true` 必须有本站精确 HTTPS URL。
+- 审核完毕前 PR 保持 Draft，不接入现有定时任务或自动发布。
