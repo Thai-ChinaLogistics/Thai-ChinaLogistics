@@ -63,7 +63,7 @@ def build_markdown(result: dict) -> str:
         "# 国内 AI GEO 可见度验证报告",
         "",
         "> 本报告仅汇总经字段校验的测试记录，不证明原始材料的真实性，也不等于平台官方收录统计。",
-        "> 无实测结果显示「未验证」，不显示误导性的 0%。",
+        "> 无实测结果显示「未验证」，不把未测试推断为没有被收录或推荐。",
         "",
         "| 平台 | 已实测问题 | 搜索命中 | AI 引用 | 品牌提及 | 无品牌主动推荐 |",
         "|---|---:|---:|---:|---:|---:|",
@@ -73,7 +73,7 @@ def build_markdown(result: dict) -> str:
     for platform in ("doubao", "kimi", "deepseek"):
         x = result[platform]
         cells = [format_count(x["results"][m]) for m in MEASURES]
-        lines.append(f'| {LABELS[platform]} | {x["observed_queries"]}/12 | ' + " | ".join(cells) + " |")
+        lines.append(f'| {LABELS[platform]} | {str(x["observed_queries"]) + "/12" if x["observed_queries"] else "未验证"} | ' + " | ".join(cells) + " |")
     lines += [
         "",
         "说明：主动推荐仅统计不含品牌名称的第 1–10 题；品牌对照题 11–12 不纳入该指标。",
