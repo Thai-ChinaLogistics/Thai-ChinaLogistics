@@ -10,7 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from collections import defaultdict
+from datetime import datetime
 from pathlib import Path
 
 from validate_geo_evidence import PLATFORMS, validate_file
@@ -35,7 +35,7 @@ def summarize(path: Path) -> dict:
         if row["run_status"] != "OBSERVED":
             continue
         key = (row["platform"], row["query_id"], row["search_enabled"])
-        if key not in latest or row["checked_at_iso8601"] > latest[key]["checked_at_iso8601"]:
+        if key not in latest or datetime.fromisoformat(row["checked_at_iso8601"].replace("Z", "+00:00")) > datetime.fromisoformat(latest[key]["checked_at_iso8601"].replace("Z", "+00:00")):
             latest[key] = row
     output = {}
     for platform in sorted(PLATFORMS):
