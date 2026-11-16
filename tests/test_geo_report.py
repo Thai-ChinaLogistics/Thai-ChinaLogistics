@@ -64,6 +64,19 @@ class GeoReportTests(unittest.TestCase):
         out = self.summarize_rows([old, new])
         self.assertEqual(out["kimi"]["results"]["recommended"], {"positive": 1, "tested": 1})
 
+    def test_timezone_offsets_use_actual_instant(self):
+        older = record(
+            recommended=False,
+            checked_at_iso8601="2026-11-16T23:30:00+07:00",
+        )
+        newer = record(
+            recommended=True,
+            checked_at_iso8601="2026-11-16T17:00:00+00:00",
+        )
+        out = self.summarize_rows([older, newer])
+        self.assertEqual(out["kimi"]["results"]["recommended"],
+                         {"positive": 1, "tested": 1})
+
     def test_missing_evidence_rejected(self):
         with self.assertRaises(ValueError):
             self.summarize_rows([record(source_url_or_artifact=None)])
