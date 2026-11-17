@@ -73,6 +73,21 @@ class GeoServiceClaimAuditTests(unittest.TestCase):
             self.assertIn("OFFICIAL_PAGE_INVALID_OR_MISSING", codes)
             self.assertIn("CONTACT_NOT_ALIGNED", codes)
 
+    def test_dynamic_js_transport_claims_are_audited(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            self.make_site(d)
+            (root / "prd-enhancements.js").write_text(
+                "var answer = '空运、陆运、海运按时效比较';", encoding="utf-8"
+            )
+            codes = [x["code"] for x in mod.audit(root)["findings"]]
+            self.assertIn("DYNAMIC_SEA_ROUTE_CLAIM_REVIEW", codes)
+            (root / "prd-enhancements.js").write_text(
+                "var answer = '空运、陆运可咨询；海运暂未开放。';", encoding="utf-8"
+            )
+            codes = [x["code"] for x in mod.audit(root)["findings"]]
+            self.assertNotIn("DYNAMIC_SEA_ROUTE_CLAIM_REVIEW", codes)
+
     def test_encoded_path_escape_is_rejected(self):
         self.assertIsNone(mod._local_official_path(
             "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/dir/%2e%2e/outside.html"
