@@ -14,6 +14,8 @@ on:
       - 'tests/test_geo_service_claims.py'
       - 'tools/audit_sitemap_pages.py'
       - 'tests/test_sitemap_pages.py'
+      - 'tools/audit_live_site_http.py'
+      - 'tests/test_live_site_http.py'
   workflow_dispatch:
 
 permissions:
@@ -61,6 +63,19 @@ jobs:
         with:
           name: seo-sitemap-page-audit
           path: ${{ runner.temp }}/sitemap-page-audit.json
+          retention-days: 14
+
+      - name: Run independent production HTTP evidence tests
+        run: python -m unittest tests/test_live_site_http.py -v
+
+      - name: Record production HTTPS status and canonical evidence
+        run: python tools/audit_live_site_http.py --output "${{ runner.temp }}/site-http-evidence.json"
+
+      - name: Preserve production HTTP evidence (not Google indexing)
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-live-site-http-evidence
+          path: ${{ runner.temp }}/site-http-evidence.json
           retention-days: 14
 
       - name: Validate SEO auto-publish diff
