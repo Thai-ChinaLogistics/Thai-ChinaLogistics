@@ -9,6 +9,7 @@ on:
       - '.github/workflows/seo-safe-publish-ci.yml'
       - 'sitemap.xml'
       - 'ai-entity.json'
+      - 'prd-enhancements.js'
       - 'llms.txt'
       - 'tools/audit_geo_service_claims.py'
       - 'tests/test_geo_service_claims.py'
