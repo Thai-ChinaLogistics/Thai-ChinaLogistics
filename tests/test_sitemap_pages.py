@@ -82,6 +82,27 @@ class SitemapAuditTests(unittest.TestCase):
             self.assertEqual(report["missing_sitemap_indexable_count"], 0)
             self.assertEqual(report["finding_count"], 0)
 
+    def test_google_search_console_ownership_challenge_is_not_indexable_content(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = self.fixture(d)
+            name = "google744716665e019d1a.html"
+            (root / name).write_text("google-site-verification: " + name, encoding="utf-8")
+            report = mod.audit(root)
+            self.assertEqual(report["verified_ownership_challenge_html_count"], 1)
+            self.assertEqual(report["verified_ownership_challenge_paths"], [name])
+            self.assertEqual(report["indexable_top_level_html_count"], 1)
+            self.assertEqual(report["missing_sitemap_indexable_count"], 0)
+            self.assertEqual(report["finding_count"], 0)
+
+    def test_lookalike_verification_html_is_not_silently_excluded(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = self.fixture(d)
+            name = "google744716665e019d1a.html"
+            (root / name).write_text(GOOD, encoding="utf-8")
+            report = mod.audit(root)
+            self.assertEqual(report["verified_ownership_challenge_html_count"], 0)
+            self.assertEqual(report["missing_sitemap_indexable_count"], 1)
+
     def test_blocks_outside_project_and_traversal_urls(self):
         self.assertIsNone(mod.map_sitemap_url("https://example.com/"))
         self.assertIsNone(mod.map_sitemap_url(BASE + "sub/%2e%2e/private.html"))
