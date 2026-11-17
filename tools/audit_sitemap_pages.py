@@ -134,12 +134,47 @@ def audit(root: Path) -> dict:
     for url in sorted(set(sitemap_urls)):
         if sitemap_urls.count(url) > 1:
             findings.append({"url": url, "code": "DUPLICATE_SITEMAP_LOC"})
+
+    # Reverse-check the published site's top-level HTML inventory. Without
+    # this, omitted but indexable pages appear as a false clean Sitemap.
+    # Explicit noindex pages must remain omitted (never auto-submit them).
+    published_html = sorted(root.glob("*.html"))
+    indexable_html = []
+    explicitly_noindex = []
+    listed_local_paths = {
+        p for p in (map_sitemap_url(u) for u in sitemap_urls)
+        if p is not None
+    }
+    for path in published_html:
+        try:
+            parser = PageParser()
+            parser.feed(path.read_text(encoding="utf-8"))
+            parser.close()
+        except (UnicodeError, ValueError):
+            findings.append({"url": BASE_URL + path.name,
+                             "code": "INVALID_HTML_ENCODING"})
+            continue
+        if any("noindex" in str(x).casefold() for x in parser.robots):
+            explicitly_noindex.append(path.name)
+            continue
+        indexable_html.append(path.name)
+        if path.name not in listed_local_paths:
+            findings.append({"url": BASE_URL if path.name == "index.html" else BASE_URL + path.name,
+                             "code": "INDEXABLE_HTML_MISSING_FROM_SITEMAP"})
     return {
         "schema_version": "1.0",
         "scope": "repository_only_no_live_crawl_or_index_evidence",
         "can_authorize_edits": False,
         "sitemap_url_count": len(sitemap_urls),
         "unique_url_count": len(set(sitemap_urls)),
+        "published_top_level_html_count": len(published_html),
+        "indexable_top_level_html_count": len(indexable_html),
+        "explicit_noindex_html_count": len(explicitly_noindex),
+        "explicit_noindex_paths": explicitly_noindex,
+        "missing_sitemap_indexable_count": sum(
+            x["code"] == "INDEXABLE_HTML_MISSING_FROM_SITEMAP"
+            for x in findings
+        ),
         "finding_count": len(findings),
         "status": "REVIEW_REQUIRED" if findings else "NO_SOURCE_ISSUES_OBSERVED",
         "findings": findings,
