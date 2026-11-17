@@ -8,6 +8,10 @@ on:
       - 'tests/test_seo_publish_guard.py'
       - '.github/workflows/seo-safe-publish-ci.yml'
       - 'sitemap.xml'
+      - 'ai-entity.json'
+      - 'llms.txt'
+      - 'tools/audit_geo_service_claims.py'
+      - 'tests/test_geo_service_claims.py'
   workflow_dispatch:
 
 permissions:
@@ -30,6 +34,19 @@ jobs:
 
       - name: Run guard unit tests
         run: python -m unittest tests/test_seo_publish_guard.py -v
+
+      - name: Run public GEO entity / business-claims audit tests
+        run: python -m unittest tests/test_geo_service_claims.py -v
+
+      - name: Collect read-only SEO/GEO service-fact review report
+        run: python tools/audit_geo_service_claims.py --site-root . --output "${{ runner.temp }}/geo-service-claims.json"
+
+      - name: Preserve GEO fact review evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-geo-service-fact-audit
+          path: ${{ runner.temp }}/geo-service-claims.json
+          retention-days: 14
 
       - name: Validate SEO auto-publish diff
         if: github.event_name == 'pull_request' && (startsWith(github.head_ref, 'seo-auto/') || github.head_ref == 'feat/seo-safe-auto-publish')
