@@ -152,7 +152,7 @@ def audit(root: Path) -> dict:
             source = path.read_text(encoding="utf-8")
             # Google ownership challenge files are NOT searchable content and
             # must never be inserted into a sitemap to satisfy a count.
-            if (re.fullmatch(r"google[A-Za-z0-9_-]{8,64}\\.html", path.name)
+            if (re.fullmatch(r"google[A-Za-z0-9_-]{8,64}[.]html", path.name)
                     and source.strip() == f"google-site-verification: {path.name}"):
                 verification_html.append(path.name)
                 continue
