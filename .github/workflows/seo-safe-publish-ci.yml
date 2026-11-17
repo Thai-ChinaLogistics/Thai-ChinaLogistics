@@ -12,6 +12,8 @@ on:
       - 'llms.txt'
       - 'tools/audit_geo_service_claims.py'
       - 'tests/test_geo_service_claims.py'
+      - 'tools/audit_sitemap_pages.py'
+      - 'tests/test_sitemap_pages.py'
   workflow_dispatch:
 
 permissions:
@@ -46,6 +48,19 @@ jobs:
         with:
           name: seo-geo-service-fact-audit
           path: ${{ runner.temp }}/geo-service-claims.json
+          retention-days: 14
+
+      - name: Run full sitemap technical audit tests
+        run: python -m unittest tests/test_sitemap_pages.py -v
+
+      - name: Audit all sitemap HTML, canonical, index directives and JSON-LD
+        run: python tools/audit_sitemap_pages.py --root . --output "${{ runner.temp }}/sitemap-page-audit.json"
+
+      - name: Preserve all-page SEO technical evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-sitemap-page-audit
+          path: ${{ runner.temp }}/sitemap-page-audit.json
           retention-days: 14
 
       - name: Validate SEO auto-publish diff
