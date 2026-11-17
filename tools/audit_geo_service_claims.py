@@ -105,6 +105,23 @@ def audit(root: Path) -> dict:
                     "homepage: 海运服务暂未开放; ai-entity.json: services contains sea freight",
                     "由业务负责人核实实际开通状态，再统一首页、AI 实体资料和运输服务页；不得自动改成可用。"))
 
+    # PRD enhancements inject text after DOMContentLoaded. A source-only HTML
+    # inspection misses these customer-visible statements entirely.
+    enhancement_path = root / "prd-enhancements.js"
+    if enhancement_path.is_file():
+        injected = enhancement_path.read_text(encoding="utf-8")
+        unqualified = [
+            marker for marker in ("空运、陆运、海运", "海运/门到门")
+            if marker in injected
+        ]
+        if unqualified:
+            findings.append(_finding(
+                "DYNAMIC_SEA_ROUTE_CLAIM_REVIEW",
+                "prd-enhancements.js",
+                ", ".join(unqualified),
+                "核对动态注入的海运信息与已确认的实际服务状态，未确认前避免默认写成可用线路。",
+            ))
+
     for code, literal in PROMISES:
         if literal in home:
             findings.append(_finding(code, "index.html", literal,
