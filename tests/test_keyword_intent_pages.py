@@ -57,7 +57,7 @@ class UserSuggestionPageTests(unittest.TestCase):
         for relative, phrase in matched.items():
             with self.subTest(relative=relative):
                 p = page(relative)
-                text = re.sub(r"\\s+", " ", " ".join(p.parts))
+                text = re.sub(r"\s+", " ", " ".join(p.parts))
                 self.assertIn(phrase, text)
                 self.assertEqual(p.canonicals, [BASE + relative])
                 self.assertEqual(p.h1_count, 1)
