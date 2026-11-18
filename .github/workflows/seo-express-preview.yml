@@ -33,6 +33,13 @@ jobs:
           assert 'href="seo-pages.css"' in raw
           print("PASS: answer-first content, lists, WhatsApp CTA and stylesheet")
           PY
+      - name: Install CJK and Thai screenshot fonts
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-noto-cjk fonts-thai-tlwg
+          fc-cache -f >/dev/null
+          fc-list :lang=zh family | head -n 3
       - name: Capture source-level responsive screenshots
         shell: bash
         run: |
