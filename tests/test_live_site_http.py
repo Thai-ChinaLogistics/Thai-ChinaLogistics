@@ -1,6 +1,7 @@
 """Synthetic local tests: origin HTTP status must not be confused with tools/GSC."""
 import importlib.util
 from pathlib import Path
+import tempfile
 import sys
 import unittest
 from urllib.error import HTTPError, URLError
@@ -84,6 +85,39 @@ class LiveHttpAuditTests(unittest.TestCase):
         robots = next(x for x in report["probes"] if x["name"] == "host_root_robots")
         self.assertEqual(robots["http_status"], 404)
         self.assertFalse(robots["required"])
+
+    def test_exact_live_bytes_match_checked_out_files(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name, relative in mod.SOURCE_PATHS.items():
+                url = next(p[1] for p in mod.PROBES if p[0] == name)
+                body = xml() if name == "sitemap" else html(url)
+                (root / relative).write_bytes(body)
+            result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), root)
+            self.assertEqual(result["status"], "ALL_DEPLOYED_SOURCE_MATCH")
+            self.assertEqual(result["exact_matches"], 5)
+            self.assertEqual(result["needs_review"], 0)
+
+    def test_http_200_with_old_page_content_is_not_deployment_proof(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            for name, relative in mod.SOURCE_PATHS.items():
+                url = next(p[1] for p in mod.PROBES if p[0] == name)
+                body = xml() if name == "sitemap" else html(url)
+                (root / relative).write_bytes(body)
+            (root / "thailand-to-china-express.html").write_bytes(b"new edited content")
+            result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), root)
+            self.assertEqual(result["status"], "REVIEW_REQUIRED")
+            self.assertEqual(result["exact_matches"], 4)
+            self.assertEqual(next(x for x in result["checks"]
+                                  if x["name"] == "express")["status"],
+                             "SOURCE_DIFFERS_FROM_DEPLOYED")
+
+    def test_source_comparison_does_not_infer_google_indexing(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), Path(tmp))
+            self.assertIn("google_indexed", result["not_proof_of"])
+            self.assertEqual(result["needs_review"], 5)
 
     def test_x_robots_noindex_is_review(self):
         def response(request, *, timeout):
