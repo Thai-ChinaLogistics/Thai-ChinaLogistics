@@ -79,8 +79,8 @@ class LiveHttpAuditTests(unittest.TestCase):
 
     def test_robot_root_absence_is_optional_not_robots_blocked(self):
         report = mod.audit(opener=normal_opener)
-        self.assertEqual(report["summary"]["required"], 5)
-        self.assertEqual(report["summary"]["passed"], 5)
+        self.assertEqual(report["summary"]["required"], len(mod.SOURCE_PATHS))
+        self.assertEqual(report["summary"]["passed"], len(mod.SOURCE_PATHS))
         self.assertEqual(report["summary"]["status"], "HTTP_SOURCE_CHECK_PASS")
         robots = next(x for x in report["probes"] if x["name"] == "host_root_robots")
         self.assertEqual(robots["http_status"], 404)
@@ -95,7 +95,7 @@ class LiveHttpAuditTests(unittest.TestCase):
                 (root / relative).write_bytes(body)
             result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), root)
             self.assertEqual(result["status"], "ALL_DEPLOYED_SOURCE_MATCH")
-            self.assertEqual(result["exact_matches"], 5)
+            self.assertEqual(result["exact_matches"], len(mod.SOURCE_PATHS))
             self.assertEqual(result["needs_review"], 0)
 
     def test_http_200_with_old_page_content_is_not_deployment_proof(self):
@@ -108,16 +108,22 @@ class LiveHttpAuditTests(unittest.TestCase):
             (root / "thailand-to-china-express.html").write_bytes(b"new edited content")
             result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), root)
             self.assertEqual(result["status"], "REVIEW_REQUIRED")
-            self.assertEqual(result["exact_matches"], 4)
+            self.assertEqual(result["exact_matches"], len(mod.SOURCE_PATHS) - 1)
             self.assertEqual(next(x for x in result["checks"]
                                   if x["name"] == "express")["status"],
                              "SOURCE_DIFFERS_FROM_DEPLOYED")
+
+    def test_recently_edited_2026_11_18_pages_are_required(self):
+        actual = {x[0] for x in mod.PROBES if x[3]}
+        for name in ("express", "pricing", "bangkok", "luggage", "moving"):
+            self.assertIn(name, actual)
+            self.assertIn(name, mod.SOURCE_PATHS)
 
     def test_source_comparison_does_not_infer_google_indexing(self):
         with tempfile.TemporaryDirectory() as tmp:
             result = mod.compare_live_to_checkout(mod.audit(opener=normal_opener), Path(tmp))
             self.assertIn("google_indexed", result["not_proof_of"])
-            self.assertEqual(result["needs_review"], 5)
+            self.assertEqual(result["needs_review"], len(mod.SOURCE_PATHS))
 
     def test_x_robots_noindex_is_review(self):
         def response(request, *, timeout):

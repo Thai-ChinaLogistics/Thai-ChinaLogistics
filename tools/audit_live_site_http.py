@@ -29,6 +29,9 @@ SOURCE_PATHS = {
     "express": "thailand-to-china-express.html",
     "pickup": "thailand-to-china-pickup.html",
     "pricing": "thailand-to-china-price.html",
+    "bangkok": "bangkok-to-china.html",
+    "luggage": "luggage-to-china.html",
+    "moving": "moving-to-china.html",
 }
 PROBES = (
     ("homepage", BASE_URL, "html", True),
@@ -36,6 +39,9 @@ PROBES = (
     ("express", BASE_URL + "thailand-to-china-express.html", "html", True),
     ("pickup", BASE_URL + "thailand-to-china-pickup.html", "html", True),
     ("pricing", BASE_URL + "thailand-to-china-price.html", "html", True),
+    ("bangkok", BASE_URL + "bangkok-to-china.html", "html", True),
+    ("luggage", BASE_URL + "luggage-to-china.html", "html", True),
+    ("moving", BASE_URL + "moving-to-china.html", "html", True),
     # Informational only. The shared Github Pages host root may legitimately
     # lack a robots.txt. A 404 here is not evidence of robots blocking.
     ("host_root_robots", HOST_ROOT + "/robots.txt", "text", False),
