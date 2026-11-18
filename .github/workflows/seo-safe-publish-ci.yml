@@ -17,6 +17,7 @@ on:
       - 'tests/test_sitemap_pages.py'
       - 'tools/audit_live_site_http.py'
       - 'tests/test_live_site_http.py'
+      - 'tests/test_keyword_intent_pages.py'
   push:
     branches:
       - main
@@ -47,6 +48,9 @@ jobs:
 
       - name: Run guard unit tests
         run: python -m unittest tests/test_seo_publish_guard.py -v
+
+      - name: Verify screenshot-derived keyword intent on existing landing pages
+        run: python -m unittest tests/test_keyword_intent_pages.py -v
 
       - name: Run public GEO entity / business-claims audit tests
         run: python -m unittest tests/test_geo_service_claims.py -v
