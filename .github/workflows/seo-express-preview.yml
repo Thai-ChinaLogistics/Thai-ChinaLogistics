@@ -1,8 +1,9 @@
-name: SEO express mobile and desktop preview
+name: SEO service landing page responsive preview
 on:
   pull_request:
     paths:
       - 'thailand-to-china-express.html'
+      - 'thailand-to-china-pickup.html'
       - 'seo-pages.css'
       - '.github/workflows/seo-express-preview.yml'
 permissions:
@@ -31,7 +32,13 @@ jobs:
           assert raw.count("<ol>")==2
           assert "https://wa.me/66839769828" in page.links
           assert 'href="seo-pages.css"' in raw
-          print("PASS: answer-first content, lists, WhatsApp CTA and stylesheet")
+          pickup=Path("thailand-to-china-pickup.html").read_text(encoding="utf-8")
+          pickup_page=Page(); pickup_page.feed(pickup)
+          assert '<strong>直接回答：</strong>' in pickup
+          assert pickup.count("<ol>") >= 1
+          assert "https://wa.me/66839769828" in pickup_page.links
+          assert 'href="seo-pages.css"' in pickup
+          print("PASS: express and pickup answers, lists, WhatsApp CTA and styles")
           PY
       - name: Install CJK and Thai screenshot fonts
         shell: bash
@@ -53,12 +60,17 @@ jobs:
           URL="file://${GITHUB_WORKSPACE}/thailand-to-china-express.html"
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=390,844 --screenshot=preview/express-mobile-390.png "$URL" >/tmp/chrome-mobile.log 2>&1
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=1440,900 --screenshot=preview/express-desktop-1440.png "$URL" >/tmp/chrome-desktop.log 2>&1
+          PICKUP_URL="file://${GITHUB_WORKSPACE}/thailand-to-china-pickup.html"
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=390,844 --screenshot=preview/pickup-mobile-390.png "$PICKUP_URL" >/tmp/chrome-pickup-mobile.log 2>&1
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=1440,900 --screenshot=preview/pickup-desktop-1440.png "$PICKUP_URL" >/tmp/chrome-pickup-desktop.log 2>&1
+          test "$(stat -c %s preview/pickup-mobile-390.png)" -gt 1000
+          test "$(stat -c %s preview/pickup-desktop-1440.png)" -gt 1000
           test "$(stat -c %s preview/express-mobile-390.png)" -gt 1000
           test "$(stat -c %s preview/express-desktop-1440.png)" -gt 1000
           file preview/*.png
       - name: Upload visual review evidence
         uses: actions/upload-artifact@v4
         with:
-          name: seo-express-responsive-preview
+          name: seo-landing-pages-responsive-preview
           path: preview/*.png
           retention-days: 14
