@@ -21,6 +21,15 @@ from audit_sitemap_pages import BASE_URL, PageParser
 MAX_BYTES = 2_000_000
 TIMEOUT_SECONDS = 12
 HOST_ROOT = "https://thai-chinalogistics.github.io"
+# Compare the deployed bytes with the checked-out branch, not merely HTTP 200.
+# On pull requests a mismatch can be expected: source edits may not yet be live.
+SOURCE_PATHS = {
+    "homepage": "index.html",
+    "sitemap": "sitemap.xml",
+    "express": "thailand-to-china-express.html",
+    "pickup": "thailand-to-china-pickup.html",
+    "pricing": "thailand-to-china-price.html",
+}
 PROBES = (
     ("homepage", BASE_URL, "html", True),
     ("sitemap", BASE_URL + "sitemap.xml", "xml", True),
@@ -133,11 +142,56 @@ def audit(opener=None) -> dict:
     }
 
 
+def compare_live_to_checkout(report: dict, root: Path) -> dict:
+    """Compare immutable body hashes to local source without changing the site.
+
+    A mismatch on a pull request is not proof of deploy failure: the checked
+    out branch is a *candidate*, not necessarily the published main branch.
+    """
+    observations = {p["name"]: p for p in report["probes"]}
+    checks = []
+    for name, relative_path in SOURCE_PATHS.items():
+        observation = observations.get(name, {})
+        local = root / relative_path
+        item = {
+            "name": name, "repository_path": relative_path,
+            "origin_http_status": observation.get("http_status"),
+            "origin_result": observation.get("result", "UNKNOWN"),
+            "origin_body_sha256": observation.get("sha256_of_read_body"),
+            "checkout_body_sha256": None,
+            "status": "UNKNOWN",
+        }
+        if not local.is_file():
+            item["status"] = "CHECKOUT_FILE_MISSING"
+        else:
+            item["checkout_body_sha256"] = sha256(local.read_bytes()).hexdigest()
+            if observation.get("result") != "PASS":
+                item["status"] = "ORIGIN_NOT_VALIDATED"
+            elif observation.get("sha256_of_read_body") == item["checkout_body_sha256"]:
+                item["status"] = "EXACT_DEPLOYED_MATCH"
+            else:
+                item["status"] = "SOURCE_DIFFERS_FROM_DEPLOYED"
+        checks.append(item)
+    matched = sum(x["status"] == "EXACT_DEPLOYED_MATCH" for x in checks)
+    return {
+        "scope": "github_actions_runner_vs_checked_out_source",
+        "not_proof_of": ["google_indexed", "googlebot_access", "ai_citation"],
+        "ci_pull_request_mismatch_is_not_a_deployment_failure": True,
+        "count": len(checks),
+        "exact_matches": matched,
+        "needs_review": len(checks) - matched,
+        "status": "ALL_DEPLOYED_SOURCE_MATCH" if matched == len(checks)
+                  else "REVIEW_REQUIRED",
+        "checks": checks,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     result = audit()
+    result["deployed_source_comparison"] = compare_live_to_checkout(result, Path("."))
     payload = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
