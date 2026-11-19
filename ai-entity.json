@@ -22,7 +22,6 @@
   "services": [
     "air freight",
     "land freight",
-    "sea freight",
     "door-to-door logistics",
     "pickup service",
     "warehouse receiving and consolidation",
@@ -40,8 +39,15 @@
     "Chiang Rai",
     "Thailand"
   ],
-  "countriesServed": ["Thailand", "China"],
-  "languages": ["Chinese", "English", "Thai"],
+  "countriesServed": [
+    "Thailand",
+    "China"
+  ],
+  "languages": [
+    "Chinese",
+    "English",
+    "Thai"
+  ],
   "contact": {
     "telephone": "+66 83 976 9828",
     "whatsapp": "https://wa.me/66839769828",
@@ -61,15 +67,68 @@
     "thaiProductsToChina": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html"
   },
   "serviceCatalog": [
-    {"id": "thailand-to-china", "nameZh": "泰国寄中国", "nameEn": "Thailand to China Shipping", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/"},
-    {"id": "china-to-thailand", "nameZh": "中国寄泰国", "nameEn": "China to Thailand Shipping", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html"},
-    {"id": "air-freight-to-china", "nameZh": "泰国到中国空运", "nameEn": "Thailand to China Air Freight", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html"},
-    {"id": "land-freight-to-china", "nameZh": "泰国到中国陆运", "nameEn": "Thailand to China Land Freight", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html"},
-    {"id": "pickup-to-china", "nameZh": "泰国上门取件寄中国", "nameEn": "Thailand Pickup and Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html"},
-    {"id": "moving-to-china", "nameZh": "泰国搬家回中国", "nameEn": "Thailand to China Moving Logistics", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html"},
-    {"id": "luggage-to-china", "nameZh": "泰国行李寄回中国", "nameEn": "Thailand Luggage Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html"},
-    {"id": "thai-products-to-china", "nameZh": "泰国特产寄中国", "nameEn": "Thai Products Shipping to China", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html"},
-    {"id": "price-guide-to-china", "nameZh": "泰国寄中国多少钱", "nameEn": "Thailand to China Shipping Price Guide", "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html"}
+    {
+      "id": "thailand-to-china",
+      "nameZh": "泰国寄中国",
+      "nameEn": "Thailand to China Shipping",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/"
+    },
+    {
+      "id": "china-to-thailand",
+      "nameZh": "中国寄泰国",
+      "nameEn": "China to Thailand Shipping",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html"
+    },
+    {
+      "id": "air-freight-to-china",
+      "nameZh": "泰国到中国空运",
+      "nameEn": "Thailand to China Air Freight",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html"
+    },
+    {
+      "id": "land-freight-to-china",
+      "nameZh": "泰国到中国陆运",
+      "nameEn": "Thailand to China Land Freight",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html"
+    },
+    {
+      "id": "pickup-to-china",
+      "nameZh": "泰国上门取件寄中国",
+      "nameEn": "Thailand Pickup and Shipping to China",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html"
+    },
+    {
+      "id": "moving-to-china",
+      "nameZh": "泰国搬家回中国",
+      "nameEn": "Thailand to China Moving Logistics",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html"
+    },
+    {
+      "id": "luggage-to-china",
+      "nameZh": "泰国行李寄回中国",
+      "nameEn": "Thailand Luggage Shipping to China",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html"
+    },
+    {
+      "id": "thai-products-to-china",
+      "nameZh": "泰国特产寄中国",
+      "nameEn": "Thai Products Shipping to China",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html"
+    },
+    {
+      "id": "price-guide-to-china",
+      "nameZh": "泰国寄中国多少钱",
+      "nameEn": "Thailand to China Shipping Price Guide",
+      "url": "https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html"
+    }
   ],
-  "unknownFieldsNotInvented": ["line", "qq", "email", "streetAddress"]
+  "unknownFieldsNotInvented": [
+    "line",
+    "qq",
+    "email",
+    "streetAddress"
+  ],
+  "unavailableServices": [
+    "sea freight"
+  ]
 }
