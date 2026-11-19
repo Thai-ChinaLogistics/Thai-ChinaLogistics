@@ -15,6 +15,7 @@ on:
       - 'tests/test_geo_service_claims.py'
       - 'tests/test_public_trust_claims.py'
       - 'tests/check_inline_scripts.py'
+      - 'tests/check_lead_fallback.mjs'
       - 'tools/audit_sitemap_pages.py'
       - 'tests/test_sitemap_pages.py'
       - 'tools/audit_live_site_http.py'
@@ -56,6 +57,9 @@ jobs:
 
       - name: Reject unverified public ratings and transit claims
         run: python -m unittest tests/test_public_trust_claims.py -v
+
+      - name: Verify fallback enquiry preserves real form contact fields (offline)
+        run: node tests/check_lead_fallback.mjs
 
       - name: Validate modified homepage inline JavaScript syntax
         run: python tests/check_inline_scripts.py
