@@ -10663,7 +10663,8 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
       };
 
       const name = getValue('name');
-      const contact = getValue('contact');
+      const contactType = getValue('contactType');
+      const contact = getValue('contactValue') || getValue('contact');
       const city = getValue('city');
       const destination = getValue('destination');
       const cargo = getValue('cargo');
@@ -10677,6 +10678,7 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
         '',
         '【客户询价信息】',
         `姓名：${name || '未填写'}`,
+        `联系方式类型：${contactType || '未填写'}`,
         `联系方式：${contact || '未填写'}`,
         `泰国所在城市：${city || '未填写'}`,
         `目的地城市：${destination || '未填写'}`,
@@ -10705,7 +10707,8 @@ html[data-lang="th"] .hero-bottom-note span { font-size: 14px !important; line-h
         '',
         '【客户询价信息】',
         `姓名：${getValue('name') || '未填写'}`,
-        `联系方式：${getValue('contact') || '未填写'}`,
+        `联系方式类型：${getValue('contactType') || '未填写'}`,
+        `联系方式：${getValue('contactValue') || getValue('contact') || '未填写'}`,
         `泰国所在城市：${getValue('city') || '未填写'}`,
         `目的地城市：${getValue('destination') || '未填写'}`,
         `货物类型：${getValue('cargo') || '未填写'}`,
