@@ -4,6 +4,7 @@ on:
     paths:
       - 'thailand-to-china-express.html'
       - 'thailand-to-china-pickup.html'
+      - 'index.html'
       - 'seo-pages.css'
       - '.github/workflows/seo-express-preview.yml'
 permissions:
@@ -63,6 +64,13 @@ jobs:
           PICKUP_URL="file://${GITHUB_WORKSPACE}/thailand-to-china-pickup.html"
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=390,844 --screenshot=preview/pickup-mobile-390.png "$PICKUP_URL" >/tmp/chrome-pickup-mobile.log 2>&1
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=1440,900 --screenshot=preview/pickup-desktop-1440.png "$PICKUP_URL" >/tmp/chrome-pickup-desktop.log 2>&1
+          HOME_URL="file://${GITHUB_WORKSPACE}/index.html"
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3000 --window-size=390,844 --screenshot=preview/home-mobile-390.png "$HOME_URL" >/tmp/chrome-home-mobile.log 2>&1
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3000 --window-size=1440,900 --screenshot=preview/home-desktop-1440.png "$HOME_URL" >/tmp/chrome-home-desktop.log 2>&1
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3000 --window-size=390,844 --screenshot=preview/home-reviews-mobile-390.png "${HOME_URL}#reviews" >/tmp/chrome-home-reviews.log 2>&1
+          test "$(stat -c %s preview/home-mobile-390.png)" -gt 1000
+          test "$(stat -c %s preview/home-desktop-1440.png)" -gt 1000
+          test "$(stat -c %s preview/home-reviews-mobile-390.png)" -gt 1000
           test "$(stat -c %s preview/pickup-mobile-390.png)" -gt 1000
           test "$(stat -c %s preview/pickup-desktop-1440.png)" -gt 1000
           test "$(stat -c %s preview/express-mobile-390.png)" -gt 1000
