@@ -4,6 +4,7 @@ on:
     paths:
       - 'thailand-to-china-express.html'
       - 'thailand-to-china-pickup.html'
+      - 'index.html'
       - 'seo-pages.css'
       - '.github/workflows/seo-express-preview.yml'
 permissions:
@@ -63,11 +64,35 @@ jobs:
           PICKUP_URL="file://${GITHUB_WORKSPACE}/thailand-to-china-pickup.html"
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=390,844 --screenshot=preview/pickup-mobile-390.png "$PICKUP_URL" >/tmp/chrome-pickup-mobile.log 2>&1
           "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=2500 --window-size=1440,900 --screenshot=preview/pickup-desktop-1440.png "$PICKUP_URL" >/tmp/chrome-pickup-desktop.log 2>&1
+          HOME_URL="file://${GITHUB_WORKSPACE}/index.html"
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3000 --window-size=390,844 --screenshot=preview/home-mobile-390.png "$HOME_URL" >/tmp/chrome-home-mobile.log 2>&1
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --hide-scrollbars --virtual-time-budget=3000 --window-size=1440,900 --screenshot=preview/home-desktop-1440.png "$HOME_URL" >/tmp/chrome-home-desktop.log 2>&1
+          test "$(stat -c %s preview/home-mobile-390.png)" -gt 1000
+          test "$(stat -c %s preview/home-desktop-1440.png)" -gt 1000
           test "$(stat -c %s preview/pickup-mobile-390.png)" -gt 1000
           test "$(stat -c %s preview/pickup-desktop-1440.png)" -gt 1000
           test "$(stat -c %s preview/express-mobile-390.png)" -gt 1000
           test "$(stat -c %s preview/express-desktop-1440.png)" -gt 1000
           file preview/*.png
+      - name: Confirm review policy in rendered homepage DOM
+        shell: bash
+        run: |
+          BROWSER="$(command -v google-chrome || command -v chromium || command -v chromium-browser)"
+          "$BROWSER" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage --virtual-time-budget=3000 --dump-dom "file://${GITHUB_WORKSPACE}/index.html" >/tmp/seo-home-rendered-dom.html 2>/tmp/seo-chrome-dom.log
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          html = Path('/tmp/seo-home-rendered-dom.html').read_text(encoding='utf-8')
+          m = re.search(r'<section[^>]*id="reviews"[^>]*>(.*?)</section>', html, re.S)
+          assert m, "Rendered reviews section missing"
+          section = m.group(1)
+          assert "当前暂不公开未经核验的客户评分和评价" in section
+          assert "testimonial-track" not in section
+          assert "rating-summary-slot" not in section
+          assert "4.99" not in section
+          print("PASS: rendered review section is a neutral policy, not simulated customer ratings")
+          PY
+
       - name: Upload visual review evidence
         uses: actions/upload-artifact@v4
         with:
