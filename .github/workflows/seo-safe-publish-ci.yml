@@ -13,6 +13,8 @@ on:
       - 'llms.txt'
       - 'tools/audit_geo_service_claims.py'
       - 'tests/test_geo_service_claims.py'
+      - 'tests/test_public_trust_claims.py'
+      - 'tests/check_inline_scripts.py'
       - 'tools/audit_sitemap_pages.py'
       - 'tests/test_sitemap_pages.py'
       - 'tools/audit_live_site_http.py'
@@ -51,6 +53,12 @@ jobs:
 
       - name: Verify screenshot-derived keyword intent on existing landing pages
         run: python -m unittest tests/test_keyword_intent_pages.py -v
+
+      - name: Reject unverified public ratings and transit claims
+        run: python -m unittest tests/test_public_trust_claims.py -v
+
+      - name: Validate modified homepage inline JavaScript syntax
+        run: python tests/check_inline_scripts.py
 
       - name: Run public GEO entity / business-claims audit tests
         run: python -m unittest tests/test_geo_service_claims.py -v
