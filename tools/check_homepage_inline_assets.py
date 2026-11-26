@@ -15,14 +15,18 @@ from pathlib import Path
 # baseline together with the sea-freight slide itself; sea freight is not
 # offered, so the image is no longer referenced by the homepage. The file is
 # deleted from the repo and remains recoverable from git history.
+# 2026-11-26: carton-weight-diagram.png converted to WebP (same image, 1.2 MB -> 81 KB)
+# and wechat-qr.jpeg recompressed at JPEG quality 72 (407 KB -> 68 KB); baseline
+# hashes updated for the intended replacements. Hero sandbox map and carousel
+# hero images were also converted to WebP (not in this baseline).
 EXPECTED = {
     "pickup-slide-2.png": ("ad6a83b75ef0e23db3df7b791ac4e93d6368a003", b"\x89PNG\r\n\x1a\n", "css"),
     "pickup-slide-4.png": ("7949b33ed09813112394224fe19e4de98489689e", b"\x89PNG\r\n\x1a\n", "css"),
-    "carton-weight-diagram.png": ("a40ff85e5116612309fa3894141f66827e087b30", b"\x89PNG\r\n\x1a\n", "img"),
+    "carton-weight-diagram.webp": ("5c668a5ffee9c0e9b1f39150b6c6b4fc41af215c", b"RIFF", "img"),
     "facebook-icon.png": ("a371772a86d6ec96163357f53f2e0197bc2d4bb3", b"\x89PNG\r\n\x1a\n", "img"),
     "whatsapp-icon.png": ("b914911a91327a3f71757d21673057575a74344c", b"\x89PNG\r\n\x1a\n", "img"),
     "wechat-icon.png": ("75665c196b3cec0f94915198b5e092efa01cadfe", b"\x89PNG\r\n\x1a\n", "img"),
-    "wechat-qr.jpeg": ("89beab0b0802d9002e66e81218ff0d5725ae7069", b"\xff\xd8", "img"),
+    "wechat-qr.jpeg": ("9956f9d4ab1e26c831933dbb41fa596258e3f58d", b"\xff\xd8", "img"),
 }
 MAX_HTML_BYTES = 1_500_000  # Below Google's documented 2MB Googlebot HTML fetch threshold.
 
@@ -77,7 +81,7 @@ def main() -> int:
         print("\n".join("FAIL " + error for error in errors), file=sys.stderr)
         return 1
     print(
-        "PASS: homepage HTML <=1.5 MB, all eight original image blobs "
+        "PASS: homepage HTML <=1.5 MB, all seven baseline image blobs "
         "present byte-identically, no layout-copy/CSS selector rewrite required"
     )
     return 0

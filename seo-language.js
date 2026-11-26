@@ -11,7 +11,8 @@
   let lang=forced||saved||browser||refHint||'zh';
   if(!allowed.includes(lang))lang='zh';
   const meta=window.TCL_SEO_PAGE_META||{};
-  const applyMeta=(l)=>{const m=meta[l]||meta.zh;if(!m)return;document.documentElement.lang=m.lang||({'zh':'zh-CN','en':'en','th':'th'}[l]);document.title=m.title||document.title;const d=document.querySelector('meta[name="description"]');if(d&&m.description)d.content=m.description;const ot=document.querySelector('meta[property="og:title"]');if(ot&&m.title)ot.content=m.title;const od=document.querySelector('meta[property="og:description"]');if(od&&m.description)od.content=m.description;};
+  const applyMeta=(l)=>{const m=meta[l]||meta.zh;if(!m)return;document.documentElement.lang=m.lang||({'zh':'zh-CN','en':'en','th':'th'}[l]);};
+  // 2026-11-26: title/description/og 保持静态中文版本，JS 不再运行时改写；语言切换只控制正文显隐。
   document.documentElement.dataset.lang=lang;applyMeta(lang);
   const persist=(l)=>{try{localStorage.setItem('tcl_seo_lang',l);localStorage.setItem('siteLanguage',l);localStorage.setItem('siteLang',l);}catch(e){}};
   const apply=(l,persistChoice=true)=>{l=normalize(l)||'zh';document.documentElement.dataset.lang=l;applyMeta(l);document.querySelectorAll('button[data-lang]').forEach(b=>{const on=b.dataset.lang===l;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false')});if(persistChoice)persist(l);};

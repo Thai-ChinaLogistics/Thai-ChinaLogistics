@@ -74,13 +74,13 @@ class UserSuggestionPageTests(unittest.TestCase):
             node.findtext(f"{ns}loc"): node.findtext(f"{ns}lastmod")
             for node in root.findall(f"{ns}url")
         }
-        self.assertEqual(len(entries), 28)
+        self.assertEqual(len(entries), 32)
         for relative in (
             "thailand-to-china-express.html", "bangkok-to-china.html",
             "thailand-to-china-price.html", "luggage-to-china.html",
             "moving-to-china.html"
         ):
-            self.assertEqual(entries[BASE + relative], "2026-11-18")
+            self.assertEqual(entries[BASE + relative], "2026-11-26")
 
     def test_competitor_brand_terms_not_in_our_updated_titles(self):
         for relative in (

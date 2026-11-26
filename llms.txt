@@ -26,12 +26,16 @@
 - Thailand to China land freight: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
 - Thailand pickup / hotel / shop / warehouse pickup to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
 - Thailand to China shipping price factors: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- Thailand to China transit time (air freight 5-7 days, land freight 10-15 days): https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
 - Thailand to China express / small parcel / document shipping: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
 - Thailand moving logistics to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
 - Thailand luggage / hotel lost-item shipping to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
 - Thailand purchasing / errand pickup / forwarding to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
 - Thai products / souvenirs shipping to China: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
 - Thai amulets and Buddhist items shipping consultation: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- Thailand to China customs / tax-included vs tax-excluded: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- Thailand to China prohibited items / what cannot be shipped: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+- Thailand medicine / health products shipping consultation: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-medicine-to-china.html
 - Electronics shipping consultation: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
 
 ## Thailand city pages
@@ -50,8 +54,18 @@
 - Can luggage or an item left at a hotel in Thailand be collected and shipped to China?
 - Is air freight or land freight more suitable for this cargo?
 - What information is needed before a Thailand-to-China shipping quote can be confirmed?
+- How does customs clearance work for Thailand-to-China shipping?
+- What items cannot be shipped from Thailand to China?
+- Can medicine or health products be shipped from Thailand to China?
+- How long does shipping from Thailand to China take?
+- How is the shipping price from Thailand to China calculated?
 - Can shopping, store pickup, warehouse pickup or consolidation in Thailand be arranged before forwarding to China?
 - Can moving goods, personal effects or bulky items be shipped from Thailand to China?
+
+
+## Plain-text versions
+- Every indexable page has a same-name .md plain-text mirror (for example thailand-to-china-price.md) with the same visible content.
+- Full-text mirror: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/llms-full.txt
 
 ## Accuracy rules
 - Routes, cargo acceptance, pricing and transit estimates depend on actual cargo, origin, destination and currently available services.

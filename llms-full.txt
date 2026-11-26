@@ -1,0 +1,3025 @@
+# Thai-China Logistics — full text (llms-full.txt)
+
+Complete plain-text mirror of the public website for search and AI retrieval. Canonical facts remain on the public website and Schema.org structured data. Do not infer prices, acceptance, transit times, licenses, addresses or service guarantees that are not explicitly stated on the cited page.
+
+Website: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
+Contact: +66 83 976 9828
+
+---
+
+# 关于泰中双向物流｜泰中物流
+
+> 泰中双向物流（Thai-China Logistics）提供泰国到中国、中国到泰国跨境物流咨询与运输服务，覆盖空运、陆运及部分取件、集货、搬家、代购和酒店遗失物品取回等场景。提供货物与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html
+
+> Updated: 2026-11-26
+
+← 返回首页 / Home
+
+# 泰中双向物流｜Thai-China Logistics
+
+泰中双向物流（Thai-China Logistics）是面向泰国与中国之间运输需求的跨境物流服务。主要方向包括 泰国 → 中国 和 中国 → 泰国 ，根据货物类型、重量体积、起运地、目的地、预算和当期线路确认可用方案。
+
+Thai-China Logistics provides cross-border logistics services between Thailand and China, including Thailand-to-China and China-to-Thailand shipping. Routes and quotes depend on the actual cargo and addresses.
+
+## 主要服务 / Core services
+
+## 服务区域 / Service areas
+
+服务需求覆盖泰国与中国之间的双向跨境运输。泰国端常见咨询地区包括曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱及泰国其他地区；具体取件与线路以实际地址和当期服务能力确认为准。
+
+## 服务流程 / How it works
+
+第一步，提供货物与路线信息：货物照片、品名、数量、重量、外箱尺寸、泰国取件地址与中国收货地址。第二步，确认方案：按货物类型、重量体积、起运地、目的地与当期线路确认可用方案、运输方式与预计时效。第三步，取件与打包：可咨询上门取件，按货物情况打包，特殊品类先审核。第四步，运输与清关：空运常规时效 5-7 天、陆运常规时效 10-15 天，清关资料提前备齐。第五步，中国派送：按收货地址派送到门，具体以实际情况为准。
+
+## 我们能帮你处理什么 / What we handle
+
+个人行李与游客物品、泰国特产与伴手礼、代购商品与合箱、家具大件与搬家物品、电子产品与带电货物、佛牌与佛教用品、食品与零食、燕窝、植物、宠物托运协调，以及中国寄泰国的淘宝集运与日常用品。食品、电子产品、药品、植物、宠物等特殊品类都要先审核，具体以货物与目的地确认。海运服务暂未开放，目前主做空运与陆运。清关要求见 泰国寄中国清关 ，禁运清单见 泰国寄中国禁运品 。
+
+## 官方联系方式 / Official contact
+
+WhatsApp / 电话： +66 83 976 9828
+
+WeChat： THAICHINA-LOGISTICS
+
+WhatsApp 联系 Facebook 中国寄泰国
+
+## 机器可读企业信息
+
+本页作为 Thai-China Logistics 的公开企业实体说明页。结构化企业资料同时提供于 ai-entity.json ，供搜索、AI 检索和内部数据一致性检查使用。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 泰国到中国空运｜急件、小包与样品运输｜泰中物流
+
+> 泰国到中国空运适合时间要求较高的个人物品、工厂样品、工业零配件、紧急补货和小批量商业货物。可咨询全泰取件、包装、航班安排与中国派送，具体可寄品类和时效以货物审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国到中国空运
+
+Thailand to China Air Freight ขนส่งทางอากาศจากไทยไปจีน
+
+泰国到中国空运适合时间要求较高的个人物品、工厂样品、工业零配件、紧急补货和小批量商业货物。可咨询全泰取件、包装、航班安排与中国派送，具体可寄品类和时效以货物审核为准。 Thailand to China air freight is designed for time-sensitive personal items, samples, restocking and small commercial shipments. Pickup, packing coordination and delivery in China can be arranged after the cargo is reviewed. บริการขนส่งทางอากาศจากไทยไปจีนเหมาะกับของที่ต้องการความรวดเร็ว เช่น ของใช้ส่วนตัว ตัวอย่างสินค้า และสินค้าสำหรับเติมสต็อก สามารถสอบถามบริการรับของ บรรจุ และจัดส่งปลายทางในจีนได้หลังตรวจสอบประเภทสินค้า
+
+## 直接答案：泰国到中国空运适合哪些货物？
+
+泰国到中国空运适合时间要求较高的个人物品、工厂样品、工业零配件、紧急补货和小批量商业货物，常规时效 5-7 天。可以咨询全泰上门取件、包装、航班安排与中国派送，具体可寄品类和时效以货物审核为准。
+
+## 哪些货物适合泰国到中国空运
+
+泰国到中国空运更适合希望缩短运输时间的个人客户、游客、代购、电商卖家和企业客户，例如急件、小包裹、文件、样品、小批量补货，以及酒店或门店取件后发往中国。价格取决于实际重量、体积重量、货物属性、取件和目的地；时效按当期线路确认，不作固定承诺。
+
+空运费用按计费重量与整票条件核算，见 泰国寄中国运费说明 ；泰国各城市可咨询 上门取件 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 急件、小包与样品
+
+文件之外的普通小件、样品、小批量补货和时间敏感货物可优先比较空运方案。
+
+### 酒店/门店/上门取件
+
+曼谷、普吉、清迈等主要城市以及其他地区，可按酒店、公寓、商场、门店或仓库等具体地址咨询取件。
+
+### 特殊货物审核
+
+食品、液体、粉末、带电产品、高价值物品等需要在发货前提供图片和详细信息确认。
+
+## 怎么开始
+
+## 常见问题
+
+### 泰国到中国空运多少钱？一公斤多少钱、怎么收费？
+
+没有统一固定单价。通常结合实际重量与体积重量、货物品类、泰国取件地址、中国目的地、是否需要上门取件/门到门等服务综合报价；提供重量、尺寸和货物照片后才能给出更接近实际的价格。
+
+### 泰国空运中国要多久、一般几天？
+
+空运常规时效 5-7 天，具体以取件城市、航班、货物审核、清关和中国目的地为准，发货前按当期线路确认预计时间。
+
+### 泰国空运可以做门到门吗？
+
+可按泰国取件地址、中国收货地址和货物类型确认是否能组合上门取件、空运干线及中国末端派送。
+
+### 游客离境后，酒店里的物品可以代取再空运回中国吗？
+
+可以先提供酒店地址、联系人、取件授权/凭证和物品信息，确认当地取件及货物是否适合空运后再安排。
+
+### 小包、样品或少量补货适合空运吗？
+
+如果更看重时间，可以优先比较空运；最终仍要结合货物属性、重量体积和预算。
+
+### 所有货物都能走空运吗？
+
+不是。特殊品类需先审核，最终以当期运输和清关要求为准。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 曼谷寄中国｜曼谷邮寄回国、上门取件与运费咨询｜泰中物流
+
+> 曼谷邮寄回国、曼谷寄中国快递怎么寄？提供货物照片、重量和地址，可咨询酒店取件、空运陆运、中国派送；运费时效按实际货物及收件地确认。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+
+> Updated: 2026-11-26
+
+# 曼谷寄中国物流
+
+Bangkok to China Shipping ส่งของจากกรุงเทพไปจีน
+
+曼谷寄中国可咨询上门取件、空运、陆运和中国派送，适合商业客户、代购、电商卖家、个人寄件和游客行李。具体价格、可寄品类和时效以货物与地址审核为准。 Bangkok to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for business cargo, e-commerce restocking, purchasing agents, personal parcels and traveler luggage. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากกรุงเทพไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับสินค้าธุรกิจ ร้านค้าออนไลน์ บริการรับซื้อ พัสดุส่วนตัว และสัมภาระนักท่องเที่ยว โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 直接答案：曼谷寄中国需要准备什么？
+
+准备曼谷酒店或住宅取件地址、货物照片、品名、件数、重量与包装尺寸，并说明中国目的地。先核实取件、可寄品类及清关资料，再按实际条件确认空运或陆运、报价和时效。
+
+## 曼谷邮寄回国，应该怎样寄到中国？
+
+从曼谷邮寄回国，先提供货物照片、品名、重量和尺寸，以及曼谷酒店或住址、中国收件城市；确认货物可寄与交接条件后，再选择适用的空运或陆运方案并核实费用。上门取件须确认地址与时间，报价不能只按公斤数估算。可参考 泰国寄中国运费说明 和 酒店取件说明 。
+
+常规时效见 泰国寄中国时效说明 ：空运 5-7 天，陆运 10-15 天。
+
+## 曼谷寄中国可以提供哪些服务
+
+从曼谷寄货到中国，可根据实际地址安排住宅、酒店、公寓、商场、门店或仓库取件，并衔接空运、陆运及中国末端派送。个人行李、代购物品、电商货物和商业补货都可以先提供货物照片、重量、尺寸和中国收货城市，由客服确认可寄线路、价格和预计时效。
+
+## 寄件重点
+
+### 曼谷上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 曼谷寄中国多少钱、要多久？
+
+价格和时效取决于重量/体积、货物类型、曼谷取件地址、中国目的地以及空运或陆运方案。提供照片、重量、尺寸和收货城市后再报价，不使用固定价格或固定天数误导。
+
+### 曼谷寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 曼谷酒店、公寓、商场或仓库可以上门/代取吗？
+
+可以按具体地址、联系人、取件凭证和时间咨询；游客酒店遗留物品可同时参考 泰国行李寄回中国 ，商场或门店代取可参考 泰国代购跑腿与转运 。
+
+### 曼谷商业货和长期补货可以发中国吗？
+
+可以根据每批重量体积、货物类型、频率和中国目的地比较空运或陆运并建立固定流程。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国燕窝寄中国｜燕窝邮寄回国与运输咨询｜泰中物流
+
+> 泰国燕窝寄中国可咨询购买后取件、包装、邮寄回国、批量运输与资料协调。请提供燕窝类型、包装、数量、重量、泰国取件地址和中国目的地确认方案。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bird-nest-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国燕窝寄中国
+
+Thai Bird's Nest Shipping to China ส่งรังนกจากไทยไปจีน
+
+泰国燕窝购买后可咨询门店代取、包装、转寄中国、个人少量或批量运输协调。 Pickup, packing and forwarding coordination for Thai bird's nest products to China. ประสานการรับสินค้า บรรจุ และส่งรังนกจากไทยไปจีน
+
+## 直接答案：泰国燕窝可以寄中国吗？
+
+泰国燕窝属于监管较严的食品品类，是否可以寄中国要按具体燕窝类型、包装、数量与目的地逐票审核，以海关最新规定为准，不承诺所有燕窝都可以寄。提供燕窝类型、原包装、数量、重量、泰国取件地址和中国目的地，客服审核后确认当前可操作方案。
+
+## 泰国燕窝怎么寄中国
+
+### 门店代取
+
+已购买燕窝可先提供门店地址、联系人、取件凭证和商品照片。
+
+### 包装与数量
+
+提供燕窝类型、原包装、数量、单件重量和总重量，便于确认包装和运输方案。
+
+### 发往中国
+
+提供中国收货城市、收件信息和预计发货时间，我们按实际货物确认方案。
+
+## 燕窝寄中国需要注意什么
+
+第一，燕窝的进口与运输要求可能随时间和渠道变化，网上“禁止进口泰国燕窝”的说法是否适用，要以海关最新规定与实际审核结果为准，不要凭传言判断。第二，提供燕窝类型、原包装、数量、单件重量与总重量，便于确认包装和运输方案。第三，个人少量与商业批量按不同规则处理，批量运输需要单独确认资料。第四，燕窝可以和其他泰国特产一起寄，但要把全部货物照片和数量发来，按不同品类组合确认。
+
+## 常见搜索问题
+
+### 泰国燕窝可以邮寄中国吗？
+
+可以先提供具体燕窝类型、包装、数量和目的地，我们按实际货物确认当前可操作方案。
+
+### 在泰国买的燕窝可以帮忙取货吗？
+
+可以咨询商场、门店或指定地址代取，再衔接包装与转寄。
+
+### 燕窝可以和其他泰国特产一起寄吗？
+
+可以先把全部货物照片和数量发来，按不同品类组合确认。
+
+### 网上说泰国燕窝不能寄中国，是真的吗？
+
+燕窝属于监管较严的食品品类，不同渠道与时期的执行口径可能不同，是否可以寄要按具体燕窝类型、包装、数量与目的地逐票审核，以海关最新规定为准，不承诺所有燕窝都可以寄。
+
+## 相关服务
+
+泰国特产寄中国 · 泰国代购与跑腿 · 泰国上门取件 · 泰国寄中国禁运清单 · 泰国寄中国清关
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 泰国佛牌寄中国｜佛像与佛教用品运输咨询｜泰中物流
+
+> 泰国佛牌、佛像及相关工艺品寄中国可先咨询包装、取件和运输方案。材质、尺寸、价值、数量以及是否属于特殊文物类物品都需要在发货前确认。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国佛牌佛像寄中国
+
+Ship Thai Amulets and Buddhist Items to China ส่งพระเครื่องและของเกี่ยวกับพุทธศาสนาจากไทยไปจีน
+
+泰国佛牌、佛像及相关工艺品寄中国可先咨询包装、取件和运输方案。材质、尺寸、价值、数量以及是否属于特殊文物类物品都需要在发货前确认。 Selected Thai amulets, Buddhist statues and related craft items may be shipped to China after the item, material, size, value and packing requirements are reviewed. Older or special items may require additional checks. พระเครื่อง พระพุทธรูป และงานฝีมือที่เกี่ยวข้องบางประเภทสามารถสอบถามส่งจากไทยไปจีนได้ โดยต้องตรวจสอบชนิด วัสดุ ขนาด มูลค่า จำนวน และการแพ็กก่อน ของเก่าหรือของพิเศษอาจต้องตรวจสอบเพิ่มเติม
+
+## 泰国佛牌、佛像和供奉用品寄中国需要注意什么
+
+佛牌、佛像、佛珠、佛牌盒、供奉用品及相关宗教工艺品可能易碎、价值较高或材质特殊，发货前需要先确认物品照片、尺寸、数量、材质、年代、来源和包装情况。较老、高价值或可能涉及特殊规定的物品，应先审核后再确认是否可寄和适合的运输方式。
+
+## 寄件重点
+
+### 佛牌、佛珠与配件
+
+普通小件也应提供照片、尺寸、数量、材质和大致价值，便于确认线路与包装。
+
+### 佛像与易碎供奉用品
+
+根据尺寸、材质和易碎程度安排缓冲、固定、边角保护和外箱加固。
+
+### 年代与来源审核
+
+年代久远、高价值或可能涉及文物/特殊规定的物品，应提前说明来源与情况并确认是否可运输。
+
+## 怎么开始
+
+## 常见问题
+
+### 佛牌、佛珠和佛牌盒可以一起寄吗？
+
+普通商品类物品可以先按一批提供照片、材质、数量和价值信息，确认包装和线路后再安排。
+
+### 佛像和易碎供奉用品怎么防止运输损坏？
+
+需要根据材质、尺寸和易碎程度选择缓冲、固定、边角保护和外箱加固。
+
+### 寺庙或商店购买的宗教用品可以代取后寄中国吗？
+
+可先提供取件地址、联系人、商品信息和购买凭证，确认当地取件及货物审核后再安排转寄。
+
+### 老物件或高价值佛牌怎么办？
+
+应提前说明年代、价值和来源情况，必要时先确认相关规定；不能按普通新商品直接处理。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+
+---
+
+# 清迈寄中国｜包裹、行李与上门取件物流｜泰中物流
+
+> 清迈寄中国可咨询上门取件、空运、陆运和中国派送，适合个人寄件、搬家物品、手工艺品、代购和商业补货。具体价格、可寄品类和时效以货物与地址审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+
+> Updated: 2026-11-26
+
+# 清迈寄中国物流
+
+Chiang Mai to China Shipping ส่งของจากเชียงใหม่ไปจีน
+
+清迈寄中国可咨询上门取件、空运、陆运和中国派送，适合个人寄件、搬家物品、手工艺品、代购和商业补货。具体价格、可寄品类和时效以货物与地址审核为准。 Chiang Mai to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for personal parcels, moving items, handicrafts, purchasing-agent cargo and commercial restocking. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากเชียงใหม่ไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับพัสดุส่วนตัว ของย้ายบ้าน งานหัตถกรรม สินค้าฝากซื้อ และการเติมสต็อกธุรกิจ โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 清迈寄中国可以提供哪些服务
+
+从清迈寄货到中国，可根据货物类型和地址安排上门取件、酒店或公寓取件、商场/门店代取、空运、陆运及中国末端派送。个人行李、手工艺品、搬家物品和商业补货都可先提供照片、重量、尺寸与目的地，由客服确认可寄线路和报价。
+
+从清迈寄中国，运费按实际重量、体积重量、货物与目的地核算，见 清迈寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 清迈上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 清迈寄中国多少钱、要多久？
+
+价格和时效由重量/体积、货物类型、清迈取件地址、中国目的地以及运输方式共同决定。手工艺品、大件或多箱货需要先提供材质、照片和尺寸再比较方案。
+
+### 清迈寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 清迈酒店、公寓或商店可以代取后寄中国吗？
+
+可以先提供地址、联系人、取件凭证和物品信息；酒店遗留物品可参考 行李与酒店物品转寄 ，门店代取可参考 代购跑腿与转运 。
+
+### 清迈手工艺品或搬家物品可以发中国吗？
+
+可以先提供材质、尺寸、数量、照片和大致价值；大件或多箱货可同时比较 陆运 方案。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 清莱寄中国｜包裹、物流与上门取件咨询｜泰中物流
+
+> 清莱寄中国可咨询上门取件、空运、陆运和中国派送，适合个人物品、旅游行李、地方商品和商业发货。具体价格、可寄品类和时效以货物与地址审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+
+> Updated: 2026-11-26
+
+# 清莱寄中国物流
+
+Chiang Rai to China Shipping ส่งของจากเชียงรายไปจีน
+
+清莱寄中国可咨询上门取件、空运、陆运和中国派送，适合个人物品、旅游行李、地方商品和商业发货。具体价格、可寄品类和时效以货物与地址审核为准。 Chiang Rai to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for personal items, traveler luggage, local products and commercial shipments. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากเชียงรายไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับของใช้ส่วนตัว สัมภาระท่องเที่ยว สินค้าท้องถิ่น และการส่งเชิงพาณิชย์ โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 清莱寄中国可以提供哪些服务
+
+从清莱寄货到中国，可根据实际地址安排住宅、酒店、民宿、门店或其他地点取件，并衔接空运、陆运及中国末端派送。个人行李、地方商品、代取物品和商业货物都可以先提供照片、重量、尺寸与中国目的地，由客服确认可寄线路、报价和预计时效。
+
+从清莱寄中国，运费按实际重量、体积重量、货物与目的地核算，见 清莱寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 清莱上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 清莱寄中国多少钱、要多久？
+
+价格和时效取决于重量/体积、货物类型、清莱取件地址、中国目的地以及运输方案。地方商品、食品或特殊品类还需要先审核后才能确认路线和报价。
+
+### 清莱寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 清莱酒店、民宿或商店可以代取后寄中国吗？
+
+可以先提供准确地址、联系人、取件凭证和物品信息；住宿遗留物品可参考 酒店物品与行李转寄 ，商店代取可参考 代购跑腿与转运 。
+
+### 清莱地方商品或批量货可以寄中国吗？
+
+可以先提供产品包装、成分/材质、数量和照片；食品、液体、粉末等需先审核，批量货可比较空运和陆运。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 中国宠物到泰国｜猫狗入境泰国托运与运输协调｜泰中物流
+
+> 中国宠物到泰国可咨询猫狗入境泰国、宠物托运、随人同行或货运、接送、航空箱、疫苗健康资料与运输流程协调。具体安排按宠物情况、出发城市和泰国目的地确认。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-pets-to-thailand.html
+
+> Updated: 2026-11-26
+
+# 中国宠物到泰国
+
+Pet Transport from China to Thailand ขนส่งสัตว์เลี้ยงจากจีนมาไทย
+
+猫狗从中国到泰国可咨询接送、航空箱、航班路线、随人同行或货运方式以及疫苗、健康和其他资料准备协调。 Relocation coordination for cats and dogs from China to Thailand, covering pickup, travel crate, flight route and document preparation. ประสานการย้ายแมวและสุนัขจากจีนมาไทย รวมรับส่ง กรงเดินทาง เส้นทางบิน และการเตรียมเอกสาร
+
+## 直接答案：中国宠物可以到泰国吗？
+
+猫狗从中国到泰国可以咨询托运协调，具体方案要按宠物种类、品种、年龄、体重、芯片与疫苗情况、中国出发城市与泰国目的地确认。宠物入境涉及检疫与疫苗、健康资料要求，提前备齐资料可以减少等待。
+
+## 中国宠物到泰国怎么安排
+
+### 宠物信息
+
+提供猫狗品种、年龄、体重、芯片/疫苗情况、中国出发城市和泰国目的地。
+
+### 航班与航空箱
+
+根据宠物尺寸、航班、出发机场和运输方式确认路线与航空箱。
+
+### 到达泰国
+
+可按曼谷、普吉、清迈等目的地继续协调接送与后续运输。
+
+## 宠物到泰国需要注意什么
+
+第一，检疫与资料要求：疫苗、健康证明、芯片信息等要按宠物情况与泰国目的地确认，出发前备齐资料。第二，航空箱规格按宠物尺寸与体重确认，提前准备。第三，随人同行或货运两种方式按航班、出发机场与宠物情况确认。第四，到达泰国后可按曼谷、普吉、清迈等目的地继续协调接送与后续运输。
+
+## 常见问题
+
+### 中国猫狗可以到泰国吗？
+
+可以先提供宠物和行程资料，我们按实际情况确认当前可执行方案。
+
+### 可以从中国多个城市出发吗？
+
+可以咨询不同出发城市，具体路线按航班和宠物情况确认。
+
+### 到泰国以后可以送到普吉或清迈吗？
+
+可以根据到达机场、宠物状态和泰国目的地继续咨询接送与国内衔接。
+
+### 宠物到泰国需要隔离吗？
+
+是否需要隔离取决于泰国目的地的检疫安排，出发前按宠物情况与目的地确认，提前备齐疫苗与健康资料。
+
+## 相关服务
+
+泰国宠物到中国 · 泰国国内搬家 · 泰国寄中国禁运清单
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-domestic-moving.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-pets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 淘宝寄泰国｜中国寄泰国物流｜集运与门到门｜泰中物流
+
+> 淘宝买东西寄泰国可安排中国仓库代收、集货合箱、空运/陆运与泰国末端派送；费用和线路按货物与地址逐票确认。提供商品链接、重量与地址，私信确认集运方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+
+> Updated: 2026-11-26
+
+# 中国寄泰国物流｜淘宝集运泰国
+
+Taobao to Thailand Shipping ส่งของจาก Taobao มาไทย | ขนส่งจีนไทย
+
+从淘宝买东西寄泰国，可以先由中国仓库代收不同店铺的订单，再根据商品、数量、包装和泰国地址确认集运、合箱及配送方式；也可处理1688、其他网购、家具大件和商业货物。具体线路、费用与预计时效按货物资料和收货地址确认。 Taobao to Thailand shipping can start with China warehouse receiving for orders from different shops, followed by consolidation and air or land delivery where suitable. We can review 1688 and other ecommerce orders, furniture, bulky cargo and commercial shipments; route, quote and estimated transit depend on the goods and Thai address. สั่งของ Taobao มาไทยสามารถเริ่มจากการรับของเข้าคลังจีน รวมพัสดุจากหลายร้าน แล้วเลือกทางอากาศหรือทางบกตามความเหมาะสม รวมถึงสินค้าจาก 1688 ร้านค้าออนไลน์ เฟอร์นิเจอร์ ของชิ้นใหญ่ และสินค้าธุรกิจ โดยยืนยันเส้นทาง ราคา และเวลาโดยประมาณจากสินค้าและที่อยู่ปลายทาง
+
+## 中国特产、零食和伴手礼怎么寄泰国
+
+中国特产寄泰国、中国特产邮寄泰国或国内特产寄泰国，可以先按个人自用包裹或商业进口区分，再审核商品名称、成分、包装、数量、重量、用途、当前线路和泰国目的地。中国零食、家乡零食、小吃、茶叶、普洱茶、绿茶、红茶、茶具、伴手礼和普通礼品可提交资料评估；螺蛳粉、火锅底料、调味料、辣椒酱、干货、方便面、速食食品、月饼、中秋礼盒、年货和春节礼物不统一承诺可寄。
+
+### 中国零食、食品和茶叶
+
+中国零食寄泰国、零食快递泰国、中国茶叶寄泰国或普洱茶寄泰国，先核对商品成分、包装、数量与用途，并按当前泰国 FDA/海关及线路要求确认。
+
+### 节日礼盒与特色食品
+
+月饼寄泰国、中国年货寄泰国、中国伴手礼寄泰国，以及螺蛳粉、火锅底料、方便面和干货等需逐项审核，不能写成所有食品都可以寄。
+
+### 陶瓷、茶具、服饰和工艺品
+
+中国陶瓷、景德镇陶瓷、茶具、工艺品、装饰品、汉服、旗袍、衣服、鞋包和饰品可按普通产品咨询；易碎品自然衔接加固包装说明，材质、尺寸和目的地需先确认。
+
+中国特产寄泰国多少钱、中国零食寄泰国多少钱或食品寄泰国一公斤多少钱，需根据实际重量、体积重量、商品类型、包装、中国起运城市、泰国目的地和当前可用线路报价。个人合理自用包裹与 商业进口不能混写；商业食品可能需要更高等级的资料和监管审核。
+
+## 中国寄泰国可以提供哪些服务
+
+从中国发货到泰国，可根据货物和地址安排供应商/仓库收货、代收、集货、合箱，以及空运、陆运和泰国末端派送。中国不同起运地（广州、深圳、东莞、佛山、义乌、厦门、上海、宁波、中山）可先提供供应商地址，再安排国内提货、仓库代收、拍照核对、验货、合箱和重新包装。泰国目的地可覆盖曼谷、春武里、林查班、罗勇、北榄府、大城府、巴吞他尼及工业园地址；商业发票、装箱单、HS Code、Form E、原产地证、RCEP、IOR、ISPM-15 等按货物与当前法规审核，不能承诺所有商品一定清关。淘宝、1688、国内网购、家具大件和商业货物都可以先提供货物照片、重量、尺寸、中国起运地与泰国收货地址，由客服确认可行线路、报价和预计时效。
+
+## 常见发货场景
+
+### 国内仓库集货与合箱
+
+多个供应商或多个订单可以先集中到仓库，再根据实际业务确认代收、合箱、包装和出运方案。
+
+### 淘宝 / 1688 / 网购
+
+淘宝、1688及其他中国电商购买的商品，可以先按商品类型、数量和目的地确认是否适合统一集运泰国。
+
+### 空运 / 陆运
+
+根据货物属性、重量体积、预算和时效选择合适运输方式，并在报价前确认当期可用线路。
+
+### 门到门与末端派送
+
+可按中国起运地、泰国具体地址和是否需要末端配送来确认完整路线。
+
+### 家具、大件与商业货物
+
+家具、设备、批量货和长期补货需要按尺寸、材质、包装、数量及目的地单独评估。
+
+### 长期发货
+
+长期往返或固定补货客户可根据频率、平均货量和对账需求建立稳定流程。
+
+## 泰国目的地
+
+曼谷、普吉、清迈以及泰国其他地区都可以先按具体地址咨询；是否需要末端派送、仓储或其他服务在报价前确认。
+
+## 怎么开始
+
+## 常见问题
+
+### 淘宝和1688可以一起集运泰国吗？
+
+可以先把不同订单信息发来确认。是否适合同仓代收、合箱及具体运输方式，需要根据商品类型、数量和包装判断。
+
+### 中国到泰国空运、陆运怎么选？
+
+通常根据货物属性、重量体积、预算和时效综合判断。急件更偏向空运，大件或批量货可比较陆运及其他可行方案，海运服务暂未开放。
+
+### 可以做中国寄泰国门到门吗？
+
+可按中国起运地、泰国收货地址、货物类型和末端服务需求确认是否可以安排完整门到门路线。
+
+### 中国家具或大件可以发泰国吗？
+
+需要先提供图片、尺寸、重量、材质、是否可拆装和泰国目的地，再根据当期线路和包装条件评估。
+
+### 中国寄泰国多少钱？一公斤多少钱、怎么收费？
+
+没有统一固定单价。费用通常由实际重量与体积重量、货物类型、中国起运地、泰国目的地、运输方式、是否需要仓库代收/合箱/包装/末端派送等共同决定。提供重量、尺寸、货物照片和泰国地址后才能做更准确报价。
+
+### 中国到泰国要多久、一般几天？
+
+空运、陆运的预计时效不同，也会受起运地、货物审核、清关、节假日和泰国目的地影响；发货前按当期可用线路确认预计时间。
+
+### 中国到泰国双清、DDP、DDU是什么意思？可以做吗？
+
+这些词对应不同清关和税费责任安排。是否适用必须根据货物类型、申报、路线及当期清关条件确认；并非所有货物都适合“包税双清”或固定采用某一种贸易/清关方式。
+
+### 商业货可以长期发泰国吗？
+
+可以咨询长期或批量运输方案，先提供货物类型、频率、每批大致重量体积和目的地。
+
+## 淘宝寄泰国：集运、费用与派送
+
+淘宝买东西寄泰国时，通常先确认淘宝泰国集运仓或中国收货地址，再由仓库代收不同店铺的订单。收到货后可根据商品类型、数量、包装和泰国地址评估合箱、重新包装、空运或陆运；含电池、液体、食品、粉末、易碎品或大件的货物应先提交资料审核。
+
+### 淘宝集运泰国与仓库合箱
+
+把淘宝订单、商品照片和中国仓库信息发来，可先确认是否适合统一代收、拍照核对、合箱及重新包装。
+
+### 淘宝寄泰国费用
+
+淘宝到泰国的运费不是统一固定数字，通常要结合实际重量或体积重量、商品类型、起运城市、运输方式、包装和泰国末端地址报价。
+
+## 中国到泰国运输方式
+
+从广州、深圳、东莞、佛山、义乌或上海发货到曼谷及泰国其他地区，可按货物属性、重量体积、预算和时效比较空运、陆运或门到门安排。最终路线、清关资料、泰国派送和预计时间需根据当期可行性确认。
+
+## 淘宝寄泰国常见问题
+
+### 淘宝买东西怎么寄泰国？
+
+先提供淘宝订单或商品信息，确认中国收货仓库、代收合箱、商品限制和泰国收货地址，再根据审核结果确认运输与派送方式。
+
+### 淘宝寄泰国运费怎么算？
+
+需要结合实际重量、体积重量、货物类型、中国起运地、泰国目的地、运输方式、包装和末端派送需求评估，不能只按订单金额或单一公斤数判断。
+
+### 淘宝泰国集运仓可以合箱吗？
+
+不同店铺订单可以先咨询合箱，但是否能同仓接收、合并包装和出运，要看货物属性、数量、包装及当期线路。
+
+## 相关服务
+
+提交中国到泰国报价资料 · 查看代购与集货服务
+
+## 直接答案：淘宝、1688 和中国货物寄泰国怎么选
+
+先提供中国起运城市、仓库或供应商地址、货物照片、数量、重量、尺寸和泰国收货地址，再确认代收、合箱、空运、陆运或门到门方案。实际价格和时效以货物审核、包装、清关和末端派送条件为准。
+
+### 仓库代收与合箱
+
+适合多个店铺或供应商订单，先核对入仓、数量和包装。
+
+### 运输方式对比
+
+急件通常先比较空运；批量或大件再比较陆运及其他可用线路。
+
+### 商业货物
+
+商业发票、装箱单、HS Code 和清关责任需逐票审核。
+
+照片、品名、数量、重量和尺寸。
+
+中国起运地和泰国完整地址。
+
+确认可寄、包装、方式和费用。
+
+确认后安排收货、运输和派送。
+
+## 反向路线与相关服务 Reverse route and related services เส้นทางกลับและบริการที่เกี่ยวข้อง
+
+## 把中国发货信息和泰国地址发给客服 Send the China-side cargo details and Thai address ส่งข้อมูลสินค้าฝั่งจีนและที่อยู่ในไทย
+
+## 中国到泰国物流跟踪与运费计算
+
+如需查询中国到泰国物流状态，请提供订单号或运输单号，我们按当前可用方式核对收货、转运、清关和泰国派送节点。中国寄泰国一公斤多少钱、按公斤还是体积重，以及 CBM 怎么计算，要结合实际重量、外箱尺寸、货物类型和路线确认，不承诺统一固定价格。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-pets-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+
+---
+
+# 泰国代购跑腿与转运｜代取 代收 合箱 发中国｜泰中物流
+
+> 泰国代购、跑腿代取、商场取货、代收货、集货合箱和转寄中国统一在一个页面说明，适合游客、代购团队、电商卖家及长期发货客户。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+
+> Updated: 2026-11-26
+
+# 泰国代购、跑腿代取与集货发中国
+
+Thailand Purchasing, Errand Pickup & Consolidation ฝากซื้อ รับของแทน และรวมสินค้าส่งจีน
+
+把泰国代购、跑腿代取、商场或门店取货、代收包裹、集货合箱和转寄中国统一归纳在一个页面；适合游客临时取件、代购团队、电商卖家和长期发货客户。 This page combines Thailand purchasing-agent support, local errand pickup, store collection, parcel receiving, consolidation and forwarding to China for travelers, purchasing teams and online sellers. หน้านี้รวมบริการฝากซื้อ รับของแทน รับสินค้าจากร้าน รับพัสดุ รวมสินค้า รวมกล่อง และส่งต่อไปจีน เหมาะกับนักท่องเที่ยว ทีมรับซื้อ และร้านค้าออนไลน์
+
+## 直接答案：泰国代购商品怎样代收、合箱并寄中国？
+
+先提供购买订单或门店地址、商品品名与数量、收货或代取联系人，以及中国目的地。核对商品可寄范围后，再确认代收、拍照核对、合箱或分箱、运输和费用安排。
+
+## 泰国代购、跑腿和集货可以提供哪些服务
+
+可协助处理泰国本地跑腿代取、商场或门店取货、代收包裹、仓库收货、拍照核对、集货合箱/分箱、重新包装以及转寄中国。明星周边、小卡、专辑等可作为代购集货场景咨询，不单独拆分页面；具体运输方案仍按货物和中国目的地确认；泰国供应商、工厂或商家需要提货时，可先提供地址、联系人、货物照片和箱数，确认当前可安排的提货、入仓、拍照核对与集货规则。
+
+代购物品的运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；取货地址可咨询 上门取件 ；小包可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 跑腿代取与门店取货
+
+已购买商品、门店自提件或需要从指定地址代取的物品，可先提供取件地点、联系人和物品信息确认。
+
+### 代收、集货与合箱
+
+多家供应商或多笔订单可以先集中，再按货物属性确认合箱、分箱、拍照或简单核对。
+
+### 转寄中国与长期发货
+
+适合游客临时转寄、代购团队、小批量多批次、电商补货和长期合作客户。
+
+## 怎么开始
+
+## 常见问题
+
+### 可以帮忙跑腿去商场、门店或指定地址取东西吗？
+
+可以先提供准确地址、联系人、取件凭证、物品图片和预计取件时间，确认当地安排后再执行。
+
+### 可以帮忙代收多个订单并合箱吗？
+
+可以咨询按批次代收、集货和合箱，具体仓储、核对与操作规则需提前确认。
+
+### 取到东西以后可以直接转寄中国吗？
+
+可以在货物审核通过后衔接包装和跨境运输；特殊品类需要先确认是否可寄。
+
+### 长期代购团队怎么合作？
+
+建议明确预计频率、平均货量、货物类型和对账需求后制定固定流程。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国电子产品寄中国｜手机、电脑与带电产品审核｜泰中物流
+
+> 泰国电子产品寄中国可咨询手机、电脑、平板和其他带电设备。电池类型、数量、价值和包装都会影响能否运输与采用的线路，发货前必须审核。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国电子产品寄中国
+
+Ship Electronics from Thailand to China ส่งอุปกรณ์อิเล็กทรอนิกส์จากไทยไปจีน
+
+泰国电子产品寄中国可咨询手机、电脑、平板和其他带电设备。电池类型、数量、价值和包装都会影响能否运输与采用的线路，发货前必须审核。 Shipping electronics from Thailand to China may include selected phones, laptops, tablets and battery-powered devices. Battery type, quantity, value and packing condition all affect route eligibility and must be reviewed before acceptance. สามารถสอบถามการส่งโทรศัพท์ โน้ตบุ๊ก แท็บเล็ต และอุปกรณ์ที่มีแบตเตอรี่จากไทยไปจีนได้ ประเภทแบตเตอรี่ จำนวน มูลค่า และการแพ็กมีผลต่อเส้นทางและต้องตรวจสอบก่อนรับส่ง
+
+## 泰国电子产品寄中国需要确认什么
+
+手机、电脑、平板、相机、游戏机、智能手表及其他带电设备寄往中国前，需要先确认品牌型号、电池类型与数量、设备状态、货值和包装情况。不同设备和电池配置可走的线路可能不同，先审核货物信息再安排运输更稳妥。
+
+## 寄件重点
+
+### 设备与电池信息
+
+手机、电脑、相机、游戏机等需确认品牌型号、内置还是独立电池、数量以及设备状态。
+
+### 高价值与防护包装
+
+屏幕、镜头、边角和易损部位应根据设备价值和运输方式加强保护，必要时使用原包装或加固外箱。
+
+### 门店/酒店代取后转寄
+
+已购买或遗留在泰国的电子设备，可先提供取件地址、凭证和设备信息，确认当地取件及运输线路。
+
+## 怎么开始
+
+## 常见问题
+
+### 手机、电脑、相机或游戏机可以从泰国寄中国吗？
+
+可以先提供品牌型号、数量、电池情况、货值和图片，由客服按当前线路审核。
+
+### 高价值电子设备怎么包装？
+
+建议优先使用原包装或充分的防震材料，并保护屏幕、镜头、边角和接口，必要时加固外箱。
+
+### 酒店遗留的手机或电脑可以帮忙取出来寄回中国吗？
+
+可先提供酒店地址、联系人、取件授权/凭证和设备信息，确认当地取件与带电货物线路后再安排。
+
+### 备用电池能一起寄吗？
+
+独立电池通常要求更严格，必须在发货前单独说明和确认。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+
+---
+
+# 合艾寄中国｜包裹、物流与上门取件咨询｜泰中物流
+
+> 合艾寄中国可咨询上门取件、空运、陆运和中国派送，适合个人寄件、商业货物、南部取件和批量运输。具体价格、可寄品类和时效以货物与地址审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+
+> Updated: 2026-11-26
+
+# 合艾寄中国物流
+
+Hat Yai to China Shipping ส่งของจากหาดใหญ่ไปจีน
+
+合艾寄中国可咨询上门取件、空运、陆运和中国派送，适合个人寄件、商业货物、南部取件和批量运输。具体价格、可寄品类和时效以货物与地址审核为准。 Hat Yai to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for personal parcels, commercial cargo, southern Thailand pickup and bulk shipments. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากหาดใหญ่ไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับพัสดุส่วนตัว สินค้าธุรกิจ การรับของในภาคใต้ และการส่งหลายกล่อง โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 合艾寄中国可以提供哪些服务
+
+从合艾及泰南地区寄货到中国，可根据实际地址安排住宅、酒店、商场、门店或仓库取件，并衔接空运、陆运及中国末端派送。个人物品、跑腿代取、商业货物、批量运输和长期补货都可以先提供照片、重量、尺寸与中国目的地，由客服确认取件安排、线路和报价。
+
+从合艾寄中国，运费按实际重量、体积重量、货物与目的地核算，见 合艾寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 合艾上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 合艾寄中国多少钱、要多久？
+
+价格和时效取决于重量/体积、货物类型、合艾或泰南取件地址、中国目的地以及空运/陆运方案。商业货和批量货建议同时提供每批平均货量和发货频率。
+
+### 合艾寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 合艾酒店、商场或仓库可以代取后寄中国吗？
+
+可以先提供准确地址、联系人、取件凭证和物品信息；门店/商场代取可衔接 代购跑腿与转运 。
+
+### 合艾商业货或泰南批量货可以长期发中国吗？
+
+可以根据每批重量体积、货物类型、频率和中国目的地比较 空运 或 陆运 并建立固定流程。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国寄中国｜泰中物流、上门取件与门到门方案
+
+> 专业提供泰国发中国、中国发泰国双向跨境物流服务，覆盖曼谷、普吉岛、清迈等泰国主要城市，全泰可咨询上门取件。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/
+
+> Updated: 2026-11-26
+
+# 泰国发中国 中国发泰国双向物流
+
+专注泰国发中国、中国发泰国双向跨境物流服务，当前主做空运与陆运，专业服务。服务覆盖曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，并支持全泰多数地区上门取件；中国发泰国可按城市、货物类型、时效和预算咨询对应线路。
+
+## 运输方式：空运与陆运
+
+我们目前主做泰国发中国、中国发泰国双向空运与陆运，专业服务。客户可根据货物紧急程度、预算和货物体积选择合适线路。
+
+### 空运极速线路
+
+适合高时效需求、游客行李、代购补货、高价值商品、商业样品等需要快速到达中国的货物。
+
+### 陆运经济线路
+
+适合大件、批量货物及长期合作客户，陆运常规时效 10-15 天，具体时效需根据货物、城市、清关和线路逐票确认，以实际情况为准。
+
+## 按城市与服务查看方案
+
+选择出发城市或服务类型，查看对应的寄送方案与说明。
+
+### 热门出发城市
+
+### 服务与线路
+
+## 为什么选择我们
+
+跨境物流不仅是运输，更是对货物安全、费用透明、清关专业和服务效率的综合考验。
+
+### 泰国本地上门取件
+
+曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，覆盖全泰多数地区，具体地址确认，均可安排上门取件，酒店、公寓、别墅、商场、仓库均可预约。
+
+### 专业中泰跨境清关
+
+熟悉泰国出口及中国进口清关流程，根据多品类货物提供更稳妥的运输与申报建议。
+
+### 多品类货物运输
+
+多品类货物均可咨询承接，覆盖个人行李、服饰、美妆、食品、佛牌佛像、电子产品、文件、奢侈品、中古商品等；特殊及监管货物需提前审核确认。
+
+### 包装加固服务
+
+提供纸箱、气泡膜、防震包装、木架、分箱合箱、拍照确认等服务，提升货物运输安全性。
+
+### 价格清晰透明
+
+根据重量、体积、货物类型、目的地和清关方式报价，发货前确认费用，减少后续沟通成本。
+
+### 全程客服跟进
+
+中泰双语客服对接，从咨询、取件、打包、发货、清关到派送，全流程提供及时沟通。
+
+## 泰国发中国 / 中国发泰国，只需 6 步
+
+清晰流程，让客户第一次跨境寄件也能轻松完成。目前仅开放空运与陆运，专业服务。
+
+### 联系客服询价
+
+提供货物类型、重量、尺寸、目的地及是否需要上门取件。
+
+### 确认运输方案
+
+根据货物类型选择包税、不含税、商业货物或个人行李方案。
+
+### 取件或到仓
+
+泰国本地安排上门取件，或客户送至指定仓库/网点。
+
+### 打包称重发货
+
+完成称重、测量、拍照、包装加固，确认账单后安排出货。
+
+### 清关与派送
+
+货物抵达中国后完成清关，并交由国内快递或物流派送。
+
+### 保价与赔付
+
+根据货物价值提前确认保价或赔付规则，特殊货物发货前单独说明。
+
+## 核心服务项目
+
+围绕泰国发中国、中国发泰国的真实需求，整理为四个更清晰的服务方向，方便客户快速判断自己适合哪一种方案。
+
+### 包税清关
+
+适合个人物品、游客行李、常规商品和希望费用更清晰的客户。运输、清关及相关费用可整合报价，发货前确认方案。
+
+### 商业运输
+
+适合企业客户、代购团队、电商卖家、小批量多批次发货，支持分箱、合箱、对账和长期稳定发货安排。
+
+### 搬家回国
+
+适合泰国旅居、留学、搬家回国客户，生活用品、衣物、行李箱、家庭杂物及大件物品可提前咨询运输方案。
+
+### 包装与仓储
+
+提供普通包装、加固包装、易碎品包装、木架包装、防潮包装、分箱合箱、拍照确认和短期仓储服务。
+
+## 支持多种货物泰中双向寄送
+
+我们承接多品类货物，不以普通品类做硬限制；特殊、监管及违禁风险货物需提前审核，最终以实际货物和清关要求为准。
+
+### 个人物品
+
+衣服、鞋子、包包、生活用品、行李箱、纪念品。
+
+### 食品类
+
+零食、咖啡、调味品、榴莲干等，具体以实际审核为准。
+
+### 美妆护肤
+
+护肤品、面膜、香薰、精油、泰国本土品牌产品。
+
+### 奢侈品中古
+
+品牌包、手表、配饰、品牌服饰、中古商品。
+
+### 佛牌佛像
+
+佛牌、佛像、宗教纪念品，需根据材质和申报要求确认。
+
+### 电子产品
+
+小型电子产品、配件、设备等，需提前确认电池及清关要求。
+
+### 植物类
+
+植物、种苗、园艺类产品等需根据品种、土壤及检疫要求提前确认。
+
+### 药品类
+
+常规药品、保健品、中成药等需根据成分、包装、数量及清关要求提前审核确认。
+
+### 文件资料
+
+合同、资料、商务文件及其他资料包裹。
+
+### 商业样品
+
+公司采购样品、展会物料、小批量商业货物。
+
+### 搬家回国
+
+适合搬家回国、家庭生活用品整箱寄送、大件家具杂物咨询发货。
+
+### 泰国代购
+
+适合泰国代购补货、批量发货、长期合作客户及电商补单需求。
+
+## 价格与时效说明
+
+费用根据货物类型、重量、体积、目的地及清关方式综合计算，建议提交信息获取专属报价。运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；常规时效见 泰国寄中国时效说明 。
+
+### 计费方式：
+
+体积重计算方式： 包裹外包装尺寸（长cm×宽cm×高cm）÷5000 = 体积重KG
+
+（长25cm × 宽20cm × 高30cm）÷ 5000 = 3KG
+
+包裹实重 1KG ，体积重 3KG ，这种情况下，将按体积重 3KG 计费。
+
+适合高时效、急件、补货、游客行李及高价值货物。
+
+由于涉及经过多国，海关查验情况标准时常不稳定，可能会导致时效更长，具体以实际情况为准。
+
+### 国际运输费
+
+根据计费重量、线路、货物类型和运输方案核算。
+
+### 清关与税费
+
+可选择包税方案或不含税申报方案，不同货物要求不同。
+
+### 包装与取件费用
+
+根据是否需要上门取件、纸箱、加固包装、木架等服务核算。
+
+### 中国境内派送
+
+货物清关后交由中国境内快递或物流派送，偏远地区需单独确认。
+
+## 清关与税费服务
+
+跨境运输涉及不同国家和地区的监管要求，我们会根据客户提供的信息进行初步判断并提供运输建议。
+
+### 包税清关方案
+
+适合不想单独处理复杂税费、希望流程更简单的客户。包税方案通常会把运输、清关及相关费用整合报价，发货前确认费用。
+
+适合个人物品、游客行李、常规商品
+
+费用结构更简单
+
+发货前确认运输方案和价格
+
+### 不含税申报方案
+
+适合需要规范申报、货值较高或商业用途的货物。税费根据申报价值、货物品类、运费、保险等信息综合计算。
+
+适合企业客户、高价值货物
+
+可能需要发票、付款记录、商品图片
+
+最终清关结果以海关审核为准
+
+## 无需出门，泰国本地上门取件
+
+我们可为客户提供从取件、入仓、称重、拍照、包装加固到发货的一站式服务。
+
+曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，全泰国区域均可上门取件服务，具体按地址确认
+
+酒店、公寓、别墅、商场、仓库均可预约
+
+普通纸箱、气泡膜、防震包装、易碎品加固、木架包装
+
+分箱、合箱、拍照确认、打包记录，方便客户后续对账
+
+大件货物、高价值货物、易碎品可提前定制包装方案
+
+## 客户案例
+
+不同客户、不同货物、不同目的地，我们提供对应的运输与清关建议。
+
+### 游客行李寄回中国
+
+客户在普吉岛旅游购物较多，行李超重，选择酒店上门取件，将衣服、零食和伴手礼寄回中国家中。
+
+### 代购客户长期发货
+
+长期采购泰国护肤品、食品、佛牌等商品，需要稳定寄往中国，提供收货、拍照、打包和对账服务。
+
+### 高价值中古包运输
+
+客户购买中古奢侈品，需要更细致包装和清关建议，发货前进行拍照确认和资料审核。
+
+### 企业样品运输
+
+企业客户从泰国寄商业样品至中国公司，协助整理资料并提供运输与清关建议。
+
+## 服务反馈与案例核实
+
+当前暂不公开未经核验的客户评分和评价。物流方案请以货物品类、取件地址及实际审核条件为准；如需了解真实业务办理流程，可通过页面联系方式咨询。
+
+## 常见问题
+
+提前了解寄件、计费、清关、取件与包装相关问题。
+
+时效需按方向、线路、城市和货物类型确认；空运、陆运可咨询，海运暂未开放，具体以货物类型、清关情况、目的地城市、航班或船期安排和节假日为准。
+
+可以。曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，全泰国区域均可上门取件服务，不限地区根据具体地址确认取件时间和费用。
+
+个人物品、衣服、食品、美妆、佛牌佛像、文件、电子产品、奢侈品等多数品类可以咨询，但不同货物要求不同。
+
+通常根据实际重量和体积重量取较大值，并结合货物类型、清关方式、目的地、包装和取件需求综合报价。
+
+包税方案费用更简单，适合希望省心的客户；不含税方案适合正规申报或货值较高的货物，税费根据实际申报情况计算。
+
+建议根据货物价值选择适合的保价或保险方案。普通运输赔偿标准、保险范围及特殊货物责任需在发货前确认。
+
+部分货物可以咨询发货，但需要根据具体产品、数量、包装、成分和清关要求判断，发货前请先提供图片确认。
+
+部分植物、药品以及电脑、笔记本、平板、手机等电子产品可以先咨询邮寄，但需根据具体品类、是否带电池、成分、数量及中国清关要求审核确认，发货前请先提供图片与详细信息。
+
+部分货物和清关方式可能需要收件人身份信息，具体以实际货物类型和清关要求为准。
+
+## 泰国商品代采购服务
+
+不只是物流，我们也可以协助客户在泰国代为采购商品，提供代下单、代支付、代收货、拍照确认、合箱打包与寄回中国的一站式服务。
+
+### 人在中国，也能轻松采购泰国本地商品
+
+适合想购买泰国本土商品、游客回国后补买、代购客户批量补货、电商商家找货发货等需求。客户只需提供商品链接、图片或采购清单，我们协助确认商品、沟通采购、代支付、代收货，再统一打包发往中国。
+
+#### 代找货 / 代采购
+
+根据客户提供的图片、链接、品牌或清单，协助在泰国本地确认商品、价格、数量与采购渠道。
+
+#### 代支付 / 代下单
+
+客户确认费用后，我们可协助完成泰国本地付款、下单或门店采购，减少语言和支付不便。
+
+#### 泰国仓代收货
+
+商品到达后可代收、入仓、拍照确认、核对数量，并按客户需求分箱或合箱处理。
+
+#### 打包发往中国
+
+完成加固包装、称重计费、清关建议与国际运输，让采购和物流衔接更省心。
+
+## 关于我们
+
+我们是一家专注于泰国发中国、中国发泰国双向跨境物流服务的本地物流团队，长期为游客、个人客户、代购、电商商家及企业客户提供上门取件、仓储打包、国际运输、清关建议及目的地派送服务。
+
+### 服务区域
+
+泰国端覆盖曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等泰国主要城市，覆盖全泰多数地区，具体地址确认；中国端覆盖全国主要城市派送。
+
+### 服务理念
+
+费用透明、流程清晰、货物安全、客服及时、清关专业、适合长期合作。
+
+### 客户类型
+
+服务企业客户、代购客户、旅居留学客户、出口贸易客户，以及个人行李和商业货物客户。
+
+### 立即获取专属报价
+
+请提供货物类型、重量、尺寸、发货城市、目的地城市及是否需要包装，并注明泰国发中国或中国发泰国，我们将根据实际情况提供运输建议与报价。
+
+客服电话 / WhatsApp： +66 83 976 9828
+
+点击后会自动打开 WhatsApp，并把表单内容整理成完整询价信息。
+
+#### Thai-China Logistics
+
+专注泰国发中国、中国发泰国双向跨境物流服务，提供上门取件、包装加固、国际运输、清关建议与目的地派送服务。
+
+#### 服务项目
+
+#### 客户类型
+
+#### 快速入口
+
+### 微信咨询
+
+扫码添加微信，咨询泰国发中国 / 中国发泰国流程
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 苏梅岛寄中国｜行李、包裹与酒店取件｜泰中物流
+
+> 苏梅岛寄中国可咨询上门取件、空运、陆运和中国派送，适合岛上游客行李、酒店取件、个人物品和小批量货物。具体价格、可寄品类和时效以货物与地址审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+
+> Updated: 2026-11-26
+
+# 苏梅岛寄中国物流
+
+Koh Samui to China Shipping ส่งของจากเกาะสมุยไปจีน
+
+苏梅岛寄中国可咨询上门取件、空运、陆运和中国派送，适合岛上游客行李、酒店取件、个人物品和小批量货物。具体价格、可寄品类和时效以货物与地址审核为准。 Koh Samui to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for island hotel pickup, traveler luggage, personal items and small commercial shipments. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากเกาะสมุยไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับรับของจากโรงแรมบนเกาะ สัมภาระนักท่องเที่ยว ของใช้ส่วนตัว และสินค้าปริมาณเล็ก โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 苏梅岛寄中国可以提供哪些服务
+
+从苏梅岛寄货到中国，可根据实际地址安排酒店、度假村、公寓、住宅或其他地点取件，再衔接合适的跨境运输和中国末端派送。游客行李、住宿遗留物品、岛上跑腿代取和小批量货物都可以先提供照片、重量、尺寸与中国目的地，由客服确认岛上取件安排、可寄线路和报价。
+
+从苏梅岛寄中国，运费按实际重量、体积重量、货物与目的地核算，见 苏梅岛寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 苏梅岛上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 苏梅岛寄中国多少钱、要多久？
+
+价格和时效取决于重量/体积、货物类型、岛上取件地址、中国目的地以及运输方案。酒店、度假村取件还需结合岛上实际取件安排确认。
+
+### 苏梅岛寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 已经离岛，东西忘在苏梅酒店或度假村还能帮忙取吗？
+
+可以先提供住宿地址、联系人、取件授权/凭证和物品照片，确认岛上取件后再衔接 酒店物品与行李转寄 。
+
+### 苏梅岛其他地址可以跑腿代取后寄中国吗？
+
+可先提供准确地址、联系人、凭证和物品信息，确认当地安排后再衔接 代购跑腿与转运 。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国到中国陆运｜大件、多箱与批量货物｜泰中物流
+
+> 泰国到中国陆运适合大件、重货、家具、工厂零配件、批量货和商业补货，具体线路需按货物和当期条件确认。可咨询全泰取件、集货、包装、清关建议与中国派送。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国到中国陆运
+
+Thailand to China Land Freight ขนส่งทางบกจากไทยไปจีน
+
+泰国到中国陆运适合大件、重货、家具、工厂零配件、批量货和商业补货，具体线路需按货物和当期条件确认。可咨询全泰取件、集货、包装、清关建议与中国派送。 Thailand to China land freight is suitable for bulky cargo, multiple cartons, recurring restocking and shipments where cost control matters more than maximum speed. Pickup and delivery options are confirmed according to the cargo. ขนส่งทางบกจากไทยไปจีนเหมาะกับของชิ้นใหญ่ หลายกล่อง สินค้าเติมสต็อกเป็นประจำ และลูกค้าที่ต้องการควบคุมต้นทุนมากกว่าความเร็วสูงสุด สามารถสอบถามรับของในไทยและจัดส่งปลายทางในจีนได้
+
+## 直接答案：泰国到中国陆运适合哪些货物？
+
+泰国到中国陆运适合大件、多箱、批量货物与搬家物品，常规时效 10-15 天。可以咨询全泰上门取件、包装、班次安排与中国派送，具体可寄品类和时效以货物审核为准。
+
+## 哪些货物适合泰国到中国陆运
+
+泰国到中国陆运适合更关注批量运输和成本平衡的客户，例如大件、多箱货、家具、搬家物品、商业补货和长期发货。实际线路、报价和时效会根据货物类型、重量体积、取件地址、中国目的地以及当期清关和运输条件确认，不作固定时效承诺。
+
+陆运费用按计费重量与整票条件核算，见 泰国寄中国运费说明 ；泰国各城市可咨询 上门取件 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 大件、家具与多箱货
+
+适合较重、体积较大、家具家居、搬家物品、长期补货或多箱货物咨询。
+
+### 商业补货与成本平衡
+
+与空运相比，更适合批量商业货、固定补货和时间相对宽松、预算优先的运输计划。
+
+### 上门取件与门到门协调
+
+可结合泰国具体取件地址、中国目的地、货物尺寸和是否需要末端派送设计完整路线。
+
+## 怎么开始
+
+## 常见问题
+
+### 泰国到中国陆运多少钱、怎么收费？
+
+陆运没有统一固定单价，通常根据实际重量/体积、货物尺寸和品类、泰国取件地址、中国目的地、包装及末端派送需求综合报价。大件、家具和多箱货尤其需要先提供尺寸和照片。
+
+### 泰国陆运中国要多久、一般几天？
+
+陆运常规时效 10-15 天，具体以线路、清关、节假日和目的地为准，发货前以当期路线预计时间为准。
+
+### 家具、大件或搬家物品适合陆运吗？
+
+很多大件和多箱货可以优先比较陆运，但仍需根据尺寸、重量、材质、包装和目的地确认。
+
+### 可以做上门取件再门到门送中国吗？
+
+可按泰国取件地址、中国收货地址和货物类型确认取件、干线及末端派送是否能组合成完整方案。
+
+### 大批量货物可以长期发吗？
+
+可以咨询长期、多批次和商业货运输安排，并按平均货量和频率建立固定流程。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国行李寄回中国｜酒店遗失物品代取 游客行李 个人物品｜泰中物流
+
+> 泰国行李寄回中国覆盖游客行李、酒店遗失物品代取、酒店/公寓取件、个人物品和超额行李，可咨询包装及空运陆运方案。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国行李寄回中国
+
+Ship Luggage from Thailand to China ส่งกระเป๋าจากไทยกลับจีน
+
+泰国行李寄回中国适合旅游结束、长期居住回国、行李超额或不方便随身携带的客户，可咨询酒店、公寓取件、包装及空运陆运方案。 Ship luggage from Thailand to China for travelers, returning residents or anyone with excess baggage. Hotel or condo pickup, packing guidance and air/land options can be discussed after the contents are reviewed. บริการส่งกระเป๋าและสัมภาระจากไทยกลับจีน เหมาะกับนักท่องเที่ยว ผู้ที่กำลังย้ายกลับจีน หรือผู้มีสัมภาระเกิน สามารถสอบถามรับของจากโรงแรม คอนโด การแพ็ก และทางอากาศหรือทางบกได้
+
+## 直接答案：泰国旅游行李或酒店遗留物品怎样寄回中国？
+
+先与酒店确认物品保管和代取授权，再提供取件地址、物品清单、照片、重量尺寸及中国收件城市。核实可寄范围、包装和交接条件后，才能确认取件与转寄方案。
+
+## 泰国邮寄行李回国，衣服和酒店物品怎么寄？
+
+旅游购物太多、行李超额、不想办理托运，或退房后发现物品遗留在酒店，都可以先咨询转寄中国。泰国寄衣服回中国也需要先整理衣物、鞋包、纪念品和个人物品清单，并单独说明食品、液体、电子产品等需审核内容，以便确认取件、包装、运输方式和报价。
+
+行李运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；酒店遗失物品可咨询 上门取件 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 酒店/公寓取件
+
+可按泰国住宿地址咨询取件，既适合游客离境前处理多余行李，也适合离店后发现物品遗留在酒店的情况。
+
+### 遗失物品代取转寄
+
+如果物品已由酒店前台保管，可提供酒店名称、联系人、房号/入住信息和物品描述，确认代取后再衔接跨境运输。
+
+### 包装与运输方式
+
+根据箱包、易碎程度、重量体积和时效要求确认纸箱、加固、分箱以及空运或陆运方案。
+
+## 怎么开始
+
+## 常见问题
+
+### 泰国行李寄中国多少钱？酒店取件怎么收费？
+
+费用通常与行李数量、实际/体积重量、内容物、泰国取件地址、中国目的地、是否需要酒店代取和包装有关。先提供箱包数量、尺寸、重量和地址，比直接问“一公斤多少钱”更容易得到准确报价。
+
+### 东西忘在泰国酒店了，可以帮忙取出来寄回中国吗？
+
+如果酒店已经确认找到并愿意交付，可提供酒店名称、联系人、入住/房号信息、物品照片或描述，先确认当地代取安排，再审核是否可寄中国。
+
+### 行李超额可以直接寄回中国吗？
+
+可以先提供行李数量、重量、尺寸和内容物，确认可寄后再安排。
+
+### 酒店退房当天可以取件吗？
+
+需要根据城市、地址和当天取件安排提前确认；如果已经离境，也可以按酒店保管情况咨询后续代取。
+
+### 行李里面什么东西要特别说明？
+
+食品、液体、粉末、药品、带电产品、贵重物品等需要提前说明。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国搬家回国｜个人物品、家具与大件物流｜泰中物流
+
+> 泰国搬家回中国覆盖个人物品、家庭用品、家具家电和其他大件，可咨询上门取件、分类打包、空运陆运及中国目的地派送。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国搬家回中国
+
+Move Personal Effects from Thailand to China ขนย้ายของจากไทยกลับจีน
+
+泰国搬家回中国适合长期居住结束、家庭搬迁或大量个人物品回国，可咨询上门取件、分类打包、空运陆运和中国目的地派送。 Moving from Thailand back to China may involve many cartons and mixed personal effects. Pickup, packing coordination, air/land freight and delivery in China can be planned after the inventory is reviewed. การย้ายจากไทยกลับจีนอาจมีหลายกล่องและของใช้หลายประเภท สามารถสอบถามรับของ การแพ็ก ทางอากาศหรือทางบก และจัดส่งปลายทางในจีนหลังตรวจสอบรายการสินค้า
+
+## 泰国寄中国大件物流，家具和家庭用品怎么安排？
+
+大件物流应先提供每件物品的照片、尺寸、重量、材质及可否拆装，再核实包装加固、取件条件和中国末端派送。是否可寄、计费方式与可用线路以逐票审核为准。
+
+搬家物品的运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；住宅地址可咨询 上门取件 ；小包可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 从泰国搬家回中国怎么安排
+
+泰国搬家回中国可同时处理少量个人行李、多箱家庭用品、家具、家电和其他大件。建议按衣物、书籍、家居用品、电子产品、家具等分类，记录箱数、尺寸、重量和是否可拆装，再按取件城市与中国目的地比较空运、陆运或当期可咨询的其他方案。
+
+## 寄件重点
+
+### 物品清单
+
+先按衣物、书籍、家居用品、电子产品、家具和大件物品分类，特殊物品单独标注。
+
+### 家具与大件评估
+
+桌椅、柜子、床架、电器等需要按尺寸、重量、材质、是否可拆装和包装条件单独评估。
+
+### 分批运输与上门
+
+急用物品和大件物品可根据时间与成本采用不同方案，并结合泰国取件地址和中国目的地安排。
+
+## 怎么开始
+
+## 常见问题
+
+### 泰国搬家回中国多少钱？家具和大件怎么报价？
+
+搬家没有统一按公斤固定价。报价通常需要箱数、主要物品、家具/家电尺寸重量、是否可拆装、泰国取件地址、中国目的地以及是否需要上门和末端派送；家具、大件最好单独拍照测量。
+
+### 搬家回国要先准备什么？
+
+建议提供城市、箱数、主要物品、预计重量尺寸和中国收货地址；家具和家电最好单独拍照并提供尺寸。
+
+### 家具、床垫、桌椅和家电能不能寄？
+
+需要根据尺寸、重量、材质、是否可拆装、是否带电及当期运输条件单独确认，不建议未审核就直接打包发货。
+
+### 急用小件和家具大件可以分开安排运输吗？
+
+可以。急用的小件和家具、大件可根据时效、体积和预算分别比较运输方案，再统一确认泰国取件与中国目的地派送安排。
+
+### 个人物品需要清关资料吗？
+
+不同货物和清关方式要求不同，发货前会根据实际情况确认。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 芭提雅寄中国｜包裹、行李与取件咨询｜泰中物流
+
+> 芭提雅寄中国可咨询上门取件、空运、陆运和中国派送，适合游客行李、酒店公寓取件、个人物品和商业货物。具体价格、可寄品类和时效以货物与地址审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+
+> Updated: 2026-11-26
+
+# 芭提雅寄中国物流
+
+Pattaya to China Shipping ส่งของจากพัทยาไปจีน
+
+芭提雅寄中国可咨询上门取件、空运、陆运和中国派送，适合游客行李、酒店公寓取件、个人物品和商业货物。具体价格、可寄品类和时效以货物与地址审核为准。 Pattaya to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for traveler luggage, hotel or condo pickup, personal items and commercial cargo. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากพัทยาไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับสัมภาระนักท่องเที่ยว รับของจากโรงแรมหรือคอนโด ของใช้ส่วนตัว และสินค้าธุรกิจ โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 芭提雅寄中国可以提供哪些服务
+
+从芭提雅寄货到中国，可根据实际地址安排酒店、公寓、住宅、商场或门店取件，并衔接空运、陆运及中国末端派送。游客行李、住宿遗留物品、跑腿代取和商业货物都可以先提供照片、重量、尺寸与中国目的地，由客服确认取件安排、可寄线路和报价。
+
+从芭提雅寄中国，运费按实际重量、体积重量、货物与目的地核算，见 芭提雅寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 芭提雅上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 芭提雅寄中国多少钱、要多久？
+
+价格和时效由重量/体积、货物品类、芭提雅取件地址、中国目的地以及空运或陆运方案决定；酒店、公寓取件还需结合本地取件安排确认。
+
+### 芭提雅寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 东西忘在芭提雅酒店或公寓，可以代取后寄中国吗？
+
+可以先提供酒店/公寓地址、联系人、取件授权或凭证和物品信息；这类需求归入 酒店物品与行李转寄 场景。
+
+### 芭提雅商场、门店或其他地址可以跑腿代取吗？
+
+可先提供准确取件地址、联系人、凭证和物品信息，确认当地安排后再衔接 代购跑腿与转运 。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 普吉寄中国｜旅游行李、包裹与酒店取件｜泰中物流
+
+> 普吉岛寄中国物流咨询，提供酒店取件、游客行李、个人包裹与商业货物运输方案。可咨询空运、陆运及中国派送，具体运费和时效以审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+
+> Updated: 2026-11-26
+
+# 普吉岛寄中国物流
+
+Phuket to China Shipping ส่งของจากภูเก็ตไปจีน
+
+普吉岛寄中国可咨询上门取件、空运、陆运和中国派送，适合游客行李、酒店取件、个人物品、特产和商业发货。具体价格、可寄品类和时效以货物与地址审核为准。 Phuket to China shipping with pickup options, air freight, land freight and delivery in China. Suitable for hotel pickup, traveler luggage, personal items, Thai products and commercial parcels. Cargo acceptance, price and transit time are confirmed case by case. บริการส่งของจากภูเก็ตไปจีน สามารถสอบถามรับของ ขนส่งทางอากาศ ทางบก และจัดส่งปลายทางในจีน เหมาะกับรับของจากโรงแรม สัมภาระนักท่องเที่ยว ของใช้ส่วนตัว สินค้าไทย และพัสดุธุรกิจ โดยต้องตรวจสอบสินค้า ราคา และระยะเวลาจริงก่อนส่ง
+
+## 直接答案：普吉岛寄中国怎么安排酒店取件？
+
+先提供普吉岛酒店或住宅地址、可交接时间、货物照片、品名、重量和尺寸，以及中国收件城市。客服核对取件条件和可寄范围后，再确认运输方式、费用与预计时效。
+
+## 普吉岛寄中国可以提供哪些服务
+
+从普吉岛寄货到中国，可根据实际地址安排酒店、公寓、住宅、商场或门店取件，并衔接空运、陆运及中国末端派送。游客行李、退房后遗留物品、跑腿代取和商业货物都可以先提供照片、重量、尺寸与中国目的地，由客服确认取件安排、可寄线路和报价。
+
+从普吉岛寄中国，运费按实际重量、体积重量、货物与目的地核算，见 普吉岛寄中国运费说明 ；酒店与住宅地址可咨询 上门取件 ；常规时效见 泰国寄中国时效说明 。
+
+## 寄件重点
+
+### 普吉岛上门取件
+
+酒店、公寓、住宅、商场或仓库等地址可按具体位置咨询。
+
+### 空运与陆运
+
+急件优先比较空运；大件、批量或时间较宽松的货物可比较陆运。
+
+### 中国目的地派送
+
+报价前确认收件城市、货物信息和是否需要包装或其他增值服务。
+
+## 怎么开始
+
+## 常见问题
+
+### 普吉寄中国多少钱、要多久？
+
+价格和时效取决于货物重量/体积、品类、普吉取件地址、中国目的地以及空运或陆运方案。酒店取件、游客行李等还要结合本地取件安排确认。
+
+### 普吉岛寄中国怎么开始？
+
+提供取件地址、中国目的地、货物图片、品类、重量和尺寸，先确认是否可寄和报价。
+
+### 东西忘在普吉酒店，已经离开泰国了还能帮忙取出来寄中国吗？
+
+可以先提供酒店名称/地址、联系人、取件授权或凭证、物品照片和中国收货地址；这类需求归入 泰国行李与酒店遗失物品转寄 场景。
+
+### 普吉商场、门店或其他地址可以跑腿代取吗？
+
+可先提供准确取件地址、联系人、凭证和物品信息，确认当地安排后再衔接 代购跑腿与转运 。
+
+### 哪些货物需要提前审核？
+
+食品、液体、粉末、电子产品、特殊工艺品等建议发货前先提供图片和详细信息。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 网站隐私政策｜泰中物流
+
+> Thai-China Logistics 隐私政策：说明通过网站或即时通信咨询泰中跨境物流时的信息收集、使用及联系更正方式。如需更正信息，请通过网站联系方式咨询。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/privacy.html
+
+> Updated: 2026-11-26
+
+# 隐私政策
+
+最后更新：2026年11月15日
+
+Thai-China Logistics 尊重你的隐私。本政策说明我们在你通过网站咨询跨境物流时如何处理信息。
+
+## 我们收集的信息
+
+当你主动咨询时，我们可能收到姓名、联系方式、取件城市、目的地、货物类型、重量及你主动提供的备注。
+
+## 信息用途
+
+这些信息仅用于回复咨询、评估物流方案、报价及安排后续服务，不用于出售个人信息。
+
+## 第三方服务
+
+如果你选择通过 WhatsApp、Facebook 或微信联系我们，相关信息会按照对应平台的隐私政策处理。
+
+## 保存与删除
+
+我们只在提供咨询和服务所需的期限内保留信息。你可以通过 WhatsApp 联系我们，要求更正或删除你的咨询信息。
+
+## 联系我们
+
+WhatsApp： +66 83 976 9828 ；微信：THAICHINA-LOGISTICS。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/./terms.html
+
+---
+
+# 网站服务条款｜泰中物流
+
+> Thai-China Logistics 服务条款：说明泰中跨境物流咨询的业务范围、报价与运输限制以及用户应提供的信息。发货前请先阅读，疑问可通过网站联系方式咨询。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/terms.html
+
+> Updated: 2026-11-26
+
+# 服务条款
+
+最后更新：2026年11月15日
+
+欢迎使用 Thai-China Logistics 网站及相关咨询服务。本网站用于介绍泰国与中国之间的跨境物流服务，并接收运输咨询。
+
+## 服务说明
+
+网站提供物流路线、取件、运输、清关及派送方案的咨询信息。具体价格、时效、可运输货物和服务范围，以客服根据实际货物、地址及当时承运条件确认的方案为准。
+
+## 用户责任
+
+用户应提供真实、完整的货物和联系方式信息，并遵守适用的法律法规及海关、航空和运输规定。禁止委托运输法律禁止或限制的物品。
+
+## 信息限制
+
+网站内容仅作一般信息参考，运输方案可能因线路、天气、政策、承运商及清关情况变化。
+
+## 联系我们
+
+WhatsApp： +66 83 976 9828 ；微信：THAICHINA-LOGISTICS。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/./privacy.html
+
+---
+
+# 泰国特产寄中国｜零食、咖啡、护肤品与伴手礼｜泰中物流
+
+> 泰国特产寄回中国可咨询零食、食品、美妆、伴手礼和其他泰国产品的运输。不同品类涉及不同运输与清关要求，发货前需先审核。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国特产寄回中国
+
+Ship Thai Products to China ส่งสินค้าไทยไปจีน
+
+泰国特产寄回中国可咨询零食、食品、美妆、伴手礼和其他泰国产品的运输。不同品类涉及不同运输与清关要求，发货前需先审核。 Shipping Thai products to China can include selected snacks, packaged food, beauty items, souvenirs and everyday products. Acceptance depends on the exact product, ingredients, quantity and current customs requirements. สามารถสอบถามการส่งสินค้าไทยไปจีน เช่น ขนม อาหารบรรจุห่อ เครื่องสำอาง ของฝาก และของใช้ทั่วไป การรับส่งขึ้นอยู่กับสินค้า ส่วนประกอบ ปริมาณ และข้อกำหนดศุลกากรในช่วงนั้น
+
+## 直接答案：泰国特产可以寄中国吗？
+
+泰国特产如零食、咖啡、茶叶、果干、调料、护肤品与伴手礼大多可以咨询寄中国，具体以品类审核为准；生鲜、冷冻食品与鲜果受限较多，需要先确认。提供货物照片、品名、重量与尺寸，以及中国收货地址，客服审核后确认可寄线路、报价与预计时效。
+
+## 泰国特产和日用品寄中国需要注意什么
+
+泰国零食、伴手礼、美妆、香薰和日用品寄往中国前，需要先确认具体产品、数量、包装、成分和用途。食品、液体、粉末、膏体、喷雾与普通日用品的运输要求可能不同，先提供产品照片和包装信息，才能判断可寄线路和报价。
+
+特产运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；旅游购物可咨询 上门取件 ；小包可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 泰国特产、零食和伴手礼怎么寄中国
+
+泰国特产寄中国、泰国特产邮寄中国或泰国特产快递中国，都要按具体商品审核。零食、食品、小吃、芒果干、榴莲干、水果干、椰子片、香蕉干、泰国咖啡、咖啡豆、茶叶、泰茶、手标茶和伴手礼，均需先提供商品资料；泰国旅游买特产想寄回国时，也建议在购买前确认包装、数量与当前可用线路。
+
+### 零食、食品与果干
+
+泰国零食寄回国、泰国食品邮寄回国和泰国果干寄中国属于需单独审核的食品品类。先审核配料、保质期、原包装、数量与用途，不承诺所有食品都可以寄。
+
+### 茶、咖啡与调味品
+
+泰国咖啡寄中国、泰国茶叶寄中国、泰国咖喱酱、冬阴功调料、香料和酱料，需根据成分、形态、包装及实际运输线路确认可寄要求，发货前请先提供商品资料审核。
+
+### 伴手礼与非食品特产
+
+曼谷、普吉、清迈伴手礼，以及乳胶枕、乳胶制品、香薰、手工艺品、陶瓷和纪念品可按品类咨询。液体、粉末、易碎品、植物材料或特殊材质要单独审核；具体可寄要求仍应按商品材质和当期线路确认。
+
+### 美妆、护肤与香薰
+
+泰国护肤品、美妆、香薰与精油寄中国，要按成分、形态、包装与数量逐票审核。液体、膏体、喷雾与易燃品类要单独确认，不承诺所有美妆都可以寄。
+
+## 泰国化妆品、护肤品怎么寄中国
+
+泰国护肤品、美妆、香薰与精油寄中国，要先确认具体产品、成分、形态、包装、数量与用途。液体、膏体、粉末、喷雾等不同形态的运输要求可能不同，香水与含酒精产品、指甲油等易燃品类要单独确认，精油与香薰按液体品类审核。先提供产品照片、成分与包装信息，审核后确认可寄线路与包装；不承诺所有美妆都可以寄。
+
+## 价格怎么计算，个人包裹和商业货物要分开
+
+泰国特产寄中国多少钱、泰国零食寄中国多少钱或泰国食品寄中国一公斤多少钱，仅凭商品名称无法给出准确报价。报价要结合实际重量、体积重量、商品类型、包装、泰国起运城市、中国目的地和当前可用线路确认。个人合理自用包裹与商业进口的审核、资料和监管要求可能不同，个人少量并不等于商业批量一定可以寄。
+
+## 怎么开始
+
+## 常见问题
+
+### 泰国食品可以寄中国吗？
+
+不同食品和不同运输线路要求不同。请先提供商品名称、照片、包装、配料/成分信息（如适用）、数量、重量、个人自用或商业用途以及中国目的地，审核后确认。
+
+### 泰国零食可以寄中国吗？
+
+泰国零食寄中国前需要审核具体品名、配料、原包装、数量和用途，不能把个人少量零食与商业食品进口按同一规则处理。
+
+### 泰国咖啡可以寄中国吗？泰国茶叶怎么寄回国？
+
+咖啡、咖啡豆、茶叶、泰茶和手标茶需要按包装、成分、数量、用途和当前线路确认；先发照片和资料，不承诺统一可寄。
+
+### 泰国果干可以寄中国吗？
+
+芒果干、榴莲干、水果干、椰子片和香蕉干属于需单独审核的食品品类，需先审核商品、配料、包装、数量和目的地要求。
+
+### 泰国调料、咖喱酱或冬阴功调料可以寄中国吗？
+
+调料、咖喱、咖喱酱、冬阴功调料、香料和酱料要按液体/粉末形态、成分、包装和线路做审核，不能直接承诺可寄。
+
+### 生鲜、冷冻食品或鲜果可以寄中国吗？
+
+这类商品可能涉及冷链、动植物检疫或其他特殊能力，不因存在搜索需求就承诺接收；如需评估，请先说明商品和目的地。
+
+### 在泰国旅游买好的特产怎么寄回国？
+
+购买前或发货前提供商品照片、包装、数量、重量、取件城市和中国目的地，审核后确认可行线路、包装和报价。
+
+### 特产很多种怎么报价？
+
+建议先列出每种商品的名称、数量、重量、外箱尺寸、包装情况、取件城市和最终目的地，再按货物组合确认。
+
+### 泰国化妆品可以寄中国吗？
+
+泰国化妆品寄中国前要按具体产品、成分、形态、包装、数量与用途逐票审核，不能直接承诺可寄。先提供产品照片、成分与包装信息，审核后确认。
+
+### 泰国护肤品、香水、精油怎么寄？
+
+护肤品按液体、膏体、粉末等形态审核；香水与含酒精产品、指甲油等易燃品类要单独确认；精油与香薰按液体品类审核。先发产品照片、成分与包装信息，审核后再发货。
+
+## 相关城市与服务入口 Related city and service pages หน้าเมืองและบริการที่เกี่ยวข้อง
+
+## 发货前先确认货物与路线 Confirm the cargo and route before shipping ตรวจสอบสินค้าและเส้นทางก่อนส่ง
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。 Share pickup city, destination in China, cargo photos, weight and dimensions for a more accurate plan. แจ้งเมืองรับของ ปลายทางในจีน รูปสินค้า น้ำหนัก และขนาด เพื่อให้ประเมินได้แม่นยำขึ้น
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bird-nest-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/buddhist-amulets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-rai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/electronics-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/hat-yai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/koh-samui-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/pattaya-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-plants-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国国内搬家｜普吉曼谷清迈跨城市搬家运输｜泰中物流
+
+> 泰国国内搬家可咨询普吉、曼谷、清迈、芭提雅、苏梅、合艾、清莱等城市之间的跨城市搬家、家具家电、大件运输、上门搬运与打包。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-domestic-moving.html
+
+> Updated: 2026-11-26
+
+# 泰国国内搬家与跨城市搬运
+
+Thailand Domestic & Intercity Moving บริการย้ายบ้านและขนของระหว่างจังหวัดในไทย
+
+普吉、曼谷、清迈、芭提雅、苏梅、合艾、清莱等城市之间可咨询家庭搬家、个人物品、家具家电、大件货物、上门搬运和打包协调。 Intercity moving across Thailand for household goods, furniture, appliances and bulky items, with pickup and packing coordination. บริการขนย้ายของใช้ในบ้าน เฟอร์นิเจอร์ เครื่องใช้ไฟฟ้า และของชิ้นใหญ่ระหว่างเมืองต่าง ๆ ในประเทศไทย
+
+## 泰国国内搬家热门路线
+
+### 普吉 ↔ 曼谷
+
+适合家庭搬家、个人物品、家具家电、大件和多箱货。
+
+### 曼谷 ↔ 清迈
+
+可按箱数、家具尺寸、楼层、电梯和装卸条件确认方案。
+
+### 清迈 ↔ 普吉
+
+长距离跨城市搬家可提前整理物品清单、照片、数量和预计时间。
+
+## 其他城市
+
+同时覆盖芭提雅、苏梅岛、合艾、清莱及其他泰国城市之间的搬家、家具运输、大件运输、仓储衔接和上门搬运需求。
+
+## 怎么报价
+
+提供起点城市、终点城市、物品照片、箱数、家具家电尺寸、楼层、电梯、是否需要打包拆装以及预计搬家日期，我们按实际工作量和路线确认报价。
+
+## 常见问题
+
+### 普吉搬家到曼谷可以吗？
+
+可以咨询，先提供地址、物品清单、家具照片和预计搬家日期。
+
+### 曼谷搬家到清迈、清迈搬家到普吉可以吗？
+
+可以咨询跨城市搬家，路线、车辆和费用按实际物品数量及装卸条件确认。
+
+### 家具、冰箱、洗衣机、床垫可以一起搬吗？
+
+可以先提供尺寸、照片、楼层和是否需要拆装，以便安排搬运和车辆。
+
+## 相关服务
+
+泰国搬家回中国 · 行李寄中国 · 上门取件 · 泰国宠物到中国
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/moving-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-pets-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+
+---
+
+# 泰国药品寄中国｜保健品审核与运输咨询｜泰中物流
+
+> 泰国药品、保健品寄中国怎么咨询？逐票审核、个案确认，不承诺具体药品可寄。提供药品名称、成分、包装与数量，私信确认方案。先发资料问，不要直接寄出。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-medicine-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国药品可以寄中国吗？
+
+泰国药品与保健品属于监管敏感品类，只能逐票审核、个案确认，不承诺具体药品可寄。提供药品名称、成分、包装、数量与用途，有处方或购买凭证请一并提供，由客服按实际情况确认可操作方案。
+
+## 直接答案：泰国药品寄中国怎么咨询？
+
+泰国药品、保健品、中成药寄中国，都要先审核再发货：提供药品名称、成分、包装、数量与用途，客服按实际情况逐票确认，不承诺具体药品可寄。处方药、非处方药、保健品、外用药的审核要求可能不同，拿不准就先发资料问，不要直接寄出。
+
+## 咨询药品运输需要提供什么资料？
+
+第一，药品名称与成分：药品中文名、成分表与规格，保健品提供产品名与成分。第二，包装与形态：原包装照片、片剂、胶囊、液体、膏体或外用等形态。第三，数量与用途：数量、个人自用还是其他用途。第四，处方或购买凭证：有处方、购买小票或药房凭证的请一并提供。第五，路线信息：泰国取件地址与中国收货地址。资料越全，审核越快；资料不全需要反复补充，会耽误发货。
+
+## 处方药、保健品、中成药的审核有什么不同？
+
+类型 | 审核要点 | 说明
+
+处方药 | 药品名称、成分、数量、用途、处方或凭证 | 监管最严，逐票审核、个案确认
+
+非处方药 | 药品名称、成分、包装、数量、用途 | 同样需要逐票审核
+
+保健品 | 产品名称、成分、形态、数量、用途 | 按成分与形态逐票审核
+
+中成药 | 药品名称、成分、包装、数量、用途 | 不承诺具体品种可寄
+
+外用药 | 药品名称、成分、形态、数量 | 液体、膏体、喷雾形态要单独审核
+
+上表只是审核要点的说明，不是可寄承诺。所有药品与保健品都以逐票审核结果为准，具体以海关最新规定为准。其他品类的可寄情况见 泰国寄中国禁运清单 ，清关要求见 泰国寄中国清关说明 。
+
+## 药品运输不承诺什么？
+
+第一，不承诺具体药品一定可以寄：每种药品都要按实际情况审核。第二，不承诺固定时效：药品审核与清关可能需要额外时间，常规时效空运 5-7 天、陆运 10-15 天仅供参考，药品件以审核后确认的预计时间为准。第三，不承诺包税：是否包税要按货物与目的地确认。第四，不提供用药建议：是否适合使用某种药品请咨询医生或药师，我们只做运输咨询。
+
+## 怎么开始
+
+第一步，提供药品资料：药品照片、名称、成分、包装、数量与用途。第二步，提供路线信息：泰国取件地址与中国收货地址。第三步，确认方案：审核后确认可操作方案、包装要求与预计时效，再安排发货。小包可走 泰国寄中国快递 ，旅游购物可咨询 泰国上门取件 。
+
+## 常见问题
+
+### 泰国处方药可以寄中国吗？
+
+处方药属于监管敏感品类，只能逐票审核、个案确认。提供药品名称、成分、包装、数量与用途，有处方或购买凭证请一并提供，由客服按实际情况确认，不承诺具体药品可寄。
+
+### 泰国保健品可以寄中国吗？
+
+保健品同样需要逐票审核，要看具体成分、形态、数量与用途。先提供产品照片、成分与包装信息，审核后再发货，不要直接寄出。
+
+### 泰国中成药可以寄中国吗？
+
+中成药属于需审核品类，要按药品名称、成分、包装、数量与用途逐票确认。不承诺具体品种可寄，具体以审核结果与海关最新规定为准。
+
+### 寄药品需要处方或购买凭证吗？
+
+是否需要处方或购买凭证，要按药品类型与目的地要求确认。提供药品资料时，有相关凭证请一并提供，便于审核。没有凭证不等于一定不能寄，具体以审核结果为准。
+
+### 药品被海关查验怎么办？
+
+按海关或承运方要求补充资料、配合核查即可。发货前先审核、备齐药品名称、成分、包装与数量等资料，可以减少查验等待。具体以实际情况为准。
+
+更新于 2026-11-26
+
+## 发货前先确认货物与路线
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 泰国宠物到中国｜猫狗回国托运与运输协调｜泰中物流
+
+> 泰国宠物到中国可咨询猫狗回国、宠物托运、随人同行或货运、接送、航空箱、疫苗健康资料与运输流程协调。具体安排按宠物情况、出发城市和目的地确认。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-pets-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国宠物到中国
+
+Pet Transport from Thailand to China ขนส่งสัตว์เลี้ยงจากไทยไปจีน
+
+猫狗从泰国回中国可咨询接送、航空箱、航班路线、随人同行或货运方式以及疫苗、健康和其他资料准备协调。 Relocation coordination for cats and dogs from Thailand to China, covering pickup, travel crate, flight route and document preparation. ประสานการย้ายแมวและสุนัขจากไทยไปจีน รวมรับส่ง กรงเดินทาง เส้นทางบิน และการเตรียมเอกสาร
+
+## 直接答案：泰国宠物可以回中国吗？
+
+猫狗从泰国回中国可以咨询托运协调，具体方案要按宠物种类、品种、年龄、体重、芯片与疫苗情况、出发城市与中国目的地确认。宠物跨境涉及检疫与疫苗、健康资料要求，提前备齐资料可以减少等待。
+
+## 泰国宠物回中国怎么安排
+
+### 猫狗基本信息
+
+提供宠物种类、品种、年龄、体重、芯片/疫苗情况、出发城市和中国目的地。
+
+### 航空箱与路线
+
+根据宠物尺寸、航班和运输方式确认航空箱及路线安排。
+
+### 资料与时间
+
+把现有疫苗、健康和其他资料发来，我们按实际行程确认下一步准备。
+
+## 覆盖城市
+
+可咨询曼谷、普吉、清迈、芭提雅、苏梅等泰国城市出发至中国主要城市的宠物运输协调。
+
+## 宠物回国需要注意什么
+
+第一，检疫与资料要求：疫苗、健康证明、芯片信息等要按宠物情况与中国目的地确认，出发前备齐资料。第二，航空箱规格按宠物尺寸与体重确认，提前准备。第三，随人同行或货运两种方式按航班与宠物情况确认。第四，是否需要隔离取决于目的地与当时的检疫安排，出发前按宠物情况与目的地确认，不要凭经验假设。
+
+## 常见问题
+
+### 泰国猫狗可以回中国吗？
+
+可以先按宠物实际情况、出发城市、目的地和现有资料确认当前可执行方案。
+
+### 可以安排上门接宠物吗？
+
+可根据所在城市和时间咨询接送安排。
+
+### 没有航空箱怎么办？
+
+可以先提供宠物尺寸和体重，确认适合的航空箱规格和后续安排。
+
+### 宠物回中国需要隔离吗？
+
+是否需要隔离取决于目的地与当时的检疫安排，出发前按宠物情况与目的地确认，提前备齐疫苗与健康资料。
+
+## 相关服务
+
+中国宠物到泰国 · 泰国国内搬家 · 泰国寄中国禁运清单 · 泰国寄中国清关
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/china-pets-to-thailand.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-domestic-moving.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 泰国植物发中国｜苗木盆栽鲜花种子运输咨询｜泰中物流
+
+> 泰国植物发中国可咨询苗木、盆栽、鲜切花、种子与繁殖材料的取件、包装、运输和资料协调。具体品种、数量、目的地与所需资料按实际情况确认。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-plants-to-china.html
+
+> Updated: 2026-11-26
+
+# 泰国植物发中国
+
+Plants from Thailand to China ส่งพืชจากไทยไปจีน
+
+可咨询泰国苗木、盆栽、鲜切花、种子和其他植物类货物发往中国的取件、包装、运输与资料协调。 Pickup, packing, shipping and document coordination for plants, nursery stock, cut flowers, seeds and related plant materials from Thailand to China. ประสานการรับของ บรรจุ ขนส่ง และเอกสารสำหรับต้นไม้ ดอกไม้ เมล็ดพันธุ์ และวัสดุพืชจากไทยไปจีน
+
+## 直接答案：泰国植物可以发中国吗？
+
+泰国苗木、盆栽、鲜切花、种子可以咨询发中国，具体方案要按植物品种、状态、数量、包装与目的地逐票审核。植物涉及动植物检疫，不同品种与状态要求不同，带土、鲜切花与种子要单独确认。
+
+## 可咨询的植物类型
+
+### 苗木与盆栽
+
+先提供品种、尺寸、数量、是否带土/介质、取件城市和中国目的地。
+
+### 鲜切花与花材
+
+按花材类型、数量、包装、温度要求和运输时效确认方案。
+
+### 种子与繁殖材料
+
+先提供名称、用途、数量、包装和目的地，资料需求按实际货物确认。
+
+## 怎么开始
+
+发送植物清晰照片、品种名称、数量、规格、包装状态、泰国取件地址和中国收货城市，我们先确认可操作路线、包装和所需资料，再安排后续。
+
+## 植物发中国需要注意什么
+
+第一，植物、苗木、种子涉及动植物检疫，不同品种与状态要求不同，都要逐票审核。第二，是否带土或带介质会影响审核，盆栽要先说明品种、尺寸与带土情况。第三，鲜切花要看花材类型、数量、包装与温度要求，时效要求高。第四，种子与繁殖材料要提供名称、用途、数量与包装，资料需求按实际货物确认。
+
+## 常见问题
+
+### 泰国植物可以发中国吗？
+
+我们可以按具体植物品种、状态、数量、目的地和资料情况进行审核并确认当前可操作方案。
+
+### 盆栽、苗木、种子都可以咨询吗？
+
+可以，先分别提供品种、数量、包装和照片，便于按具体货物确认。
+
+### 带土的盆栽可以寄中国吗？
+
+是否带土或带介质会影响审核，需要先说明盆栽品种、尺寸、带土情况与目的地，由客服按实际情况确认。
+
+### 种子可以寄中国吗？
+
+种子与繁殖材料要按名称、用途、数量、包装与目的地逐票审核，不承诺所有种子都可以寄。先提供名称与照片确认。
+
+## 相关服务
+
+泰国特产发中国 · 泰国到中国空运 · 泰国上门取件 · 泰国寄中国禁运清单
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thai-products-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+---
+
+# 泰国寄中国清关｜包税与不含税、文件与税费说明｜泰中物流
+
+> 泰国寄中国怎么清关？包税与不含税的区别、所需文件清单、食品与电子等品类特殊要求一次说明。提供货物照片、品名与数量，私信确认清关方案，发前先确认。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+
+> Updated: 2026-11-26
+
+# 泰国寄中国清关怎么办理？
+
+泰国寄中国清关，分包税和不含税两种方式，具体用哪种要按货物类型、申报价值、目的地与当期线路确认。发货前备齐货物照片、品名、数量、重量、外箱尺寸、申报价值与收件信息，特殊品类按要求补充资料，清关等待更短。
+
+## 直接答案：泰国寄中国怎么清关？
+
+泰国寄中国清关分包税和不含税两种方式：包税指报价中包含清关相关费用，不含税指清关相关费用按实际产生另计或由收件方按规定处理。两种方式没有统一的好坏，要按货物类型、申报价值、目的地与当期线路确认。发货前备齐货物资料、提前确认品类可寄要求，是清关顺利最直接的办法。
+
+## 包税与不含税对照
+
+项目 | 包税 | 不含税
+
+费用包含 | 报价中包含清关相关费用，按整票条件核算 | 清关相关费用按实际产生另计，或由收件方按规定处理
+
+需要提供的资料 | 货物照片、品名、数量、重量、外箱尺寸、申报价值、收件信息 | 同左；特殊品类同样需要补充资料
+
+适合货物 | 个人物品、游客行李、一般特产与普通货物 | 按货物与目的地确认，商业货物需单独确认
+
+注意事项 | 发货前问清报价包含哪些费用 | 发货前问清哪些费用另计，避免到付争议
+
+两种方式的具体费用构成与包含范围没有固定标准，都要按货物与目的地确认。运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；常规时效见 泰国寄中国时效说明 。
+
+## 清关需要准备什么文件和资料？
+
+第一，货物照片：外包装与内装物品的清晰照片，用于确认品名与状态。第二，品名与数量：每种货物的中文品名、数量与规格，写清楚不写简称。第三，重量与尺寸：实际重量与外箱长宽高，用于核算计费重量。第四，申报价值：与货物实际情况一致的申报价值。第五，收件信息：中国收件人、电话与收货地址。第六，按品类补充的资料：食品提供配料与保质期信息，电子产品提供电池类型与数量，佛牌提供材质与价值信息，燕窝、植物、宠物、药品等按品类要求补充资料。资料齐全、信息一致，清关等待较短；资料不全需要补充证明时，总时效会延长。
+
+## 不同品类清关有什么特殊要求？
+
+食品与零食：看配料、保质期、原包装、数量与用途，个人少量与商业批量按不同规则处理，先审核再发货。电子产品与带电货物：看电池类型、数量、价值与包装，带电产品发货前必须审核。佛牌与佛教用品：看材质、尺寸、价值以及是否属于特殊文物类物品，提前确认。燕窝、植物、宠物、药品：属于监管较严的品类，都要逐票审核、以海关最新规定为准，不承诺所有货物都可以寄。液体、粉末、膏体与喷雾：按成分、形态与包装逐票审核。拿不准的品类先看 泰国寄中国禁运清单 ，再发照片与资料确认。
+
+## 清关要多久？会影响总时效吗？
+
+清关时间包含在常规时效内：空运 5-7 天，陆运 10-15 天。资料齐全、品名与数量清楚、申报价值一致，清关等待较短；资料不全、需要补充证明或遇到海关查验时，总时效会延长。发货前备齐资料、提前确认可寄品类，是缩短等待最直接的办法。海运服务暂未开放，目前主做空运与陆运。
+
+## 怎么开始
+
+第一步，提供货物信息：货物照片、品名、数量、重量与外箱尺寸。第二步，提供路线信息：泰国取件地址与中国收货地址，说明是否需要上门取件。第三步，确认清关与报价：审核后确认包税或不含税方式、运输方式与预计时效，再安排发货。小包与文件可走 泰国寄中国快递 ，旅游购物可咨询 泰国上门取件 。
+
+## 常见问题
+
+### 泰国寄中国包税和不含税有什么区别？
+
+包税指报价中包含清关相关费用，按整票条件核算；不含税指清关相关费用按实际产生另计或由收件方按规定处理。具体采用哪种方式、包含哪些费用，要按货物类型、申报价值、目的地与当期线路确认，发货前先问清再发货。
+
+### 泰国寄中国清关需要准备哪些文件？
+
+一般需要货物照片、品名、数量、重量、外箱尺寸、申报价值与中国收件信息。食品、电子产品、佛牌等特殊品类可能需要补充配料、成分、电池信息或材质价值等资料，具体按货物确认。资料齐全、信息一致，清关等待较短。
+
+### 食品、电子产品清关有什么特殊要求？
+
+食品要看配料、保质期、原包装、数量与用途；电子产品要看电池类型、数量、价值与包装；佛牌要看材质、尺寸、价值以及是否属于特殊文物类物品。特殊品类都要先审核，不能直接承诺可寄，具体以审核结果与海关最新规定为准。
+
+### 泰国寄中国清关要多久？
+
+清关时间包含在常规时效内：空运 5-7 天，陆运 10-15 天。资料齐全、品名与数量清楚、申报价值一致，清关等待较短；资料不全、需要补充证明或遇到海关查验时，总时效会延长。发货前备齐资料可以减少等待。
+
+### 海关查验或需要补充资料怎么办？
+
+按海关或承运方要求补充资料、配合核查即可。发货前备齐货物照片、品名、数量与收件信息，特殊品类提前确认可寄要求，可以减少查验与补充资料的等待。具体以实际情况为准。
+
+更新于 2026-11-26
+
+## 发货前先确认货物与路线
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-medicine-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国寄中国快递公司｜泰国邮寄中国、包裹与上门取件咨询｜泰中物流
+
+> 寻找泰国邮寄中国的快递公司？Thai-China Logistics 提供泰国寄中国包裹、行李与文件的物流咨询，可按取件城市、货物和目的地匹配方案，费用及可寄范围以审核为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+
+> Updated: 2026-11-26
+
+# 泰国邮寄中国｜快递公司与物流方案咨询
+
+从泰国寄东西回中国，可寄包裹、文件或个人物品的具体范围需先审核；可按实际重量、体积重量、货物属性、取件城市和目的地匹配运输方案。先提交信息，再确认可寄范围、清关与末端派送。
+
+## 直接答案：泰国寄中国快递怎么寄？
+
+从泰国寄中国，先提供货物照片、品名、重量和包装尺寸，以及泰国取件地址、中国收件城市。核实可寄品类、计费重量、清关资料与派送范围后，再确认渠道、报价和预计时效。
+
+## 泰国邮寄中国的快递公司怎么选？
+
+直接回答： 先确认取件地址和货物可寄范围，再比较实际重量与体积重量的计费规则、清关资料和中国境内派送安排。Thai-China Logistics 可根据货物与地址提供物流方案咨询；承运渠道、报价和时效均以实际审核结果为准。
+
+取件： 提供泰国城市、酒店或完整地址，确认交接条件。
+
+货物： 提供品名、数量、照片、包装尺寸及重量，提前核对限制。
+
+运输： 确认计费方式、清关资料、末端派送和最终报价。
+
+## 从泰国寄东西回中国怎么寄？
+
+从泰国寄东西回中国，先提供资料、确认可寄范围，再确定运输方案。 小包、文件、样品和个人物品的可寄条件可能不同，不能仅凭重量判断。
+
+提交品名、件数、货物照片、实际重量与包装尺寸。
+
+提供泰国取件地址、中国收货城市，核实取件及收件条件。
+
+按审核结果确认可用空运、陆运或门到门安排，再核实报价和运输资料。
+
+## 小包、文件与门到门服务
+
+文件和小包通常需要清晰的品名、数量与收发件人资料；是否安排上门取件、清关协助和中国末端派送，要以真实地址及货物审核结果为准。
+
+## 费用与清关怎么确认
+
+报价可能同时参考实际重量与体积重量，也会受到包装、取件、目的地和货物属性影响。不要只按公斤数估算，先提交完整资料更准确。
+
+常规时效见 泰国寄中国时效说明 ：空运 5-7 天，陆运 10-15 天。
+
+## 常见问题
+
+### 泰国寄包裹到中国需要什么资料？
+
+请准备品名、数量、尺寸重量、取件地址、收件信息和货物照片；特殊品类需先确认。
+
+### 泰国快递到中国可以门到门吗？
+
+可以咨询门到门方案，但服务范围、清关和末端派送须按货物与地址确认。
+
+### 泰国寄中国快递要多久？
+
+空运常规时效 5-7 天，陆运常规时效 10-15 天；具体以货物审核、取件城市、班次、清关与中国目的地为准。
+
+### 泰国寄中国快递运费怎么算？
+
+按计费重量核算，取实际重量与体积重量两者中的较大值，再结合货物品类、取件城市、中国目的地与运输方式综合确认；没有统一固定单价，见泰国寄中国运费说明。
+
+### 泰国寄中国可以寄文件和小包吗？
+
+文件、小包、样品与个人物品可以咨询，具体以货物品类审核为准；提供货物照片、重量与尺寸后确认方案。
+
+## 普吉岛、曼谷寄中国快递
+
+在普吉岛或曼谷寄包裹回中国，可先确认酒店或住址取件条件，并提供货物照片、重量、尺寸和中国收件城市。不同城市、渠道及品类的取件安排和费用需单独确认。
+
+## 相关服务
+
+关于 Thai-China Logistics · 普吉岛寄中国 · 曼谷寄中国 · 泰国上门取件寄中国 · 泰国行李寄回中国 · 泰国到中国空运 · 泰国到中国陆运
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/about.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国上门取件寄中国｜酒店、商场与遗失物代取｜泰中物流
+
+> 泰国上门取件寄中国可咨询酒店、公寓、别墅、商场、门店和仓库取件，以及遗失物转寄。具体地址、货物与费用先确认；泰国供应商、工厂、商家或曼谷仓库提货，也应先提交地址、联系人、货物照片和箱数。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+
+> Updated: 2026-11-26
+
+# 泰国上门取件寄中国
+
+可咨询曼谷、普吉、清迈等地的酒店、公寓、别墅、商场、门店和仓库取件，以及跑腿代取和酒店遗失物转寄。是否可取、费用和时间按真实地址与货物信息确认。
+
+## 直接答案：泰国上门取件寄中国怎么安排？
+
+提供泰国取件地址、联系人、可交接时间、货物照片、品名、重量与尺寸，以及中国收货地址，客服先核实取件条件与可寄范围，再确认空运或陆运方案、报价与预计时效。酒店、公寓、住宅、商场、门店与仓库地址都可以咨询上门取件。
+
+## 泰国酒店取件寄中国，应该怎么安排？
+
+直接回答： 先确认酒店或公寓是否允许代取及交接，再提供取件地址、联系人、货物内容、件数和中国收件城市。取件范围、可寄品类、费用及时间均需逐票核实；确认之前不要假设酒店前台会代交物品。
+
+授权交接： 联系酒店或物品保管方，确认取件凭证、联系人和允许交接的时间。
+
+货物审核： 提供物品照片、数量、包装尺寸及重量，确认可寄范围。
+
+报价发货： 确认取件费用和国际运输费用分别如何计算，以及清关和末端交付条件。
+
+## 酒店、公寓和商业地址上门取件
+
+请提供取件城市、酒店或完整地址、联系人和电话、货物品类、件数、尺寸重量及中国收货城市。酒店取件还需确认前台交接规则和可取时间；门店、仓库和商场地址需确认工作人员交接。
+
+## 商场代取、跑腿与遗失物转寄
+
+如果无法亲自到店，可先提供订单、取货凭证或遗失物信息，确认是否能代取、包装和转寄。酒店忘记的个人物品也应先核实酒店保管和交接条件。
+
+## 取件后如何寄到中国
+
+取件完成后，再根据货物、实际重量、体积重量和中国收货地址确认空运、陆运、清关及末端派送方案。取件服务与国际运输费用分开核算。
+
+小包与文件可走 泰国寄中国快递 ；常规时效见 泰国寄中国时效说明 。
+
+## 常见问题
+
+### 可以从泰国酒店取件寄回中国吗？
+
+可以咨询，但需先确认酒店前台交接、取件时间、货物内容和授权信息。
+
+### 曼谷以外可以安排上门取件吗？
+
+可提供曼谷、普吉、清迈等地的地址咨询，具体覆盖范围和费用按真实地址确认。
+
+### 上门取件需要提前多久预约？
+
+提前提供取件地址、联系人与可交接时间，由客服确认当天或次日的取件安排；酒店取件还需确认前台交接与授权信息。
+
+### 上门取件时需要准备什么？
+
+货物提前打包好，准备好货物照片、品名、数量、重量与尺寸，以及取件联系人的电话；遗失物品需要提供酒店订单或入住凭证等授权信息。
+
+### 取件后货物怎么寄到中国？
+
+取件后按货物与目的地确认空运或陆运方案；空运常规时效 5-7 天，陆运常规时效 10-15 天，具体以货物审核与当期线路为准。
+
+## 相关页面
+
+曼谷寄中国 · 普吉寄中国 · 清迈寄中国 · 泰国代购集货转寄 · 查看报价因素
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/bangkok-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/chiang-mai-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/daigou-shipping.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/luggage-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/phuket-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国寄到中国的运费怎么算｜泰国寄中国报价｜泰中物流
+
+> 泰国寄到中国的运费如何计算？按货物实际重量、体积重量、包装、取件城市与中国目的地核算，不承诺固定低价。提供货物照片、重量与地址，私信确认报价。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+
+> Updated: 2026-11-26
+
+# 泰国寄中国多少钱？
+
+泰国寄中国的运费没有统一固定价格，需要按计费重量、货物属性、取件城市、中国目的地、运输方式、包装和末端派送综合核算。提供货物照片、重量、尺寸和地址后，才能确认适用的方案与报价。
+
+## 直接答案：泰国寄中国多少钱？
+
+泰国寄中国多少钱，没有固定单价。运费按计费重量核算，计费重量取实际重量与体积重量两者中的较大值，再结合货物品类、泰国取件城市、中国收货城市、空运或陆运、包装与派送要求综合确认。想知道具体费用，提供货物照片、品名、重量、外箱尺寸、取件地址和中国收货地址，客服审核后会给出对应方案与报价。
+
+## 泰国寄到中国的运费怎么计算？
+
+计费重量是运费核算的基础。先称实际重量，再按外箱尺寸算体积重量：体积重量（公斤）等于长（厘米）乘宽（厘米）乘高（厘米）除以 5000。两者比较，取较大值作为计费重量。
+
+举例一：外箱 25×20×30 厘米，体积重量等于 25×20×30÷5000＝3 公斤。如果包裹实际重只有 1 公斤，计费重量按体积重量 3 公斤算。举例二：外箱 20×30×20 厘米，体积重量等于 20×30×20÷5000＝2.4 公斤。如果包裹实际重 5 公斤，计费重量按实际重量 5 公斤算。同样重量的货物，外箱越大、越轻泡，体积重量越高，计费重量也越高。
+
+除了计费重量，取件距离、包装方式、清关条件与中国末端派送也会影响总费用，报价需要结合整票货物确认，不能只按公斤数估算。发货前同时提供实际重量和外箱尺寸，才能算准。
+
+## 泰国寄中国空运和陆运怎么选？
+
+运输方式 | 常规时效 | 适合货物 | 计费特点
+
+空运 | 5-7 天 | 急件、小包、样品、补货、游客行李 | 时效快，适合时间要求高的货物
+
+陆运 | 10-15 天 | 大件、多箱、批量货物、搬家物品 | 适合体积大、重量大、时间较宽松的货物
+
+常规时效指泰国取件到中国派送的一般情况，具体以货物审核、取件城市、班次、清关与中国目的地为准。时效详情见 泰国寄中国时效说明 。海运服务暂未开放，目前主做 泰国到中国空运 与 泰国到中国陆运 。
+
+## 泰国寄中国包税和不含税有什么区别？
+
+方式 | 含义 | 费用构成 | 适用情况
+
+包税 | 报价包含中国进口环节相关税费的协调 | 运费加税费协调 | 希望费用一次确认、不想另付税费的货物
+
+不含税 | 税费按实际发生另计 | 运费加实报实销的税费 | 货物本身税率低或客户自行处理税费的情况
+
+包税与不含税不是价格高低之分，而是费用包含范围不同。能否包税、税费怎么算，取决于货物品类、申报价值与当期清关要求，需逐票审核确认。
+
+## 影响泰国寄中国运费的 6 个因素
+
+第一，计费重量：实际重量与体积重量取大值，轻泡货按体积重计费，外箱尺寸直接影响费用。第二，货物品类：食品、电子产品、佛牌、化妆品等品类审核要求不同，包装与清关条件也不同。第三，取件城市与距离：曼谷、普吉岛、清迈等城市取件条件不同，偏远地址可能需要额外协调。第四，中国目的地：收件城市与末端派送方式影响总费用。第五，运输方式：空运常规时效 5-7 天、陆运常规时效 10-15 天，时效与适用货物不同。第六，包装与增值服务：打木架、加固包装、拍照验货等服务按实际需求确认。
+
+同一票货物换一个取件城市、换一种运输方式，费用都可能不同，所以报价前一定要提供完整信息。也可以先看 泰国上门取件说明 确认取件安排，再按 泰国寄中国快递 的流程提交询价。
+
+## 报价前需要什么资料
+
+货物照片或名称、数量、实际重量、外箱尺寸、取件地址、中国收货地址及期望时效。确认后再选择空运、陆运或其他可用方案。
+
+## 常见问题
+
+### 泰国寄中国多少钱？一公斤多少钱？
+
+没有统一固定单价。运费按计费重量核算，计费重量取实际重量与体积重量两者中的较大值，再结合货物品类、泰国取件城市、中国收货城市、运输方式、包装与末端派送综合确认。提供货物照片、重量、尺寸和地址后，才能给出对应方案的报价。
+
+### 泰国寄中国运费按实际重量还是体积重量算？
+
+两者比较，取较大值作为计费重量。体积重量（公斤）等于长（厘米）乘宽（厘米）乘高（厘米）除以 5000。同样重量的货物，外箱越大、越轻泡，体积重量越高，计费重量也越高，所以发货前要同时提供实际重量和外箱尺寸。
+
+### 泰国寄中国空运和陆运价格有什么区别？
+
+空运和陆运不是同一个服务，价格不能直接按公斤比较。空运常规时效 5-7 天，适合急件、小包、样品和时间要求高的货物；陆运常规时效 10-15 天，适合大件、多箱、批量货物和时间较宽松的货物。具体费用要结合计费重量、货物品类、取件城市和中国目的地逐票确认。
+
+### 泰国寄中国包税和不含税有什么区别？
+
+包税和不含税是费用包含范围不同，不是价格高低之分。包税指报价包含中国进口环节相关税费的协调；不含税指税费按实际发生另计。能否包税、税费怎么算，取决于货物品类、申报价值与当期清关要求，需逐票审核确认。
+
+### 泰国寄中国报价需要提供什么资料？
+
+货物照片或名称、数量、实际重量、外箱尺寸、泰国取件地址、中国收货地址及期望时效。客服先核实可寄品类与线路，再给出适用的空运或陆运方案与报价。没有货物信息，无法给出准确价格。
+
+更新于 2026-11-26
+
+## 发货前先确认货物与路线
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国寄中国禁运品｜哪些不能寄、哪些要审核｜泰中物流
+
+> 泰国寄中国什么不能寄？可寄、禁寄、需审核三张清单一次看清。拿不准的品类先发照片与资料，私信确认再发货，不要先寄出。具体以承运方与海关最新规定为准。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-prohibited.html
+
+> Updated: 2026-11-26
+
+# 泰国寄中国什么不能寄？
+
+泰国寄中国分三类：一般可寄、需审核、禁寄。大部分日用品与特产可以咨询寄中国，食品、液体、电池、药品、植物、宠物等要先审核，危险品与违禁物品不能寄。拿不准的品类先发照片与资料确认，不要先寄出。
+
+## 直接答案：泰国寄中国哪些不能寄？
+
+泰国寄中国不能寄的是危险品与违禁物品，包括易燃易爆、腐蚀、放射性等危险品，毒品与管制物品，武器弹药，假冒品牌商品，现金与有价票据。食品、液体、粉末、电池、药品、植物、宠物、燕窝、贵重品属于需审核品类，要按具体货物逐票确认。普通衣物、日用品、已审核的包装食品与特产一般可以咨询寄中国。具体以承运方与海关最新规定为准。
+
+## 一般可寄清单
+
+品类 | 举例 | 说明
+
+普通衣物与日用品 | 衣服、鞋子、包、普通日用品 | 按实际货物确认包装与线路
+
+已审核的包装食品与特产 | 零食、果干、咖啡、茶叶、伴手礼 | 先审核配料、保质期、原包装与数量
+
+伴手礼与工艺品 | 手工艺品、陶瓷、纪念品、乳胶制品 | 易碎品与特殊材质要单独审核包装
+
+已审核的普通电子产品 | 不含问题电池的手机、电脑、平板 | 电池类型、数量与包装发货前必须审核
+
+佛牌与佛教用品 | 佛牌、佛像、佛教工艺品 | 看材质、尺寸、价值，提前确认
+
+以上“一般可寄”指品类上可以咨询，不等于每一件都能寄，具体仍要按货物照片、数量与目的地审核。运费按计费重量与整票条件核算，见 泰国寄中国运费说明 。
+
+## 需审核清单
+
+品类 | 要看什么 | 说明
+
+食品与零食 | 品名、配料、保质期、原包装、数量、用途 | 个人少量与商业批量按不同规则处理
+
+液体、粉末、膏体、喷雾 | 成分、形态、包装、数量 | 按成分与形态逐票审核
+
+带电产品与电池 | 电池类型、数量、价值、包装 | 发货前必须审核
+
+药品与保健品 | 药品名称、成分、包装、数量、用途 | 监管敏感，逐票审核、个案确认，见 | 泰国药品寄中国说明
+
+植物、苗木、种子 | 品种、状态、是否带土、数量 | 涉及动植物检疫，逐票审核
+
+宠物 | 种类、品种、年龄、体重、疫苗与健康资料 | 走宠物托运协调，不按普通快递处理
+
+燕窝 | 类型、包装、数量、目的地 | 监管较严，逐票审核、以海关最新规定为准
+
+贵重品与高价值商品 | 品名、价值、包装 | 按实际货物确认方案
+
+生鲜与冷冻食品 | 商品、包装、目的地 | 可能涉及冷链与检疫，先说明商品再评估
+
+## 禁寄清单
+
+品类 | 举例 | 说明
+
+危险品 | 易燃、易爆、腐蚀、放射性物品 | 承运方不接收
+
+毒品与管制物品 | 毒品、管制药品、违禁化学品 | 违法，一律不接收
+
+武器弹药 | 枪支、弹药、管制刀具 | 一律不接收
+
+假冒品牌商品 | 假冒商标、盗版商品 | 涉及侵权，不接收
+
+现金与有价票据 | 现金、支票、证券 | 不接收，请走正规金融渠道
+
+禁寄清单仅作参考，具体以承运方与海关最新规定为准。清单以外的品类如果拿不准，一律先按“需审核”处理：发照片与资料确认后再发货。
+
+## 怎么开始
+
+第一步，提供货物信息：货物照片、品名、成分、数量、重量与包装状态。第二步，提供路线信息：泰国取件地址与中国收货地址。第三步，确认可寄与方案：审核后确认可寄线路、包装、费用与预计时效，再安排发货。旅游购物可咨询 泰国上门取件 ，小包可走 泰国寄中国快递 ，清关要求见 泰国寄中国清关说明 。
+
+## 常见问题
+
+### 泰国食品可以寄中国吗？
+
+食品属于需审核品类，要看具体品名、配料、保质期、原包装、数量与用途，个人少量与商业批量按不同规则处理。先提供商品照片与资料审核，不承诺所有食品都可以寄。
+
+### 液体、粉末、喷雾可以寄中国吗？
+
+液体、粉末、膏体与喷雾属于需审核品类，要按成分、形态、包装与数量逐票审核。先提供产品照片、成分与包装信息，审核后再发货，不要直接寄出。
+
+### 带电池的电子产品可以寄中国吗？
+
+带电产品与电池属于需审核品类，要看电池类型、数量、价值与包装。手机、电脑、平板等设备发货前必须审核，具体以审核结果为准。
+
+### 药品、保健品可以寄中国吗？
+
+药品与保健品属于监管敏感品类，只能逐票审核、个案确认，不承诺具体药品可寄。提供药品名称、成分、包装与数量后，由客服按实际情况确认。
+
+### 不确定自己的东西能不能寄，怎么办？
+
+先不要寄出。把货物照片、品名、成分、数量、包装、泰国取件地址与中国目的地发来，审核确认可寄线路与方案后再发货。拿不准就先问，比寄出后被退回更省事。
+
+更新于 2026-11-26
+
+## 发货前先确认货物与路线
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-customs.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+---
+
+# 泰国寄中国要多久｜空运陆运时效对照与影响因素｜泰中物流
+
+> 泰国寄中国要多久？空运常规时效 5-7 天，陆运常规时效 10-15 天，具体以货物审核、取件城市、班次、清关与中国目的地为准。提供货物照片与地址，私信确认方案。
+
+> Canonical: https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-transit-time.html
+
+> Updated: 2026-11-26
+
+# 泰国寄中国要多久？
+
+泰国寄中国要多久，取决于运输方式：空运常规时效 5-7 天，陆运常规时效 10-15 天。这里的常规时效指泰国取件到中国派送的一般情况，具体以货物审核、取件城市、班次、清关与中国目的地为准。
+
+## 直接答案：泰国寄中国要多久？
+
+泰国寄中国，空运常规时效 5-7 天，陆运常规时效 10-15 天。急件优先比较空运，大件、批量或时间较宽松的货物可以比较陆运。常规时效指泰国取件到中国派送的一般情况，具体天数以货物审核、取件城市、航班或班次、清关与中国目的地为准，发货前按当期线路确认预计时间。
+
+## 泰国寄中国空运与陆运时效对照
+
+运输方式 | 常规时效 | 适合货物 | 说明
+
+空运 | 5-7 天 | 急件、小包、样品、补货、游客行李 | 时效快，适合时间要求高的货物
+
+陆运 | 10-15 天 | 大件、多箱、批量货物、搬家物品 | 适合体积大、重量大、时间较宽松的货物
+
+海运服务暂未开放，目前主做空运与陆运。运费按计费重量与整票条件核算，见 泰国寄中国运费说明 ；取件安排见 泰国上门取件说明 ，小包与文件可走 泰国寄中国快递 。
+
+## 哪些因素会影响泰国寄中国时效？
+
+第一，取件城市：曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等城市都可以安排上门取件，取件地址与时间需要提前确认，偏远地址可能需要额外协调。第二，货物审核：食品、电子产品、佛牌、化妆品等品类审核要求不同，特殊货物需要先确认可寄范围。第三，航班与班次：空运看航班安排，陆运看班次与路线，班次衔接会影响总时间。第四，清关资料：品名、数量、申报价值清楚、资料齐全，清关等待较短；资料不全或需补充证明时，总时效会延长。第五，中国目的地与派送：收件城市与末端派送方式不同，到达时间也不同。第六，节假日与天气：假期、恶劣天气与海关查验都可能让时效延长，具体以发货前确认的预计时间为准。
+
+## 泰国寄中国清关与派送时间怎么算？
+
+常规时效 5-7 天（空运）与 10-15 天（陆运）是泰国取件到中国派送的全程一般情况，清关时间包含在内，不是另外加的。清关需要货物资料齐全：品名、数量、申报价值与收件信息一致，可以减少等待；如果资料不全、需要补充证明，或者遇到海关查验，总时效会比常规区间更长。发货前备齐资料、提前确认可寄品类，是缩短等待最直接的办法。
+
+## 怎么查自己的包裹从泰国寄中国要多久？
+
+提供货物照片、品名、重量、外箱尺寸、泰国取件地址和中国收货地址，客服会按当期线路给出预计时间。没有货物与地址信息，只能按空运 5-7 天、陆运 10-15 天的常规区间参考，无法确认具体天数。急件建议优先比较 泰国到中国空运 ，大件与批量货物可以比较 泰国到中国陆运 。
+
+## 常见问题
+
+### 泰国寄中国要多久？一般几天能到？
+
+常规时效：空运 5-7 天，陆运 10-15 天。这里的常规时效指泰国取件到中国派送的一般情况，具体以货物审核、取件城市、航班或班次、清关与中国目的地为准。急件优先比较空运，大件、批量或时间较宽松的货物可以比较陆运。
+
+### 泰国寄中国空运和陆运时效差多少？
+
+空运常规时效 5-7 天，陆运常规时效 10-15 天，一般相差 3-10 天。空运适合急件、小包、样品和时间要求高的货物；陆运适合大件、多箱、批量货物和时间较宽松的货物。具体时效仍要结合货物、取件城市与中国目的地逐票确认。
+
+### 从曼谷寄中国要多久？从普吉岛寄中国要多久？
+
+取件城市不改变常规时效区间：空运 5-7 天，陆运 10-15 天。曼谷、普吉岛、清迈、芭提雅、苏梅岛、合艾、清莱等城市都可以安排上门取件，具体时效以取件城市、航班或班次、清关与中国目的地为准。
+
+### 泰国寄中国清关要多久？会影响总时效吗？
+
+清关时间包含在上述常规时效内。货物资料齐全、品名与数量清楚、申报价值一致，清关等待较短；资料不全、需要补充证明或遇到海关查验时，总时效会延长。发货前备齐货物照片、品名、数量与收件信息，可以减少清关等待。
+
+### 怎么知道自己的包裹从泰国寄中国具体要多久？
+
+提供货物照片、品名、重量、外箱尺寸、泰国取件地址和中国收货地址，客服会按当期线路给出预计时间。没有货物与地址信息，只能按空运 5-7 天、陆运 10-15 天的常规区间参考，无法确认具体天数。
+
+更新于 2026-11-26
+
+## 发货前先确认货物与路线
+
+提供取件城市、中国目的地、货物图片、重量和尺寸，可以更快获得准确方案。
+
+## Related pages
+
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/air-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/index.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/land-freight-to-china.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-express.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-pickup.html
+- https://thai-chinalogistics.github.io/Thai-ChinaLogistics/thailand-to-china-price.html
