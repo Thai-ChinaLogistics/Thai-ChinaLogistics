@@ -11,9 +11,12 @@ import sys
 from pathlib import Path
 
 # Original image bytes, not rewritten/transcoded/recompressed in this PR.
+# 2026-11-23: pickup-slide-3.png (sea-freight carousel image) removed from the
+# baseline together with the sea-freight slide itself; sea freight is not
+# offered, so the image is no longer referenced by the homepage. The file is
+# deleted from the repo and remains recoverable from git history.
 EXPECTED = {
     "pickup-slide-2.png": ("ad6a83b75ef0e23db3df7b791ac4e93d6368a003", b"\x89PNG\r\n\x1a\n", "css"),
-    "pickup-slide-3.png": ("66f19d35c4f74c6fc1ce13a74727e8580a43e3f7", b"\x89PNG\r\n\x1a\n", "css"),
     "pickup-slide-4.png": ("7949b33ed09813112394224fe19e4de98489689e", b"\x89PNG\r\n\x1a\n", "css"),
     "carton-weight-diagram.png": ("a40ff85e5116612309fa3894141f66827e087b30", b"\x89PNG\r\n\x1a\n", "img"),
     "facebook-icon.png": ("a371772a86d6ec96163357f53f2e0197bc2d4bb3", b"\x89PNG\r\n\x1a\n", "img"),
