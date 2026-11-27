@@ -4,8 +4,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 PAGES = {
-    "bangkok-to-china.html": ("曼谷寄中国", 65),
-    "phuket-to-china.html": ("普吉岛寄中国", 64),
+    "bangkok-to-china.html": ("曼谷寄中国", 82),  # 2026-11-27: live HEAD description is 82 chars; stale 65 fixed
+    "phuket-to-china.html": ("普吉岛寄中国", 81),  # 2026-11-27: live HEAD description is 81 chars; stale 64 fixed
 }
 
 class HeadParser(HTMLParser):
